@@ -1,0 +1,17 @@
+Negro
+Hola que tal me llamo negro 
+Vengo de Africa y no tengo amigos
+Si eres mi amigo te seguire toda mi vida
+(Dar Objeto)
+Que rico  
+Muchas gracias
+
+deportista
+Hey pardillo
+Hazme un favorcillo...
+Consigueme los apuntes antes de que el negro se los coma.
+(Dar Objeto)
+Gracias pardillo esto me vendra de perlas 
+ahora pierdete
+(Mision completada).
+Gracias pardillo.
