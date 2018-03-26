@@ -5468,6 +5468,40 @@ Transform:
   m_PrefabParentObject: {fileID: 4153614527004774, guid: 38c795b5389d1234a9476967215fb381,
     type: 2}
   m_PrefabInternal: {fileID: 1756803213}
+--- !u!1 &1918948650 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1617261582197984, guid: 6798309ad79c7b44bbdfcebd4077d326,
+    type: 2}
+  m_PrefabInternal: {fileID: 560599384}
+--- !u!50 &1918948653 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 50636130799117640, guid: 6798309ad79c7b44bbdfcebd4077d326,
+    type: 2}
+  m_PrefabInternal: {fileID: 560599384}
+--- !u!114 &1918948656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1918948650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b87291ada414e48b93a5f2a00c5ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: 0
+  directions_4:
+    speed: 3
+    direction: {x: 0, y: 0}
+  directions_8:
+    speed: 0
+    direction: {x: 0, y: 0}
+  platform:
+    jumpForce: 0
+    maxSpeed: 0
+    groundCheck: {fileID: 0}
+    direction: {x: 0, y: 0}
+  myRigidbody: {fileID: 1918948653}
 --- !u!1 &2114057698
 GameObject:
   m_ObjectHideFlags: 0

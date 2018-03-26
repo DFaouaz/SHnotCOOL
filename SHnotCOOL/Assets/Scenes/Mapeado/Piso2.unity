@@ -379,7 +379,7 @@ Sprite:
         format: 0
         dimension: 0
       m_DataSize: 80
-      _typelessdata: 000000bf0000003f0000000000000000000000000000003f0000003f000000000000000000000000000000bf000000bf0000000000000000000000000000003f000000bf000000000000000000000000
+      _typelessdata: 000000bf0000003f00000000000000000000803f0000003f0000003f000000000000803f0000803f000000bf000000bf0000000000000000000000000000003f000000bf000000000000803f00000000
     textureRect:
       serializedVersion: 2
       x: 0
@@ -4578,20 +4578,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1682573800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3965310ac8f1a249a71c4fdd91382d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 00b87291ada414e48b93a5f2a00c5ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movement: 0
   directions_4:
-    speed: 3
+    speed: 4
     direction: {x: 0, y: 0}
   directions_8:
     speed: 0
     direction: {x: 0, y: 0}
   platform:
-    jumpForce: 350
-    maxSpeed: 5
-    groundCheck: {fileID: 2049326601}
+    jumpForce: 0
+    maxSpeed: 0
+    groundCheck: {fileID: 0}
     direction: {x: 0, y: 0}
   myRigidbody: {fileID: 1682573804}
 --- !u!95 &1682573802

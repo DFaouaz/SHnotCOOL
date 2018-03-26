@@ -13,7 +13,7 @@ public class LayerManager : MonoBehaviour {
 		obstacles = FindObjectsOfType<Obstacle> ();
 		//Para todo obstaculo, su orden es menor cuando mas lejos.
 		for (int i = 0; i < obstacles.Length; i++) {
-			obstacles [i].MySpRenderer.sortingOrder = (int)(mapHeight * 2 - obstacles[i].transform.position.y * 2);
+			obstacles [i].GetComponent<SpriteRenderer>().sortingOrder = (int)(mapHeight * 2 - obstacles[i].transform.position.y * 2);
 		}
 	}
 }

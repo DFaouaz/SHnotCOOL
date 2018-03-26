@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Mapeado/Piso1.unity
-  isLoaded: 1
-  isActive: 1
