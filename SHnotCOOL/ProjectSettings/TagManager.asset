@@ -13,6 +13,7 @@ TagManager:
   - Vidas
   - Limite
   - Negro
+  - DeathZone
   layers:
   - Default
   - TransparentFX
