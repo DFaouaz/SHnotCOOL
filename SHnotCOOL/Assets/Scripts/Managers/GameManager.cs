@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour {
 	public int tamInv = 0;
 	[HideInInspector]
 	public int matematicasScore = 0;
+	[HideInInspector]
+	public int lenguaScore = 0;
 
 	// En cuanto el objeto se active
 	void Awake() {
@@ -50,7 +52,13 @@ public class GameManager : MonoBehaviour {
 	}
 
 	// A partir de aquí añadiríamos los métodos que necesitemos implementar
-	// para conseguir las funcionalidades que pretendamos incluir. 
+	// para conseguir las funcionalidades que pretendamos incluir.
+	//Métodos generales
+	void CambiaAEscenaPrincipal(){
+		SceneManager.LoadScene (EscenaPiso1);
+	}
+
+	//Minijuego de matematicas.
 	public void FinExamenMatematicas()
 	{
 		Text textoFin = GameObject.FindGameObjectWithTag("FinMatematicas").GetComponent<Text>();
@@ -59,6 +67,20 @@ public class GameManager : MonoBehaviour {
 		else
 			textoFin.text = "Das Asco";
 
-		SceneManager.LoadScene (EscenaPiso1);
+		Invoke ("CambiaAEscenaPrincipal", 3);
+	}
+
+	//Minijuego de Lengua
+	public void FinExamenLengua(){
+		Invoke ("CambiaAEscenaPrincipal", 3);
+	}
+	public void SubePuntosLengua(){
+		FindObjectOfType<Puntos> ().SubePuntos ();
+	}
+	public void BajaVidaLengua(){
+		FindObjectOfType<VidasLengua> ().BajaVida ();
+	}
+	public void SubeVidaLengua(){
+		FindObjectOfType<VidasLengua> ().SubeVida ();
 	}
 }

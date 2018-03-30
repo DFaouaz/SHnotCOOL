@@ -13,9 +13,22 @@ public class Letter : MonoBehaviour {
 		caracter.text = letra.ToString();
 	}
 
+	void Update(){
+		CheckLetter ();
+	}
+
 	void OnTriggerEnter2D(Collider2D col){
-		if (col.tag == "DeathZone")
+		if (col.tag == "DeathZone") {
 			Destroy (this.gameObject);
+			GameManager.instance.BajaVidaLengua ();
+		}
+	}
+
+	void CheckLetter(){
+		if (Input.inputString.ToLower() == letra.ToString ()) {
+			Destroy (this.gameObject);
+			GameManager.instance.SubePuntosLengua ();
+		}
 	}
 
 }
