@@ -44,11 +44,10 @@ public class GameManager : MonoBehaviour {
 			// de que persista, si cambiamos de escena
 			DontDestroyOnLoad(this.gameObject);
 		}
-		/*else {
+		else {
 			// Si ya existe un objeto GameManager, no necesitamos uno nuevo
 			Destroy(this.gameObject);
-		}*/
-      
+		}      
 	}
 
 	// A partir de aquí añadiríamos los métodos que necesitemos implementar

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Letter : MonoBehaviour {
 
+	[HideInInspector]
 	public char letra;
 	TextMesh caracter;
 

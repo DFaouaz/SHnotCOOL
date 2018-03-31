@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a41cec2fd94c66f49adaeee396c9eb64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 3
+  vidas: 5
 --- !u!1 &748829741
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +388,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -662,7 +662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea80f423817f84a488c3c5c9bf20873b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntosPorLetra: 10
+  puntosParaAprobar: 25
+  puntosPorLetra: 1
 --- !u!1 &1976726802
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +720,7 @@ MonoBehaviour:
   letraPrefab: {fileID: 114682925400772906, guid: 85ffebc9e92290841af11516837f2c99,
     type: 2}
   firstSpawnDelay: 0
-  spawnDelay: 2
+  spawnDelay: 0.7
 --- !u!4 &1976726805
 Transform:
   m_ObjectHideFlags: 0

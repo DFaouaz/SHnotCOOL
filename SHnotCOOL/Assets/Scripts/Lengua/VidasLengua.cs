@@ -15,12 +15,13 @@ public class VidasLengua : MonoBehaviour {
 		
 
 	public void BajaVida(){
-		vidas--;
-		if (vidas <= 0) {
+		if (vidas > 0) {
+			vidas--;
+			ActualizaVidas ();
+		} else if (vidas == 0) {
+			vidas--;
 			GameManager.instance.FinExamenLengua ();
-			vidas = 0;
 		}
-		ActualizaVidas ();
 	}
 	public void SubeVida(){
 		vidas++;

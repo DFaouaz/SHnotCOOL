@@ -144,7 +144,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: b78e4a7b9959efd46beb0aff62ff2fd6, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
 --- !u!114 &114579623337351200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,6 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f60a85c1eb2c142a0c4d353f3f9110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minSpeed: 2
+  maxSpeed: 5
   speed: 3
 --- !u!114 &114682925400772906
 MonoBehaviour:
