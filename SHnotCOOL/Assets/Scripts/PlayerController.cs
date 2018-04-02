@@ -26,16 +26,18 @@ public class Directions_4 {
 	//Input
 	public void CheckInput() 
 	{
-		direction = Vector2.zero;
-		if (Input.GetButton ("Vertical")) {
-			direction = Vector2.up * Mathf.Sign (Input.GetAxis ("Vertical"));
+		if (!GameManager.instance.pauseMode) {
+			direction = Vector2.zero;
+			if (Input.GetButton ("Vertical")) {
+				direction = Vector2.up * Mathf.Sign (Input.GetAxis ("Vertical"));
             
-			GameManager.instance.ActualPlayerDirecction = direction.normalized;
+				GameManager.instance.ActualPlayerDirecction = direction.normalized;
 
-		} else if (Input.GetButton ("Horizontal")) {
-			direction = Vector2.right * Mathf.Sign (Input.GetAxis ("Horizontal"));
+			} else if (Input.GetButton ("Horizontal")) {
+				direction = Vector2.right * Mathf.Sign (Input.GetAxis ("Horizontal"));
 
-			GameManager.instance.ActualPlayerDirecction = direction.normalized;
+				GameManager.instance.ActualPlayerDirecction = direction.normalized;
+			}
 		}
 	}
 	//Animator

@@ -71,10 +71,9 @@ public class AparecenRandoms : MonoBehaviour {
         tiempoPasado += Time.deltaTime;
         if(tiempoPasado>=tiempoMax)
         {
-
             CambiaOperacion();
         }
-        if (operacionesHechas >= 11)
+        if (operacionesHechas == 11)
         {
             GameManager.instance.FinExamenMatematicas();
         }

@@ -22,10 +22,12 @@ public class PauseManager : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			if (pausaMenu.activeInHierarchy) {
 				pausaMenu.SetActive (false);
+				GameManager.instance.pauseMode = false;
 				Time.timeScale = 1;
 			}
 			else {
 				pausaMenu.SetActive (true);
+				GameManager.instance.pauseMode = true;
 				Time.timeScale = 0;
 			}
 		}

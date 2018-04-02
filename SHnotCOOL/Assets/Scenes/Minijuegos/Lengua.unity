@@ -331,7 +331,7 @@ MonoBehaviour:
   ActualPlayerVelocity: {x: 0, y: 0}
   habladoNegro: 0
   darObjeto: 1
-  tamInv: 0
+  tamInv: 3
   matematicasScore: 0
   lenguaScore: 0
 --- !u!4 &748829743

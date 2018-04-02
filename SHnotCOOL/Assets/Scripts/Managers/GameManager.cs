@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour {
     public bool habladoNegro=false;
 	[HideInInspector]
     public bool darObjeto = true;
+	[HideInInspector]
+	public bool pauseMode = false;
     
 	public int tamInv = 0;
 	[HideInInspector]

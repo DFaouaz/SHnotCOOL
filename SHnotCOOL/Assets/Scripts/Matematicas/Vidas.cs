@@ -13,45 +13,40 @@ public class Vidas : MonoBehaviour {
     int repeticiones = 8;
     float tiempo = 0.1f;
     bool golpeado = false, parpadea = false;
-	// Use this for initialization
+
 	void Start () {
         text = GameObject.FindGameObjectWithTag("Vidas");
         textoVidas = text.GetComponent<Text>();
         
         render = GetComponent<SpriteRenderer>();
+		ActualizaVidas ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        textoVidas.text = "Vidas: " + vidas;
-    }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Bala")
-        {
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.tag == "Bala") {
             Damage();
             Destroy(collision.gameObject);
         }
     }
 
-    void Damage()
-    {
-        if (vidas > 0 && !golpeado)
-        {
-            vidas--;
-            golpeado = true;
-            InvokeRepeating("Invulnerable", 0, tiempo);
-            Invoke("CancelInvoke", tiempo * repeticiones);
-            golpeado = false;
-        }
-        else
-            GameManager.instance.FinExamenMatematicas();
+    void Damage() {
+		if (vidas > 0 && !golpeado) {
+			vidas--;
+			ActualizaVidas ();
+			golpeado = true;
+			InvokeRepeating ("Invulnerable", 0, tiempo);
+			Invoke ("CancelInvoke", tiempo * repeticiones);
+			golpeado = false;
+		} else if (vidas-- == 0)
+			GameManager.instance.FinExamenMatematicas ();
     }
 
-    void Invulnerable()
-    {
+    void Invulnerable() {
         render.enabled = parpadea;
         parpadea = !parpadea;
     }
+
+	void ActualizaVidas(){
+		textoVidas.text = "Vidas: " + vidas;
+	}
 }
