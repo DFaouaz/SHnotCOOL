@@ -8,32 +8,42 @@ public class NPC : MonoBehaviour
 {
     public Dialogue dialogo;
     bool encontrado;
-    bool hablando = false;
+	[HideInInspector]
+    public bool hablando = false;
     const int frasesMax = 20;
     StreamReader texto;
+	DialogueManager manager;
+
+	void Start(){
+		manager = FindObjectOfType<DialogueManager> ();
+	}
 
 
-    public void ComienzaDialogo()
-    {
-
-
-        texto = new StreamReader("tex.txt", Encoding.Default);
+    public void ComienzaDialogo() {
+		texto = new StreamReader("tex.txt", Encoding.Default);
 
         LeeDialogo(dialogo);
-        FindObjectOfType<DialogueManager>().TriggerDialogo(dialogo);
-
-
+		manager.TriggerDialogo (dialogo);
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.gameObject.CompareTag("Player") == true)
-        {
+    public void OnCollisionEnter2D(Collision2D collision) {
+		if (collision.gameObject.tag == "Player") {
+			manager.dialogueMensaje.gameObject.SetActive (true);
+			manager.currentNPC = this;
+		}
+        /*{
             hablando = true;
             ComienzaDialogo();
             
-        }
+        }*/
     }
+
+	void OnCollisionExit2D(Collision2D col){
+		if (col.gameObject.tag == "Player") {
+			manager.dialogueMensaje.gameObject.SetActive (false);
+			manager.currentNPC = null;
+		}
+	}
     void LeeDialogo(Dialogue dialogo)
     {
         dialogo.frases = new string[frasesMax];
@@ -85,9 +95,10 @@ public class NPC : MonoBehaviour
         } while (linea != null && linea != "" && linea != "(Mision completada)." && linea != "(Dar Objeto)");
         texto.Close();
     }
-    private void Update()
+    
+	void Update()
     {
-		if (GameManager.instance.darObjeto && hablando && dialogo.nombre== FindObjectOfType<DialogueManager>().personaAhora)
+		if (GameManager.instance.darObjeto && hablando && dialogo.nombre== manager.personaAhora)
         {
             ComienzaDialogo();
           

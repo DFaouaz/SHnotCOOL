@@ -21,6 +21,10 @@ public class DialogueManager : MonoBehaviour
     public Text nombre;
     public Text sentence;
     public GameObject dialogueBox;
+	public Text dialogueMensaje;
+	public KeyCode botonParaHablar;
+	[HideInInspector]
+	public NPC currentNPC;
 
     bool negroo;
 	[HideInInspector]
@@ -35,6 +39,7 @@ public class DialogueManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		dialogueMensaje.gameObject.SetActive (false);
         frases = new Queue<string>();
         jugador = GameObject.FindGameObjectWithTag("Player");
         playerMovement = jugador.GetComponent<PlayerController>();
@@ -107,11 +112,22 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    private void Update()
+    void Update()
     {
+		CheckInputDialogue ();
+
         if (Input.GetMouseButtonDown(0) == true && empezado && !GameManager.instance.darObjeto)
         {
             SiguienteFrase();
         }
     }
+		
+	//Comprueba si el ususario da la orden de comenzar la conversación
+	void CheckInputDialogue(){
+		if (Input.GetKeyDown (botonParaHablar) && currentNPC != null) {
+			dialogueMensaje.gameObject.SetActive (false);
+			currentNPC.hablando = true;
+			currentNPC.ComienzaDialogo ();
+		}			
+	}
 }

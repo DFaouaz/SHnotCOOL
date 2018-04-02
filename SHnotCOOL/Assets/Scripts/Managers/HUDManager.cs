@@ -28,7 +28,9 @@ public class HUDManager : MonoBehaviour {
     public KeyCode aux;
 
 	void Start () {
+		inventory.gameObject.SetActive (true);
 		InicializeSlots ();
+		inventory.gameObject.SetActive (false);
 		mensajeCoger.gameObject.SetActive (false);
 		mensajeSustitucion.gameObject.SetActive (false);
 		mensajeNoSustitucion.gameObject.SetActive (false);
