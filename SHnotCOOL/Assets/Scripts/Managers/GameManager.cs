@@ -84,4 +84,7 @@ public class GameManager : MonoBehaviour {
 	public void SubeVidaLengua(){
 		FindObjectOfType<VidasLengua> ().SubeVida ();
 	}
+	public void Destapa(char letra){
+		FindObjectOfType<Palabra> ().Destapa (letra);
+	}
 }
