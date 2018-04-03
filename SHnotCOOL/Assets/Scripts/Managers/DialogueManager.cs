@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		dialogueMensaje.text = "Pulsar " + botonParaHablar.ToString () + " para interactuar.";
 		dialogueMensaje.gameObject.SetActive (false);
         frases = new Queue<string>();
         jugador = GameObject.FindGameObjectWithTag("Player");

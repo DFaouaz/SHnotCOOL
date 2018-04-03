@@ -46,9 +46,9 @@ public class Letter : MonoBehaviour {
 	public bool BuscaLetra(){
 		int i = 0;
 		Palabra pal = FindObjectOfType<Palabra> ();
-		while (i < pal.palabraElegida.palabraElegida.Length && letra.ToString() != pal.palabraElegida.palabraElegida[i].ToString().ToLower())
+		while (i < pal.palabraElegida.Length && letra.ToString() != pal.palabraElegida[i].ToString().ToLower())
 			i++;
-		return i < pal.palabraElegida.palabraElegida.Length;
+		return i < pal.palabraElegida.Length;
 	}
 
 }

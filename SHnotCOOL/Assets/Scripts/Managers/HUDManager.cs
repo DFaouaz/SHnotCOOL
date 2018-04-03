@@ -28,6 +28,7 @@ public class HUDManager : MonoBehaviour {
     public KeyCode aux;
 
 	void Start () {
+		mensajeCoger.text = "Pulsar " + teclaCoger.ToString () + " para coger el objeto.";
 		inventory.gameObject.SetActive (true);
 		InicializeSlots ();
 		inventory.gameObject.SetActive (false);
