@@ -4,11 +4,6 @@ using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
 
-public class TipoPalabra{
-	
-
-
-}
 
 public class Palabra : MonoBehaviour {
 
