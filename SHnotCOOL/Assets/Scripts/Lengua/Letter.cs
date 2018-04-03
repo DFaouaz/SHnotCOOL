@@ -8,10 +8,16 @@ public class Letter : MonoBehaviour {
 	[HideInInspector]
 	public char letra;
 	TextMesh caracter;
+	public Color colorCorrecto;
+	bool enPalabra = false;
 
 	void Start(){
 		caracter = GetComponent<TextMesh>();
 		caracter.text = letra.ToString();
+		if (BuscaLetra ()) {
+			caracter.color = colorCorrecto;
+			enPalabra = true;
+		}
 	}
 
 	void Update(){
@@ -20,8 +26,14 @@ public class Letter : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.tag == "DeathZone") {
-			Destroy (this.gameObject);
-			GameManager.instance.BajaVidaLengua ();
+			if (enPalabra) {
+				Destroy (this.gameObject);
+				GameManager.instance.Destapa(letra);
+			}
+			else{			
+				Destroy (this.gameObject);
+				GameManager.instance.BajaVidaLengua ();
+			}
 		}
 	}
 
@@ -30,6 +42,13 @@ public class Letter : MonoBehaviour {
 			Destroy (this.gameObject);
 			GameManager.instance.SubePuntosLengua ();
 		}
+	}
+	public bool BuscaLetra(){
+		int i = 0;
+		Palabra pal = FindObjectOfType<Palabra> ();
+		while (i < pal.palabraElegida.palabraElegida.Length && letra.ToString() != pal.palabraElegida.palabraElegida[i].ToString().ToLower())
+			i++;
+		return i < pal.palabraElegida.palabraElegida.Length;
 	}
 
 }

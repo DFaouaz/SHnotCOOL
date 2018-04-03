@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class SpawnLetter : MonoBehaviour {
 
@@ -17,10 +18,10 @@ public class SpawnLetter : MonoBehaviour {
 	}
 
 	void Spawn(){
-		//Elige al azar una letra(indice)
-		int indice = Random.Range(0, letras.Length);
+		//Elige al azar una letra
 		Vector2 randomPos = new Vector2 (Random.Range (bounds.bounds.min.x + 1, bounds.bounds.max.x - 1), this.gameObject.transform.position.y);
-		Instantiate<Letter> (letraPrefab, randomPos, Quaternion.identity).letra = (char)letras[indice];
+		Letter letra = Instantiate<Letter> (letraPrefab, randomPos, Quaternion.identity);
+		letra.letra = (char)letras[Random.Range(0, letras.Length)];
 	}
 
 }
