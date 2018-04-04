@@ -8,6 +8,8 @@ public class PauseManager : MonoBehaviour {
 
 	public GameObject pausaMenu;
 	public string escenaMenuPrincipal;
+	public GameObject botones;
+	public CanvasRenderer panelOpciones;
 
 
 	void Start(){
@@ -44,6 +46,15 @@ public class PauseManager : MonoBehaviour {
 		SceneManager.LoadScene (escenaMenuPrincipal);
 	}
 
+	//Métodos para el panel de opciones
+	public void AbreOpciones(){
+		botones.SetActive (false);
+		panelOpciones.gameObject.SetActive (true);
+	}
+	public void CierraOpciones(){
+		botones.SetActive (true);
+		panelOpciones.gameObject.SetActive (false);
+	}
 
 
 

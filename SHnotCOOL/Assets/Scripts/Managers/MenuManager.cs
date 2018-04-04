@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour {
 	public string EscenaPredeterminada;
 	public Button botonReanudar, botonNuevaPartida, botonSalir;
 	public GameObject botones;
-	public CanvasRenderer panelNuevaPartida, panelReanudar;
+	public CanvasRenderer panelNuevaPartida, panelReanudar,panelOpciones;
 	public BotonArchivo botonArchivo;
 	RectTransform content;
 	[HideInInspector]
@@ -29,6 +29,7 @@ public class MenuManager : MonoBehaviour {
 		//Desactiva los paneles
 		panelNuevaPartida.gameObject.SetActive (false);
 		panelReanudar.gameObject.SetActive (false);
+		panelOpciones.gameObject.SetActive (false);
 	}
 
 
@@ -161,9 +162,14 @@ public class MenuManager : MonoBehaviour {
 		BuscarArchivos ();
 		CreaBotonArchivo ();
 	}
-		
 
-
-
-
+	//Métodos para el panel de opciones
+	public void AbreOpciones(){
+		botones.SetActive (false);
+		panelOpciones.gameObject.SetActive (true);
+	}
+	public void CierraOpciones(){
+		botones.SetActive (true);
+		panelOpciones.gameObject.SetActive (false);
+	}
 }
