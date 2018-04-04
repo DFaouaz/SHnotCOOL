@@ -128,7 +128,6 @@ GameObject:
   - component: {fileID: 568155678}
   - component: {fileID: 568155676}
   - component: {fileID: 568155677}
-  - component: {fileID: 568155683}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -298,30 +297,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &568155683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 568155675}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b87291ada414e48b93a5f2a00c5ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movement: 0
-  directions_4:
-    speed: 3
-    direction: {x: 0, y: 0}
-  directions_8:
-    speed: 0
-    direction: {x: 0, y: 0}
-  platform:
-    jumpForce: 0
-    maxSpeed: 0
-    groundCheck: {fileID: 0}
-    direction: {x: 0, y: 0}
-  myRigidbody: {fileID: 568155680}
 --- !u!1 &650366750
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,8 +876,10 @@ MonoBehaviour:
   ActualPlayerVelocity: {x: 0, y: 0}
   habladoNegro: 0
   darObjeto: 1
+  pauseMode: 0
   tamInv: 0
   matematicasScore: 0
+  lenguaScore: 0
 --- !u!4 &1500597927
 Transform:
   m_ObjectHideFlags: 0

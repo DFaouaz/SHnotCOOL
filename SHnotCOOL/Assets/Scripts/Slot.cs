@@ -32,31 +32,29 @@ public class Slot : MonoBehaviour
         {
             //Dropeamos en la posicion
             
-            if (im.modoSustitucion)
-            {
-                CleanSlot();
-                //Asignamos el nuevo objeto
-                objeto = im.objeto.gameObject;
-                nombre = im.objeto.NombreColeccionable;
-                imagenObjeto = im.objeto.imagenRepresentacion;
-                //Desactivamos el objeto
-                im.objeto.gameObject.SetActive(false);
-                im.modoSustitucion = false;
-                im.mensajeSustitucion.gameObject.SetActive(false);
-                im.inventory.gameObject.SetActive(false);
-            }
-            else if (im.darObjeto)
-            {
+			if (im.modoSustitucion) {
+				CleanSlot ();
+				//Asignamos el nuevo objeto
+				objeto = im.objeto.gameObject;
+				nombre = im.objeto.NombreColeccionable;
+				imagenObjeto = im.objeto.imagenRepresentacion;
+				//Desactivamos el objeto
+				im.objeto.gameObject.SetActive (false);
+				im.modoSustitucion = false;
+				im.mensajeSustitucion.gameObject.SetActive (false);
+				im.inventory.gameObject.SetActive (false);
+			} else if (im.modoDarObjeto) {
 
-                Text textos = GetComponentInChildren<Text>();
-                textos.text = "Vacio";
-                objeto = null;
+				Text textos = GetComponentInChildren<Text> ();
+				textos.text = "Vacio";
+				objeto = null;
                 
-                im.darObjeto = false;
-                im.inventory.gameObject.SetActive(false);
-                GameManager.instance.darObjeto = false;
-                im.teclaParaAbrirYCerrar = im.aux;
-            }
+				im.modoDarObjeto = false;
+				im.inventory.gameObject.SetActive (false);
+				GameManager.instance.darObjeto = false;
+				im.teclaParaAbrirYCerrar = im.aux;
+			} else
+				CleanSlot ();
             //Lo actualizamos visualmente
             UpdateRender();
         }

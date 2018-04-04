@@ -22,12 +22,14 @@ public class HUDManager : MonoBehaviour {
 	bool huecoNegro = false;
 	[HideInInspector]
 	public bool modoSustitucion=false;
-    public bool darObjeto = true;
+	[HideInInspector]
+	public bool modoDarObjeto = false;
 	public Sprite imagenDeVacio, imagenDeBloqueo;
     [HideInInspector]
     public KeyCode aux;
 
 	void Start () {
+		modoDarObjeto = false;
 		mensajeCoger.text = "Pulsar " + teclaCoger.ToString () + " para coger el objeto.";
 		inventory.gameObject.SetActive (true);
 		InicializeSlots ();
@@ -40,8 +42,7 @@ public class HUDManager : MonoBehaviour {
 	void Update () {
 		OpenCloseInventory ();
 		CheckInputObject ();
-		CheckNegro ();
-        
+		CheckNegro ();        
 	}
 	//Guarda el objeto
 	void SaveObject(){
@@ -154,11 +155,8 @@ public class HUDManager : MonoBehaviour {
             teclaParaAbrirYCerrar = KeyCode.None;
             GameManager.instance.darObjeto = true;
             inventory.gameObject.SetActive(true);
-            darObjeto = true;
-        }
-        
-
-            
+            modoDarObjeto = true;
+        }            
     }
 }
 

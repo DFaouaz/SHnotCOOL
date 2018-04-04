@@ -57,6 +57,6 @@ public class Palabra : MonoBehaviour {
 		int i = 0;
 		while (i < text.text.Length && text.text [i] != '_')
 			i++;
-		return i < text.text.Length;
+		return i == text.text.Length;
 	}
 }

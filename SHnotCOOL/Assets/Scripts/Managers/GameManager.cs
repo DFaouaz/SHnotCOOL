@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour {
 	//Métodos generales
 	void CambiaAEscenaPrincipal(){
 		SceneManager.LoadScene (EscenaPiso1);
+		Time.timeScale = 1;
 	}
 
 	//Minijuego de matematicas.
@@ -68,12 +69,14 @@ public class GameManager : MonoBehaviour {
 		else
 			textoFin.text = "Das Asco";
 
-		Invoke ("CambiaAEscenaPrincipal", 3);
+		Invoke ("CambiaAEscenaPrincipal", 0.6f);
+		Time.timeScale = 0.2f;
 	}
 
 	//Minijuego de Lengua
 	public void FinExamenLengua(){
-		Invoke ("CambiaAEscenaPrincipal", 3);
+		Invoke ("CambiaAEscenaPrincipal", 0.3f);
+		Time.timeScale = 0.1f;
 	}
 	public void SubePuntosLengua(){
 		FindObjectOfType<Puntos> ().SubePuntos ();

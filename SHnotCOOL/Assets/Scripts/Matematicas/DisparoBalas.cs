@@ -22,7 +22,7 @@ public class DisparoBalas : MonoBehaviour {
     // Use this for initialization
     void Start () {
         tamañoCamara = Camera.main.orthographicSize;
-        angulo=360/numeroProyectiles;
+        angulo = 360 / numeroProyectiles;
         if (modoDisparo == 0)
             DisparoAPosicion();
         else if (modoDisparo == 1)
@@ -58,8 +58,7 @@ public class DisparoBalas : MonoBehaviour {
 
     }
     void DisparoExplosion()
-    {
-        
+    {        
         incremento = 0;
         while(incremento/360<1)
         {

@@ -13,8 +13,6 @@ public class AparecenRandoms : MonoBehaviour {
     int tiempoMax = 10;
     float tiempoPasado;
     int operacionesHechas;
-    bool aprobado;
-
     public Text suma;
     public Text hechas;
     public float tiempo;
@@ -38,6 +36,8 @@ public class AparecenRandoms : MonoBehaviour {
         suma.text = cuenta;
         CancelInvoke();
         SpawnSoluciones();
+		ActualizaOperacion ();
+		CompruebaOperacion ();
     }
 	// Update is called once per frame
 	public void SpawnSoluciones  () {
@@ -72,12 +72,16 @@ public class AparecenRandoms : MonoBehaviour {
         if(tiempoPasado>=tiempoMax)
         {
             CambiaOperacion();
-        }
-        if (operacionesHechas == 11)
-        {
-            GameManager.instance.FinExamenMatematicas();
-        }
-        hechas.text = GameManager.instance.matematicasScore.ToString() + "/" + operacionesHechas.ToString();
+        }        
     }
 
+	void ActualizaOperacion(){
+		hechas.text = GameManager.instance.matematicasScore.ToString() + "/" + operacionesHechas.ToString();
+	}
+	void CompruebaOperacion(){
+		if (operacionesHechas == 11)
+		{
+			GameManager.instance.FinExamenMatematicas();
+		}
+	}
 }
