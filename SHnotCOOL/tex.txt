@@ -15,3 +15,17 @@ Gracias pardillo esto me vendra de perlas
 ahora pierdete
 (Mision completada).
 Gracias pardillo.
+
+Maton
+Eeh tu! 
+Sera mejor que me des todo tu almuerzo o tu dinero si no te perseguire y te lo robare
+(Dar Objeto)
+Te has librado de una buena pringado
+Por cierto Dale recuerdos a tu madre
+
+Timmy
+He oido que alguna chica ha perdido sus pantsus
+Seria tan feliz si los consiguiese...
+Ejem.. para propositos educativos claramente
+(Dar Objeto)
+Muchas Gracias! Mmh, me pregunto de quien sera. 
