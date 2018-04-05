@@ -39,13 +39,26 @@ Son un collar y un anillo.
 Gracias por hacerme el favor. Para la próxima tendré tu nombre aprendido.
 
 Chino
-Hola me llamo Jose Lamon.
-Pol casualidad no hablas visto pasal un pello pol aqui no?
-Cada vez que lo veo me entla un hamble atloz
-...
-Quielo decil que tengo mucho hamble podlias buscalme unas albondigas pala comel
-Te estalia muy agladecido, alomejol hasta te daba un 1x2 en el bazal de mis padles
+Hài, xiâozi, zênme yàng
+Huy peldona, que no me entiendes, hola soy Jose Lamon
+Debelias pasalte pol el bazal de mi padle, muy balato, muy balato
+Oye, ¿has visto el pelo?
+Parece sel muy tielno y esta goldito
+Sí al pelo de la entlada, el chucho ese
+Bueno dejalo, ya veo que no te impolta
+Te voy a pedil un favol, si me tlaes unas albóndigas de la cafetelia selemos buenos amigos
 (Dar Objeto)
 Muchas Glacias Amigo
 Pelo segulo  que estas albondigas no son ni la mitad de sablosas que ese pello... 
+
+Autista
+Tabla...
+Donde estas tabla...
+Quiero a tabla.
+(Dar Objeto)
+¿Tabla donde estabas?
+Mira perrito tabla ha vuelto.
+... Gracias niño.
+(Mision completada).
+Tabla este niño es bueno.
  
