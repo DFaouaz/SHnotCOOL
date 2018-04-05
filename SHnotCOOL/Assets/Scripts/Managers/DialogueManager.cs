@@ -118,6 +118,7 @@ public class DialogueManager : MonoBehaviour
 
 		if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter)) && empezado && !GameManager.instance.darObjeto)
         {
+            
             SiguienteFrase();
         }
     }
