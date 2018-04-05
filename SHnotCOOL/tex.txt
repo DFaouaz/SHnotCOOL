@@ -29,3 +29,11 @@ Seria tan feliz si los consiguiese...
 Ejem.. para propositos educativos claramente
 (Dar Objeto)
 Muchas Gracias! Mmh, me pregunto de quien sera. 
+
+Delegada
+Eh, tú... ¿cómo te llamabas?
+Bueno, no importa. Necesito tu ayuda.
+Creo que alguien ha escondido mis joyas en alguna clase.
+¿Podrías buscarlas por mí?
+Son un collar y un anillo.
+Gracias por hacerme el favor. Para la próxima tendré tu nombre aprendido.
