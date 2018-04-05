@@ -24,10 +24,10 @@ public class Directions_4 {
 
 	}
 	//Input
-	public void CheckInput() 
+	public void CheckInput()
 	{
-		if (!GameManager.instance.pauseMode) {
-			direction = Vector2.zero;
+		direction = Vector2.zero;
+		if (!GameManager.instance.ventanaAbierta) {
 			if (Input.GetButton ("Vertical")) {
 				direction = Vector2.up * Mathf.Sign (Input.GetAxis ("Vertical"));
             
@@ -64,10 +64,12 @@ public class Free {
 		rb.velocity = direction.normalized * speed;
 	}
 	//Input
-	public void CheckInput() 
+	public void CheckInput()
 	{
-		direction.y = Input.GetAxis ("Vertical");
-		direction.x = Input.GetAxis ("Horizontal");
+		if (!GameManager.instance.ventanaAbierta) {
+			direction.y = Input.GetAxis ("Vertical");
+			direction.x = Input.GetAxis ("Horizontal");
+		}
 	}
 }
 //Clase para Plataformas
@@ -84,11 +86,13 @@ public class Platform {
 	//Métodos
 	//Input
 	public void CheckInput(GameObject go){
-		//Movimimiento principal
-		direction.x = Input.GetAxis("Horizontal");
-		grounded = Physics2D.Linecast (go.transform.position, groundCheck.position,1 << LayerMask.NameToLayer ("Ground"));
-		if (Input.GetButtonDown ("Jump") && grounded)
-			jump = true;
+		if (!GameManager.instance.ventanaAbierta) {
+			//Movimimiento principal
+			direction.x = Input.GetAxis ("Horizontal");
+			grounded = Physics2D.Linecast (go.transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground"));
+			if (Input.GetButtonDown ("Jump") && grounded)
+				jump = true;
+		}
 	}
 	//Movimiento
 	public void Move(Rigidbody2D rb){
@@ -128,29 +132,32 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Update () {
-		if (movement == Movimiento.Directions_4) {
-			directions_4.CheckInput ();
-			directions_4.HandleAnimatorLayers (animator);
-		}
-		if (movement == Movimiento.Free) {
-			directions_8.CheckInput ();
-			directions_4.CheckInput ();						//PROVISIONAL
-			directions_4.HandleAnimatorLayers (animator);
-		}
-		if (movement == Movimiento.Platform) {
-			platform.CheckInput (gameObject);
-			platform.HandleAnimatorLayers (animator);
+
+		if (!GameManager.instance.pauseMode) {
+			if (movement == Movimiento.Directions_4) {
+				directions_4.CheckInput ();
+				directions_4.HandleAnimatorLayers (animator);
+			}
+			if (movement == Movimiento.Free) {
+				directions_8.CheckInput ();
+				directions_4.CheckInput ();						//PROVISIONAL
+				directions_4.HandleAnimatorLayers (animator);
+			}
+			if (movement == Movimiento.Platform) {
+				platform.CheckInput (gameObject);
+				platform.HandleAnimatorLayers (animator);
+			}
 		}
 	}
 
 	void FixedUpdate(){
-		
-		if(movement == Movimiento.Directions_4)
-			directions_4.Move (myRigidbody);
-		if (movement == Movimiento.Free)
-			directions_8.Move (myRigidbody);
-		if (movement == Movimiento.Platform)
-			platform.Move (myRigidbody);
-	
-		}
+		if (!GameManager.instance.pauseMode) {
+			if (movement == Movimiento.Directions_4)
+				directions_4.Move (myRigidbody);
+			if (movement == Movimiento.Free)
+				directions_8.Move (myRigidbody);
+			if (movement == Movimiento.Platform)
+				platform.Move (myRigidbody);
+		}	
+	}
 }

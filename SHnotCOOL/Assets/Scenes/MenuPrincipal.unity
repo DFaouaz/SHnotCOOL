@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 256226457}
   - component: {fileID: 256226456}
   - component: {fileID: 256226455}
+  - component: {fileID: 256226459}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -608,6 +609,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &256226459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 256226454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392e87e510527f54796de33a14592dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EscenaPredeterminada: Piso1
+  botonReanudar: {fileID: 1068981631}
+  botonNuevaPartida: {fileID: 1005885838}
+  botonOpciones: {fileID: 1848282548}
+  botones: {fileID: 371834471}
+  panelNuevaPartida: {fileID: 172293372}
+  panelReanudar: {fileID: 1517950280}
+  panelOpciones: {fileID: 1102288378}
+  botonArchivo: {fileID: 114036272058962240, guid: 6d43f9a19d4082945ab8a8a558649727,
+    type: 2}
+  fileName: 
+  botonRef: {fileID: 0}
 --- !u!1 &269632530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,7 +1025,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2028430297}
+      - m_Target: {fileID: 256226459}
         m_MethodName: AceptarNuevaPartida
         m_Mode: 1
         m_Arguments:
@@ -1333,7 +1357,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028430297}
+      - m_Target: {fileID: 256226459}
         m_MethodName: Salir
         m_Mode: 1
         m_Arguments:
@@ -2427,7 +2451,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028430297}
+      - m_Target: {fileID: 256226459}
         m_MethodName: ActivaPanelNuevaPartida
         m_Mode: 1
         m_Arguments:
@@ -2623,7 +2647,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028430297}
+      - m_Target: {fileID: 256226459}
         m_MethodName: ActivaPanelReanudar
         m_Mode: 1
         m_Arguments:
@@ -2745,7 +2769,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028430297}
+      - m_Target: {fileID: 256226459}
         m_MethodName: CancelarReanudar
         m_Mode: 1
         m_Arguments:
@@ -3063,7 +3087,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028430297}
+      - m_Target: {fileID: 256226459}
         m_MethodName: AceptarNuevaPartida
         m_Mode: 1
         m_Arguments:
@@ -3836,7 +3860,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028430297}
+      - m_Target: {fileID: 256226459}
         m_MethodName: CancelarNuevaPartida
         m_Mode: 1
         m_Arguments:
@@ -4192,7 +4216,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028430297}
+      - m_Target: {fileID: 256226459}
         m_MethodName: AceptaReanudar
         m_Mode: 1
         m_Arguments:
@@ -5171,7 +5195,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028430297}
+      - m_Target: {fileID: 256226459}
         m_MethodName: CierraOpciones
         m_Mode: 1
         m_Arguments:
@@ -5293,7 +5317,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028430297}
+      - m_Target: {fileID: 256226459}
         m_MethodName: AbreOpciones
         m_Mode: 1
         m_Arguments:
@@ -5660,58 +5684,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1871516132}
---- !u!1 &2028430296
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2028430298}
-  - component: {fileID: 2028430297}
-  m_Layer: 0
-  m_Name: MenuManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2028430297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2028430296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 392e87e510527f54796de33a14592dae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EscenaPredeterminada: Piso1
-  botonReanudar: {fileID: 1068981631}
-  botonNuevaPartida: {fileID: 1005885838}
-  botonSalir: {fileID: 513759513}
-  botones: {fileID: 371834471}
-  panelNuevaPartida: {fileID: 172293372}
-  panelReanudar: {fileID: 1517950280}
-  panelOpciones: {fileID: 1102288378}
-  botonArchivo: {fileID: 114036272058962240, guid: 6d43f9a19d4082945ab8a8a558649727,
-    type: 2}
-  fileName: 
-  botonRef: {fileID: 0}
---- !u!4 &2028430298
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2028430296}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2049132135
 GameObject:
   m_ObjectHideFlags: 0

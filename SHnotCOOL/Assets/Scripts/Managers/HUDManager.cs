@@ -31,7 +31,6 @@ public class HUDManager : MonoBehaviour {
 	void Start () {
 		modoDarObjeto = false;
 		mensajeCoger.text = "Pulsar " + teclaCoger.ToString () + " para coger el objeto.";
-		inventory.gameObject.SetActive (true);
 		InicializeSlots ();
 		inventory.gameObject.SetActive (false);
 		mensajeCoger.gameObject.SetActive (false);
@@ -40,9 +39,12 @@ public class HUDManager : MonoBehaviour {
 	}
 
 	void Update () {
-		OpenCloseInventory ();
+		if(!GameManager.instance.pauseMode){
+		CheckInputOpenCloseInventory ();
 		CheckInputObject ();
-		CheckNegro ();        
+		//SUPER MEGA PROVISIONAL
+			CheckNegro (); 
+		}       
 	}
 	//Guarda el objeto
 	void SaveObject(){
@@ -94,35 +96,19 @@ public class HUDManager : MonoBehaviour {
 		return false;
 	}
 	//Para abrir y cerrar la interfaz del inventario
-	void OpenCloseInventory(){
+	void CheckInputOpenCloseInventory(){
 		if (Input.GetKeyDown (teclaParaAbrirYCerrar)) {
-			if (!inventory.gameObject.activeInHierarchy) {
-				inventory.gameObject.SetActive (true);
-				mensajeNoSustitucion.gameObject.SetActive (true);
-			}
-			else {
-				if (mensajeSustitucion.IsActive ()) {
-					mensajeSustitucion.gameObject.SetActive (false);
-					modoSustitucion = false;
-				}
-				inventory.gameObject.SetActive (false);
-				mensajeNoSustitucion.gameObject.SetActive (false);
-			}
+			AbreYCierraInventario ();
 		}
 	}
-
 	//Inicializa los slots
 	void InicializeSlots(){
 		inventory.gameObject.SetActive (true);
 		for (int i = 0; i < slots.Length; i++) {
-			Text textos = slots [i].GetComponentInChildren<Text> ();
-			if (i < GameManager.instance.tamInv) {
-				textos.text = "Vacio";
+			if (i < GameManager.instance.tamInv)
 				slots [i].estado = Slot.Estado.Desbloqueado;
-			} else {
-				textos.text = "";
+			else 
 				slots [i].estado = Slot.Estado.Bloqueado;
-			}
 			slots [i].UpdateRender ();
 		}
 		inventory.gameObject.SetActive (false);
@@ -146,15 +132,33 @@ public class HUDManager : MonoBehaviour {
 		}
 	}
 
+	void AbreYCierraInventario(){
+		if (!inventory.gameObject.activeInHierarchy && !GameManager.instance.ventanaAbierta) {
+			inventory.gameObject.SetActive (true);
+			GameManager.instance.ventanaAbierta = true;
+			//Selecciona el primer Slot en el inventario
+			slots [0].boton.Select ();
+			mensajeNoSustitucion.gameObject.SetActive (true);
+		}
+		else {
+			if (mensajeSustitucion.IsActive ()) {
+				mensajeSustitucion.gameObject.SetActive (false);
+				modoSustitucion = false;
+			}
+			GameManager.instance.ventanaAbierta = false;
+			inventory.gameObject.SetActive (false);
+			mensajeNoSustitucion.gameObject.SetActive (false);
+		}
+	}
 
 	//Para implementar en las misiones
 	public void GiveObject(){
-        if (!wholeEmpty())
-        {
+        if (!wholeEmpty()) {
             aux = teclaParaAbrirYCerrar;
             teclaParaAbrirYCerrar = KeyCode.None;
             GameManager.instance.darObjeto = true;
             inventory.gameObject.SetActive(true);
+
             modoDarObjeto = true;
         }            
     }

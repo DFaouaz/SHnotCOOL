@@ -8,7 +8,7 @@ using System.IO;
 public class MenuManager : MonoBehaviour {
 
 	public string EscenaPredeterminada;
-	public Button botonReanudar, botonNuevaPartida, botonSalir;
+	public Button botonReanudar, botonNuevaPartida, botonOpciones;
 	public GameObject botones;
 	public CanvasRenderer panelNuevaPartida, panelReanudar,panelOpciones;
 	public BotonArchivo botonArchivo;
@@ -30,6 +30,7 @@ public class MenuManager : MonoBehaviour {
 		panelNuevaPartida.gameObject.SetActive (false);
 		panelReanudar.gameObject.SetActive (false);
 		panelOpciones.gameObject.SetActive (false);
+		botonReanudar.Select ();
 	}
 
 
@@ -60,7 +61,7 @@ public class MenuManager : MonoBehaviour {
 
 	//Lee archivo y lo decodifica
 	public void AceptaReanudar(){
-		StreamReader archivoLeido = new StreamReader (botonRef.ruta);
+		//StreamReader archivoLeido = new StreamReader (botonRef.ruta);
 		//Decodificacio
 		///////////////
 
@@ -69,7 +70,7 @@ public class MenuManager : MonoBehaviour {
 		///////////////
 
 		///////////////
-		archivoLeido.Close();
+		//archivoLeido.Close();
 	}
 
 	public void CancelarReanudar(){
@@ -78,6 +79,7 @@ public class MenuManager : MonoBehaviour {
 		botonRef = null;
 		//Activa botones
 		botones.gameObject.SetActive(true);
+		botonReanudar.Select ();
 	}
 
 	//Metodos para NuevaPartida()
@@ -116,6 +118,7 @@ public class MenuManager : MonoBehaviour {
 		panelNuevaPartida.gameObject.SetActive (false);
 		panelNuevaPartida.GetComponentInChildren<InputField>().text = "";
 		botones.SetActive (true);
+		botonNuevaPartida.Select ();
 	}
 
 	//Crea el archivo con el nombre
@@ -171,5 +174,6 @@ public class MenuManager : MonoBehaviour {
 	public void CierraOpciones(){
 		botones.SetActive (true);
 		panelOpciones.gameObject.SetActive (false);
+		botonOpciones.Select ();
 	}
 }

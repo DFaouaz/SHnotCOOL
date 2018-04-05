@@ -9,6 +9,7 @@ public class PauseManager : MonoBehaviour {
 	public GameObject pausaMenu;
 	public string escenaMenuPrincipal;
 	public GameObject botones;
+	public Button [] botonesDelMenu;
 	public CanvasRenderer panelOpciones;
 
 
@@ -24,11 +25,14 @@ public class PauseManager : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			if (pausaMenu.activeInHierarchy) {
 				pausaMenu.SetActive (false);
+				panelOpciones.gameObject.SetActive (false);
+				botones.gameObject.SetActive (false);
 				GameManager.instance.pauseMode = false;
 				Time.timeScale = 1;
-			}
-			else {
+			}else {
 				pausaMenu.SetActive (true);
+				botones.SetActive (true);
+				botonesDelMenu [0].Select ();
 				GameManager.instance.pauseMode = true;
 				Time.timeScale = 0;
 			}
@@ -38,6 +42,7 @@ public class PauseManager : MonoBehaviour {
 	//Devuelve el tiempo al juego y quita el menu de pausa
 	public void Continuar(){
 		pausaMenu.SetActive (false);
+		GameManager.instance.pauseMode = false;
 		Time.timeScale = 1;
 	}
 
@@ -53,9 +58,7 @@ public class PauseManager : MonoBehaviour {
 	}
 	public void CierraOpciones(){
 		botones.SetActive (true);
+		botonesDelMenu [1].Select ();
 		panelOpciones.gameObject.SetActive (false);
 	}
-
-
-
 }

@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 608584001}
+      - m_Target: {fileID: 1950515483}
         m_MethodName: EndDialogue
         m_Mode: 1
         m_Arguments:
@@ -572,7 +572,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 608584001}
+      - m_Target: {fileID: 1950515483}
         m_MethodName: SalirConversacion
         m_Mode: 1
         m_Arguments:
@@ -4520,7 +4520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -5453,6 +5453,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 311699428}
+  - component: {fileID: 311699429}
   m_Layer: 5
   m_Name: Inventory/HUDCanvas
   m_TagString: Untagged
@@ -5483,6 +5484,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &311699429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 311699427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330fcb82f5a5dd94b855a27460f82996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots:
+  - {fileID: 812887570}
+  - {fileID: 1913717948}
+  - {fileID: 446794935}
+  - {fileID: 671543250}
+  - {fileID: 1463750157}
+  - {fileID: 1757414155}
+  inventory: {fileID: 628137307}
+  teclaParaAbrirYCerrar: 114
+  teclaCoger: 101
+  mensajeCoger: {fileID: 175608698}
+  mensajeSustitucion: {fileID: 75368661}
+  mensajeNoSustitucion: {fileID: 1419618768}
+  Aprobado: {fileID: 0}
+  Suspenso: {fileID: 0}
+  objeto: {fileID: 0}
+  modoSustitucion: 0
+  modoDarObjeto: 0
+  imagenDeVacio: {fileID: 21300000, guid: 49a756ab6ae7fc14080179f888057c4e, type: 3}
+  imagenDeBloqueo: {fileID: 21300000, guid: da8e465dc9ee8e64db314d4c0e427b65, type: 3}
+  aux: 0
 --- !u!1 &333513652
 GameObject:
   m_ObjectHideFlags: 0
@@ -5692,7 +5725,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.2}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5743,7 +5776,7 @@ GameObject:
   - component: {fileID: 446794935}
   m_Layer: 5
   m_Name: Slot3
-  m_TagString: Slot
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5763,6 +5796,7 @@ MonoBehaviour:
   objeto: {fileID: 0}
   imagenObjeto: {fileID: 0}
   estado: 0
+  boton: {fileID: 0}
 --- !u!114 &446794936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5775,7 +5809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -5949,50 +5983,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!1 &475331480
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 475331482}
-  - component: {fileID: 475331481}
-  m_Layer: 0
-  m_Name: PauseManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &475331481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 475331480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b9854226f87bd041ae71eb097aed4f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pausaMenu: {fileID: 1897142347}
-  escenaMenuPrincipal: MenuPrincipal
-  botones: {fileID: 1157298985}
-  panelOpciones: {fileID: 81719785}
---- !u!4 &475331482
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 475331480}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1852378222}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &548007475
 GameObject:
   m_ObjectHideFlags: 0
@@ -6131,7 +6121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -19, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &578312886
@@ -6251,7 +6241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -6278,7 +6268,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 475331481}
+      - m_Target: {fileID: 1648532066}
         m_MethodName: CierraOpciones
         m_Mode: 1
         m_Arguments:
@@ -6324,56 +6314,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 596571550}
---- !u!1 &608583999
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 608584000}
-  - component: {fileID: 608584001}
-  m_Layer: 0
-  m_Name: DialogueManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &608584000
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 608583999}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1852378222}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &608584001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 608583999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2d9c02ebdfde948abc70939bb787ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  salir: {fileID: 40231757}
-  hablar: {fileID: 1694241724}
-  DarObjeto: {fileID: 1236201039}
-  nombre: {fileID: 70034501}
-  sentence: {fileID: 1433018077}
-  dialogueBox: {fileID: 982332599}
-  dialogueMensaje: {fileID: 52729273}
-  botonParaHablar: 120
-  currentNPC: {fileID: 0}
-  personaAhora: 
 --- !u!1 &620050181
 GameObject:
   m_ObjectHideFlags: 0
@@ -6431,7 +6371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &628137305
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6603,7 +6543,7 @@ GameObject:
   - component: {fileID: 671543250}
   m_Layer: 5
   m_Name: Slot4
-  m_TagString: Slot
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6623,6 +6563,7 @@ MonoBehaviour:
   objeto: {fileID: 0}
   imagenObjeto: {fileID: 0}
   estado: 0
+  boton: {fileID: 0}
 --- !u!114 &671543251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6635,7 +6576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -6938,7 +6879,7 @@ RectTransform:
   m_Children:
   - {fileID: 1950515482}
   - {fileID: 311699428}
-  - {fileID: 1897142348}
+  - {fileID: 1648532065}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7440,7 +7381,7 @@ GameObject:
   - component: {fileID: 812887570}
   m_Layer: 5
   m_Name: Slot1
-  m_TagString: Slot
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7479,6 +7420,7 @@ MonoBehaviour:
   objeto: {fileID: 0}
   imagenObjeto: {fileID: 0}
   estado: 0
+  boton: {fileID: 0}
 --- !u!114 &812887571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7491,7 +7433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -7846,7 +7788,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 475331481}
+      - m_Target: {fileID: 1648532066}
         m_MethodName: AbreOpciones
         m_Mode: 1
         m_Arguments:
@@ -7855,7 +7797,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -34929,7 +34871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -35232,7 +35174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -35545,6 +35487,7 @@ MonoBehaviour:
   ActualPlayerVelocity: {x: 0, y: 0}
   habladoNegro: 0
   darObjeto: 0
+  ventanaAbierta: 0
   pauseMode: 0
   tamInv: 3
   matematicasScore: 0
@@ -35579,7 +35522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -35606,7 +35549,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2086024533}
+      - m_Target: {fileID: 311699429}
         m_MethodName: GiveObject
         m_Mode: 1
         m_Arguments:
@@ -36000,11 +35943,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 140362083}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 1045284413}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -36044,6 +35987,17 @@ MonoBehaviour:
       - m_Target: {fileID: 81719786}
         m_MethodName: ActualizaResolucion
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1656270559}
+        m_MethodName: Select
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -36593,7 +36547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 475331481}
+      - m_Target: {fileID: 1648532066}
         m_MethodName: SalirMenuPrincipal
         m_Mode: 1
         m_Arguments:
@@ -64030,7 +63984,7 @@ GameObject:
   - component: {fileID: 1463750157}
   m_Layer: 5
   m_Name: Slot5
-  m_TagString: Slot
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64050,6 +64004,7 @@ MonoBehaviour:
   objeto: {fileID: 0}
   imagenObjeto: {fileID: 0}
   estado: 0
+  boton: {fileID: 0}
 --- !u!114 &1463750158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64062,7 +64017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -64263,7 +64218,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -18, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1472892986
 MonoBehaviour:
@@ -64965,6 +64920,59 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1642429697}
+--- !u!1 &1648532064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1648532065}
+  - component: {fileID: 1648532066}
+  m_Layer: 5
+  m_Name: PauseMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1648532065
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648532064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1897142348}
+  m_Father: {fileID: 682567430}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1648532066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648532064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b9854226f87bd041ae71eb097aed4f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausaMenu: {fileID: 1897142347}
+  escenaMenuPrincipal: MenuPrincipal
+  botones: {fileID: 1157298985}
+  botonesDelMenu:
+  - {fileID: 2050175907}
+  - {fileID: 968624285}
+  panelOpciones: {fileID: 81719785}
 --- !u!1 &1655400065
 GameObject:
   m_ObjectHideFlags: 0
@@ -65151,7 +65159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -65178,7 +65186,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 608584001}
+      - m_Target: {fileID: 1950515483}
         m_MethodName: SiguienteFrase
         m_Mode: 1
         m_Arguments:
@@ -65571,7 +65579,7 @@ GameObject:
   - component: {fileID: 1757414155}
   m_Layer: 5
   m_Name: Slot6
-  m_TagString: Slot
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65591,6 +65599,7 @@ MonoBehaviour:
   objeto: {fileID: 0}
   imagenObjeto: {fileID: 0}
   estado: 0
+  boton: {fileID: 0}
 --- !u!114 &1757414156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65603,7 +65612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -66099,9 +66108,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 620050182}
-  - {fileID: 608584000}
-  - {fileID: 2086024532}
-  - {fileID: 475331482}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -66222,7 +66228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -66249,11 +66255,22 @@ MonoBehaviour:
   m_HandleRect: {fileID: 410955823}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.2
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Scrollbar+ScrollEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1876047230
@@ -66374,7 +66391,7 @@ GameObject:
   - component: {fileID: 1897142350}
   - component: {fileID: 1897142349}
   m_Layer: 5
-  m_Name: PauseMenu
+  m_Name: PauseMenuPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66386,19 +66403,19 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1897142347}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1157298986}
   - {fileID: 81719784}
-  m_Father: {fileID: 682567430}
-  m_RootOrder: 2
+  m_Father: {fileID: 1648532065}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 620, y: 305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1897142349
 MonoBehaviour:
@@ -66490,7 +66507,7 @@ GameObject:
   - component: {fileID: 1913717948}
   m_Layer: 5
   m_Name: Slot2
-  m_TagString: Slot
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66510,6 +66527,7 @@ MonoBehaviour:
   objeto: {fileID: 0}
   imagenObjeto: {fileID: 0}
   estado: 0
+  boton: {fileID: 0}
 --- !u!114 &1913717949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66522,7 +66540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -66766,6 +66784,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1950515482}
+  - component: {fileID: 1950515483}
   m_Layer: 5
   m_Name: DialogueCanvas
   m_TagString: Untagged
@@ -66793,6 +66812,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1950515483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1950515481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2d9c02ebdfde948abc70939bb787ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salir: {fileID: 40231759}
+  hablar: {fileID: 1694241725}
+  DarObjeto: {fileID: 1236201040}
+  nombre: {fileID: 70034501}
+  sentence: {fileID: 1433018077}
+  dialogueBox: {fileID: 982332599}
+  dialogueMensaje: {fileID: 52729273}
+  botonParaHablar: 120
+  currentNPC: {fileID: 0}
+  personaAhora: 
 --- !u!1 &1978222718
 GameObject:
   m_ObjectHideFlags: 0
@@ -67202,7 +67242,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 475331481}
+      - m_Target: {fileID: 1648532066}
         m_MethodName: Continuar
         m_Mode: 1
         m_Arguments:
@@ -67390,67 +67430,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2082890320}
---- !u!1 &2086024531
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2086024532}
-  - component: {fileID: 2086024533}
-  m_Layer: 0
-  m_Name: HUDManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2086024532
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2086024531}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1852378222}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2086024533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2086024531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 330fcb82f5a5dd94b855a27460f82996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 812887570}
-  - {fileID: 1913717948}
-  - {fileID: 446794935}
-  - {fileID: 671543250}
-  - {fileID: 1463750157}
-  - {fileID: 1757414155}
-  inventory: {fileID: 628137307}
-  teclaParaAbrirYCerrar: 114
-  teclaCoger: 101
-  mensajeCoger: {fileID: 175608698}
-  mensajeSustitucion: {fileID: 75368661}
-  mensajeNoSustitucion: {fileID: 1419618768}
-  Aprobado: {fileID: 0}
-  Suspenso: {fileID: 0}
-  objeto: {fileID: 0}
-  modoSustitucion: 0
-  modoDarObjeto: 0
-  imagenDeVacio: {fileID: 21300000, guid: 49a756ab6ae7fc14080179f888057c4e, type: 3}
-  imagenDeBloqueo: {fileID: 21300000, guid: da8e465dc9ee8e64db314d4c0e427b65, type: 3}
-  aux: 0
 --- !u!1 &2125876777
 GameObject:
   m_ObjectHideFlags: 0

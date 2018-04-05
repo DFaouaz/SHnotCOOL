@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
     public bool darObjeto = true;
 	[HideInInspector]
+	public bool ventanaAbierta = false;
+	[HideInInspector]
 	public bool pauseMode = false;
     
 	public int tamInv = 0;

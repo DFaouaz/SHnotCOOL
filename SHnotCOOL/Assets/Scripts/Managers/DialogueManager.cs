@@ -15,9 +15,7 @@ public class Dialogue
 public class DialogueManager : MonoBehaviour
 {
 
-    public GameObject salir;
-    public GameObject hablar;
-    public GameObject DarObjeto;
+	public Button salir, hablar, DarObjeto;
     public Text nombre;
     public Text sentence;
     public GameObject dialogueBox;
@@ -30,10 +28,8 @@ public class DialogueManager : MonoBehaviour
 	[HideInInspector]
 	public string personaAhora;
     bool empezado;
-    GameObject jugador;
     Animator playerAnimator;
     PlayerController playerMovement;
-    Rigidbody2D rb;
     // cola de strings( el primero en meterse es el primero en salir
     Queue<string> frases;
     // Use this for initialization
@@ -42,10 +38,8 @@ public class DialogueManager : MonoBehaviour
 		dialogueMensaje.text = "Pulsar " + botonParaHablar.ToString () + " para interactuar.";
 		dialogueMensaje.gameObject.SetActive (false);
         frases = new Queue<string>();
-        jugador = GameObject.FindGameObjectWithTag("Player");
-        playerMovement = jugador.GetComponent<PlayerController>();
-        rb = jugador.GetComponent<Rigidbody2D>();
-        playerAnimator = jugador.GetComponent<Animator>();
+		playerMovement = FindObjectOfType<PlayerController>();
+		playerAnimator = playerMovement.gameObject.GetComponent<Animator>();
 		negroo = false;
     }
     public void TriggerDialogo(Dialogue dialogo)
@@ -56,10 +50,14 @@ public class DialogueManager : MonoBehaviour
             negroo = false;
 
         playerAnimator.SetLayerWeight(1, 0f);//Cambia la animacion a Idle
-        rb.velocity = Vector2.zero;
-        playerMovement.enabled = false;//Desactiva el movimiento mientras que dure el dialogo
+		playerMovement.myRigidbody.velocity = Vector2.zero;
+		playerMovement.enabled = false;//Desactiva el movimiento mientras que dure el dialogo
         empezado = false;
+		//Esta hablando el jugador (true)
+		GameManager.instance.ventanaAbierta = true;
+		//Activa la caja de dialogo
         dialogueBox.SetActive(true);
+		SeleccionaBoton ();
         frases.Clear();// vacia la cola
         nombre.text = dialogo.nombre;
 		personaAhora=dialogo.nombre;
@@ -104,6 +102,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         playerMovement.enabled = true;
+		GameManager.instance.ventanaAbierta = false;
         
 
     }
@@ -117,7 +116,7 @@ public class DialogueManager : MonoBehaviour
     {
 		CheckInputDialogue ();
 
-        if (Input.GetMouseButtonDown(0) == true && empezado && !GameManager.instance.darObjeto)
+		if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter)) && empezado && !GameManager.instance.darObjeto)
         {
             SiguienteFrase();
         }
@@ -130,5 +129,13 @@ public class DialogueManager : MonoBehaviour
 			currentNPC.hablando = true;
 			currentNPC.ComienzaDialogo ();
 		}			
+	}
+
+	void SeleccionaBoton(){
+		if (hablar.gameObject.activeInHierarchy)
+			//Selecciona el primer boton para la navegación
+			hablar.Select ();
+		else
+			DarObjeto.Select ();
 	}
 }
