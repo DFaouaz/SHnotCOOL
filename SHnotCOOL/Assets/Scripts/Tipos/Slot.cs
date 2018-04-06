@@ -34,7 +34,7 @@ public class Slot : MonoBehaviour
 
     //Espera el click a uno de los botones del inventario para sustituir
 	public void ClickSustituto() {
-        if (estado == Estado.Desbloqueado) {            
+		if (estado == Estado.Desbloqueado && objeto != null) {            
 			if (im.modoSustitucion) {
 				CleanSlot ();
 				//Asignamos el nuevo objeto
@@ -47,13 +47,31 @@ public class Slot : MonoBehaviour
 				im.mensajeSustitucion.gameObject.SetActive (false);
 				im.inventory.gameObject.SetActive (false);
 			} else if (im.modoDarObjeto) {
-				Text textos = GetComponentInChildren<Text> ();
-				textos.text = "Vacio";
-				objeto = null;                
+				if (objeto.tag == im.tagDarObjeto) {
+					//Le damos el objeto
+					Text textos = GetComponentInChildren<Text> ();
+					textos.text = "Vacio";
+					objeto = null; 
+					//Actualizamos cola
+					DialogueManager.instance.currentNPC.pasos.Dequeue ();
+					//Si no hay mas pasos
+					if (DialogueManager.instance.currentNPC.pasos.Count == 0) {
+						DialogueManager.instance.frases = DialogueManager.instance.currentNPC.finMision;
+						im.AbreYCierraInventario ();
+						DialogueManager.instance.AbreCierraDialogueCanvas ();
+						DialogueManager.instance.MuestraFrases ();
+						DialogueManager.instance.currentNPC.TerminarMision ();
+					} else {
+						//Actualizar pasos
+						//-----------------
+						im.AbreYCierraInventario ();
+						DialogueManager.instance.FinConversacion ();
+					}
+
+				} else {
+					im.AbreYCierraInventario ();
+				}
 				im.modoDarObjeto = false;
-				im.inventory.gameObject.SetActive (false);
-				GameManager.instance.darObjeto = false;
-				GameManager.instance.ventanaAbierta = false;
 				im.teclaParaAbrirYCerrar = im.aux;
 			} else {
 				CleanSlot ();
@@ -83,7 +101,7 @@ public class Slot : MonoBehaviour
     //Renderiza el estado actual del slot
     public void UpdateRender(){
 		if (estado == Estado.Desbloqueado) {
-			if (textoBoton.text != nombre && objeto != null) {
+			if (objeto != null) {
 				textoBoton.text = nombre;
 				imagenBoton.sprite = imagenObjeto;
 			} else {

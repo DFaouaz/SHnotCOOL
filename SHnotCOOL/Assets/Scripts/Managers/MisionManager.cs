@@ -6,7 +6,7 @@ public class Personajes { public bool completado;public string personaje; }
 public class MisionManager : MonoBehaviour {
     public static MisionManager instance = null;
 
-   public Personajes lista;
+   	public Personajes lista;
         
   
 
@@ -27,4 +27,7 @@ public class MisionManager : MonoBehaviour {
             Destroy(this.gameObject);
         }
     }
+	//Metodos para la clase Mission
+	//Aceptar mision
+
 }

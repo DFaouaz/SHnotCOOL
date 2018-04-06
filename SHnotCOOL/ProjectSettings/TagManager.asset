@@ -14,6 +14,7 @@ TagManager:
   - Limite
   - Negro
   - DeathZone
+  - Tabla
   layers:
   - Default
   - TransparentFX

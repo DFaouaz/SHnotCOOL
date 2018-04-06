@@ -26,8 +26,6 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
     public bool habladoNegro=false;
 	[HideInInspector]
-    public bool darObjeto = true;
-	[HideInInspector]
 	public bool ventanaAbierta = false;
 	[HideInInspector]
 	public bool pauseMode = false;
