@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 446802725}
   - component: {fileID: 446802724}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 879780216}
   - component: {fileID: 879780215}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: PanelEnemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 881801397}
   - component: {fileID: 881801396}
   m_Layer: 5
-  m_Name: Ataque 2
+  m_Name: Ataque 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,10 +581,10 @@ RectTransform:
   m_Father: {fileID: 1266810774}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6735145, y: 0.231}
-  m_AnchorMax: {x: 1, y: 0.30223984}
-  m_AnchoredPosition: {x: -0.5499878, y: -1.0100098}
-  m_SizeDelta: {x: 2.1000004, y: 2.02}
+  m_AnchorMin: {x: 0.6735145, y: 0.225}
+  m_AnchorMax: {x: 1, y: 0.3}
+  m_AnchoredPosition: {x: -0.5499878, y: 0.48999023}
+  m_SizeDelta: {x: 2.1000004, y: 1.0200005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881801396
 MonoBehaviour:
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 1158802747}
   - component: {fileID: 1158802746}
   m_Layer: 5
-  m_Name: Ataque 3
+  m_Name: Ataque 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -692,10 +692,10 @@ RectTransform:
   m_Father: {fileID: 1266810774}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6735145, y: 0.003690037}
-  m_AnchorMax: {x: 1, y: 0.081535056}
-  m_AnchoredPosition: {x: -0.5499878, y: -1.105011}
-  m_SizeDelta: {x: 2.1, y: 1.79}
+  m_AnchorMin: {x: 0.6735145, y: 0}
+  m_AnchorMax: {x: 1, y: 0.075}
+  m_AnchoredPosition: {x: -0.5499878, y: 0.394989}
+  m_SizeDelta: {x: 2.1, y: 2.790001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1158802746
 MonoBehaviour:
@@ -783,7 +783,7 @@ GameObject:
   - component: {fileID: 1210258718}
   - component: {fileID: 1210258717}
   m_Layer: 5
-  m_Name: Ataque 1
+  m_Name: Ataque 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -803,10 +803,10 @@ RectTransform:
   m_Father: {fileID: 1266810774}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6735145, y: 0.162}
-  m_AnchorMax: {x: 1, y: 0.231}
-  m_AnchoredPosition: {x: -0.5499878, y: -2.869995}
-  m_SizeDelta: {x: 2.1, y: 5.74}
+  m_AnchorMin: {x: 0.6735145, y: 0.15}
+  m_AnchorMax: {x: 1, y: 0.225}
+  m_AnchoredPosition: {x: -0.5499878, y: -0.36999512}
+  m_SizeDelta: {x: 2.1, y: 4.739998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1210258717
 MonoBehaviour:
@@ -1075,7 +1075,7 @@ GameObject:
   - component: {fileID: 1512851977}
   - component: {fileID: 1512851976}
   m_Layer: 5
-  m_Name: Ataque 4
+  m_Name: Ataque 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1095,10 +1095,10 @@ RectTransform:
   m_Father: {fileID: 1266810774}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6735145, y: 0.081535056}
-  m_AnchorMax: {x: 1, y: 0.162}
-  m_AnchoredPosition: {x: -0.5499878, y: -3.119995}
-  m_SizeDelta: {x: 2.1000004, y: -1.69}
+  m_AnchorMin: {x: 0.6735145, y: 0.075}
+  m_AnchorMax: {x: 1, y: 0.15}
+  m_AnchoredPosition: {x: -0.5499878, y: -0.6199951}
+  m_SizeDelta: {x: 2.1000004, y: -0.69000053}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512851976
 MonoBehaviour:
@@ -1186,7 +1186,7 @@ GameObject:
   - component: {fileID: 1514885400}
   - component: {fileID: 1514885399}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Enemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1288,10 +1288,10 @@ RectTransform:
   m_Father: {fileID: 1266810774}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.30223984}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: 0, y: -0.8999939}
+  m_AnchorMin: {x: 0, y: -0.01}
+  m_AnchorMax: {x: 1, y: 0.31}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -5.899994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725786942
 MonoBehaviour:
@@ -1337,7 +1337,7 @@ GameObject:
   - component: {fileID: 1992892995}
   - component: {fileID: 1992892994}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: PanelJugador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
