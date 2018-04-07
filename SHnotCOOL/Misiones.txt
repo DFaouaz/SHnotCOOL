@@ -1,5 +1,4 @@
-
-Autista-0-2
+Autista-0-2-En busca de la tabla perdida.
 #
 Hola
 Soy autista
@@ -10,7 +9,33 @@ No me mires perro
 Busca la tabla y llevasela:Tabla
 ##
 ###
-Gracias por la tabla, te quiero mazo.
+Gracias por la tabla
+Te he echado de menos
+Vamos a casa que tengo una sorprestia
 ###
 
-Autista-1-0
+Autista-1-1-¿Espia o es pio?.
+#
+Dicen que en el baño están hablando mal de mi
+Mira a ver que dicen
+Menudos mierdas
+#
+##
+Ve al baño a espiar:Espia1
+--
+Jenny:DICEN QUE ESTAS EMBARAZADA TIA
+Courtney:Menuda mentira tia
+Jenny:Tia en el taller se están metiendo con el autista
+--
+Espia en el talle:Espia2
+--
+Perry:me has pillado
+CACA: menudo perro de mierda tiene el autista
+--
+##
+###
+Asi que se están metiendo con mi mejor amigo ehh
+Ya verán, se las tendrán que ver conmigo
+###
+
+Autista-2-0

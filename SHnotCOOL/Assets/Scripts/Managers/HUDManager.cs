@@ -168,7 +168,8 @@ public class HUDManager : MonoBehaviour {
 		if (!wholeEmpty ()) {
 			aux = teclaParaAbrirYCerrar;
 			teclaParaAbrirYCerrar = KeyCode.None;
-			DialogueManager.instance.AbreCierraDialogueCanvas ();
+			DialogueManager.instance.AbreCierraDialogueCanvas (); 					//Cierra
+			DialogueManager.instance.dialogueMensaje.gameObject.SetActive(false);	//Deasctiva el mensaje
 			AbreYCierraInventario ();
 			modoDarObjeto = true;
 		}            

@@ -56,10 +56,11 @@ public class Slot : MonoBehaviour
 					DialogueManager.instance.currentNPC.pasos.Dequeue ();
 					//Si no hay mas pasos
 					if (DialogueManager.instance.currentNPC.pasos.Count == 0) {
-						DialogueManager.instance.frases = DialogueManager.instance.currentNPC.finMision;
-						im.AbreYCierraInventario ();
-						DialogueManager.instance.AbreCierraDialogueCanvas ();
+						DialogueManager.instance.frases = new Queue<string>(DialogueManager.instance.currentNPC.finMision);
+						im.AbreYCierraInventario ();	//Cierra
+						DialogueManager.instance.AbreCierraDialogueCanvas();	//Abre
 						DialogueManager.instance.MuestraFrases ();
+						DialogueManager.instance.currentNPC.isComplete = true;
 						DialogueManager.instance.currentNPC.TerminarMision ();
 					} else {
 						//Actualizar pasos
@@ -70,6 +71,7 @@ public class Slot : MonoBehaviour
 
 				} else {
 					im.AbreYCierraInventario ();
+					DialogueManager.instance.dialogueMensaje.gameObject.SetActive (true);
 				}
 				im.modoDarObjeto = false;
 				im.teclaParaAbrirYCerrar = im.aux;
@@ -86,10 +88,8 @@ public class Slot : MonoBehaviour
     }
 
     //Vacia el slot
-    public void CleanSlot()
-    {
-        if (estado == Estado.Desbloqueado && objeto != null)
-        {
+    public void CleanSlot(){
+        if (estado == Estado.Desbloqueado && objeto != null){
             //Dropeamos en la posicion
             objeto.transform.position = GameManager.instance.ActualPlayerPosition;
             objeto.SetActive(true);
