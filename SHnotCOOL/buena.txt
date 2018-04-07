@@ -1,8 +1,8 @@
-3guapo
-2bello
-1bonito
-5maravilloso
-4precioso
-6hermoso
-7maravitupendo
-8marvelous
+5 guapo
+12 bello
+9 bonito
+5 maravilloso
+4 precioso
+6 hermoso
+20 maravitupendo
+8 marvelous

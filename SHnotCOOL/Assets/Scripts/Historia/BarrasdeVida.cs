@@ -2,13 +2,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+public class Health
+{
+    float vida;
+    public Health()
+    {
+        vida = 100;
+    }
+    public void ModificaVida(float daño)
+    {
+        if (vida > 0 && vida<=100)
+            vida-=daño;
 
+    }
+    public float DevuelveVida()
+    {
+        return vida;
+    }
+    public void TruncaVida()
+    {
+        if (vida > 100)
+            vida = 100;
+        else if (vida < 0)
+            vida = 0;
+    }
+}
 public class BarrasdeVida : MonoBehaviour {
-    float Health=100;
+    Health enemigo;
+    Health player;
+    GameObject barraEnemigo, barraPlayer;
 	// Use this for initialization
 	void Start () {
-        
-            DisminuyeVida();
+        barraEnemigo = GameObject.FindGameObjectWithTag("VidaEnemigo");
+        barraPlayer = GameObject.FindGameObjectWithTag("VidaJugador");
+        player = new Health();
+        enemigo = new Health();
      
 
     }
@@ -16,22 +44,49 @@ public class BarrasdeVida : MonoBehaviour {
     // Update is called once per frame
     private void Update()
     {
-        ActualizaBarra();
+        Ataque();
+        ActualizaBarras();
+        player.TruncaVida();
+        enemigo.TruncaVida();
+        FinJuego();
+    }
+    void Ataque()
+    {
+        if(AnswerManager.instance.getPulsado()&& !AnswerManager.instance.getQuitadaVida())
+        {
+            float daño = AnswerManager.instance.getDaño();
+            if(daño<=0 && daño>=-10)
+            {
+                player.ModificaVida(-daño);
+            }
+            else if(daño<-10)
+            {
+                player.ModificaVida(-daño);
+                enemigo.ModificaVida(daño / 2);
+            }
+            else if(daño>0 && daño<=10 )
+            {
+                enemigo.ModificaVida(daño);
+            }
+            else
+            {
+                player.ModificaVida(-daño/2);
+                enemigo.ModificaVida(daño);
+            }
+            AnswerManager.instance.setQuitadaVida(true);
+        }
     }
 
-    void DisminuyeVida()
+    void FinJuego()
     {
-        if(Health>0)
-            Health-= 10f;
-        
+        if (player.DevuelveVida() <= 0)
+            AnswerManager.instance.JuegoGanado(false);
+        else if (enemigo.DevuelveVida() <= 0)
+            AnswerManager.instance.JuegoGanado(true);
     }
-    void AumentaVida()
+    void ActualizaBarras()
     {
-        if (Health <100)
-            Health += 1f;
-    }
-    void ActualizaBarra()
-    {
-        gameObject.GetComponent<Slider>().value =Health;
+        barraPlayer.GetComponent<Slider>().value =player.DevuelveVida();
+        barraEnemigo.GetComponent<Slider>().value = enemigo.DevuelveVida();
     }
 }

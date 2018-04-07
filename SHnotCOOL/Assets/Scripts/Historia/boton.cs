@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class boton : MonoBehaviour {
 	public int index;
 	opcion MiOpcion;
-	bool turno;
+
 	int valor;
 
 	Text texto;
@@ -13,20 +13,19 @@ public class boton : MonoBehaviour {
 		
 		texto = GetComponentInChildren<Text> ();
 		AsignarOpcion ();
-		turno = false;
+	
 	}
 
 
 	void Update()
 	{
-		if (!turno) {
+		
 			if (AnswerManager.instance.getPulsado ())
 				AsignarOpcion ();
-		}
-		else {
-			AnswerManager.instance.setPulsado (false);
-			turno = false;
-		}
+		
+			
+			
+		
 	}
 
 	void AsignarOpcion()
@@ -38,9 +37,10 @@ public class boton : MonoBehaviour {
 	}
 	public void clikado()
 	{
-		AnswerManager.instance.setPulsado (true);
+        AnswerManager.instance.setDaño(valor);
+        AnswerManager.instance.setPulsado (true);
 		AnswerManager.instance.InitButtons ();
-		turno = true;
+        
 		AsignarOpcion ();
 	}
 }

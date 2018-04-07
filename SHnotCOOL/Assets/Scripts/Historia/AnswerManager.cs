@@ -12,19 +12,24 @@ public struct opcion{
 public class AnswerManager : MonoBehaviour {
 
 	public static AnswerManager instance = null;
-
+    float daño=0;
 	opcion[] respuestas;
 	List<opcion> opciones;
 	opcion [] Buenas;
 	opcion [] Malas;
 	bool pulsado;
+    bool quitadaVida=false;
+    
 
 	void Start () {
 		if (instance == null)
 			instance = this;
-	
-	     
-		pulsado = false;
+
+        string fraseBuena;
+        string[] lineasBuenas;
+        string fraseMala;
+        string[] lineasMalas;
+        pulsado = false;
 		StreamReader texto = new StreamReader("buena.txt", Encoding.Default);
 		StreamReader texto2 = new StreamReader("mala.txt", Encoding.Default);
 		opciones = new List<opcion> ();
@@ -33,10 +38,14 @@ public class AnswerManager : MonoBehaviour {
 		respuestas = new opcion[4];
 		int i = 0;
 		while (i < Buenas.Length) {
-			Buenas [i].valor = texto.Read ();
-			Buenas [i].frase = texto.ReadLine ();
-			Malas [i].valor = texto2.Read ();
-			Malas [i].frase = texto2.ReadLine ();
+            fraseBuena = texto.ReadLine();
+            lineasBuenas= fraseBuena.Split(' ');
+            fraseMala = texto2.ReadLine();
+            lineasMalas = fraseMala.Split(' ');
+            Buenas [i].valor = int.Parse(lineasBuenas[0]);
+			Buenas [i].frase = lineasBuenas[1];
+            Malas[i].valor = int.Parse(lineasMalas[0]);
+			Malas [i].frase = lineasMalas[1];
 			i++;
 		}
 		InitButtons ();
@@ -68,8 +77,17 @@ public class AnswerManager : MonoBehaviour {
 			opciones.RemoveAt (posicion);
 			contador++;
 		}
+        quitadaVida = false;
 
 	}
+
+    public void JuegoGanado(bool ganado)
+    {
+        if (ganado)
+            print("GANASTE!!!!!");
+        else
+            print("Una Pena");
+    }
 
 	public opcion getOpcion(int index)
 	{
@@ -83,4 +101,20 @@ public class AnswerManager : MonoBehaviour {
 	{
 		pulsado = ok;
 	}
+    public void setDaño(int damage)
+    {
+        daño = damage;
+    }
+    public float getDaño()
+    {
+        return daño;
+    }
+    public bool getQuitadaVida()
+    {
+        return quitadaVida;
+    }
+    public void setQuitadaVida(bool ok)
+    {
+        quitadaVida = ok;
+    }
 }
