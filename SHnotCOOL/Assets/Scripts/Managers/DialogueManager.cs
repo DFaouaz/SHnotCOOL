@@ -110,13 +110,8 @@ public class DialogueManager : MonoBehaviour {
 		MuestraFrases ();
 	}
 	public void DarObjeto(){
-		//Asignamos el tag
-		HUD.tagDarObjeto = currentNPC.pasos.ToArray()[0].tagObjeto;
-		//Si existe el objeto necesario en en inventario
-		if (HUD.ExistingObject ()) 
-			HUD.GiveObject ();
-		else
-			FinConversacion ();
+		HUD.tagDarObjeto = currentNPC.pasos.ToArray () [0].tagObjeto;
+		HUD.GiveObject ();
 	}
 	public void CompletarMision(){
 		if (currentNPC.isComplete) {
@@ -152,8 +147,15 @@ public class DialogueManager : MonoBehaviour {
 		if (currentNPC.isAcepted) {
 			botonAceptarMision.gameObject.SetActive (false);
 			botonCompletarMision.gameObject.SetActive (false);
+			botonDarObjeto.gameObject.SetActive (false);
 			if (currentNPC.tipoDeMision == Mission.TipoDeMision.DarObjeto) {
-				botonDarObjeto.gameObject.SetActive (true);
+				if(currentNPC.pasos.ToArray () [0] != null){
+					HUD.tagDarObjeto = currentNPC.pasos.ToArray () [0].tagObjeto;					
+					if (HUD.ExistingObject ()) {
+						botonDarObjeto.gameObject.SetActive (true);
+						HUD.tagDarObjeto = null;
+					}
+				}
 				botonCompletarMision.gameObject.SetActive (false);
 			} else if (currentNPC.tipoDeMision == Mission.TipoDeMision.Espionaje) {
 				botonDarObjeto.gameObject.SetActive (false);
@@ -214,7 +216,7 @@ public class DialogueManager : MonoBehaviour {
 
 	void ActualizaDialogo(){
 		//Si la frase que hay es la ultima
-  		string aux = frases.Dequeue(); 
+   		string aux = frases.Dequeue(); 
 		if (aux != null)
 			sentence.text = aux;
 		else

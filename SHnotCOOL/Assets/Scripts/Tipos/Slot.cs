@@ -55,9 +55,10 @@ public class Slot : MonoBehaviour
 					//Actualizamos cola
 					DialogueManager.instance.currentNPC.pasos.Dequeue ();
 					//Si no hay mas pasos
-					if (DialogueManager.instance.currentNPC.pasos.Count == 0) {
+					if (DialogueManager.instance.currentNPC.pasos.ToArray()[0] == null) {
 						DialogueManager.instance.frases = new Queue<string>(DialogueManager.instance.currentNPC.finMision);
 						im.AbreYCierraInventario ();	//Cierra
+						DialogueManager.instance.HUD.tagDarObjeto = null;
 						DialogueManager.instance.AbreCierraDialogueCanvas();	//Abre
 						DialogueManager.instance.MuestraFrases ();
 						DialogueManager.instance.currentNPC.isComplete = true;

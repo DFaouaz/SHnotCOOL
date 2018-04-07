@@ -86,6 +86,7 @@ public class Mission : MonoBehaviour {
 			}
 			conversacion.Enqueue (null);
 			finMision.Enqueue (null);
+			pasos.Enqueue (null);
 			//PROVISIONAL PARA AÑADIR UN PASOS NULL A LA COLA
 		} else
 			tipoDeMision = TipoDeMision.None;
