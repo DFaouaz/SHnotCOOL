@@ -18,7 +18,7 @@ public class Espionaje : MonoBehaviour {
 		DialogueManager.instance.MuestraFrasesEspia ();
 		DialogueManager.instance.ableInput = true;
 		//Si hay mas pasos, los carga
-		if (NPCMision.pasos.Count != 0) {
+		if (NPCMision.pasos.ToArray()[0] != null) {
 			Espionaje esp = GameObject.FindGameObjectWithTag (NPCMision.pasos.ToArray () [0].tagObjeto).AddComponent<Espionaje> ();
 			esp.NPCMision = NPCMision;
 		} else
