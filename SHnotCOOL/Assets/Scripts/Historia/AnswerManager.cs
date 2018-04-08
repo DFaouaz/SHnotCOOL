@@ -43,9 +43,17 @@ public class AnswerManager : MonoBehaviour {
             fraseMala = texto2.ReadLine();
             lineasMalas = fraseMala.Split(' ');
             Buenas [i].valor = int.Parse(lineasBuenas[0]);
-			Buenas [i].frase = lineasBuenas[1];
+            for (int k = 1; k < lineasBuenas.Length; k++)
+            {
+                Buenas[i].frase += ' ';
+                Buenas[i].frase += lineasBuenas[k];                
+            }
             Malas[i].valor = int.Parse(lineasMalas[0]);
-			Malas [i].frase = lineasMalas[1];
+            for (int j = 1; j < lineasMalas.Length; j++)
+            {
+                Malas[i].frase += ' ';
+                Malas[i].frase += lineasMalas[j];               
+            }
 			i++;
 		}
 		InitButtons ();

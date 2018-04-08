@@ -1,8 +1,8 @@
-5 guapo
-12 bello
-9 bonito
-5 maravilloso
-4 precioso
-6 hermoso
-20 maravitupendo
-8 marvelous
+10 Pintor
+12 Animalista
+9 Participo en ambas guerras mundiales
+7 Nacionalsocialista
+20 Nominado al nobel de la paz
+10 Potencia del Eje  
+20 Escritor de Bestseller
+8 Austriaco
