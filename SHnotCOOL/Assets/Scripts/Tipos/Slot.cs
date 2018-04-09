@@ -92,7 +92,6 @@ public class Slot : MonoBehaviour
 					DialogueManager.instance.dialogueMensaje.gameObject.SetActive (true);
 				}
 				im.modoDarObjeto = false;
-				im.teclaParaAbrirYCerrar = im.aux;
 			} else {
 				CleanSlot ();
 				//Cerramos las ventanas

@@ -26,8 +26,6 @@ public class HUDManager : MonoBehaviour {
 	[HideInInspector]
 	public bool modoDarObjeto = false;
 	public Sprite imagenDeVacio, imagenDeBloqueo;
-	[HideInInspector]
-	public KeyCode aux;
 	//PARA MISIONES
 	[HideInInspector]
 	public string tagDarObjeto;
@@ -47,7 +45,7 @@ public class HUDManager : MonoBehaviour {
 
 
 	void Update () {
-		if (!GameManager.instance.pauseMode) {
+		if (!GameManager.instance.pauseMode && (!GameManager.instance.ventanaAbierta || !GameManager.instance.pauseMode)) {
 			CheckInputOpenCloseInventory ();
 			CheckInputObject ();
 			//SUPER MEGA PROVISIONAL
@@ -144,7 +142,7 @@ public class HUDManager : MonoBehaviour {
 
 
 	public void AbreYCierraInventario(){
-		if (!inventory.gameObject.activeInHierarchy && !GameManager.instance.ventanaAbierta) {
+		if (!inventory.gameObject.activeInHierarchy && !DialogueManager.instance.dialogueBox.activeInHierarchy) {
 			inventory.gameObject.SetActive (true);
 			GameManager.instance.ventanaAbierta = true;
 			//Selecciona el primer Slot en el inventario
@@ -155,7 +153,8 @@ public class HUDManager : MonoBehaviour {
 				mensajeSustitucion.gameObject.SetActive (false);
 				modoSustitucion = false;
 			}
-			GameManager.instance.ventanaAbierta = false;
+			if(!DialogueManager.instance.dialogueBox.activeInHierarchy)
+				GameManager.instance.ventanaAbierta = false;
 			inventory.gameObject.SetActive (false);
 			mensajeNoSustitucion.gameObject.SetActive (false);
 		}
@@ -163,13 +162,10 @@ public class HUDManager : MonoBehaviour {
 	
 
 	//Para implementar en las misiones
-	public void GiveObject ()
-	{
+	public void GiveObject () {
 		if (!wholeEmpty ()) {
-			aux = teclaParaAbrirYCerrar;
-			teclaParaAbrirYCerrar = KeyCode.None;
 			DialogueManager.instance.AbreCierraDialogueCanvas (); 					//Cierra
-			DialogueManager.instance.dialogueMensaje.gameObject.SetActive(false);	//Deasctiva el mensaje
+			DialogueManager.instance.dialogueMensaje.gameObject.SetActive(false);	//Desactiva el mensaje
 			AbreYCierraInventario ();
 			modoDarObjeto = true;
 		}            
