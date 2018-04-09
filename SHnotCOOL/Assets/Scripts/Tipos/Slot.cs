@@ -8,7 +8,7 @@ public class Slot : MonoBehaviour
     [HideInInspector]
     public string nombre;
     [HideInInspector]
-    public GameObject objeto;
+	public GameObject objeto = null;
     [HideInInspector]
     public Sprite imagenObjeto;
     [HideInInspector]
@@ -34,7 +34,7 @@ public class Slot : MonoBehaviour
 
     //Espera el click a uno de los botones del inventario para sustituir
 	public void ClickSustituto() {
-		if (estado == Estado.Desbloqueado && objeto != null) {            
+		if (estado == Estado.Desbloqueado) {            
 			if (im.modoSustitucion) {
 				CleanSlot ();
 				//Asignamos el nuevo objeto
@@ -47,29 +47,46 @@ public class Slot : MonoBehaviour
 				im.mensajeSustitucion.gameObject.SetActive (false);
 				im.inventory.gameObject.SetActive (false);
 			} else if (im.modoDarObjeto) {
-				if (objeto.tag == im.tagDarObjeto) {
+				if (DialogueManager.instance.currentNPC.nombrePersonaje == "Negro") {
+					if (objeto != null) {
+						Text textos = GetComponentInChildren<Text> ();
+						textos.text = "Vacio";
+						objeto = null;
+						im.AbreYCierraInventario ();	//Cierra
+						DialogueManager.instance.HUD.tagDarObjeto = null;
+						DialogueManager.instance.AbreCierraDialogueCanvas ();//Abre
+						DialogueManager.instance.frases = new Queue<string> (DialogueManager.instance.currentNPC.finMision);
+						DialogueManager.instance.MuestraFrases ();
+						DialogueManager.instance.currentNPC.indiceMision--;
+						DialogueManager.instance.currentNPC.TerminarMision ();
+						DialogueManager.instance.currentNPC.isAcepted = true;
+					} else {
+						im.AbreYCierraInventario ();
+						DialogueManager.instance.AbreCierraDialogueCanvas ();
+						DialogueManager.instance.FinConversacion ();
+					}
+				} else if (objeto != null && objeto.tag == im.tagDarObjeto) {
 					//Le damos el objeto
 					Text textos = GetComponentInChildren<Text> ();
 					textos.text = "Vacio";
 					objeto = null; 
-					//Actualizamos cola
-					DialogueManager.instance.currentNPC.pasos.Dequeue ();
-					//Si no hay mas pasos
-					if (DialogueManager.instance.currentNPC.pasos.ToArray()[0] == null) {
-						DialogueManager.instance.frases = new Queue<string>(DialogueManager.instance.currentNPC.finMision);
-						im.AbreYCierraInventario ();	//Cierra
-						DialogueManager.instance.HUD.tagDarObjeto = null;
-						DialogueManager.instance.AbreCierraDialogueCanvas();	//Abre
-						DialogueManager.instance.MuestraFrases ();
-						DialogueManager.instance.currentNPC.isComplete = true;
-						DialogueManager.instance.currentNPC.TerminarMision ();
-					} else {
-						//Actualizar pasos
-						//-----------------
-						im.AbreYCierraInventario ();
-						DialogueManager.instance.FinConversacion ();
-					}
-
+					//Por precaucion
+					 if (DialogueManager.instance.currentNPC.nombrePersonaje != "Negro") {
+						DialogueManager.instance.currentNPC.pasos.Dequeue ();							//Actualizamos cola
+						if (DialogueManager.instance.currentNPC.pasos.ToArray () [0] == null) {			//Si no hay mas pasos
+							DialogueManager.instance.frases = new Queue<string> (DialogueManager.instance.currentNPC.finMision);
+							im.AbreYCierraInventario ();	//Cierra
+							DialogueManager.instance.HUD.tagDarObjeto = null;
+							DialogueManager.instance.AbreCierraDialogueCanvas ();	//Abre
+							DialogueManager.instance.MuestraFrases ();
+							DialogueManager.instance.currentNPC.isComplete = true;
+							DialogueManager.instance.currentNPC.TerminarMision ();
+						} else {
+							im.AbreYCierraInventario ();
+							DialogueManager.instance.AbreCierraDialogueCanvas ();
+							DialogueManager.instance.FinConversacion ();
+						}
+					}			
 				} else {
 					im.AbreYCierraInventario ();
 					DialogueManager.instance.dialogueMensaje.gameObject.SetActive (true);

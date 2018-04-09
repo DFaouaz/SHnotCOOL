@@ -387,7 +387,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4068811269392952, guid: 5660e4a2303aec44688d71cbc228ded7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10.17
+      value: -6.21
       objectReference: {fileID: 0}
     - target: {fileID: 4068811269392952, guid: 5660e4a2303aec44688d71cbc228ded7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -523,6 +523,11 @@ Prefab:
     - target: {fileID: 4734935068044352, guid: 32ca1ed55c62f5846986fdfd4fda616a, type: 2}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114149031551984500, guid: 32ca1ed55c62f5846986fdfd4fda616a,
+        type: 2}
+      propertyPath: nombrePersonaje
+      value: Chino
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32ca1ed55c62f5846986fdfd4fda616a, type: 2}
@@ -7706,7 +7711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreClavePersonaje: 
+  nombrePersonaje: Deportista
   tituloDeLaMision: 
   indiceMision: 0
   tipoDeMision: 0
@@ -35859,6 +35864,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114623287051566550, guid: 820f6b76b24e28f40ae516e2b51e768f,
+        type: 2}
+      propertyPath: nombrePersonaje
+      value: Delegada
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 820f6b76b24e28f40ae516e2b51e768f, type: 2}
   m_IsPrefabParent: 0
@@ -36125,7 +36135,6 @@ MonoBehaviour:
   Escena1PlayerPos: {x: 0, y: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
-  ActualPlayerVelocity: {x: 0, y: 0}
   habladoNegro: 0
   ventanaAbierta: 0
   pauseMode: 0
@@ -36901,11 +36910,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.93
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 27.14
+      value: -1.38
       objectReference: {fileID: 0}
     - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
       propertyPath: m_LocalPosition.z
@@ -36931,9 +36940,41 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114192127130471706, guid: d871f2555c6711741bbf9f1ef51ec4cd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114669673983568282, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
+    - {fileID: 114192127130471706, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1413080558 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1064008837616570, guid: d871f2555c6711741bbf9f1ef51ec4cd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1413080557}
+--- !u!114 &1413080559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413080558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc54387dab2a75a438f7302ca581d5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombrePersonaje: Negro
+  tituloDeLaMision: 
+  indiceMision: 0
+  tipoDeMision: 0
+  isAcepted: 0
+  isComplete: 0
+  alreadyTalked: 0
+  playerTarget: {fileID: 767960388}
+  minDistance: 1.15
 --- !u!1 &1413795659
 GameObject:
   m_ObjectHideFlags: 0
@@ -66241,7 +66282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreClavePersonaje: 
+  nombrePersonaje: Timmy
   tituloDeLaMision: 
   indiceMision: 0
   tipoDeMision: 0
@@ -66749,7 +66790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreClavePersonaje: 
+  nombrePersonaje: Maton
   tituloDeLaMision: 
   indiceMision: 0
   tipoDeMision: 0
@@ -67000,11 +67041,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4273666578845702, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.48
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4273666578845702, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.01
+      value: 1.02
       objectReference: {fileID: 0}
     - target: {fileID: 4273666578845702, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -67033,6 +67074,11 @@ Prefab:
     - target: {fileID: 114649256699418010, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e,
         type: 2}
       propertyPath: nombreClavePersonaje
+      value: Autista
+      objectReference: {fileID: 0}
+    - target: {fileID: 114649256699418010, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e,
+        type: 2}
+      propertyPath: nombrePersonaje
       value: Autista
       objectReference: {fileID: 0}
     m_RemovedComponents: []

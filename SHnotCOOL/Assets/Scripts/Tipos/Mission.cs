@@ -5,15 +5,22 @@ using System.IO;
 
 public class Mission : MonoBehaviour {
 
-	public string nombreClavePersonaje;
+	[Header("Escribir el nombre clave que se encuentra")]
+	[Header("en la codificación del dialogo y misiones")]
+	public string nombrePersonaje;
+	[HideInInspector]
 	public string tituloDeLaMision;
+	[HideInInspector]
 	public int indiceMision;
 	public enum TipoDeMision {None, Espionaje, DarObjeto}
+	[HideInInspector]
 	public TipoDeMision tipoDeMision;
 	public Queue<string> conversacion = new Queue<string>();
 	public Queue<Pasos> pasos = new Queue<Pasos>();
 	public Queue<string> finMision = new Queue<string> ();
+	[HideInInspector]
 	public bool isAcepted = false;
+	[HideInInspector]
 	public bool isComplete = false;
 
 
@@ -25,14 +32,13 @@ public class Mission : MonoBehaviour {
 	void LeeMision(){
 		StreamReader file = new StreamReader ("Misiones.txt");
 		//Busca el nombre en clave y el numero
-		string [] partes;
+		string [] partes = new string[1];
 		do{
 			partes = file.ReadLine().Split('-');
-		}while(partes[0] == "" || (!file.EndOfStream 
-			&&(partes[0] != nombreClavePersonaje 										//partes[0] = nombreClavePersonaje
-			|| int.Parse(partes[1]) != indiceMision)));									//partes[1] = indiceMision
-		//Si lo encuentra, lo decodifica												//partes[2] = tipoDeMision
-		DecodificaMision (file, partes);
+		}while(!file.EndOfStream && (partes[0] != nombrePersonaje
+			|| (partes[0] != nombrePersonaje && int.Parse(partes[1]) != indiceMision)));	
+		if(!file.EndOfStream)							
+			DecodificaMision (file, partes);
 		file.Close ();
 	}
 	//Decodifica la mision
@@ -91,7 +97,7 @@ public class Mission : MonoBehaviour {
 		} else
 			tipoDeMision = TipoDeMision.None;
 	}
-	//Vacia las listas de pasos y de conversación
+	//Vacia las listas de pasos, de conversación, finMision.
 	void VaciaListas(){
 		conversacion.Clear ();
 		pasos.Clear ();
@@ -114,8 +120,7 @@ public class Mission : MonoBehaviour {
 	}
 
 	void DecodConversacionEspia(ref string[] partes, Pasos p, StreamReader file){
-		if(partes[0] == "--")
-		{
+		if(partes[0] == "--"){
 		partes = file.ReadLine ().Split (':');
 			while (!file.EndOfStream && partes [0] != "--") {
 				FraseEspia fr = new FraseEspia ();

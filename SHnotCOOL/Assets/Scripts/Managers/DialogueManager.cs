@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour {
     public GameObject dialogueBox;
 	public Text dialogueMensaje;
 	public KeyCode botonInteraccion;
-	[HideInInspector]
+	//[HideInInspector]
 	public NPC currentNPC;
 	//[HideInInspector]
 	public bool isTalking = false;
@@ -25,22 +25,12 @@ public class DialogueManager : MonoBehaviour {
 	public Queue<FraseEspia> frasesEspia;
 	public static DialogueManager instance;
 
-	void Awake()
-	{
-		// Si no hay ningún objeto GameManager ya creado
-		if (instance == null)
-		{
-			// Almacenamos la instancia actual
+	void Awake(){
+		if (instance == null){
 			instance = this;
-			// Nos aseguramos de no destruir el objeto, es decir, 
-			// de que persista, si cambiamos de escena
 			DontDestroyOnLoad(this.gameObject);
-		}
-		else
-		{
-			// Si ya existe un objeto GameManager, no necesitamos uno nuevo
+		}else
 			Destroy(this.gameObject);
-		}
 	}
 
     void Start(){
@@ -73,7 +63,7 @@ public class DialogueManager : MonoBehaviour {
 
 	void ActualizaInicioDelCanvas(){
 		if (currentNPC != null)
-			nombre.text = currentNPC.nombreClavePersonaje;
+			nombre.text = currentNPC.nombrePersonaje;
 		sentence.gameObject.SetActive (false);
 		EligeBoton ();
 	}
@@ -110,7 +100,8 @@ public class DialogueManager : MonoBehaviour {
 		MuestraFrases ();
 	}
 	public void DarObjeto(){
-		HUD.tagDarObjeto = currentNPC.pasos.ToArray () [0].tagObjeto;
+		if(currentNPC.nombrePersonaje != "Negro")
+			HUD.tagDarObjeto = currentNPC.pasos.ToArray () [0].tagObjeto;
 		HUD.GiveObject ();
 	}
 	public void CompletarMision(){
@@ -144,12 +135,17 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	void EligeBoton(){
+		botonAceptarMision.gameObject.SetActive (false);
+		botonCompletarMision.gameObject.SetActive (false);
+		botonDarObjeto.gameObject.SetActive (false);
 		if (currentNPC.isAcepted) {
-			botonAceptarMision.gameObject.SetActive (false);
-			botonCompletarMision.gameObject.SetActive (false);
-			botonDarObjeto.gameObject.SetActive (false);
 			if (currentNPC.tipoDeMision == Mission.TipoDeMision.DarObjeto) {
-				if(currentNPC.pasos.ToArray () [0] != null){
+				if (currentNPC.nombrePersonaje == "Negro"){
+					if (currentNPC.alreadyTalked && !HUD.wholeEmpty()) {
+						botonDarObjeto.gameObject.SetActive (true);
+						HUD.tagDarObjeto = null;
+					}
+				}else if(currentNPC.pasos.ToArray () [0] != null){
 					HUD.tagDarObjeto = currentNPC.pasos.ToArray () [0].tagObjeto;					
 					if (HUD.ExistingObject ()) {
 						botonDarObjeto.gameObject.SetActive (true);
@@ -167,7 +163,8 @@ public class DialogueManager : MonoBehaviour {
 				botonCompletarMision.gameObject.SetActive (false);
 			}
 		} else {
-			botonAceptarMision.gameObject.SetActive (true);
+			if(currentNPC.nombrePersonaje != "Negro")
+				botonAceptarMision.gameObject.SetActive (true);
 			botonDarObjeto.gameObject.SetActive (false);
 			botonCompletarMision.gameObject.SetActive (false);
 		}

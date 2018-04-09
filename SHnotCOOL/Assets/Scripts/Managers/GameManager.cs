@@ -22,8 +22,6 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
 	public Vector2 ActualPlayerDirecction;
 	[HideInInspector]
-	public Vector2 ActualPlayerVelocity;// Ejemplo de variable que podemos querer usar
-	[HideInInspector]
     public bool habladoNegro=false;
 	[HideInInspector]
 	public bool ventanaAbierta = false;

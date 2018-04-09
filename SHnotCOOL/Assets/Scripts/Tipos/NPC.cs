@@ -6,6 +6,7 @@ using System.IO;
 public class NPC : Mission {
 	public Queue<string> dialogo = new Queue<string> ();
 	public Queue<string> frasesEstandar = new Queue<string> ();
+	[HideInInspector]
 	public bool alreadyTalked = false;
 
 	protected override void Start(){
@@ -28,13 +29,13 @@ public class NPC : Mission {
 	}
 
 
-   void LeeDialogo() {
+   public void LeeDialogo() {
 		StreamReader file = new StreamReader ("Dialogos.txt");
         string linea;
 		//Buscamos el nombre
         do{
 			linea = file.ReadLine();
-		} while (!file.EndOfStream && linea != nombreClavePersonaje);
+		} while (!file.EndOfStream && linea != nombrePersonaje);
 
 		//Decodificamos
 		linea = file.ReadLine();

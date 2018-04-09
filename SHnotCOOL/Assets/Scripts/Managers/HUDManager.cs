@@ -84,7 +84,7 @@ public class HUDManager : MonoBehaviour {
 			return true;
 	}
 		
-	bool wholeEmpty(){
+	public bool wholeEmpty(){
 		indice = 0;
 		while (indice < slots.Length && (slots [indice].objeto == null || slots [indice].estado == Slot.Estado.Bloqueado))
 			indice++;
