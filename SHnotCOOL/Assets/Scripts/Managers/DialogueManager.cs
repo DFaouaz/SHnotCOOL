@@ -28,9 +28,8 @@ public class DialogueManager : MonoBehaviour {
 	void Awake(){
 		if (instance == null){
 			instance = this;
-			DontDestroyOnLoad(this.gameObject);
 		}else
-			Destroy(this.gameObject);
+			Destroy(this);
 	}
 
     void Start(){
