@@ -33,28 +33,33 @@ public class AnswerManager : MonoBehaviour {
 		StreamReader texto = new StreamReader("buena.txt", Encoding.Default);
 		StreamReader texto2 = new StreamReader("mala.txt", Encoding.Default);
 		opciones = new List<opcion> ();
-		Buenas = new opcion[8];
-		Malas = new opcion[8];
+		Buenas = new opcion[10];
+		Malas = new opcion[30];
 		respuestas = new opcion[4];
 		int i = 0;
-		while (i < Buenas.Length) {
+        while (i < Buenas.Length)
+        {
             fraseBuena = texto.ReadLine();
-            lineasBuenas= fraseBuena.Split(' ');
-            fraseMala = texto2.ReadLine();
-            lineasMalas = fraseMala.Split(' ');
-            Buenas [i].valor = int.Parse(lineasBuenas[0]);
+            lineasBuenas = fraseBuena.Split(' ');
+            Buenas[i].valor = int.Parse(lineasBuenas[0]);
             for (int k = 1; k < lineasBuenas.Length; k++)
             {
                 Buenas[i].frase += ' ';
-                Buenas[i].frase += lineasBuenas[k];                
+                Buenas[i].frase += lineasBuenas[k];
             }
-            Malas[i].valor = int.Parse(lineasMalas[0]);
+            i++;
+        }
+        int l = 0;
+        while (l<Malas.Length) { 
+            fraseMala = texto2.ReadLine();
+            lineasMalas = fraseMala.Split(' ');
+            Malas[l].valor = int.Parse(lineasMalas[0]);
             for (int j = 1; j < lineasMalas.Length; j++)
             {
-                Malas[i].frase += ' ';
-                Malas[i].frase += lineasMalas[j];               
+                Malas[l].frase += ' ';
+                Malas[l].frase += lineasMalas[j];               
             }
-			i++;
+			l++;
 		}
 		InitButtons ();
 	}
@@ -65,17 +70,17 @@ public class AnswerManager : MonoBehaviour {
 
 		int x, y, w, z;
 		x = Random.Range (0, Buenas.Length);
-		y = Random.Range (0, Buenas.Length);
+		y = Random.Range (0, Malas.Length);
 		w = Random.Range (0, Malas.Length);
 		z = Random.Range (0,Malas.Length);
 
-		while(x==y)
-			y = Random.Range (0, Buenas.Length);
-		while(w==z)
+		while(w==y)
+			w = Random.Range (0, Buenas.Length);
+		while(w==z||z==y)
 			z = Random.Range (0,Malas.Length);
 
 		opciones.Add (Buenas [x]);
-		opciones.Add (Buenas [y]);
+		opciones.Add (Malas [y]);
 		opciones.Add (Malas [w]);
 		opciones.Add (Malas [z]);
 		int contador = 0;
@@ -89,13 +94,6 @@ public class AnswerManager : MonoBehaviour {
 
 	}
 
-    public void JuegoGanado(bool ganado)
-    {
-        if (ganado)
-            print("GANASTE!!!!!");
-        else
-            print("Una Pena");
-    }
 
 	public opcion getOpcion(int index)
 	{

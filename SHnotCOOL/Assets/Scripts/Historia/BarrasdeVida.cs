@@ -31,10 +31,13 @@ public class BarrasdeVida : MonoBehaviour {
     Health enemigo;
     Health player;
     GameObject barraEnemigo, barraPlayer;
+    Text finHistoria;
+    int indiceVida=15;//Limite de vida a partir del cual regenera
 	// Use this for initialization
 	void Start () {
         barraEnemigo = GameObject.FindGameObjectWithTag("VidaEnemigo");
         barraPlayer = GameObject.FindGameObjectWithTag("VidaJugador");
+        finHistoria = GameObject.FindGameObjectWithTag("FinHistoria").GetComponent<Text>();
         player = new Health();
         enemigo = new Health();
      
@@ -55,16 +58,16 @@ public class BarrasdeVida : MonoBehaviour {
         if(AnswerManager.instance.getPulsado()&& !AnswerManager.instance.getQuitadaVida())
         {
             float daño = AnswerManager.instance.getDaño();
-            if(daño<=0 && daño>=-10)
+            if(daño<=0 && daño>=-indiceVida)
             {
                 player.ModificaVida(-daño);
             }
-            else if(daño<-10)
+            else if(daño<-indiceVida)
             {
                 player.ModificaVida(-daño);
                 enemigo.ModificaVida(daño / 2);
             }
-            else if(daño>0 && daño<=10 )
+            else if(daño>0 && daño<=indiceVida )
             {
                 enemigo.ModificaVida(daño);
             }
@@ -80,9 +83,18 @@ public class BarrasdeVida : MonoBehaviour {
     void FinJuego()
     {
         if (player.DevuelveVida() <= 0)
-            AnswerManager.instance.JuegoGanado(false);
+        {
+            finHistoria.text = "Una Pena";
+            GameManager.instance.historiaScore = (int)enemigo.DevuelveVida();
+            GameManager.instance.FinExamenHistoria();
+        }
         else if (enemigo.DevuelveVida() <= 0)
-            AnswerManager.instance.JuegoGanado(true);
+        {
+            finHistoria.text = "Bien Hecho";
+            GameManager.instance.historiaScore = (int)player.DevuelveVida();
+            GameManager.instance.FinExamenHistoria();
+        }
+        
     }
     void ActualizaBarras()
     {

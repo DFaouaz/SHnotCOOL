@@ -16,6 +16,7 @@ TagManager:
   - DeathZone
   - VidaEnemigo
   - VidaJugador
+  - FinHistoria
   layers:
   - Default
   - TransparentFX
