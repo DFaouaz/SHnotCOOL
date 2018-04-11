@@ -93,6 +93,7 @@ public class DialogueManager : MonoBehaviour {
 	//Misiones
 	public void AceptarMision(){
 		currentNPC.isAcepted = true;
+		MissionManager.instance.AñadirMision (currentNPC);
 		frases = currentNPC.conversacion;
 		if (currentNPC.tipoDeMision == Mission.TipoDeMision.Espionaje)
 			EmparejaEspia();

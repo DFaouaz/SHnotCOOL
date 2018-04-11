@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MissionManager : MonoBehaviour {
 
 	//Variables
 	public KeyCode botonAbrirYCerrar;
 	public GameObject missionBox;
+	public Button izquierda, derecha;
+	public MissionSlot[] huecos;
 	int paginaCont = 1;
-	List<MissionSlot> misiones = new List<MissionSlot> ();
+	List<Mission> misiones = new List<Mission> ();
 
 
 
@@ -42,22 +45,30 @@ public class MissionManager : MonoBehaviour {
 		}
 	}
 
-	void AñadirMision(){
-		
-	}
-	void ActualizaVista (){
-		//Dependiendo de la pagina
-		
+	public void AñadirMision(NPC mision){
+		Mission m = (Mission)mision;
+		misiones.Add (m);
+		AsignaMisiones ();
 	}
 
 	public void PasaPaginaDerecha(){
-		int n = 8;	//Numero de misiones en una pagina
-		if (misiones.Count > n && misiones.Count / 8 > paginaCont)
+		if (misiones.Count > huecos.Length && misiones.Count / huecos.Length > paginaCont) {
 			paginaCont++;
+			AsignaMisiones ();
+		}
 	}
+
 	public void PasaPaginaIzquierda(){
-		if (paginaCont - 1 > 0)
+		if (paginaCont - 1 > 0) {
 			paginaCont--;
+			AsignaMisiones ();
+		}
 	}
-		
+
+	void AsignaMisiones(){
+		for (int i = (huecos.Length * paginaCont) - huecos.Length; i < huecos.Length * paginaCont && i < misiones.Count; i++) {
+			huecos [i].mision = misiones [i];
+			huecos [i].UpdateLooking ();
+		}
+	}
 }
