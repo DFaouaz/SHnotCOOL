@@ -162,7 +162,7 @@ public class DialogueManager : MonoBehaviour {
 				botonCompletarMision.gameObject.SetActive (false);
 			}
 		} else {
-			if(currentNPC.nombrePersonaje != "Negro")
+			if(currentNPC.nombrePersonaje != "Negro" && currentNPC.alreadyTalked)
 				botonAceptarMision.gameObject.SetActive (true);
 			botonDarObjeto.gameObject.SetActive (false);
 			botonCompletarMision.gameObject.SetActive (false);

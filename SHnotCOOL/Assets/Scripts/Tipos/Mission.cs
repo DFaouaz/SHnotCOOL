@@ -35,8 +35,8 @@ public class Mission : MonoBehaviour {
 		string [] partes = new string[1];
 		do{
 			partes = file.ReadLine().Split('-');
-		}while(!file.EndOfStream && (partes[0] != nombrePersonaje
-			|| (partes[0] != nombrePersonaje && int.Parse(partes[1]) != indiceMision)));	
+		}while(!file.EndOfStream && ((partes[0] != nombrePersonaje)
+			|| (partes[0] == nombrePersonaje && int.Parse(partes[1]) != indiceMision)));	
 		if(!file.EndOfStream)							
 			DecodificaMision (file, partes);
 		file.Close ();
@@ -93,7 +93,6 @@ public class Mission : MonoBehaviour {
 			conversacion.Enqueue (null);
 			finMision.Enqueue (null);
 			pasos.Enqueue (null);
-			//PROVISIONAL PARA AÑADIR UN PASOS NULL A LA COLA
 		} else
 			tipoDeMision = TipoDeMision.None;
 	}
