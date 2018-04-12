@@ -14,9 +14,9 @@ TagManager:
   - Limite
   - Negro
   - DeathZone
-  - VidaEnemigo
-  - VidaJugador
-  - FinHistoria
+  - Tabla
+  - Espia1
+  - Espia2
   layers:
   - Default
   - TransparentFX
