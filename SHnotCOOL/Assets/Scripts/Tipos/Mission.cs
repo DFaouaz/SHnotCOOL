@@ -134,6 +134,7 @@ public class Mission : MonoBehaviour {
 	}
 
 	public void TerminarMision(){
+		MissionManager.instance.EliminaMision (this);
 		CargarSiguienteMision ();
 	}
 }

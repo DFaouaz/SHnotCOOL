@@ -21,6 +21,7 @@ public class Espionaje : MonoBehaviour {
 		if (NPCMision.pasos.ToArray()[0] != null) {
 			Espionaje esp = GameObject.FindGameObjectWithTag (NPCMision.pasos.ToArray () [0].tagObjeto).AddComponent<Espionaje> ();
 			esp.NPCMision = NPCMision;
+			MissionManager.instance.ActualizaPasos ((Mission) NPCMision);
 		} else
 			NPCMision.isComplete = true;
 		Destroy (this.gameObject);

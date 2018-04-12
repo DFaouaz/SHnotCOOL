@@ -82,6 +82,7 @@ public class Slot : MonoBehaviour
 							DialogueManager.instance.currentNPC.isComplete = true;
 							DialogueManager.instance.currentNPC.TerminarMision ();
 						} else {
+							MissionManager.instance.ActualizaPasos ((Mission)DialogueManager.instance.currentNPC);
 							im.AbreYCierraInventario ();
 							DialogueManager.instance.AbreCierraDialogueCanvas ();
 							DialogueManager.instance.FinConversacion ();

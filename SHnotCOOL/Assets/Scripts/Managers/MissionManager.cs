@@ -9,7 +9,7 @@ public class MissionManager : MonoBehaviour {
 	public KeyCode botonAbrirYCerrar;
 	public GameObject missionBox;
 	public Button izquierda, derecha;
-	public MissionSlot[] huecos;
+	public List<MissionSlot> huecos;
 	int paginaCont = 1;
 	List<Mission> misiones = new List<Mission> ();
 
@@ -52,7 +52,7 @@ public class MissionManager : MonoBehaviour {
 	}
 
 	public void PasaPaginaDerecha(){
-		if (misiones.Count > huecos.Length && misiones.Count / huecos.Length > paginaCont) {
+		if (misiones.Count > huecos.Count && misiones.Count / huecos.Count > paginaCont) {
 			paginaCont++;
 			AsignaMisiones ();
 		}
@@ -66,9 +66,31 @@ public class MissionManager : MonoBehaviour {
 	}
 
 	void AsignaMisiones(){
-		for (int i = (huecos.Length * paginaCont) - huecos.Length; i < huecos.Length * paginaCont && i < misiones.Count; i++) {
+		for (int i = (huecos.Count * paginaCont) - huecos.Count; i < huecos.Count * paginaCont && i < misiones.Count; i++) {
 			huecos [i].mision = misiones [i];
 			huecos [i].UpdateLooking ();
+		}
+	}
+
+	public void EliminaMision(Mission mision){
+		misiones.Remove (mision);
+		VaciaTodo ();
+		AsignaMisiones ();
+	}
+
+	void VaciaTodo(){
+		for (int i = 0; i < huecos.Count; i++) {
+			huecos [i].VaciaSlot ();
+			huecos [i].mision = null;
+		}
+	}
+
+	public void ActualizaPasos(Mission mision){
+		for (int i = (huecos.Count * paginaCont) - huecos.Count; i < huecos.Count * paginaCont && i < misiones.Count; i++) {
+			if (huecos [i].mision == mision) {
+				huecos [i].mision = misiones [i];
+				huecos [i].UpdateLooking ();
+			}
 		}
 	}
 }
