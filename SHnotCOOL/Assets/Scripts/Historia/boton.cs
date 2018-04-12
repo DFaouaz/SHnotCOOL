@@ -5,12 +5,10 @@ using UnityEngine.UI;
 public class boton : MonoBehaviour {
 	public int index;
 	opcion MiOpcion;
-
 	int valor;
 
 	Text texto;
 	void Start () {
-		
 		texto = GetComponentInChildren<Text> ();
 		AsignarOpcion ();
 	
@@ -19,15 +17,10 @@ public class boton : MonoBehaviour {
 
 	void Update()
 	{
-		
-			if (AnswerManager.instance.getPulsado ())
-				AsignarOpcion ();
-		
-			
-			
+
+			AsignarOpcion ();
 		
 	}
-
 	void AsignarOpcion()
 	{
 		MiOpcion = AnswerManager.instance.getOpcion (index);
@@ -37,10 +30,9 @@ public class boton : MonoBehaviour {
 	}
 	public void clikado()
 	{
-        AnswerManager.instance.setDaño(valor);
+        AnswerManager.instance.setDanio(valor);
         AnswerManager.instance.setPulsado (true);
 		AnswerManager.instance.InitButtons ();
-        
 		AsignarOpcion ();
 	}
 }

@@ -45,19 +45,12 @@ public class BarrasdeVida : MonoBehaviour {
     }
 
     // Update is called once per frame
-    private void Update()
-    {
-        Ataque();
-        ActualizaBarras();
-        player.TruncaVida();
-        enemigo.TruncaVida();
-        FinJuego();
-    }
-    void Ataque()
+
+    public void Ataque()
     {
         if(AnswerManager.instance.getPulsado()&& !AnswerManager.instance.getQuitadaVida())
         {
-            float daño = AnswerManager.instance.getDaño();
+            float daño = AnswerManager.instance.getDanio();
             if(daño<=0 && daño>=-indiceVida)
             {
                 player.ModificaVida(-daño);
@@ -77,6 +70,10 @@ public class BarrasdeVida : MonoBehaviour {
                 enemigo.ModificaVida(daño);
             }
             AnswerManager.instance.setQuitadaVida(true);
+			ActualizaBarras();
+			player.TruncaVida();
+			enemigo.TruncaVida();
+			FinJuego();
         }
     }
 

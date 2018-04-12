@@ -12,7 +12,7 @@ public struct opcion{
 public class AnswerManager : MonoBehaviour {
 
 	public static AnswerManager instance = null;
-    float daño=0;
+    float danio=0;
 	opcion[] respuestas;
 	List<opcion> opciones;
 	opcion [] Buenas;
@@ -107,13 +107,13 @@ public class AnswerManager : MonoBehaviour {
 	{
 		pulsado = ok;
 	}
-    public void setDaño(int damage)
+    public void setDanio(int damage)
     {
-        daño = damage;
+        danio = damage;
     }
-    public float getDaño()
+    public float getDanio()
     {
-        return daño;
+        return danio;
     }
     public bool getQuitadaVida()
     {
