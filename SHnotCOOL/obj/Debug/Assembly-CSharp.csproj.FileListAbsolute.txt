@@ -1,0 +1,536 @@
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\nunit.framework.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.Advertisements.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.Analytics.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.Graphs.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.HoloLens.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.Networking.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.Purchasing.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.TestRunner.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.Timeline.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.TreeEditor.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.UIAutomation.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.VR.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.WindowsStandalone.Extensions.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.Advertisements.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.StandardEvents.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\Unity.Cecil.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.UI.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.Networking.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.TestRunner.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\nunit.framework.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.Timeline.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.TreeEditor.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.UIAutomation.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.HoloLens.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.SpatialTracking.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.VR.xml
+C:\Users\gtada\Desktop\UncommonStudent\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\gtada\Desktop\UncommonStudent\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\gtada\Desktop\UncommonStudent\obj\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\UncommonStudent\obj\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\nunit.framework.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.Advertisements.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.Analytics.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.Graphs.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.HoloLens.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.Networking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.Purchasing.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.TestRunner.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.Timeline.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.TreeEditor.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.UIAutomation.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.VR.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.WindowsStandalone.Extensions.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.Advertisements.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.StandardEvents.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\Unity.Cecil.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.UI.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.Networking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.TestRunner.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\nunit.framework.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.Timeline.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.TreeEditor.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.UIAutomation.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.HoloLens.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.SpatialTracking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.VR.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\obj\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Junto]\obj\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\nunit.framework.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.Advertisements.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.Analytics.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.Graphs.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.HoloLens.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.Networking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.Purchasing.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.TestRunner.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.Timeline.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.TreeEditor.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.UIAutomation.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.VR.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.WindowsStandalone.Extensions.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.Advertisements.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.StandardEvents.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\Unity.Cecil.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.UI.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.Networking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.TestRunner.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\nunit.framework.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.Timeline.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.TreeEditor.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.UIAutomation.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.HoloLens.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.SpatialTracking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.VR.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\obj\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\SHnotCOOL[InventarioImplementado]\obj\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\nunit.framework.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.Advertisements.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.Analytics.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.Graphs.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.HoloLens.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.Networking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.Purchasing.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.TestRunner.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.Timeline.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.TreeEditor.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.UIAutomation.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.VR.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.WindowsStandalone.Extensions.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.Advertisements.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.StandardEvents.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\Unity.Cecil.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.UI.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.Networking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.TestRunner.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\nunit.framework.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.Timeline.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.TreeEditor.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.UIAutomation.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.HoloLens.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.SpatialTracking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.VR.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\obj\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\SHnotCOOL[JuntoPeroNoAjuntado]\obj\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\obj\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\nunit.framework.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.Advertisements.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.Analytics.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.Graphs.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.HoloLens.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.Networking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.Purchasing.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.TestRunner.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.Timeline.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.TreeEditor.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.UIAutomation.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.VR.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.WindowsStandalone.Extensions.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.Advertisements.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.StandardEvents.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\Unity.Cecil.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.UI.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.Networking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.TestRunner.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\nunit.framework.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.Timeline.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.TreeEditor.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.UIAutomation.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.HoloLens.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.SpatialTracking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.VR.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\gtada\Desktop\SHnotCOOL[Falta conexion con el examen]\obj\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\obj\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\nunit.framework.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.Advertisements.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.Analytics.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.Graphs.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.HoloLens.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.Networking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.Purchasing.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.TestRunner.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.Timeline.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.TreeEditor.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.UIAutomation.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.VR.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.WindowsStandalone.Extensions.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.Advertisements.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.StandardEvents.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\Unity.Cecil.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.UI.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.Networking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.TestRunner.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\nunit.framework.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.Timeline.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.TreeEditor.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.UIAutomation.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.HoloLens.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.SpatialTracking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.VR.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\gtada\Desktop\SHnotCOOL[VersionMegaAlpha]\obj\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\nunit.framework.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Advertisements.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Analytics.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Graphs.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.HoloLens.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Networking.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Purchasing.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.TestRunner.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Timeline.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.TreeEditor.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.UIAutomation.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.VR.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.WindowsStandalone.Extensions.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Advertisements.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.StandardEvents.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.Cecil.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.UI.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Networking.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.TestRunner.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\nunit.framework.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Timeline.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.TreeEditor.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.UIAutomation.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.HoloLens.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.SpatialTracking.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.VR.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\obj\Debug\Assembly-CSharp.dll
+C:\Users\gtada\Desktop\Repositorio - SHnotCOOL\SHnotCOOL\SHnotCOOL\obj\Debug\Assembly-CSharp.pdb
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Assembly-CSharp.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\nunit.framework.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Advertisements.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Analytics.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Graphs.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.HoloLens.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Networking.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Purchasing.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.TestRunner.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Timeline.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.TreeEditor.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.UI.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.UIAutomation.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.VR.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.WindowsStandalone.Extensions.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Advertisements.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Analytics.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.HoloLens.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Networking.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Purchasing.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.StandardEvents.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.TestRunner.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Timeline.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.UI.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.Cecil.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.DataContract.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\ExCSS.Unity.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.UNetWeaver.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.CecilTools.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.UI.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.UI.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Networking.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Networking.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.TestRunner.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.TestRunner.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\nunit.framework.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.Timeline.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.Timeline.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.TreeEditor.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.UIAutomation.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.GoogleAudioSpatializer.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.HoloLens.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.HoloLens.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.SpatialTracking.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.VR.xml
+D:\github\SHnotCOOL\SHnotCOOL\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+D:\github\SHnotCOOL\SHnotCOOL\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+D:\github\SHnotCOOL\SHnotCOOL\obj\Debug\Assembly-CSharp.dll
+D:\github\SHnotCOOL\SHnotCOOL\obj\Debug\Assembly-CSharp.pdb
