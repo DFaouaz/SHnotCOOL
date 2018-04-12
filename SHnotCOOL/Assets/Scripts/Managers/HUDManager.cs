@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class HUDManager : MonoBehaviour {
 
 	[SerializeField]
@@ -25,8 +26,12 @@ public class HUDManager : MonoBehaviour {
 	[HideInInspector]
 	public bool modoDarObjeto = false;
 	public Sprite imagenDeVacio, imagenDeBloqueo;
-    [HideInInspector]
-    public KeyCode aux;
+	//PARA MISIONES
+	[HideInInspector]
+	public string tagDarObjeto;
+
+
+
 
 	void Start () {
 		modoDarObjeto = false;
@@ -38,14 +43,16 @@ public class HUDManager : MonoBehaviour {
 		mensajeNoSustitucion.gameObject.SetActive (false);
 	}
 
+
 	void Update () {
-		if(!GameManager.instance.pauseMode){
-		CheckInputOpenCloseInventory ();
-		CheckInputObject ();
-		//SUPER MEGA PROVISIONAL
+		if (!GameManager.instance.pauseMode && (!GameManager.instance.ventanaAbierta || !GameManager.instance.pauseMode)) {
+			CheckInputOpenCloseInventory ();
+			CheckInputObject ();
+			//SUPER MEGA PROVISIONAL
 			CheckNegro (); 
-		}       
-	}
+		}
+	}     
+
 	//Guarda el objeto
 	void SaveObject(){
 		//Si hay espacio, guardalo
@@ -53,7 +60,7 @@ public class HUDManager : MonoBehaviour {
 			slots [indice].objeto = objeto.gameObject;
 			slots [indice].nombre = objeto.NombreColeccionable;
 			slots [indice].imagenObjeto = objeto.imagenRepresentacion;
-			slots[indice].UpdateRender();
+			slots [indice].UpdateRender ();
 			objeto.gameObject.SetActive (false);
 		} else {
 			//Abrir el inventario con el mensaje de sustituir para que el jugador diga que objeto quiere sustituir
@@ -63,66 +70,67 @@ public class HUDManager : MonoBehaviour {
 			modoSustitucion = true;
 		}
 	}
+
 	//Devuelve true si hay espacio en el inventario
 	bool isEmpty(){
 		indice = 0;
-		while (indice < slots.Length && slots[indice].objeto != null && slots[indice].estado != Slot.Estado.Bloqueado)
+		while (indice < slots.Length && slots [indice].objeto != null && slots [indice].estado != Slot.Estado.Bloqueado)
 			indice++;
-		if (indice >= slots.Length || slots[indice].estado == Slot.Estado.Bloqueado)
+		if (indice >= slots.Length || slots [indice].estado == Slot.Estado.Bloqueado)
 			return false;
 		else
 			return true;
-	} 
-    bool wholeEmpty()
-    {
-            indice = 0;
-		    while (indice<slots.Length &&( slots[indice].objeto == null || slots[indice].estado == Slot.Estado.Bloqueado))
-
-                indice++;
-            if (indice >= slots.Length)
-                return true;
-            else
-                return false;
-    }
-	//Devuelve true si ya hay referencia del mismo objeto en el inventario
-	bool ExistingObject(){
-		indice = 0;
-		while (indice < slots.Length && slots [indice].nombre != objeto.NombreColeccionable)
-			indice++;
-		if (indice >= slots.Length)
-			return false;
-		else if (slots[indice].nombre == objeto.NombreColeccionable)
-			return true;
-		return false;
 	}
+		
+	public bool wholeEmpty(){
+		indice = 0;
+		while (indice < slots.Length && (slots [indice].objeto == null || slots [indice].estado == Slot.Estado.Bloqueado))
+			indice++;
+		return indice >= slots.Length;
+	}
+
+	//Devuelve true si ya hay referencia del mismo objeto en el inventario
+	public bool ExistingObject(){
+		indice = 0;
+		bool exists = false;
+		while (indice < slots.Length && !exists)
+			if (slots [indice].objeto != null && slots [indice].objeto.tag == tagDarObjeto)
+				exists = true;
+			else
+				indice++;
+		return exists;
+	}
+
 	//Para abrir y cerrar la interfaz del inventario
 	void CheckInputOpenCloseInventory(){
 		if (Input.GetKeyDown (teclaParaAbrirYCerrar)) {
 			AbreYCierraInventario ();
 		}
 	}
+
 	//Inicializa los slots
 	void InicializeSlots(){
 		inventory.gameObject.SetActive (true);
 		for (int i = 0; i < slots.Length; i++) {
 			if (i < GameManager.instance.tamInv)
 				slots [i].estado = Slot.Estado.Desbloqueado;
-			else 
+			else
 				slots [i].estado = Slot.Estado.Bloqueado;
 			slots [i].UpdateRender ();
 		}
 		inventory.gameObject.SetActive (false);
 	}
 
-	//Comprueba si hay objeto y lo guarda en el inventario
-	void CheckInputObject(){
-		if (objeto != null) {
-			mensajeCoger.gameObject.SetActive (true);
-			if (Input.GetKeyDown (teclaCoger))
-				SaveObject ();
-		} else
-			mensajeCoger.gameObject.SetActive (false);
-	}
+
+		//Comprueba si hay objeto y lo guarda en el inventario
+		void CheckInputObject(){
+			if (objeto != null) {
+				mensajeCoger.gameObject.SetActive (true);
+				if (Input.GetKeyDown (teclaCoger))
+					SaveObject ();
+			} else
+				mensajeCoger.gameObject.SetActive (false);
+		}
 	//Comprueba si el negro ya esta desbloqueado
 	void CheckNegro(){
 		if (GameManager.instance.habladoNegro && !huecoNegro && GameManager.instance.tamInv < 4) {	//Cambiar porque es PROVISIONAL
@@ -132,37 +140,42 @@ public class HUDManager : MonoBehaviour {
 		}
 	}
 
-	void AbreYCierraInventario(){
-		if (!inventory.gameObject.activeInHierarchy && !GameManager.instance.ventanaAbierta) {
+
+	public void AbreYCierraInventario(){
+		if (!inventory.gameObject.activeInHierarchy && !DialogueManager.instance.dialogueBox.activeInHierarchy) {
 			inventory.gameObject.SetActive (true);
 			GameManager.instance.ventanaAbierta = true;
 			//Selecciona el primer Slot en el inventario
 			slots [0].boton.Select ();
 			mensajeNoSustitucion.gameObject.SetActive (true);
-		}
-		else {
+		} else {
 			if (mensajeSustitucion.IsActive ()) {
 				mensajeSustitucion.gameObject.SetActive (false);
 				modoSustitucion = false;
 			}
-			GameManager.instance.ventanaAbierta = false;
+			if(!DialogueManager.instance.dialogueBox.activeInHierarchy)
+				GameManager.instance.ventanaAbierta = false;
 			inventory.gameObject.SetActive (false);
 			mensajeNoSustitucion.gameObject.SetActive (false);
 		}
 	}
+	
 
 	//Para implementar en las misiones
-	public void GiveObject(){
-        if (!wholeEmpty()) {
-            aux = teclaParaAbrirYCerrar;
-            teclaParaAbrirYCerrar = KeyCode.None;
-            GameManager.instance.darObjeto = true;
-            inventory.gameObject.SetActive(true);
-
-            modoDarObjeto = true;
-        }            
-    }
+	public void GiveObject () {
+		if (!wholeEmpty ()) {
+			DialogueManager.instance.AbreCierraDialogueCanvas (); 					//Cierra
+			DialogueManager.instance.dialogueMensaje.gameObject.SetActive(false);	//Desactiva el mensaje
+			AbreYCierraInventario ();
+			modoDarObjeto = true;
+		}            
+	}
 }
+
+
+
+
+
 
 
 

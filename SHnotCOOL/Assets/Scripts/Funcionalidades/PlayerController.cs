@@ -19,7 +19,6 @@ public class Directions_4 {
 		
 		rb.velocity = direction.normalized * speed;
 
-		GameManager.instance.ActualPlayerVelocity = rb.velocity;
 		GameManager.instance.ActualPlayerPosition = rb.position;
 
 	}
