@@ -33,9 +33,11 @@ public class GameManager : MonoBehaviour {
 	public int matematicasScore = 0;
 	[HideInInspector]
 	public int lenguaScore = 0;
+    [HideInInspector]
+    public int historiaScore = 0;
 
-	// En cuanto el objeto se active
-	void Awake() {
+    // En cuanto el objeto se active
+    void Awake() {
 		// Si no hay ningún objeto GameManager ya creado
 		if (instance == null) {
 			// Almacenamos la instancia actual
@@ -71,8 +73,14 @@ public class GameManager : MonoBehaviour {
 		Time.timeScale = 0.2f;
 	}
 
-	//Minijuego de Lengua
-	public void FinExamenLengua(){
+    //Minijuego de Historia
+    public void FinExamenHistoria()
+    {
+        Invoke("CambiaAEscenaPrincipal",0.1f);
+        Time.timeScale = 0.2f;
+    }
+    //Minijuego de Lengua
+    public void FinExamenLengua(){
 		Invoke ("CambiaAEscenaPrincipal", 0.3f);
 		Time.timeScale = 0.1f;
 	}
