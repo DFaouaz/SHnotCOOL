@@ -1047,7 +1047,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4675335370580176, guid: 820f6b76b24e28f40ae516e2b51e768f, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 820f6b76b24e28f40ae516e2b51e768f, type: 2}
@@ -2239,7 +2239,7 @@ MonoBehaviour:
   modoDarObjeto: 0
   imagenDeVacio: {fileID: 21300000, guid: 49a756ab6ae7fc14080179f888057c4e, type: 3}
   imagenDeBloqueo: {fileID: 21300000, guid: da8e465dc9ee8e64db314d4c0e427b65, type: 3}
-  aux: 0
+  tagDarObjeto: 
 --- !u!1 &333513652
 GameObject:
   m_ObjectHideFlags: 0
@@ -43254,14 +43254,13 @@ MonoBehaviour:
   Escena1PlayerPos: {x: 0, y: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
-  ActualPlayerVelocity: {x: 0, y: 0}
   habladoNegro: 0
-  darObjeto: 0
   ventanaAbierta: 0
   pauseMode: 0
   tamInv: 3
   matematicasScore: 0
   lenguaScore: 0
+  historiaScore: 0
 --- !u!1 &1236201039
 GameObject:
   m_ObjectHideFlags: 0
@@ -94116,7 +94115,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4644471717153392, guid: 7943ece2bfdded84f82e55162bc3cd41, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7943ece2bfdded84f82e55162bc3cd41, type: 2}
@@ -95510,7 +95509,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4192876814598282, guid: d9f8e242596794c49898060f75c7b156, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9f8e242596794c49898060f75c7b156, type: 2}
@@ -97840,9 +97839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41fcff2af2ffaa8478e619dc1fa76a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lista:
-    completado: 0
-    personaje: deportista
 --- !u!4 &1897178917
 Transform:
   m_ObjectHideFlags: 0
@@ -98186,16 +98182,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2d9c02ebdfde948abc70939bb787ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  salir: {fileID: 40231759}
-  hablar: {fileID: 1694241725}
-  DarObjeto: {fileID: 1236201040}
+  HUD: {fileID: 0}
+  botonSalir: {fileID: 0}
+  botonHablar: {fileID: 0}
+  botonDarObjeto: {fileID: 0}
+  botonAceptarMision: {fileID: 0}
+  botonCompletarMision: {fileID: 0}
   nombre: {fileID: 70034501}
   sentence: {fileID: 1433018077}
   dialogueBox: {fileID: 982332599}
   dialogueMensaje: {fileID: 52729273}
-  botonParaHablar: 120
+  botonInteraccion: 0
   currentNPC: {fileID: 0}
-  personaAhora: 
+  isTalking: 0
+  ableInput: 0
 --- !u!1 &1987043342
 GameObject:
   m_ObjectHideFlags: 0
@@ -99038,6 +99038,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 212019916984691892, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212019916984691892, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 212019916984691892, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.1875
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e, type: 2}
   m_IsPrefabParent: 0
@@ -99078,7 +99093,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4114017675379994, guid: 2af783deffafdc0409e5f1dd0d3bba2c, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2af783deffafdc0409e5f1dd0d3bba2c, type: 2}
