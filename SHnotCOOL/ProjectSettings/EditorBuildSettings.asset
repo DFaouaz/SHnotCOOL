@@ -4,4 +4,22 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: de5d3cfc275fbd54781b1222152b846a
+  - enabled: 1
+    path: Assets/Scenes/Mapeado/Piso1.unity
+    guid: ff3befae2d25c4c40af5f87d7c406498
+  - enabled: 1
+    path: Assets/Scenes/Minijuegos/Matematicas.unity
+    guid: a72e80fdb77fd7f4985b9ef12f82a285
+  - enabled: 1
+    path: Assets/Scenes/Minijuegos/Lengua.unity
+    guid: 3a0630d2575955546a228efe47c9f84d
+  - enabled: 1
+    path: Assets/Scenes/Minijuegos/Historia.unity
+    guid: 5864cf3bf3153d34b866b015b9630268
+  - enabled: 1
+    path: Assets/Scenes/Minijuegos/Maton.unity
+    guid: 31572b385c474784dbfb4469a1bec3ab
