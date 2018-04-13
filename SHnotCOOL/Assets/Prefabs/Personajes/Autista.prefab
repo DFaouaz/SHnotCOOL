@@ -39,9 +39,10 @@ GameObject:
   - component: {fileID: 212019916984691892}
   - component: {fileID: 61022690275141024}
   - component: {fileID: 50530659787344250}
+  - component: {fileID: 95578398410833800}
   - component: {fileID: 114649256699418010}
   - component: {fileID: 114133769379398924}
-  - component: {fileID: 95578398410833800}
+  - component: {fileID: 114455323633882506}
   m_Layer: 0
   m_Name: Autista
   m_TagString: Untagged
@@ -56,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1837731096425228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.93, y: 0.13, z: 0}
+  m_LocalPosition: {x: 0, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4651791011630752}
@@ -112,14 +113,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8888889, y: 1.2063493}
-    newSize: {x: 0.56, y: 0.76}
+    oldSize: {x: 0.9032258, y: 1.2258065}
+    newSize: {x: 0.9032258, y: 1.2258065}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.56, y: 0.76}
+  m_Size: {x: 0.75, y: 1}
   m_EdgeRadius: 0
 --- !u!61 &61175890506257328
 BoxCollider2D:
@@ -144,7 +145,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 1}
+  m_Size: {x: 0.75, y: 1}
   m_EdgeRadius: 0
 --- !u!95 &95578398410833800
 Animator:
@@ -183,6 +184,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6c4ac59f21dd614f8b472e678619506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114455323633882506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837731096425228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5576861b1d559944f9cf8e813e5973fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114649256699418010
@@ -233,13 +245,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: afe0ee1d1bc783246adeefa71e6bccbc, type: 3}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 44428650be40c8945b460bac9056425f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.56, y: 0.76}
+  m_Size: {x: 0.9032258, y: 1.2258065}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
