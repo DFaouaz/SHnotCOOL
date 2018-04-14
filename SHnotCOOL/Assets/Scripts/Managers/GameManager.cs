@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour {
 	public int lenguaScore = 0;
     [HideInInspector]
     public int historiaScore = 0;
+    [HideInInspector]
+    public int Examen = 0;//0 mates, 1 historia 2 lengua 3 geografia
 
     // En cuanto el objeto se active
     void Awake() {
