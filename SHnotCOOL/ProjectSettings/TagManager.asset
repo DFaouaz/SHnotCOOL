@@ -51,6 +51,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Techo
+    uniqueID: 2370486903
+    locked: 0
+  - name: Suelo
+    uniqueID: 2698985415
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

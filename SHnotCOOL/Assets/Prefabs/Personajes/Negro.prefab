@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 50234612438385022}
   - component: {fileID: 95503364267273284}
   - component: {fileID: 114192127130471706}
-  - component: {fileID: 114669673983568282}
   - component: {fileID: 114777358613613686}
   - component: {fileID: 114529529654097792}
   m_Layer: 0
@@ -172,9 +171,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1064008837616570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c7cdf1acc79bf419dc95bf77ed35c1, type: 3}
+  m_Script: {fileID: 11500000, guid: dc54387dab2a75a438f7302ca581d5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombrePersonaje: Negro
+  tituloDeLaMision: 
+  indiceMision: 0
+  tipoDeMision: 0
+  isAcepted: 0
+  isComplete: 0
+  alreadyTalked: 0
+  playerTarget: {fileID: 0}
+  minDistance: 1.2
 --- !u!114 &114529529654097792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,41 +194,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5576861b1d559944f9cf8e813e5973fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114669673983568282
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1064008837616570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogo:
-    nombre: Negro
-    frases:
-    - 'Hola que tal me llamo negro '
-    - Vengo de Africa y no tengo amigos
-    - Si eres mi amigo te seguire toda mi vida
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-  hablando: 0
 --- !u!114 &114777358613613686
 MonoBehaviour:
   m_ObjectHideFlags: 1
