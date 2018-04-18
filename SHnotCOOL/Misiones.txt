@@ -1,9 +1,8 @@
 Autista-0-2-En busca de la tabla perdida.
 #
-Hola
-Soy autista
-CACA PARA TI
-No me mires perro
+Hola...
+Niño busca a tabla
+Sin tabla estoy triste
 #
 ##
 Busca la tabla y llevasela:Tabla
@@ -11,37 +10,243 @@ Busca la tabla y llevasela:Tabla
 ###
 Gracias por la tabla
 Te he echado de menos
-Vamos a casa que tengo una sorprestia
+Tabla este niño es bueno 
 ###
 
-Autista-1-1-¿Espia o es pio?.
+Autista-1-0
+
+Timmy-0-2-Vistiendo a la waifu
+#
+
+#
+##
+Obten las bragas para Timmy:Pantsus 
+##
+###
+
+###
+Timmy-1-1-¿Espia o es pio?.
 #
 Dicen que en el baño están hablando mal de mi
 Mira a ver que dicen
-Menudos mierdas
+Menudos mierdas seguro que tienen envidia de mi
 #
 ##
 Ve al baño a espiar:Espia1
 --
-Jenny:DICEN QUE ESTAS EMBARAZADA TIA
-Courtney:Menuda mentira tia
-Jenny:Tia en el taller se están metiendo con el autista
+Britney:DICEN QUE ESTAS EMBARAZADA TIA!!
+Ariadna:Osea que mentira tia, jamas estare embarazada podria salir un rarito como Timmy
+Britney:Ya te digo, que persona mas rara antes le estaban criticando en el taller
 --
-Espia en el talle:Espia2
+Espia en el taller:Espia2
 --
-Perry:me has pillado
-CACA: menudo perro de mierda tiene el autista
+Malote 1:Has visto al pringado de Timmy hoy
+Malote 2:Que asco de tio 
 --
 ##
 ###
-Asi que se están metiendo con mi mejor amigo ehh
+Asi que se están metiendo conmigo ehh
 Ya verán, se las tendrán que ver conmigo
+y con mi puño de furia de nivel 15
 ###
 
-Autista-2-0
+Timmy-2-0
 
 Negro-0-2-Comida para Africa
+#
+Tengo hambre, no tengo casi fuerza 
+hace dias que no como
+haria cualquier cosa por algo de comer
+#
+##
+Consigue un bocata para el negro:Bocata
+##
 ###
 Mmmm, que rico.
+Gracias amigo te ayudare en lo que me pidas 
 ###
 
+Negro-1-0
+
+Deportista-0-2-Apuntame esta
+#
+
+#
+##
+Encuentra unos apuntes antes del examen:Apuntes 
+##
+###
+
+###
+
+Deportista-1-2-Que la fuerza te acompañe
+#
+
+#
+##
+Busca los esteroides del Deportista:Esteroides
+##
+###
+
+###
+
+Deportista-2-0
+
+Delegada-0-2-El anillo de poder
+#
+
+#
+##
+Recupera las joyas de la delegada:Anillo
+##
+###
+
+###
+
+Delegada-1-2-Un collar para dominarlos a todos
+#
+
+#
+##
+Recupera las joyas de la delegada II:Collar
+##
+###
+
+###
+
+Delegada-2-1-El cerezo en flor
+#
+
+#
+##
+Busca un lugar con árbol en el patio
+--
+
+--
+##
+###
+
+###
+
+Delegada-3-0
+
+Pijas-0-1-Un secreto oscuro
+#
+
+#
+##
+Averigua el secreto del Conserje:Espia1
+##
+###
+
+###
+
+Pijas-1-0
+
+Emos-0-2-Entre el cuchillo y la pared
+#
+
+#
+##
+Consigue un cuchillo para los emos:Cuchillo 
+##
+###
+
+###
+
+Emos-1-2-Al filo del mañana
+#
+
+#
+##
+Consigue el cúter para los emos:Cuter
+##
+###
+
+###
+
+Emos-2-0
+
+Minusvalido-0-1-A todo Gas
+#
+
+#
+##
+LLeva al minusvalido al taller:Espia1
+--
+
+--
+##
+###
+
+###
+
+Minusvalido-1-2-Saliva o Aceite?
+#
+
+#
+##
+Busca lubricante para la silla:Aceite
+##
+###
+
+###
+
+Minusvalido-2-0
+
+Moro-0-2-Rogue two
+#
+
+#
+##
+Busca los planos de la escuela:Planos
+##
+###
+
+###
+
+Moro-1-2-Objetivo Cubierto
+#
+
+#
+##
+Consigue objetos metalicos:Cubiertos
+##
+###
+
+###
+
+Moro-2-0
+
+Chino-0-2-Lluvia de albondigas
+#
+
+#
+##
+Obten unas albondigas:Albondigas
+##
+###
+
+###
+
+Chino-1-2-Mastelchef
+#
+
+#
+##
+Encuentra utensilios de cocina:Olla
+##
+###
+
+###
+
+Conserje-0-2-Un dulce prohibido
+#
+
+#
+##
+Adquiere carmelos para las actividades sospechosas del conserje:Conserje
+##
+###
+
+###
