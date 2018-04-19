@@ -86,6 +86,12 @@ public class GameManager : MonoBehaviour {
 		Invoke ("CambiaAEscenaPrincipal", 0.3f);
 		Time.timeScale = 0.1f;
 	}
+    //Minijuego de Geografía
+    public void FinExamenGeografia()
+    {
+        Invoke("CambiaEscenaPrincipal", 0.3f);
+        Time.timeScale = 0.1f;
+    }
 	public void SubePuntosLengua(){
 		FindObjectOfType<Puntos> ().SubePuntos ();
 	}

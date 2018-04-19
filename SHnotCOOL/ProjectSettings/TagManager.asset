@@ -17,6 +17,7 @@ TagManager:
   - Tabla
   - Espia1
   - Espia2
+  - Items
   layers:
   - Default
   - TransparentFX
