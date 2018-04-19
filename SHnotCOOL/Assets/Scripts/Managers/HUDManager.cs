@@ -8,6 +8,8 @@ public class HUDManager : MonoBehaviour {
 
 	[SerializeField]
 	Slot [] slots;
+	[SerializeField]
+	ExamenSlot [] exams;
 	int indice;
 	public CanvasRenderer inventory;
 	public KeyCode teclaParaAbrirYCerrar;
@@ -37,6 +39,7 @@ public class HUDManager : MonoBehaviour {
 		modoDarObjeto = false;
 		mensajeCoger.text = "Pulsar " + teclaCoger.ToString () + " para coger el objeto.";
 		InicializeSlots ();
+		UpdateExams ();
 		inventory.gameObject.SetActive (false);
 		mensajeCoger.gameObject.SetActive (false);
 		mensajeSustitucion.gameObject.SetActive (false);
@@ -169,6 +172,30 @@ public class HUDManager : MonoBehaviour {
 			AbreYCierraInventario ();
 			modoDarObjeto = true;
 		}            
+	}
+
+	//Actualiza el aspecto de los examenes
+	void UpdateExams(){
+		//Mates
+		if (GameManager.instance.finMates)
+			exams [0].UpdateRender (Aprobado);
+		else
+			exams [0].UpdateRender (Suspenso);
+		//Historia
+		if (GameManager.instance.finHistoria)
+			exams [1].UpdateRender (Aprobado);
+		else
+			exams [1].UpdateRender (Suspenso);
+		//Geografia
+		if (GameManager.instance.finGeo)
+			exams [2].UpdateRender (Aprobado);
+		else
+			exams [2].UpdateRender (Suspenso);
+		//Lengua
+		if (GameManager.instance.finLengua)
+			exams [3].UpdateRender (Aprobado);
+		else
+			exams [3].UpdateRender (Suspenso);
 	}
 }
 

@@ -32,9 +32,17 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
 	public int matematicasScore = 0;
 	[HideInInspector]
+	public bool finMates = false;
+	[HideInInspector]
 	public int lenguaScore = 0;
+	[HideInInspector]
+	public bool finLengua = false;
     [HideInInspector]
+	public bool finGeo = false;
+	[HideInInspector]
     public int historiaScore = 0;
+	[HideInInspector]
+	public bool finHistoria = false;
     [HideInInspector]
     public int Examen = 0;//0 mates, 1 historia 2 lengua 3 geografia
 
@@ -78,17 +86,19 @@ public class GameManager : MonoBehaviour {
     //Minijuego de Historia
     public void FinExamenHistoria()
     {
+		finHistoria = true;
         Invoke("CambiaAEscenaPrincipal",0.1f);
         Time.timeScale = 0.2f;
     }
     //Minijuego de Lengua
     public void FinExamenLengua(){
+		finLengua = true;
 		Invoke ("CambiaAEscenaPrincipal", 0.3f);
 		Time.timeScale = 0.1f;
 	}
     //Minijuego de Geografía
-    public void FinExamenGeografia()
-    {
+    public void FinExamenGeografia(){
+		finGeo = true;
         Invoke("CambiaEscenaPrincipal", 0.3f);
         Time.timeScale = 0.1f;
     }
