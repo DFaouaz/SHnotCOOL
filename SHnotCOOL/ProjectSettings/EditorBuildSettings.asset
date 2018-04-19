@@ -29,3 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Mapeado/Ba\xF1o.unity"
     guid: 35b611fb798628b47b0efbe64f25438c
+  - enabled: 1
+    path: Assets/Scenes/Minijuegos/Geografia.unity
+    guid: 4b47664e2dc1c624e9ac179a16c29365

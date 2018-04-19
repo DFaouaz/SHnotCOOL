@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour {
     //Minijuego de Geografía
     public void FinExamenGeografia(){
 		finGeo = true;
-        Invoke("CambiaEscenaPrincipal", 0.3f);
+        Invoke("CambiaAEscenaPrincipal", 0.3f);
         Time.timeScale = 0.1f;
     }
 	public void SubePuntosLengua(){
