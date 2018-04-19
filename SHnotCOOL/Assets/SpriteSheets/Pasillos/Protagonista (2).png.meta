@@ -1,21 +1,25 @@
 fileFormatVersion: 2
-guid: c4b4885459101124b86f20fc12f48536
-timeCreated: 1524165482
+guid: 85c51d457c57caf429175540b19dcc19
+timeCreated: 1521285976
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Pija1_0
-    21300002: Pija1_1
-    21300004: Pija1_2
-    21300006: Pija1_3
-    21300008: Pija1_4
-    21300010: Pija1_5
-    21300012: Pija1_6
-    21300014: Pija1_7
-    21300016: Pija1_8
-    21300018: Pija1_9
-    21300020: Pija1_10
-    21300022: Pija1_11
+    21300000: Protagonista (2)_0
+    21300002: Protagonista (2)_1
+    21300004: Protagonista (2)_2
+    21300006: Protagonista (2)_3
+    21300008: Protagonista (2)_4
+    21300010: Protagonista (2)_5
+    21300012: Protagonista (2)_6
+    21300014: Protagonista (2)_7
+    21300016: Protagonista (2)_8
+    21300018: Protagonista (2)_9
+    21300020: Protagonista (2)_10
+    21300022: Protagonista (2)_11
+    21300024: Protagonista (2)_12
+    21300026: Protagonista (2)_13
+    21300028: Protagonista (2)_14
+    21300030: Protagonista (2)_15
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -58,7 +62,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -92,13 +96,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pija1_0
+      name: Protagonista (2)_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 160
-        width: 32
-        height: 40
+        x: 48
+        y: 370
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,13 +110,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_1
+      name: Protagonista (2)_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 158
-        width: 92
-        height: 42
+        x: 112
+        y: 366
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,13 +124,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_2
+      name: Protagonista (2)_2
       rect:
         serializedVersion: 2
-        x: 30
-        y: 112
-        width: 30
-        height: 40
+        x: 176
+        y: 370
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,13 +138,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_3
+      name: Protagonista (2)_3
       rect:
         serializedVersion: 2
-        x: 62
-        y: 112
-        width: 30
-        height: 38
+        x: 240
+        y: 366
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,13 +152,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_4
+      name: Protagonista (2)_4
       rect:
         serializedVersion: 2
-        x: 94
-        y: 112
-        width: 30
-        height: 40
+        x: 48
+        y: 274
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,13 +166,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_5
+      name: Protagonista (2)_5
       rect:
         serializedVersion: 2
-        x: 126
-        y: 112
-        width: 30
-        height: 38
+        x: 112
+        y: 274
+        width: 56
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,13 +180,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_6
+      name: Protagonista (2)_6
       rect:
         serializedVersion: 2
-        x: 28
-        y: 64
-        width: 30
-        height: 40
+        x: 176
+        y: 274
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,13 +194,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_7
+      name: Protagonista (2)_7
       rect:
         serializedVersion: 2
-        x: 60
-        y: 64
-        width: 30
-        height: 38
+        x: 240
+        y: 274
+        width: 56
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,13 +208,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_8
+      name: Protagonista (2)_8
       rect:
         serializedVersion: 2
-        x: 92
-        y: 64
-        width: 30
-        height: 40
+        x: 48
+        y: 178
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,13 +222,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_9
+      name: Protagonista (2)_9
       rect:
         serializedVersion: 2
-        x: 124
-        y: 64
-        width: 30
-        height: 38
+        x: 112
+        y: 178
+        width: 56
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,13 +236,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_10
+      name: Protagonista (2)_10
       rect:
         serializedVersion: 2
-        x: 28
-        y: 16
-        width: 32
-        height: 40
+        x: 176
+        y: 178
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,13 +250,69 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pija1_11
+      name: Protagonista (2)_11
       rect:
         serializedVersion: 2
-        x: 62
-        y: 14
-        width: 92
-        height: 42
+        x: 240
+        y: 178
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Protagonista (2)_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 82
+        width: 56
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Protagonista (2)_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 78
+        width: 56
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Protagonista (2)_14
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 82
+        width: 56
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Protagonista (2)_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 78
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
