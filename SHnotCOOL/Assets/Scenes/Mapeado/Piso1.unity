@@ -562,18 +562,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1950515483}
-        m_MethodName: EndDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1950515483}
-        m_MethodName: SalirConversacion
+        m_MethodName: FinConversacion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1512,7 +1501,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 181106894}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.43, y: -4.49, z: 0}
+  m_LocalPosition: {x: 4.43, y: -4.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1487042564}
@@ -15926,7 +15915,6 @@ Transform:
   - {fileID: 159305739}
   - {fileID: 1374707195}
   - {fileID: 2044416785}
-  - {fileID: 1317634907}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17870,11 +17858,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7943ece2bfdded84f82e55162bc3cd41, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1317634907 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1771835110}
 --- !u!1001 &1317806230
 Prefab:
   m_ObjectHideFlags: 0
@@ -27970,7 +27953,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1950515483}
-        m_MethodName: SiguienteFrase
+        m_MethodName: HablarConNPC
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28132,7 +28115,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1707571088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.44, y: 4.61, z: 0}
+  m_LocalPosition: {x: -19.44, y: 4.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1487042564}
@@ -28604,48 +28587,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1771071372}
---- !u!1001 &1771835110
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 854184993}
-    m_Modifications:
-    - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 61.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 9.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1792087778
 Prefab:
   m_ObjectHideFlags: 0
@@ -29436,12 +29377,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2d9c02ebdfde948abc70939bb787ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HUD: {fileID: 0}
-  botonSalir: {fileID: 0}
-  botonHablar: {fileID: 0}
-  botonDarObjeto: {fileID: 0}
-  botonAceptarMision: {fileID: 0}
-  botonCompletarMision: {fileID: 0}
+  HUD: {fileID: 311699429}
+  botonSalir: {fileID: 40231759}
+  botonHablar: {fileID: 1694241725}
+  botonDarObjeto: {fileID: 1236201040}
+  botonAceptarMision: {fileID: 1236201040}
+  botonCompletarMision: {fileID: 1236201040}
   nombre: {fileID: 70034501}
   sentence: {fileID: 1433018077}
   dialogueBox: {fileID: 982332599}

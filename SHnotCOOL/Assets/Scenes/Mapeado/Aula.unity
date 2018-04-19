@@ -223,7 +223,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.018987745, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -234,7 +234,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.6076179, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &215643152
 Transform:
@@ -243,7 +243,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 215643150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.51, y: -3.39, z: 0}
+  m_LocalPosition: {x: -9.51, y: -4.89, z: 0}
   m_LocalScale: {x: 1.3963848, y: 1.4500918, z: 1.0741421}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3480,7 +3480,7 @@ Tilemap:
     e33: 1
   m_TileRefreshArray:
   - serializedVersion: 1
-    m_DirtyIndex: 2
+    m_DirtyIndex: 0
 --- !u!1 &1003687114
 GameObject:
   m_ObjectHideFlags: 0
@@ -6325,3 +6325,37 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6798309ad79c7b44bbdfcebd4077d326, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2142357809 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1617261582197984, guid: 6798309ad79c7b44bbdfcebd4077d326,
+    type: 2}
+  m_PrefabInternal: {fileID: 2142357808}
+--- !u!50 &2142357810 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 50636130799117640, guid: 6798309ad79c7b44bbdfcebd4077d326,
+    type: 2}
+  m_PrefabInternal: {fileID: 2142357808}
+--- !u!114 &2142357811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2142357809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b87291ada414e48b93a5f2a00c5ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: 0
+  directions_4:
+    speed: 3
+    direction: {x: 0, y: 0}
+  directions_8:
+    speed: 0
+    direction: {x: 0, y: 0}
+  platform:
+    jumpForce: 0
+    maxSpeed: 0
+    groundCheck: {fileID: 0}
+    direction: {x: 0, y: 0}
+  myRigidbody: {fileID: 2142357810}
