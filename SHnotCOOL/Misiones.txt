@@ -17,13 +17,21 @@ Autista-1-0
 
 Timmy-0-2-Vistiendo a la waifu
 #
-
+¿Nakama me harías un favor?
+Te acuerdas antes que te he hablado de mi nueva Waifu...
+pues verás, necesita ropa...
+exactamente ropa interior
+¿Me podriás conseguir unas pantsus?
 #
 ##
 Obten las bragas para Timmy:Pantsus 
 ##
 ###
-
+"snif" "snif"
+Hmmmm Muchas gracias,son perfectas
+Le van a quedar genial, ya verás
+No, perdón no la verás
+Es solo mía
 ###
 Timmy-1-1-¿Espia o es pio?.
 #
@@ -41,7 +49,8 @@ Britney:Ya te digo, que persona mas rara antes le estaban criticando en el talle
 Espia en el taller:Espia2
 --
 Malote 1:Has visto al pringado de Timmy hoy
-Malote 2:Que asco de tio 
+Malote 2:Que asco de tio
+Alumno (saliendo del vater):Es repugnante
 --
 ##
 ###
@@ -70,106 +79,180 @@ Negro-1-0
 
 Deportista-0-2-Apuntame esta
 #
-
+A ver pringao mañana tengo un examen 
+no me vendría nada mal tener unos buenos apuntes.
+Aunque dudo que tu los tengas
+asi que ya me estas buscando unos.
 #
 ##
 Encuentra unos apuntes antes del examen:Apuntes 
 ##
 ###
-
+Ah muchas graci...Digo...
+Así me gusta que hagas lo que yo te ordene
+Me gusta ser el dominante
+Aunque a veces... ejem no he dicho nada
 ###
 
 Deportista-1-2-Que la fuerza te acompañe
 #
-
+Maldito pardillo la otra vez me diste los apuntes de otro examen
+¿Sabes qué? Te voy a dar otra oportunidad
+Este finde tengo partido y ando un poco falto de fuerzas
+Consigueme alguna medicina especial...
+Vamos que me traigas mis drogas
 #
 ##
 Busca los esteroides del Deportista:Esteroides
 ##
 ###
-
+Por lo menos esto lo has hecho bien
+(Se pincha)Esta mierda es buena
+Me siento mucho más masculino
+como el profesor de gimnasia,tiene unos biceps...
 ###
 
 Deportista-2-0
 
 Delegada-0-2-El anillo de poder
 #
-
+Por favor ayudame estoy en un problema
+me han robado mi anillo preferido
+cuando me lo quité a primera hora
+No se que hacer, era una joya familiar
+por favor ayudame a encontrarlo...
 #
 ##
 Recupera las joyas de la delegada:Anillo
 ##
 ###
-
+Ayyy muchas gracias
+eres un chico muy majo 
+te lo agradezco con todo mi corazón 
+A partir de ahora seremos buenos AMIGOS
 ###
 
 Delegada-1-2-Un collar para dominarlos a todos
 #
-
+Ay justo el amigo al que estaba buscando
+soy un desastre, me ha vuelto a pasar
+me deje el collar en el baño cuando me lavaba la cara
+y al volver a buscarlo no estaba, alguien me lo ha debido quitar
+Me tienes que ayudar por favor
+Me lo regalo mi ex, pero me gustaba mucho
 #
 ##
 Recupera las joyas de la delegada II:Collar
 ##
 ###
-
+Sí, es este
+Eres genial de verdad 
+no podria estar más agradecida de tener un amigo como tú
 ###
 
 Delegada-2-1-El cerezo en flor
 #
-
+Muchas gracias por haberme ayudado durante el curso
+...
+Me gustaría contarte algo muy importante 
+pero aquí no, vayamos a otro lugar ...
+un lugar más bonito.
 #
 ##
-Busca un lugar con árbol en el patio
+Busca un lugar con árboles en el patio
 --
 
 --
 ##
 ###
-
+...
+...
+La verdad...
+desde que te conocí...
+...
+Me has caido muy bien y...
+Ay que vergüenza...
+Bueno...venga ... lo voy a decir... a a ti .. te gustaría... 
+¡¡SALIR CONMIGO!!
+...
 ###
 
 Delegada-3-0
 
 Pijas-0-1-Un secreto oscuro
 #
-
+Anda el niño raro
+Ariadna: Bueno ahora eres algo más conocido
+Te permitiremos respirar nuestro aire,
+solo si averiguas lo que está ocurriendo en el cuarto de la limpieza
+Se escuchan sonidos raros de ahí
 #
 ##
 Averigua el secreto del Conserje:Espia1
+--
+Conserje:Niño coge esto
+Autista:Pero esta húmedo
+Autista:Y esto de aquí duro
+Conserje:Ya lo se, es que tiene que estar así
+Autista:Nunca habia visto uno igual,mi padre no lo tiene así
+Conserje:Deja de quejarte y coge la escoba y la balleta cuanto antes
+Conserje:Que el vaso que has roto,alguien lo tendrá que recoger
+Conserje:Que cuando termines podremos seguir jugando
+--
 ##
 ###
-
+Ariadna:¡¡Dios que asco!!
+Britney:Ay que mantenerse alejadas de ese asqueroso pedofilo
+Ariadna: Ya tía, a saber lo que nos puede llegar a hacer
 ###
 
 Pijas-1-0
 
 Emos-0-2-Entre el cuchillo y la pared
 #
-
+Emo 2:Esto da mucho asco
+Emo 1:Pues sí, deberíamos hacer algo al respecto
+Emo 2:¿Que sugieres?
+Emo 1:Mira quién está aquí, nos podrías ayudar
+Emo 1:Nos cansa ya este mundo
+Emo 1:Podemos ser tus amigos por un tiempo, si nos ayudas
+Emo 1:Necesitamos que nos traigas algo cortante
 #
 ##
 Consigue un cuchillo para los emos:Cuchillo 
 ##
 ###
-
+Emo 2:Para que queremos un cuchillo, yo me tarigo el almuerzo ya cortado
+Emo 1:Ya te contaré, pero esto no creo que nos sirva
+Emo 1:Gracias de todas formas
+Emo 1:Probaremos aunque sea
 ###
 
 Emos-1-2-Al filo del mañana
 #
-
+Emo 2:Quiero acabar con todo
+Emo 1:Tengo la solución pero necesitamos ayuda
+Emos:Menos mal que estás aquí, te vamos a pedir otro favor
+Emo 1:Al final el cuchillo que nos trajiste no nos sirvió
+Emo 1:Nos tienes que traer algo mas cortante y afilado
 #
 ##
 Consigue el cúter para los emos:Cuter
 ##
 ###
-
+Emo 2:Vale me ahs convencido, pero no se si me atreveré
+Emo 1:Si de verdad lo que quieres es acabar con este sufrimiento de mundo es lo único que nos salvará
+Emo 2:Está bien, yo confío en ti
+Emos:Gracias po el cúter, esto si que es lo que de verdad necesitamos
 ###
 
 Emos-2-0
 
 Minusvalido-0-1-A todo Gas
 #
-
+Necesito ir al taller, pero esta en el piso de arriba
+Yo no puedo subir escaleras por razones obvias
+Podrías hecharme una mano, bueno las dos mejor
 #
 ##
 LLeva al minusvalido al taller:Espia1
@@ -178,75 +261,111 @@ LLeva al minusvalido al taller:Espia1
 --
 ##
 ###
-
+Perfecto, muchas gracias amigo
+Espero que no haya sido muy pesado
+Luego a ver como bajo...
+Bueno hasta la próxima
 ###
 
 Minusvalido-1-2-Saliva o Aceite?
 #
-
+Hola de nuevo
+Buah tengo otro problema, resulta que me chirrian las ruedas
+Necesito engrasarlas, puedes ayudarme
+Me vendría bien algo con que lubricarlas
 #
 ##
 Busca lubricante para la silla:Aceite
 ##
 ###
-
+Esto es justo lo que necesitaba
+Me me viene de perlas
+Mira ya no chirrian
+Gracias por todo
 ###
 
 Minusvalido-2-0
 
 Moro-0-2-Rogue two
 #
-
+Hola ando un poco perdido
+Estoy buscando una clase en especial pero no se donde está
+¿Me ayudas?
+Si pudieses conseguirme unos planos de la escuela sería genial
+Así ya no me perdería más
+Jejeje
 #
 ##
 Busca los planos de la escuela:Planos
 ##
 ###
-
+Jejeje, vale con esto ya podré poner en marcha mi plan...
+Quiero decir, que podré encontrar la clase que buscaba
+Gracias
 ###
 
-Moro-1-2-Objetivo Cubierto
+Moro-1-2-Objetivo enCubierto
 #
-
+Necesito tu ayuda otra vez, estoy haciendo un trabajo de ciencias
+Me hace falta algun objeto metálico
+Lo que sea, me da igual, eso si que sea metal
 #
 ##
 Consigue objetos metalicos:Cubiertos
 ##
 ###
-
+Esto sirve, gracias
+Además pesan un poco, saldrán con fuerza
+Y están afilados
 ###
 
 Moro-2-0
 
 Chino-0-2-Lluvia de albondigas
 #
-
+Te voy a pedil un favol, si me tlaes unas albóndigas de la cafetelia selemos buenos amigos
+No tlanquilo no son pala mi, yo no como esto
+Me gusta otlo tipo de calne
 #
 ##
 Obten unas albondigas:Albondigas
 ##
 ###
-
+Glacias, con esto no taldale mucho en conseguil lo que quelia 
+Se le ve muy sabloso
+Ahola solo queda sepalal´le de este tonto
 ###
 
 Chino-1-2-Mastelchef
 #
-
+Ya estoy mas celca de mi plan
+Pelo necesito que me hagas otlo favol
+Pala hacel la calne que me gusta necesito una olla
+Asi que tlaemela
 #
 ##
 Encuentra utensilios de cocina:Olla
 ##
 ###
-
+Pelfecto, ya no necesito nada mas
+Ahola podle comel en condiciones
 ###
 
 Conserje-0-2-Un dulce prohibido
 #
-
+Hola muchacho
+¿Necesitabas algo?
+Si quieres hablar podemos ir a un lugar más privado
+Como... el cuarto de la limpieza...
+¿No?, bueno pues yo si que necesito algo
+Mira vas a traerme algunos dulces, para...
+Tu traemelos
 #
 ##
-Adquiere carmelos para las actividades sospechosas del conserje:Conserje
+Adquiere carmelos para las actividades sospechosas del conserje:Caramelos
 ##
 ###
-
+¿Caramelos?, bueno si con esto valdrá
+A vosotros los niños os gustan mucho eh
+Si quieres aguno, ya sabes donde encontrarme
 ###

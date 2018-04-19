@@ -8,9 +8,10 @@ public class CambiaEscena : MonoBehaviour {
 	public string escenaACambiar;// Aula si es un examen
     public string Examen;
 	void OnTriggerEnter2D(Collider2D col){
-		Debug.Log ("Entrada");
-		if (col.tag == "Player" ) {	//ES MA PROVISIONAL
-            if(escenaACambiar!="Piso1")
+		
+		if (col.tag == "Player" ) {
+            Debug.Log("Entrada");//ES MA PROVISIONAL
+            if (escenaACambiar!="Piso1")
 			    GameManager.instance.Escena1PlayerPos = GameManager.instance.ActualPlayerPosition;
 			SceneManager.LoadScene (escenaACambiar);
             if (Examen == "Matematicas" && GameManager.instance.matematicasScore == 0)
