@@ -8,7 +8,7 @@ public class Home : MonoBehaviour {
 	public void OnTriggerEnter2D(Collider2D other)
 	{
 		GameObject go = other.gameObject;
-        if (go.CompareTag("player"))
-            GameManager.instance.FinPasillos();
+		if (go.CompareTag ("player")) 
+			PasillosManager.instance.Home ();
 	}
 }

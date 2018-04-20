@@ -530,7 +530,7 @@ Transform:
   m_GameObject: {fileID: 912270886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.62, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1379,7 +1379,7 @@ Animator:
   m_GameObject: {fileID: 2135920168}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 19ffe7236fd9fc84e8cb4d4a15803582, type: 2}
+  m_Controller: {fileID: 9100000, guid: 393de462160964d459e6c9f0b0d05b2f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1473,5 +1473,5 @@ MonoBehaviour:
   flechaArriba: {fileID: 1998561623}
   time: {fileID: 2084381100}
   textoFinJuego: {fileID: 1281111753}
-  decremento: 2
+  decremento: 0.5
   distMinima: 3

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-
+	SpriteRenderer playerSprite;
 	Rigidbody2D playerRB;
 	Transform playerTR;
 	Animator playerAnim;
@@ -18,7 +18,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void Start () {
-		
+		playerSprite = GetComponentInChildren<SpriteRenderer> ();
 		playerAnim = GetComponentInChildren<Animator> ();
 		movX = 0;
 		movY = 0;
