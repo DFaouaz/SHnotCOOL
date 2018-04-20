@@ -42,10 +42,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4081904337028342}
   - component: {fileID: 61745678670332146}
-  - component: {fileID: 114497725522995820}
   m_Layer: 0
   m_Name: 'LayerSorter '
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,8 +68,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1035038571699478}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 34.99, y: -3.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4081904337028342}
@@ -186,21 +185,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo:
-    nombre: Chino
-    frases: []
-  hablando: 0
---- !u!114 &114497725522995820
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1447567508278784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6c4ac59f21dd614f8b472e678619506, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  nombrePersonaje: Chino
+  tituloDeLaMision: 
+  indiceMision: 0
+  tipoDeMision: 0
+  isAcepted: 0
+  isComplete: 0
+  alreadyTalked: 0
 --- !u!114 &114974292306910224
 MonoBehaviour:
   m_ObjectHideFlags: 1
