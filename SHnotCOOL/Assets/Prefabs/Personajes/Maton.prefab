@@ -42,10 +42,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4764779017915640}
   - component: {fileID: 61749250571121506}
-  - component: {fileID: 114997058825617890}
   m_Layer: 0
   m_Name: 'LayerSorter '
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +55,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1123470140391324}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7, y: 8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -109,7 +108,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.3889082}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -120,7 +119,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.2}
+  m_Size: {x: 1, y: 0.42218363}
   m_EdgeRadius: 0
 --- !u!61 &61899360966378010
 BoxCollider2D:
@@ -134,7 +133,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.005761385, y: -0.2535103}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -145,7 +144,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.2}
+  m_Size: {x: 0.6427808, y: 0.69297945}
   m_EdgeRadius: 0
 --- !u!95 &95225545483886304
 Animator:
@@ -175,10 +174,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo:
-    nombre: Maton
-    frases: []
-  hablando: 0
+  nombrePersonaje: Maton
+  tituloDeLaMision: 
+  indiceMision: 0
+  tipoDeMision: 0
+  isAcepted: 0
+  isComplete: 0
+  alreadyTalked: 0
 --- !u!114 &114678672615115788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -199,17 +201,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5576861b1d559944f9cf8e813e5973fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114997058825617890
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1516680718201572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6c4ac59f21dd614f8b472e678619506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212508610774189208
@@ -245,7 +236,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 124
   m_Sprite: {fileID: 21300006, guid: 95411d310f1c13040b88d5feb022af13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
