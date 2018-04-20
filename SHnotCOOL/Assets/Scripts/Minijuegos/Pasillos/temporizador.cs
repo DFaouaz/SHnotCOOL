@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class temporizador : MonoBehaviour {
 	Text temporiza;
-	int temporizadorapoyo,temporizador;
+	int temporizadorapoyo,temp;
 	// Use this for initialization
 	void Start () {
 		temporizadorapoyo = 0;
@@ -17,10 +17,10 @@ public class temporizador : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		temporizador = (int)Time.time;
-		print (temporizador);
-		if (temporizador > temporizadorapoyo) {
-			temporizadorapoyo = temporizador;
+		temp = (int)Time.time;
+		print (temp);
+		if (temp > temporizadorapoyo) {
+			temporizadorapoyo = temp;
 			PasillosManager.instance.RestarTiempo ();
 			temporiza.text=PasillosManager.instance.TiempoRestante().ToString() +"S";
 		}
