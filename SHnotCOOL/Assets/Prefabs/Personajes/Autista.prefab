@@ -20,10 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4651791011630752}
   - component: {fileID: 61175890506257328}
-  - component: {fileID: 114155765392120180}
   m_Layer: 0
   m_Name: 'LayerSorter '
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +55,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1837731096425228}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -113,8 +112,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9032258, y: 1.2258065}
-    newSize: {x: 0.9032258, y: 1.2258065}
+    oldSize: {x: 0.875, y: 1.1875}
+    newSize: {x: 0.875, y: 1.1875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -175,17 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6266016e6a9ee094e8c1930552087c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114155765392120180
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1229437827803872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6c4ac59f21dd614f8b472e678619506, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114455323633882506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -208,10 +196,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo:
-    nombre: Autista
-    frases: []
-  hablando: 0
+  nombrePersonaje: Autista
+  tituloDeLaMision: 
+  indiceMision: 0
+  tipoDeMision: 0
+  isAcepted: 0
+  isComplete: 0
+  alreadyTalked: 0
 --- !u!212 &212019916984691892
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -251,7 +242,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.9032258, y: 1.2258065}
+  m_Size: {x: 0.875, y: 1.1875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

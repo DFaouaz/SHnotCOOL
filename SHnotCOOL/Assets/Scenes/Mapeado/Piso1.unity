@@ -1029,17 +1029,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114623287051566550, guid: 820f6b76b24e28f40ae516e2b51e768f,
-        type: 2}
-      propertyPath: nombrePersonaje
-      value: Delegada
-      objectReference: {fileID: 0}
-    - target: {fileID: 1612863314816792, guid: 820f6b76b24e28f40ae516e2b51e768f, type: 2}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114801397879875034, guid: 820f6b76b24e28f40ae516e2b51e768f, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 820f6b76b24e28f40ae516e2b51e768f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &112562442
@@ -1385,7 +1375,7 @@ Prefab:
         type: 2}
       propertyPath: playerTarget
       value: 
-      objectReference: {fileID: 1107957317}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
   m_IsPrefabParent: 0
@@ -2148,16 +2138,6 @@ Prefab:
     - target: {fileID: 4911144613218930, guid: 6798309ad79c7b44bbdfcebd4077d326, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61773447716756950, guid: 6798309ad79c7b44bbdfcebd4077d326,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.29834676
-      objectReference: {fileID: 0}
-    - target: {fileID: 61773447716756950, guid: 6798309ad79c7b44bbdfcebd4077d326,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.40330648
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6798309ad79c7b44bbdfcebd4077d326, type: 2}
@@ -13935,22 +13915,6 @@ Tilemap:
     m_DirtyIndex: 0
   - serializedVersion: 1
     m_DirtyIndex: 0
---- !u!1 &285607638 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1612863314816792, guid: 820f6b76b24e28f40ae516e2b51e768f,
-    type: 2}
-  m_PrefabInternal: {fileID: 112520913}
---- !u!114 &285607639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 285607638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6c4ac59f21dd614f8b472e678619506, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &311699427
 GameObject:
   m_ObjectHideFlags: 0
@@ -15486,7 +15450,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4074994087531834, guid: 89b4413ef2cdc534881bd9aa76963de3, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89b4413ef2cdc534881bd9aa76963de3, type: 2}
@@ -15535,15 +15499,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 61554522231037604, guid: 1a565bf3996b41b43a1882b997bf616d,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1740765975907946, guid: 1a565bf3996b41b43a1882b997bf616d, type: 2}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a565bf3996b41b43a1882b997bf616d, type: 2}
   m_IsPrefabParent: 0
@@ -15585,15 +15540,6 @@ Prefab:
     - target: {fileID: 4734935068044352, guid: 32ca1ed55c62f5846986fdfd4fda616a, type: 2}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114149031551984500, guid: 32ca1ed55c62f5846986fdfd4fda616a,
-        type: 2}
-      propertyPath: nombrePersonaje
-      value: Chino
-      objectReference: {fileID: 0}
-    - target: {fileID: 1447567508278784, guid: 32ca1ed55c62f5846986fdfd4fda616a, type: 2}
-      propertyPath: m_TagString
-      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32ca1ed55c62f5846986fdfd4fda616a, type: 2}
@@ -16995,40 +16941,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &1107957316 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1617261582197984, guid: 6798309ad79c7b44bbdfcebd4077d326,
-    type: 2}
-  m_PrefabInternal: {fileID: 260719476}
---- !u!114 &1107957317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1107957316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b87291ada414e48b93a5f2a00c5ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movement: 0
-  directions_4:
-    speed: 3
-    direction: {x: 0, y: 0}
-  directions_8:
-    speed: 0
-    direction: {x: 0, y: 0}
-  platform:
-    jumpForce: 0
-    maxSpeed: 0
-    groundCheck: {fileID: 0}
-    direction: {x: 0, y: 0}
-  myRigidbody: {fileID: 1107957318}
---- !u!50 &1107957318 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 50636130799117640, guid: 6798309ad79c7b44bbdfcebd4077d326,
-    type: 2}
-  m_PrefabInternal: {fileID: 260719476}
 --- !u!1 &1117138835
 GameObject:
   m_ObjectHideFlags: 0
@@ -17141,10 +17053,6 @@ Prefab:
     - target: {fileID: 4370018221518518, guid: 88b209128b6b960478ef9ab6abe100d8, type: 2}
       propertyPath: m_RootOrder
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1994293818949778, guid: 88b209128b6b960478ef9ab6abe100d8, type: 2}
-      propertyPath: m_TagString
-      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88b209128b6b960478ef9ab6abe100d8, type: 2}
@@ -18008,15 +17916,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114891854478546932, guid: 7943ece2bfdded84f82e55162bc3cd41,
-        type: 2}
-      propertyPath: nombrePersonaje
-      value: Timmy
-      objectReference: {fileID: 0}
-    - target: {fileID: 1041284740937896, guid: 7943ece2bfdded84f82e55162bc3cd41, type: 2}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7943ece2bfdded84f82e55162bc3cd41, type: 2}
   m_IsPrefabParent: 0
@@ -18247,7 +18146,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4892372474928526, guid: e0c78d6d1e46dce4796514411b5a77be, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0c78d6d1e46dce4796514411b5a77be, type: 2}
@@ -27606,12 +27505,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 1416791768237452, guid: 439eadbab6fc89242bb5298ba570bdaa, type: 2}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114249738745793148, guid: 439eadbab6fc89242bb5298ba570bdaa, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 439eadbab6fc89242bb5298ba570bdaa, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1599606612
@@ -27652,10 +27546,6 @@ Prefab:
     - target: {fileID: 4574458444128470, guid: 1a5db538495101044a08d9d0a6cff659, type: 2}
       propertyPath: m_RootOrder
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1767269178484992, guid: 1a5db538495101044a08d9d0a6cff659, type: 2}
-      propertyPath: m_TagString
-      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a5db538495101044a08d9d0a6cff659, type: 2}
@@ -32189,30 +32079,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 212019916984691892, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e,
-        type: 2}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212019916984691892, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.875
-      objectReference: {fileID: 0}
-    - target: {fileID: 212019916984691892, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 1.1875
-      objectReference: {fileID: 0}
-    - target: {fileID: 114649256699418010, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e,
-        type: 2}
-      propertyPath: nombrePersonaje
-      value: Autista
-      objectReference: {fileID: 0}
-    - target: {fileID: 1229437827803872, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e, type: 2}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e, type: 2}
   m_IsPrefabParent: 0
@@ -32254,15 +32120,6 @@ Prefab:
     - target: {fileID: 4114017675379994, guid: 2af783deffafdc0409e5f1dd0d3bba2c, type: 2}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114443399096038410, guid: 2af783deffafdc0409e5f1dd0d3bba2c,
-        type: 2}
-      propertyPath: nombrePersonaje
-      value: Maton
-      objectReference: {fileID: 0}
-    - target: {fileID: 1516680718201572, guid: 2af783deffafdc0409e5f1dd0d3bba2c, type: 2}
-      propertyPath: m_TagString
-      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2af783deffafdc0409e5f1dd0d3bba2c, type: 2}
