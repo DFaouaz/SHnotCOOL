@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4508469870273770}
   - component: {fileID: 61559455157319410}
+  - component: {fileID: 114801397879875034}
   m_Layer: 0
   m_Name: 'LayerSorter '
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,7 +69,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1762193854086270}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5, y: 8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -108,7 +109,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.35}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -119,7 +120,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.35}
+  m_Size: {x: 0.75, y: 1}
   m_EdgeRadius: 0
 --- !u!61 &61612431827069574
 BoxCollider2D:
@@ -133,7 +134,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0016686916, y: -0.20326829}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -144,7 +145,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.593143, y: 0.6270814}
+  m_Size: {x: 0.75, y: 0.8}
   m_EdgeRadius: 0
 --- !u!95 &95922330453420136
 Animator:
@@ -196,13 +197,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePersonaje: Delegada
-  tituloDeLaMision: El anillo de poder
-  indiceMision: 0
-  tipoDeMision: 2
-  isAcepted: 0
-  isComplete: 0
-  alreadyTalked: 1
+  dialogo:
+    nombre: Delegada
+    frases: []
+  hablando: 0
+--- !u!114 &114801397879875034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1612863314816792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c4ac59f21dd614f8b472e678619506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212422925997508682
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -236,8 +245,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 124
-  m_Sprite: {fileID: 21300004, guid: 30ef117a1037a6746bd6eb6c4070cfc7, type: 3}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 30ef117a1037a6746bd6eb6c4070cfc7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
