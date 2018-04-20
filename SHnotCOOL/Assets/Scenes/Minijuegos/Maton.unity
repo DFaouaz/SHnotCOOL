@@ -530,7 +530,7 @@ Transform:
   m_GameObject: {fileID: 912270886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.62, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1258,7 +1258,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: e85cd80838ff8bc4c9f6eca66382cd63, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -1473,5 +1473,5 @@ MonoBehaviour:
   flechaArriba: {fileID: 1998561623}
   time: {fileID: 2084381100}
   textoFinJuego: {fileID: 1281111753}
-  decremento: 0.5
+  decremento: 2
   distMinima: 3

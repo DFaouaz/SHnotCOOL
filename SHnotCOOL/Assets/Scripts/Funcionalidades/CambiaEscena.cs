@@ -10,17 +10,26 @@ public class CambiaEscena : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 		
 		if (col.tag == "Player" ) {
-            Debug.Log("Entrada");//ES MA PROVISIONAL
+            if (escenaACambiar=="Aula")
+            {
+                int num = Random.Range(0, 10);
+                if(num<3)
+                    SceneManager.LoadScene("Pasillos");
+                else
+                    SceneManager.LoadScene(escenaACambiar);
+            }
+            else
+                SceneManager.LoadScene(escenaACambiar);
             if (escenaACambiar!="Piso1")
 			    GameManager.instance.Escena1PlayerPos = GameManager.instance.ActualPlayerPosition;
-			SceneManager.LoadScene (escenaACambiar);
-            if (Examen == "Matematicas" && GameManager.instance.matematicasScore == 0)
+			
+            if (Examen == "Matematicas" && !GameManager.instance.finMates)
                 GameManager.instance.Examen = 0;
-            else if (Examen == "Historia" && GameManager.instance.historiaScore == 0)
+            else if (Examen == "Historia" && !GameManager.instance.finHistoria)
                 GameManager.instance.Examen = 1;
-            else if (Examen == "Lengua" && GameManager.instance.lenguaScore == 0)
+            else if (Examen == "Lengua" && !GameManager.instance.finLengua)
                 GameManager.instance.Examen = 2;
-            else if (Examen == "Geografia" /*&& GameManager.instance.geografiaScore == 0*/)
+            else if (Examen == "Geografia" && !GameManager.instance.finGeo)
                 GameManager.instance.Examen = 3;
             else
                 GameManager.instance.Examen = 4;

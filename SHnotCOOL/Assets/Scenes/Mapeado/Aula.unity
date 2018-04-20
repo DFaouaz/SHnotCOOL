@@ -149,8 +149,12 @@ MonoBehaviour:
   pauseMode: 0
   tamInv: 0
   matematicasScore: 0
+  finMates: 0
   lenguaScore: 0
+  finLengua: 0
+  finGeo: 0
   historiaScore: 0
+  finHistoria: 0
   Examen: 0
 --- !u!4 &4604880
 Transform:
@@ -243,8 +247,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 215643150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.51, y: -4.89, z: 0}
-  m_LocalScale: {x: 1.3963848, y: 1.4500918, z: 1.0741421}
+  m_LocalPosition: {x: -8.28, y: -9.15, z: 0}
+  m_LocalScale: {x: 0.7854665, y: 1.2507045, z: 1.0741421}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
