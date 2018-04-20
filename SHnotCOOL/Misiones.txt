@@ -286,7 +286,7 @@ Gracias por todo
 
 Minusvalido-2-0
 
-Moro-0-2-Rogue two
+Al-Kaboom-0-2-Rogue two
 #
 Hola ando un poco perdido
 Estoy buscando una clase en especial pero no se donde está
@@ -304,7 +304,7 @@ Quiero decir, que podré encontrar la clase que buscaba
 Gracias
 ###
 
-Moro-1-2-Objetivo enCubierto
+Al-Kaboom-1-2-Objetivo enCubierto
 #
 Necesito tu ayuda otra vez, estoy haciendo un trabajo de ciencias
 Me hace falta algun objeto metálico
@@ -319,7 +319,7 @@ Además pesan un poco, saldrán con fuerza
 Y están afilados
 ###
 
-Moro-2-0
+Al-Kaboom-2-0
 
 Chino-0-2-Lluvia de albondigas
 #
