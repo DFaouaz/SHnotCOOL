@@ -31,7 +31,7 @@ Ahora esfumate
 #
 ##
 Que miras friki fuera de aquí 
-##
+## 
 
 Timmy
 #
@@ -45,7 +45,7 @@ ejem, alguna cancion ya sabes...
 Eh tio tenemos que ir a Akihabara
 Es mi sueño ir a tierras niponas
 y conseguire todas las figuras de mis 20 waifus 
-##
+## 
 
 Delegada
 #
@@ -57,7 +57,7 @@ Bueno si necesitas algo puedes hablar con tu delegada
 Buf que estres con el consejo de estudiantes
 No tengo tiempo ni para estudiar
 Hablamos en otro momento
-##
+## 
 
 Chino
 #
@@ -70,7 +70,7 @@ Oye, ¿has visto el pelo?
 Parece sel muy tielno y esta goldito
 Sí al pelo de la entlada, el chucho ese
 Bueno dejalo, ya veo que no te impolta
-##
+## 
 
 Pijas
 #
@@ -90,7 +90,7 @@ Emo 2: Es verdad que asco de vida
 ##
 Emo 2:(recortando una hoja de papel) Como me gustaria acabar con esto 
 Emo 1: Tio, no te cortes 
-##
+## 
 
 Moro
 #
@@ -101,7 +101,7 @@ sucesor de la dinstia Al-tadior
 ##
 Estoy a punto de explotar 
 No aguanto la comida occidental
-##
+## 
 
 Conserje
 #
@@ -124,4 +124,4 @@ Jajaja, hay que tomarse las cosas con humor
 ##
 Lo unico malo de este colegio 
 es que no hay infraestructuras para gente como yo 
-##
+##   
