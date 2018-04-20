@@ -39,7 +39,9 @@ GameObject:
   - component: {fileID: 50636130799117640}
   - component: {fileID: 95433935520562406}
 
+
   - component: {fileID: 114527863211603430}
+
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -129,7 +131,9 @@ Transform:
   m_GameObject: {fileID: 1617261582197984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 
+
   m_LocalPosition: {x: -5.5, y: -5, z: 0}
+
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4368580191509432}
@@ -280,6 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 
+
 --- !u!114 &114527863211603430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -304,6 +309,7 @@ MonoBehaviour:
     groundCheck: {fileID: 0}
     direction: {x: 0, y: 0}
   myRigidbody: {fileID: 50636130799117640}
+
 --- !u!124 &124632836235508534
 Behaviour:
   m_ObjectHideFlags: 1
