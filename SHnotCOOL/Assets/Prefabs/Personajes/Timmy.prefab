@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4425436777379992}
   - component: {fileID: 61769143761061028}
-  - component: {fileID: 114892240678378902}
   m_Layer: 0
   m_Name: 'LayerSorter '
   m_TagString: Obstacle
@@ -134,7 +133,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003232479, y: -0.23212242}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -145,7 +144,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5883856, y: 0.53575516}
+  m_Size: {x: 0.7, y: 0.8}
   m_EdgeRadius: 0
 --- !u!95 &95201963239507116
 Animator:
@@ -203,18 +202,9 @@ MonoBehaviour:
   tipoDeMision: 2
   isAcepted: 0
   isComplete: 0
+  isFriend: 0
+  maxMision: 0
   alreadyTalked: 0
---- !u!114 &114892240678378902
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1041284740937896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6c4ac59f21dd614f8b472e678619506, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212009148437658638
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -248,7 +238,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 106
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300028, guid: 8bbbe0c9abcd5844d9fbe8f3bf6c1c3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

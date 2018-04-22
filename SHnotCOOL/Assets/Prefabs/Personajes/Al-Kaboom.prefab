@@ -38,10 +38,10 @@ GameObject:
   - component: {fileID: 212795716841533940}
   - component: {fileID: 61554522231037604}
   - component: {fileID: 50398550642994654}
+  - component: {fileID: 95167477865381698}
   - component: {fileID: 114960817479429168}
   - component: {fileID: 114296221830184364}
   - component: {fileID: 114399148724216014}
-  - component: {fileID: 95167477865381698}
   m_Layer: 0
   m_Name: Al-Kaboom
   m_TagString: Untagged
@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1871712577187226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.69, y: 27.98, z: 0}
+  m_LocalPosition: {x: 5.6, y: 27.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4556501368495340}
@@ -108,7 +108,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.006475687, y: -0.31434345}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -119,7 +119,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48386335, y: 0.5603466}
+  m_Size: {x: 0.7, y: 0.8}
   m_EdgeRadius: 0
 --- !u!61 &61746751714498024
 BoxCollider2D:
@@ -133,7 +133,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.005466938, y: 0.36354542}
+  m_Offset: {x: 0, y: 0.4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -144,7 +144,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1217461, y: 0.3713131}
+  m_Size: {x: 0.75, y: 0.4}
   m_EdgeRadius: 0
 --- !u!95 &95167477865381698
 Animator:
@@ -202,6 +202,8 @@ MonoBehaviour:
   tipoDeMision: 0
   isAcepted: 0
   isComplete: 0
+  isFriend: 0
+  maxMision: 0
   alreadyTalked: 0
 --- !u!212 &212795716841533940
 SpriteRenderer:
@@ -236,7 +238,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 84
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 32ab4ba1c0680334ca2632447f596a8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
