@@ -22,6 +22,11 @@ public class Mission : MonoBehaviour {
 	public bool isAcepted = false;
 	[HideInInspector]
 	public bool isComplete = false;
+	[HideInInspector]
+	public bool isFriend = false;
+	[SerializeField]
+	int maxMision;
+
 
 
 	protected virtual void Start(){
@@ -136,5 +141,14 @@ public class Mission : MonoBehaviour {
 	public void TerminarMision(){
 		MissionManager.instance.EliminaMision (this);
 		CargarSiguienteMision ();
+		CheckFriendship ();
 	}
+	void CheckFriendship(){
+		if (maxMision <= indiceMision && !isFriend) {
+			isFriend = true;
+			GameManager.instance.SubeAmigos();
+		}
+		
+	}
+
 }

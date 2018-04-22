@@ -28,6 +28,8 @@ public class HUDManager : MonoBehaviour {
 	[HideInInspector]
 	public bool modoDarObjeto = false;
 	public Sprite imagenDeVacio, imagenDeBloqueo;
+	public Text friendsCount;
+	public CanvasRenderer negroCount;
 	//PARA MISIONES
 	[HideInInspector]
 	public string tagDarObjeto;
@@ -44,6 +46,7 @@ public class HUDManager : MonoBehaviour {
 		mensajeCoger.gameObject.SetActive (false);
 		mensajeSustitucion.gameObject.SetActive (false);
 		mensajeNoSustitucion.gameObject.SetActive (false);
+		negroCount.gameObject.SetActive (false);
 	}
 
 
@@ -196,6 +199,12 @@ public class HUDManager : MonoBehaviour {
 			exams [3].UpdateRender (Aprobado);
 		else
 			exams [3].UpdateRender (Suspenso);
+	}
+
+	public void UpdateFriends(){
+		if (GameManager.instance.habladoNegro && !negroCount.gameObject.activeInHierarchy)
+			negroCount.gameObject.SetActive (true);
+		friendsCount.text = GameManager.instance.numFriends.ToString();
 	}
 }
 

@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour {
 	public bool finHistoria = false;
     [HideInInspector]
     public int Examen = 0;//0 mates, 1 historia 2 lengua 3 geografia
+	[HideInInspector]
+	public int numFriends = 0;
 
     // En cuanto el objeto se active
     void Awake() {
@@ -121,5 +123,11 @@ public class GameManager : MonoBehaviour {
 	}
 	public void Destapa(char letra){
 		FindObjectOfType<Palabra> ().Destapa (letra);
+	}
+
+	//Amigos
+	public void SubeAmigos(){
+		numFriends++;
+		FindObjectOfType<HUDManager> ().UpdateFriends ();
 	}
 }

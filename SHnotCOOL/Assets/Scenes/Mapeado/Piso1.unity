@@ -1795,21 +1795,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 61773447716756950, guid: 6798309ad79c7b44bbdfcebd4077d326,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.29834676
-      objectReference: {fileID: 0}
-    - target: {fileID: 61773447716756950, guid: 6798309ad79c7b44bbdfcebd4077d326,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.40330648
-      objectReference: {fileID: 0}
-    - target: {fileID: 212755733806418140, guid: 6798309ad79c7b44bbdfcebd4077d326,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 200
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6798309ad79c7b44bbdfcebd4077d326, type: 2}
   m_IsPrefabParent: 0
@@ -2031,7 +2016,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1595981881
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16
@@ -14520,13 +14505,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: x
+  m_Text: '0
+
+'
 --- !u!222 &430848193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18319,6 +18306,8 @@ MonoBehaviour:
   modoDarObjeto: 0
   imagenDeVacio: {fileID: 21300000, guid: 49a756ab6ae7fc14080179f888057c4e, type: 3}
   imagenDeBloqueo: {fileID: 21300000, guid: da8e465dc9ee8e64db314d4c0e427b65, type: 3}
+  friendsCount: {fileID: 430848192}
+  negroCount: {fileID: 1357532602}
   tagDarObjeto: 
 --- !u!1 &915671837
 GameObject:
@@ -19177,7 +19166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: 0
   directions_4:
-    speed: 3
+    speed: 4
     direction: {x: 0, y: 0}
   directions_8:
     speed: 0
@@ -20000,6 +19989,7 @@ MonoBehaviour:
   historiaScore: 0
   finHistoria: 0
   Examen: 0
+  numFriends: 0
 --- !u!1 &1201022852
 GameObject:
   m_ObjectHideFlags: 0
@@ -21462,7 +21452,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1595981881
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16
@@ -28031,7 +28021,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1595981881
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16
@@ -33225,7 +33215,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1595981881
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16

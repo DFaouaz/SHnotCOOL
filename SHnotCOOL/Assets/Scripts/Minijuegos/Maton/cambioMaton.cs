@@ -4,22 +4,28 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class cambioMaton : MonoBehaviour {
-    int Prob;
+	int prob;
+	int prueba = 5;
+	int tiempo;
    
 	// Use this for initialization
 	void Start () {
-        Invoke("probMaton", 20);
+		tiempo = 10 + prueba;
+		Debug.Log ("Tiempo: " + tiempo);
+		Invoke("probMaton", tiempo);
 	}
 	
     void probMaton()
     {
-        Prob = Random.Range(0, 100);
-        if (Prob < 20 && !DialogueManager.instance.isTalking)
+        prob = Random.Range(0, 100);
+		if (prob < 20 && !GameManager.instance.ventanaAbierta)
         {
-            Prob = 50;
+            prob = 50;
             SceneManager.LoadScene("Maton");
         }
-        else
-            Invoke("probMaton", 20);
+        /*else
+            Invoke("probMaton", 20);*/
+		tiempo += 20;
+		Debug.Log ("Tiempo: " + tiempo);
     }
 }

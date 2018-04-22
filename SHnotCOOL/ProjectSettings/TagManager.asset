@@ -58,6 +58,9 @@ TagManager:
   - name: Suelo
     uniqueID: 2698985415
     locked: 0
+  - name: Obstacle
+    uniqueID: 4172413031
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

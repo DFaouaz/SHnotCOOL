@@ -19,8 +19,13 @@ public class NegroBehaviour : NPC {
 	}
 
 	void FixedUpdate () {
-		if(alreadyTalked)
+		if (alreadyTalked) {
+			if (!GameManager.instance.habladoNegro) {
+				GameManager.instance.habladoNegro = true;
+				FindObjectOfType<HUDManager> ().UpdateFriends ();
+			}
 			FollowPlayer ();
+		}
 	}
 		
 
