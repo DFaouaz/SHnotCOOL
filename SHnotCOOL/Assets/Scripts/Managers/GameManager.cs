@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour {
     public int Examen = 0;//0 mates, 1 historia 2 lengua 3 geografia
 	[HideInInspector]
 	public int numFriends = 0;
+	public int maxFriends;
 
     // En cuanto el objeto se active
     void Awake() {

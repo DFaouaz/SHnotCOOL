@@ -1519,6 +1519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac9cc9bd8b59fe408a03dc8835372af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  probInicial: 20
+  time: 20
 --- !u!1 &223112037
 GameObject:
   m_ObjectHideFlags: 0
@@ -19991,6 +19993,7 @@ MonoBehaviour:
   finHistoria: 0
   Examen: 0
   numFriends: 0
+  maxFriends: 15
 --- !u!1 &1201022852
 GameObject:
   m_ObjectHideFlags: 0
