@@ -17972,7 +17972,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 880355993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.5, y: -4.31, z: 0}
+  m_LocalPosition: {x: 31.5, y: -4.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1487042564}
@@ -19166,7 +19166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: 0
   directions_4:
-    speed: 4
+    speed: 6
     direction: {x: 0, y: 0}
   directions_8:
     speed: 0
@@ -19980,6 +19980,7 @@ MonoBehaviour:
   habladoNegro: 0
   ventanaAbierta: 0
   pauseMode: 0
+  dinero: 100
   tamInv: 3
   matematicasScore: 0
   finMates: 0

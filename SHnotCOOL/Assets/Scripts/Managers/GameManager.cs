@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour {
 	public bool ventanaAbierta = false;
 	[HideInInspector]
 	public bool pauseMode = false;
+	[HideInInspector]
+	public int dinero = 100;
     
 	public int tamInv = 0;
 	[HideInInspector]

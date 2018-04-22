@@ -77,6 +77,19 @@ public class HUDManager : MonoBehaviour {
 		}
 	}
 
+	public bool BuyObject(Coleccionable compra){
+		//Si hay espacio, guardalo
+		if (isEmpty ()) {
+			slots [indice].objeto = compra.gameObject;
+			slots [indice].nombre = compra.NombreColeccionable;
+			slots [indice].imagenObjeto = compra.imagenRepresentacion;
+			slots [indice].UpdateRender ();
+			return true;
+			//objeto.gameObject.SetActive (false);
+		} else {
+			return false;
+		}
+	}
 	//Devuelve true si hay espacio en el inventario
 	bool isEmpty(){
 		indice = 0;
