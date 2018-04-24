@@ -153,6 +153,7 @@ MonoBehaviour:
   finMates: 0
   lenguaScore: 0
   finLengua: 0
+  GeoScore: 0
   finGeo: 0
   historiaScore: 0
   finHistoria: 0
@@ -5235,7 +5236,7 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5248,7 +5249,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4911144613218930, guid: 6798309ad79c7b44bbdfcebd4077d326, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4911144613218930, guid: 6798309ad79c7b44bbdfcebd4077d326, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5281,37 +5282,3 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6798309ad79c7b44bbdfcebd4077d326, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2142357809 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1617261582197984, guid: 6798309ad79c7b44bbdfcebd4077d326,
-    type: 2}
-  m_PrefabInternal: {fileID: 2142357808}
---- !u!50 &2142357810 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 50636130799117640, guid: 6798309ad79c7b44bbdfcebd4077d326,
-    type: 2}
-  m_PrefabInternal: {fileID: 2142357808}
---- !u!114 &2142357811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2142357809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b87291ada414e48b93a5f2a00c5ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movement: 0
-  directions_4:
-    speed: 6
-    direction: {x: 0, y: 0}
-  directions_8:
-    speed: 0
-    direction: {x: 0, y: 0}
-  platform:
-    jumpForce: 0
-    maxSpeed: 0
-    groundCheck: {fileID: 0}
-    direction: {x: 0, y: 0}
-  myRigidbody: {fileID: 2142357810}

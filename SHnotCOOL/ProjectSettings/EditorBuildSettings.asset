@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Mapeado/Ba\xF1o.unity"
     guid: 35b611fb798628b47b0efbe64f25438c
   - enabled: 1
+    path: Assets/Scenes/Mapeado/CuartoDeLimpieza.unity
+    guid: 1f15bd290cddb6d48b5c9fd4353bf515
+  - enabled: 1
     path: Assets/Scenes/Mapeado/Piso1.unity
     guid: ff3befae2d25c4c40af5f87d7c406498
   - enabled: 1
