@@ -5,30 +5,32 @@ using UnityEngine.UI;
 
 public class Pick : MonoBehaviour {
     static int total;
-    int destruidos;
+    
     GameObject text;
     Text textoItems;
-
+ 
     void Start () {
         text = GameObject.FindGameObjectWithTag("Items");
         textoItems = text.GetComponent<Text>();
         total++;
         ActualizaItems();
+       
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            destruidos++;
+            GameManager.instance.GeoScore++;
             ActualizaItems();
             Destroy(this.gameObject);
-            if (destruidos == total)
+            
+            if (GameManager.instance.GeoScore == total)
                 GameManager.instance.FinExamenGeografia();
         }
     }
     void ActualizaItems()
     {
-        textoItems.text = "Items: " + destruidos + "/" + total;
+        textoItems.text = "Items: " + GameManager.instance.GeoScore + "/" + total;
     }
 }

@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Save : MonoBehaviour {
     GameObject respawn, go;
+    Animator animator;
 
-	void Start () {
+    void Start () {
         respawn = GameObject.FindGameObjectWithTag("Respawn");
-        go = GameObject.FindGameObjectWithTag("Player");
+        animator = GetComponent<Animator>();
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-            respawn.transform.position = go.transform.position;
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            respawn.transform.position = transform.position;
+            animator.SetBool("Llegado", true);
+        }
     }
 }

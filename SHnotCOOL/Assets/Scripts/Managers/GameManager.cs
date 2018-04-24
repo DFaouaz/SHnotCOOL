@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
 	public bool finLengua = false;
     [HideInInspector]
+    public int GeoScore = 0;
+    [HideInInspector]
 	public bool finGeo = false;
 	[HideInInspector]
     public int historiaScore = 0;

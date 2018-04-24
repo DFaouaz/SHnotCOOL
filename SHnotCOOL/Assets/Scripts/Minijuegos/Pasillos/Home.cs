@@ -9,6 +9,6 @@ public class Home : MonoBehaviour {
 	{
 		GameObject go = other.gameObject;
         if (go.CompareTag("player"))
-            GameManager.instance.FinPasillos();
+            PasillosManager.instance.Home();
 	}
 }
