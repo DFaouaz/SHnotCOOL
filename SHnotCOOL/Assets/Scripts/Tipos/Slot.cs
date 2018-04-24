@@ -65,7 +65,7 @@ public class Slot : MonoBehaviour
 						DialogueManager.instance.AbreCierraDialogueCanvas ();
 						DialogueManager.instance.FinConversacion ();
 					}
-				} else if (objeto != null && objeto.tag == im.tagDarObjeto) {
+				} else if (objeto != null && nombre == im.tagDarObjeto) {
 					//Le damos el objeto
 					Text textos = GetComponentInChildren<Text> ();
 					textos.text = "Vacio";

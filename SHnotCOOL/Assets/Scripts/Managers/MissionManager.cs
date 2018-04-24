@@ -26,6 +26,11 @@ public class MissionManager : MonoBehaviour {
 	}
 
 	void Start(){
+		missionBox.SetActive (true);
+		//Inicializacion
+		foreach (MissionSlot i in huecos) {
+			i.VaciaSlot ();
+		}
 		missionBox.SetActive (false);
 	}
 

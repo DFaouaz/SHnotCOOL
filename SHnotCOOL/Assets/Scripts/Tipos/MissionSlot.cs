@@ -9,9 +9,6 @@ public class MissionSlot : MonoBehaviour {
 	[HideInInspector]
 	public Mission mision;
 
-	void Start(){
-		VaciaSlot ();
-	}
 
 	public void UpdateLooking(){
 		if (mision != null) {

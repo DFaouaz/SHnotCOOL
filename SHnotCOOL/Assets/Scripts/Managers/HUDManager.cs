@@ -113,7 +113,7 @@ public class HUDManager : MonoBehaviour {
 		indice = 0;
 		bool exists = false;
 		while (indice < slots.Length && !exists)
-			if (slots [indice].objeto != null && slots [indice].objeto.tag == tagDarObjeto)
+			if (slots [indice].objeto != null && slots [indice].nombre == tagDarObjeto)
 				exists = true;
 			else
 				indice++;
