@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PersistantObjects : MonoBehaviour {
 
@@ -9,27 +10,33 @@ public class PersistantObjects : MonoBehaviour {
 	Coleccionable[] objs;
 
 	void Awake() {
-		updateObjs = false;
-		objs = GetComponentsInChildren<Coleccionable> ();
 		if (instance == null) {
 			instance = this;
 			DontDestroyOnLoad(this.gameObject);
+			updateObjs = false;
+			objs = GetComponentsInChildren<Coleccionable> ();
+			ActualizaObjetos ();
 		}
 		else {
 			Destroy(this.gameObject);
 		} 
 	}
 
-	void Update(){
-		if (updateObjs)
-			ActualizaObjetos ();
-	}
 
+	void OnEnable(){
+		SceneManager.sceneLoaded += OnSceneLoaded;
+	}
+	void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+		Debug.Log (scene.name);
+		ActualizaObjetos ();
+	}
+	void OnDisable(){
+		SceneManager.sceneLoaded -= OnSceneLoaded;
+	}
 
 	void ActualizaObjetos(){
 		foreach (Coleccionable i in objs) {
 			i.ActualizaObjeto ();
 		}
-		updateObjs = false;
 	}
 }

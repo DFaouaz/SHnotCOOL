@@ -12,10 +12,9 @@ public class DialogueManager : MonoBehaviour {
     public Text sentence;
     public GameObject dialogueBox;
 	public Text dialogueMensaje;
-	public KeyCode botonInteraccion;
-	//[HideInInspector]
+	[HideInInspector]
 	public NPC currentNPC;
-	//[HideInInspector]
+	[HideInInspector]
 	public bool isTalking = false;
 	//Para corregir el input del Espacio
 	[HideInInspector]
@@ -33,7 +32,7 @@ public class DialogueManager : MonoBehaviour {
 	}
 
     void Start(){
-		dialogueMensaje.text = "Pulsar " + botonInteraccion.ToString () + " para interactuar.";
+		dialogueMensaje.text = "Pulsar " + GameManager.instance.botonInteractuar.ToString() + " para interactuar.";
 		dialogueMensaje.gameObject.SetActive (false);
     }
 
@@ -44,7 +43,7 @@ public class DialogueManager : MonoBehaviour {
 	//Comprueba si el ususario da la orden de comenzar la conversación
 	void CheckInputDialogue(){
 		
-		if (Input.GetKeyDown (botonInteraccion) && !isTalking && currentNPC != null) {
+		if (Input.GetKeyDown (GameManager.instance.botonInteractuar) && !isTalking && currentNPC != null) {
 			dialogueMensaje.gameObject.SetActive (false);
 			AbreCierraDialogueCanvas ();
 		} else if (isTalking && (Input.GetKeyDown (KeyCode.Space)

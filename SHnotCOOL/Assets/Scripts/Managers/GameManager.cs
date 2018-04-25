@@ -13,8 +13,11 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance = null;
 	//Nombre del piso principal
 	public string EscenaPiso1;
-
+	public KeyCode botonInteractuar;
+	public Text mensajeEscena;
+	[HideInInspector]
 	public Vector2 Escena1PlayerPos;
+	[HideInInspector]
     public Vector2 Escena2PlayerPos;
 
 	// Añadimos las variables necesarias para almacenar información
@@ -74,7 +77,6 @@ public class GameManager : MonoBehaviour {
 	// para conseguir las funcionalidades que pretendamos incluir.
 	//Métodos generales
 	void CambiaAEscenaPrincipal(){
-		PersistantObjects.instance.updateObjs = true;
 		SceneManager.LoadScene (EscenaPiso1);
 		Time.timeScale = 1;
 	}

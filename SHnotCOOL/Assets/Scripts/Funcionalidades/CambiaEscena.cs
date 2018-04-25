@@ -6,29 +6,18 @@ using UnityEngine.UI;
 
 public class CambiaEscena : MonoBehaviour {
 
-    Text mensajeEscena;
 	public string escenaACambiar;// Aula si es un examen
     public string Examen;
-    bool colision;
     bool pasillos;
-    private void Start()
-    {
-        mensajeEscena = GameObject.FindGameObjectWithTag("MensajeEscena").GetComponent<Text>();
-    }
+
     void OnTriggerEnter2D(Collider2D col){
-
-
-
-        if (col.tag == "Player")
-        {
-            colision = true;
-            mensajeEscena.gameObject.SetActive(true);
+        if (col.tag == "Player") {
+			GameManager.instance.mensajeEscena.gameObject.SetActive(true);
             if (escenaACambiar != "Aula")
-                mensajeEscena.text = "Pulsa X para acceder al " + escenaACambiar;
+				GameManager.instance.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString() + " para acceder al\n" + escenaACambiar;
             else
-                mensajeEscena.text = "Pulsa X para acceder al Aula de " + Examen;
-                if (escenaACambiar == "Aula")
-                {
+				GameManager.instance.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString() + " para acceder al\nAula de " + Examen;
+                if (escenaACambiar == "Aula") {
                     int num = Random.Range(0, 10);
                     if (num < 3)
                         pasillos = true;                        
@@ -50,25 +39,20 @@ public class CambiaEscena : MonoBehaviour {
                 else
                     GameManager.instance.Examen = 4;
             }
-        
         }
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        mensajeEscena.gameObject.SetActive(false);
-        colision = false;
+
+    void OnTriggerExit2D(Collider2D other){
+		GameManager.instance.mensajeEscena.gameObject.SetActive(false);
     }
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.X)&&colision)
-        {
-			PersistantObjects.instance.updateObjs = true;
+
+    void Update() {
+		if(Input.GetKeyDown(GameManager.instance.botonInteractuar) && GameManager.instance.mensajeEscena.gameObject.activeInHierarchy) {
             if (pasillos)
                 SceneManager.LoadScene("Pasillos");
             else
                 SceneManager.LoadScene(escenaACambiar);
-            mensajeEscena.text = "";
+			GameManager.instance.mensajeEscena.gameObject.SetActive (false);
         }
     }
-
 }
 

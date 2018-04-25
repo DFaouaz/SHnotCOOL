@@ -65,7 +65,6 @@ public class PasillosManager : MonoBehaviour
 	}
 	public void Home ()
 	{
-		PersistantObjects.instance.updateObjs = true;
         SceneManager.LoadScene("Aula");
 	}
 

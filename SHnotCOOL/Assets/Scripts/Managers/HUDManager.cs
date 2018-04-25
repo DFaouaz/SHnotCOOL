@@ -13,7 +13,6 @@ public class HUDManager : MonoBehaviour {
 	int indice;
 	public CanvasRenderer inventory;
 	public KeyCode teclaParaAbrirYCerrar;
-	public KeyCode teclaCoger;
 	public Text mensajeCoger;
 	public Text mensajeSustitucion;
 	public Text mensajeNoSustitucion;
@@ -39,7 +38,7 @@ public class HUDManager : MonoBehaviour {
 
 	void Start () {
 		modoDarObjeto = false;
-		mensajeCoger.text = "Pulsar " + teclaCoger.ToString () + " para coger el objeto.";
+		mensajeCoger.text = "Pulsar " + GameManager.instance.botonInteractuar.ToString() + " para coger el objeto.";
 		InicializeSlots ();
 		UpdateExams ();
 		inventory.gameObject.SetActive (false);
@@ -145,7 +144,7 @@ public class HUDManager : MonoBehaviour {
 		void CheckInputObject(){
 			if (objeto != null) {
 				mensajeCoger.gameObject.SetActive (true);
-				if (Input.GetKeyDown (teclaCoger))
+			if (Input.GetKeyDown (GameManager.instance.botonInteractuar))
 					SaveObject ();
 			} else
 				mensajeCoger.gameObject.SetActive (false);

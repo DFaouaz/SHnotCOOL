@@ -18,7 +18,6 @@ TagManager:
   - Espia1
   - Espia2
   - Items
-  - MensajeEscena
   - Enemigo
   layers:
   - Default

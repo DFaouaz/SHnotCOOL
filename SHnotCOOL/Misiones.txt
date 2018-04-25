@@ -160,9 +160,6 @@ un lugar más bonito.
 #
 ##
 Busca un lugar con árboles en el patio
---
-
---
 ##
 ###
 ...
@@ -256,9 +253,6 @@ Podrías hecharme una mano, bueno las dos mejor
 #
 ##
 LLeva al minusvalido al taller:Espia1
---
-
---
 ##
 ###
 Perfecto, muchas gracias amigo
