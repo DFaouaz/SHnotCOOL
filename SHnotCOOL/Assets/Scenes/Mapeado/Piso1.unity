@@ -1209,7 +1209,7 @@ GameObject:
   - component: {fileID: 166960589}
   - component: {fileID: 166960588}
   m_Layer: 0
-  m_Name: Decoracion2
+  m_Name: Decoracion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34245,7 +34245,7 @@ GameObject:
   - component: {fileID: 2031769683}
   - component: {fileID: 2031769682}
   m_Layer: 0
-  m_Name: Decoracion
+  m_Name: Muebles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
