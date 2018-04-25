@@ -12,17 +12,17 @@ public class AparecenRandoms : MonoBehaviour {
     int resultado;
     int tiempoMax = 10;
     float tiempoPasado;
-    int operacionesHechas;
+    int operacionesHechas=-1;
     public Text suma;
     public Text hechas;
     public float tiempo;
     public GameObject coleccionable;
 	// Use this for initialization
 	void Start () {
-        Altura = Camera.main.orthographicSize*2;
-        Anchura = Altura*Camera.main.aspect;
-        camaraPosX = Camera.main.transform.position.x;
-        camaraPosY = Camera.main.transform.position.y;
+        Altura = (Camera.main.orthographicSize*2)-0.25f;
+        Anchura = (Altura*Camera.main.aspect)-0.25f;
+        camaraPosX = (Camera.main.transform.position.x)-0.25f;
+        camaraPosY = (Camera.main.transform.position.y)-0.25f;
         
         CambiaOperacion();
 
@@ -79,7 +79,7 @@ public class AparecenRandoms : MonoBehaviour {
 		hechas.text = GameManager.instance.matematicasScore.ToString() + "/" + operacionesHechas.ToString();
 	}
 	void CompruebaOperacion(){
-		if (operacionesHechas == 11)
+		if (operacionesHechas == 10)
 		{
 			GameManager.instance.FinExamenMatematicas();
 		}

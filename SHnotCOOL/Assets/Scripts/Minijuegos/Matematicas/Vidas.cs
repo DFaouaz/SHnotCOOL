@@ -10,7 +10,7 @@ public class Vidas : MonoBehaviour {
     Text textoVidas;
     SpriteRenderer render;
     public int vidas = 5;
-    int repeticiones = 8;
+    int repeticiones = 16;
     float tiempo = 0.1f;
     bool golpeado = false, parpadea = false;
 
@@ -27,6 +27,11 @@ public class Vidas : MonoBehaviour {
             Damage();
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "Enemigo")
+        {
+            Damage();
+            
+        }
     }
 
     void Damage() {
@@ -37,6 +42,7 @@ public class Vidas : MonoBehaviour {
 			InvokeRepeating ("Invulnerable", 0, tiempo);
 			Invoke ("CancelInvoke", tiempo * repeticiones);
 			golpeado = false;
+            render.enabled = true;
 		} else if (vidas-- == 0)
 			GameManager.instance.FinExamenMatematicas ();
     }
