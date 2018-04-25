@@ -63,7 +63,7 @@ public class HUDManager : MonoBehaviour {
 	void SaveObject(){
 		//Si hay espacio, guardalo
 		if (isEmpty ()) {
-			slots [indice].objeto = objeto.gameObject;
+			slots [indice].objeto = objeto;
 			slots [indice].nombre = objeto.NombreColeccionable;
 			slots [indice].imagenObjeto = objeto.imagenRepresentacion;
 			slots [indice].UpdateRender ();
@@ -80,7 +80,7 @@ public class HUDManager : MonoBehaviour {
 	public bool BuyObject(Coleccionable compra){
 		//Si hay espacio, guardalo
 		if (isEmpty ()) {
-			slots [indice].objeto = compra.gameObject;
+			slots [indice].objeto = compra;
 			slots [indice].nombre = compra.NombreColeccionable;
 			slots [indice].imagenObjeto = compra.imagenRepresentacion;
 			slots [indice].UpdateRender ();

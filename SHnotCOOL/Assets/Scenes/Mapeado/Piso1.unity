@@ -781,6 +781,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 112562443}
+  - component: {fileID: 112562444}
   m_Layer: 0
   m_Name: Objetos
   m_TagString: Untagged
@@ -814,6 +815,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112562444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112562442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8efe46f8732984eb212824ac55aa4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &118860758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1014,11 @@ Prefab:
     - target: {fileID: 4304351917969684, guid: 7dc1444255a552944a85dca5efeb24c3, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114192243145257372, guid: 7dc1444255a552944a85dca5efeb24c3,
+        type: 2}
+      propertyPath: currentScene
+      value: Piso1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7dc1444255a552944a85dca5efeb24c3, type: 2}
@@ -14273,6 +14290,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 114404992746425422, guid: 6df057b358acd894094fb401f2784970,
+        type: 2}
+      propertyPath: currentScene
+      value: Piso1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6df057b358acd894094fb401f2784970, type: 2}
   m_IsPrefabParent: 0
@@ -17172,6 +17194,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114913689990124568, guid: 71731b8a161865d4da9e0555a4a86c27,
+        type: 2}
+      propertyPath: currentScene
+      value: Piso1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71731b8a161865d4da9e0555a4a86c27, type: 2}
   m_IsPrefabParent: 0
@@ -18499,6 +18526,7 @@ GameObject:
   - component: {fileID: 925648478}
   - component: {fileID: 925648477}
   - component: {fileID: 925648476}
+  - component: {fileID: 925648480}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -18578,6 +18606,7 @@ RectTransform:
   - {fileID: 898925527}
   - {fileID: 915671838}
   - {fileID: 1151913372}
+  - {fileID: 1526641532}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18586,6 +18615,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &925648480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925648475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d55004f4e486040b6bf251afc5c97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &931988093
 GameObject:
   m_ObjectHideFlags: 0
@@ -19045,6 +19085,11 @@ Prefab:
     - target: {fileID: 4401138192730628, guid: b4068663b1dc02c47970dd3ad79eac8b, type: 2}
       propertyPath: m_RootOrder
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114639959639117600, guid: b4068663b1dc02c47970dd3ad79eac8b,
+        type: 2}
+      propertyPath: currentScene
+      value: Piso1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b4068663b1dc02c47970dd3ad79eac8b, type: 2}
@@ -20122,7 +20167,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1179899436
 MonoBehaviour:
@@ -27458,12 +27503,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1526641529}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -639.99994, y: -359.8939, z: 0}
+  m_LocalScale: {x: 1.6976126, y: 1.6976126, z: 1.6976126}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 925648479}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1538663601
 GameObject:
@@ -32723,6 +32768,11 @@ Prefab:
     - target: {fileID: 4218072558169672, guid: 6bfc17d2b3b1694419ce2f5358d17182, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114805071431193370, guid: 6bfc17d2b3b1694419ce2f5358d17182,
+        type: 2}
+      propertyPath: currentScene
+      value: Piso1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6bfc17d2b3b1694419ce2f5358d17182, type: 2}

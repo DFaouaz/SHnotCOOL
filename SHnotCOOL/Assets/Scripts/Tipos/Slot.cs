@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Slot : MonoBehaviour
 {
     [HideInInspector]
     public string nombre;
     [HideInInspector]
-	public GameObject objeto = null;
+	public Coleccionable objeto = null;
     [HideInInspector]
     public Sprite imagenObjeto;
     [HideInInspector]
@@ -38,7 +39,7 @@ public class Slot : MonoBehaviour
 			if (im.modoSustitucion) {
 				CleanSlot ();
 				//Asignamos el nuevo objeto
-				objeto = im.objeto.gameObject;
+				objeto = im.objeto;
 				nombre = im.objeto.NombreColeccionable;
 				imagenObjeto = im.objeto.imagenRepresentacion;
 				//Desactivamos el objeto
@@ -110,7 +111,8 @@ public class Slot : MonoBehaviour
         if (estado == Estado.Desbloqueado && objeto != null){
             //Dropeamos en la posicion
             objeto.transform.position = GameManager.instance.ActualPlayerPosition;
-            objeto.SetActive(true);
+			objeto.currentScene = SceneManager.GetActiveScene ().name;
+            objeto.gameObject.SetActive(true);
 			textoBoton.text = "Vacio";
             objeto = null;
         }
