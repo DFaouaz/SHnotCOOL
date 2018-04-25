@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Mapeado/CuartoDeLimpieza.unity
     guid: 1f15bd290cddb6d48b5c9fd4353bf515
   - enabled: 1
+    path: Assets/Scenes/Mapeado/Gimnasio.unity
+    guid: f65d971c1778c0d4284c1ec60321b44f
+  - enabled: 1
     path: Assets/Scenes/Mapeado/Piso1.unity
     guid: ff3befae2d25c4c40af5f87d7c406498
   - enabled: 1

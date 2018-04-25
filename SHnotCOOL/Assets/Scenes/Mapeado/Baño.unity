@@ -2841,6 +2841,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 61987165299494834, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61987165299494834, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 61987165299494834, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 61987165299494834, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
   m_IsPrefabParent: 0
@@ -3970,6 +3990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EscenaPiso1: Piso1
   Escena1PlayerPos: {x: 0, y: 0}
+  Escena2PlayerPos: {x: 0, y: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
   habladoNegro: 0

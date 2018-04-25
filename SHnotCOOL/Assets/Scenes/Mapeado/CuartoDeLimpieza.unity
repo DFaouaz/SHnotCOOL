@@ -216,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EscenaPiso1: Piso1
   Escena1PlayerPos: {x: 0, y: 0}
+  Escena2PlayerPos: {x: 0, y: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
   habladoNegro: 0
@@ -3686,6 +3687,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114192127130471706, guid: d871f2555c6711741bbf9f1ef51ec4cd,
+        type: 2}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 2127695521}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
   m_IsPrefabParent: 0
@@ -3782,3 +3788,9 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6798309ad79c7b44bbdfcebd4077d326, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &2127695521 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114814485670947256, guid: 6798309ad79c7b44bbdfcebd4077d326,
+    type: 2}
+  m_PrefabInternal: {fileID: 2127695520}
+  m_Script: {fileID: 11500000, guid: 00b87291ada414e48b93a5f2a00c5ca3, type: 3}
