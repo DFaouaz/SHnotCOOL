@@ -61,6 +61,7 @@ public class CambiaEscena : MonoBehaviour {
     {
         if(Input.GetKeyDown(KeyCode.X)&&colision)
         {
+			PersistantObjects.instance.updateObjs = true;
             if (pasillos)
                 SceneManager.LoadScene("Pasillos");
             else

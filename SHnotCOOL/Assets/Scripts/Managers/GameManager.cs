@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour {
 	// para conseguir las funcionalidades que pretendamos incluir.
 	//Métodos generales
 	void CambiaAEscenaPrincipal(){
+		PersistantObjects.instance.updateObjs = true;
 		SceneManager.LoadScene (EscenaPiso1);
 		Time.timeScale = 1;
 	}

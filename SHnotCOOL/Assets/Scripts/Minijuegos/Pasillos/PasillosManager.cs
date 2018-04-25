@@ -24,11 +24,7 @@ public class PasillosManager : MonoBehaviour
         // Si no hay ningún objeto GameManager ya creado
         if (instance == null)
         {
-            // Almacenamos la instancia actual
             instance = this;
-            // Nos aseguramos de no destruir el objeto, es decir, 
-            // de que persista, si cambiamos de escena
-            DontDestroyOnLoad(this.gameObject);
         }
         else
         {
@@ -64,10 +60,12 @@ public class PasillosManager : MonoBehaviour
 	}
 
 	public void RestarTiempo()
-	{tiempo--;
+	{
+		tiempo--;
 	}
 	public void Home ()
 	{
+		PersistantObjects.instance.updateObjs = true;
         SceneManager.LoadScene("Aula");
 	}
 
@@ -80,12 +78,10 @@ public class PasillosManager : MonoBehaviour
         if (vidas > 0)
         {
             SceneManager.LoadScene("Aula");
-
         }
         else
         {
             vidas = 5;
-
         }
     }
 }
