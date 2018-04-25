@@ -9,7 +9,16 @@ public class NegroBehaviour : NPC {
 	public float minDistance;
 	Rigidbody2D myRigidbody;
 	Animator animator;
-
+	public static NegroBehaviour instance = null;
+	void Awake() {
+		if (instance == null) {
+			instance = this;
+			DontDestroyOnLoad(this.gameObject);
+		}
+		else {
+			Destroy(this.gameObject);
+		} 
+	}
 
 	new void Start(){
 		animator = GetComponent<Animator> ();
@@ -30,10 +39,12 @@ public class NegroBehaviour : NPC {
 		
 
 	void FollowPlayer(){
+		if (playerTarget == null)
+			playerTarget = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ();
 		Vector2 x = playerTarget.myRigidbody.position - playerTarget.directions_4.direction.normalized - myRigidbody.position;
 		if (x.magnitude > 0 && (playerTarget.myRigidbody.position - myRigidbody.position).magnitude > minDistance) {
 			x.Normalize ();
-			myRigidbody.velocity = x * 3;
+			myRigidbody.velocity = x * playerTarget.directions_4.speed;
 		} else
 			myRigidbody.velocity = Vector2.zero;
 		HandleAnimatorLayers (animator, x);
