@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 1350397491}
   m_Layer: 0
   m_Name: Enemigo
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -954,6 +954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EscenaPiso1: Piso1
   Escena1PlayerPos: {x: 0, y: 0}
+  Escena2PlayerPos: {x: 0, y: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
   habladoNegro: 0

@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour {
 	public string EscenaPiso1;
 
 	public Vector2 Escena1PlayerPos;
+    public Vector2 Escena2PlayerPos;
 
 	// Añadimos las variables necesarias para almacenar información
 	[HideInInspector]

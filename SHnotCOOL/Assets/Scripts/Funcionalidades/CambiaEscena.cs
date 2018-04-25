@@ -34,10 +34,12 @@ public class CambiaEscena : MonoBehaviour {
                         pasillos = true;                        
                 }
            
-                if (escenaACambiar != "Piso1")
-                    GameManager.instance.Escena1PlayerPos = GameManager.instance.ActualPlayerPosition;
+            if (escenaACambiar != "Piso1")
+                GameManager.instance.Escena1PlayerPos = GameManager.instance.ActualPlayerPosition;
+            if (escenaACambiar != "Piso2")
+                GameManager.instance.Escena2PlayerPos = GameManager.instance.ActualPlayerPosition;
 
-                if (Examen == "Matematicas" && !GameManager.instance.finMates)
+            if (Examen == "Matematicas" && !GameManager.instance.finMates)
                     GameManager.instance.Examen = 0;
                 else if (Examen == "Historia" && !GameManager.instance.finHistoria)
                     GameManager.instance.Examen = 1;

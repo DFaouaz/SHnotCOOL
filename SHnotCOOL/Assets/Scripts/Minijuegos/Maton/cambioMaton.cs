@@ -14,8 +14,12 @@ public class cambioMaton : MonoBehaviour {
 	
     void probMaton() {
         int prob = Random.Range(0, 100);
-		if (prob < probInicial - ((GameManager.instance.numFriends * probInicial) / GameManager.instance.maxFriends) 
-			&& !GameManager.instance.ventanaAbierta)
-			SceneManager.LoadScene ("Maton");
+        if (prob < probInicial - ((GameManager.instance.numFriends * probInicial) / GameManager.instance.maxFriends)
+            && !GameManager.instance.ventanaAbierta)
+        {
+            GameManager.instance.Escena1PlayerPos = GameManager.instance.ActualPlayerPosition;
+            GameManager.instance.Escena2PlayerPos = GameManager.instance.ActualPlayerPosition;
+            SceneManager.LoadScene("Maton");
+        }
 	}
 }

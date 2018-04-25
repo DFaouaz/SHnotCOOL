@@ -19,6 +19,7 @@ TagManager:
   - Espia2
   - Items
   - MensajeEscena
+  - Enemigo
   layers:
   - Default
   - TransparentFX
