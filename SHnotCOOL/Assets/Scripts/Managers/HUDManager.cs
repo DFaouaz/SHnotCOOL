@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class HUDManager : MonoBehaviour {
 
 	[SerializeField]
-	Slot [] slots;
+	Slot [] slots = null;
 	[SerializeField]
-	ExamenSlot [] exams;
+	ExamenSlot [] exams = null;
 	int indice;
 	public CanvasRenderer inventory;
 	public KeyCode teclaParaAbrirYCerrar;

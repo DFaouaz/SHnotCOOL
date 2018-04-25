@@ -6,14 +6,12 @@ using UnityEngine.SceneManagement;
 public class PersistantObjects : MonoBehaviour {
 
 	public static PersistantObjects instance = null;
-	public bool updateObjs;
 	Coleccionable[] objs;
 
 	void Awake() {
 		if (instance == null) {
 			instance = this;
 			DontDestroyOnLoad(this.gameObject);
-			updateObjs = false;
 			objs = GetComponentsInChildren<Coleccionable> ();
 			ActualizaObjetos ();
 		}

@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour {
 	//Nombre del piso principal
 	public string EscenaPiso1;
 	public KeyCode botonInteractuar;
-	public Text mensajeEscena;
 	[HideInInspector]
 	public Vector2 Escena1PlayerPos;
 	[HideInInspector]

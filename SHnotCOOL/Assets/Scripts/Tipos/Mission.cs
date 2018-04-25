@@ -25,7 +25,7 @@ public class Mission : MonoBehaviour {
 	[HideInInspector]
 	public bool isFriend = false;
 	[SerializeField]
-	int maxMision;
+	int maxMision = 0;
 
 
 

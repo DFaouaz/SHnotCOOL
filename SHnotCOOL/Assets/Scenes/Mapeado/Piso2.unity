@@ -3988,11 +3988,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 417290457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ef528fc53f1634a83c0c7b57ad21b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 834c0392bb4f83f4a97f7c35a9eba0a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaACambiar: Piso1
-  Examen: 
+  escenaACambiar: "Ba\xF1o"
+  examen: 
 --- !u!61 &417290460
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12075,11 +12075,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 900540498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ef528fc53f1634a83c0c7b57ad21b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 834c0392bb4f83f4a97f7c35a9eba0a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   escenaACambiar: "Ba\xF1o"
-  Examen: 
+  examen: 
 --- !u!61 &900540501
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12185,11 +12185,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1061111419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ef528fc53f1634a83c0c7b57ad21b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 834c0392bb4f83f4a97f7c35a9eba0a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   escenaACambiar: Taller
-  Examen: 
+  examen: 
 --- !u!61 &1061111422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20998,11 +20998,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1283635508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ef528fc53f1634a83c0c7b57ad21b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 834c0392bb4f83f4a97f7c35a9eba0a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   escenaACambiar: CuartoDeLimpieza
-  Examen: 
+  examen: 
 --- !u!61 &1283635511
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21036,6 +21036,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1409352598}
+  - component: {fileID: 1409352599}
   m_Layer: 0
   m_Name: CambioEscena
   m_TagString: Untagged
@@ -21060,6 +21061,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1409352599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409352597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ef528fc53f1634a83c0c7b57ad21b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mensajeEscena: {fileID: 0}
+  entrada: {fileID: 0}
 --- !u!1 &1643801766
 GameObject:
   m_ObjectHideFlags: 0
@@ -21088,6 +21102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EscenaPiso1: Piso1
+  botonInteractuar: 0
+  mensajeEscena: {fileID: 0}
   Escena1PlayerPos: {x: 0, y: 0}
   Escena2PlayerPos: {x: 0, y: 0}
   ActualPlayerPosition: {x: 0, y: 0}
