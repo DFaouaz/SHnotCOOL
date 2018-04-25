@@ -18,6 +18,7 @@ TagManager:
   - Espia1
   - Espia2
   - Items
+  - MensajeEscena
   layers:
   - Default
   - TransparentFX
