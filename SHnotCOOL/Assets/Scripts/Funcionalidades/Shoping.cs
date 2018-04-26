@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Shoping : MonoBehaviour {
 	[SerializeField]
 	ObjetoEnVenta [] objetos_en_venta;
 	public CanvasRenderer tienda_;
 
-
+	public string currentScene;
 	public Text dialogueMensaje;
 	public KeyCode botonInteraccion;
+	public Button primerBoton;
 	bool collisionn;
 	// Use this for initialization
 	void Start () {
@@ -34,6 +36,7 @@ public class Shoping : MonoBehaviour {
 	void CheckInputDialogue(){
 		if (Input.GetKeyDown (botonInteraccion) && collisionn) {
 			tienda_.gameObject.SetActive (true);
+			primerBoton.Select ();
 			dialogueMensaje.gameObject.SetActive (false);
 			GameManager.instance.ventanaAbierta = true;
 		} else if(!collisionn)
@@ -48,5 +51,11 @@ public class Shoping : MonoBehaviour {
 		tienda_.gameObject.SetActive (false);
 		GameManager.instance.ventanaAbierta = false;
 	}
-
+	public void ActualizaPersonaje ()
+	{
+		if (SceneManager.GetActiveScene ().name == currentScene)
+			this.gameObject.SetActive (true);
+		else
+			this.gameObject.SetActive (false);
+	}
 }

@@ -28,6 +28,7 @@ public class HUDManager : MonoBehaviour {
 	public bool modoDarObjeto = false;
 	public Sprite imagenDeVacio, imagenDeBloqueo;
 	public Text friendsCount;
+	public Text moneyCount;
 	public CanvasRenderer negroCount;
 	//PARA MISIONES
 	[HideInInspector]
@@ -217,6 +218,9 @@ public class HUDManager : MonoBehaviour {
 		if (GameManager.instance.habladoNegro && !negroCount.gameObject.activeInHierarchy)
 			negroCount.gameObject.SetActive (true);
 		friendsCount.text = GameManager.instance.numFriends.ToString();
+	}
+	public void UpdateMoney(){
+		moneyCount.text = GameManager.instance.dinero.ToString();
 	}
 }
 

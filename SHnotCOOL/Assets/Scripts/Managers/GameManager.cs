@@ -58,10 +58,12 @@ public class GameManager : MonoBehaviour {
 
     // En cuanto el objeto se active
     void Awake() {
+		
 		// Si no hay ningún objeto GameManager ya creado
 		if (instance == null) {
 			// Almacenamos la instancia actual
 			instance = this;
+			ActualizaDinero ();
 			// Nos aseguramos de no destruir el objeto, es decir, 
 			// de que persista, si cambiamos de escena
 			DontDestroyOnLoad(this.gameObject);
@@ -137,5 +139,8 @@ public class GameManager : MonoBehaviour {
 	public void SubeAmigos(){
 		numFriends++;
 		FindObjectOfType<HUDManager> ().UpdateFriends ();
+	}
+	public void ActualizaDinero(){
+		FindObjectOfType<HUDManager> ().UpdateMoney ();
 	}
 }

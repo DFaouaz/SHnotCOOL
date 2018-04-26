@@ -17,6 +17,8 @@ public class CambiaEscena : MonoBehaviour {
 	}
 
     void Update() {
+		if (mensajeEscena == null)
+			mensajeEscena = GameObject.FindGameObjectWithTag ("MensajeEscena").GetComponent<Text> ();
 		if(Input.GetKeyDown(GameManager.instance.botonInteractuar) && entrada != null) {
 			SavePositions ();
 			ChooseExam ();
