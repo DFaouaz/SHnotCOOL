@@ -8,6 +8,7 @@ public class Player : MonoBehaviour {
 	Transform playerTR;
 	Animator playerAnim;
 
+    float tiempo;
 	bool alive = true;
 
 	int movX, movY;
@@ -25,11 +26,12 @@ public class Player : MonoBehaviour {
 	}
 
 	void Update () {
-		if (alive) 
+		if (alive&&tiempo>5) 
 		{
 			// Comprobar la entrada del usuario
 			CheckInput ();
 		}
+        tiempo += Time.deltaTime;
 	}
 
 	// MÉTODOS

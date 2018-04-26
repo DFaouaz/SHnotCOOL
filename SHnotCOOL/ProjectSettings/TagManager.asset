@@ -19,6 +19,11 @@ TagManager:
   - Espia2
   - Items
   - Enemigo
+  - MensajeEscena
+  - player
+  - GameManager
+  - Limpieza
+  - Arboles
   layers:
   - Default
   - TransparentFX

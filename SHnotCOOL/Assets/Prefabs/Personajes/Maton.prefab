@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 61899360966378010}
   - component: {fileID: 50055394514033844}
   - component: {fileID: 95225545483886304}
-  - component: {fileID: 114443399096038410}
   - component: {fileID: 114678672615115788}
   - component: {fileID: 114749530875422082}
   m_Layer: 0
@@ -163,26 +162,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114443399096038410
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1123470140391324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nombrePersonaje: Maton
-  tituloDeLaMision: 
-  indiceMision: 0
-  tipoDeMision: 0
-  isAcepted: 0
-  isComplete: 0
-  isFriend: 0
-  maxMision: 0
-  alreadyTalked: 0
 --- !u!114 &114678672615115788
 MonoBehaviour:
   m_ObjectHideFlags: 1

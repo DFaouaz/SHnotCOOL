@@ -9,7 +9,7 @@ public class temporizador : MonoBehaviour {
 	int temporizadorapoyo,temp;
 	// Use this for initialization
 	void Start () {
-		temporizadorapoyo = 0;
+		temporizadorapoyo = 5;
 		temporiza = GetComponent<Text> ();
 
 		temporiza.text=PasillosManager.instance.TiempoRestante().ToString() +"S";

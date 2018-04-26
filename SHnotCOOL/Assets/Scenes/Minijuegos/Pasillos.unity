@@ -245,7 +245,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -3715,7 +3715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   step: 4
   initialDelay: 2
-  speed: 1
+  speed: 2.5
   leftSense: 0
   varPrefab: {fileID: 1920295131172904, guid: 7cdc5678fda543347abc52e81ee21e0b, type: 2}
 --- !u!4 &634491632
@@ -4236,6 +4236,16 @@ Prefab:
       propertyPath: m_Size.y
       value: 0.7410276
       objectReference: {fileID: 0}
+    - target: {fileID: 50768471845577214, guid: 575b7df46e4a6474d9e91c576a44608c,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50768471845577214, guid: 575b7df46e4a6474d9e91c576a44608c,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 575b7df46e4a6474d9e91c576a44608c, type: 2}
   m_IsPrefabParent: 0
@@ -4266,11 +4276,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88327f7806ce4bd42b87bf2a9a4a2238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  step: 1
-  initialDelay: 2
+  step: 2
+  initialDelay: 0
   speed: 3
   leftSense: 0
-  varPrefab: {fileID: 1098264875344248, guid: 5b20357950c348645980181bb14dcc54, type: 2}
+  varPrefab: {fileID: 1703773142901588, guid: 115a42cbc75989e45af78339cc9a7438, type: 2}
 --- !u!4 &1263939916
 Transform:
   m_ObjectHideFlags: 0
@@ -4315,7 +4325,7 @@ MonoBehaviour:
   initialDelay: 1
   speed: 2
   leftSense: 1
-  varPrefab: {fileID: 1098264875344248, guid: 5b20357950c348645980181bb14dcc54, type: 2}
+  varPrefab: {fileID: 1920295131172904, guid: 7cdc5678fda543347abc52e81ee21e0b, type: 2}
 --- !u!4 &1282609182
 Transform:
   m_ObjectHideFlags: 0
@@ -4358,7 +4368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   step: 3
   initialDelay: 2
-  speed: 1
+  speed: 6
   leftSense: 1
   varPrefab: {fileID: 1701899741434244, guid: b834fd4278c9399469f7cfd300b37606, type: 2}
 --- !u!4 &1327553733
@@ -4558,7 +4568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   step: 2
   initialDelay: 3
-  speed: 1
+  speed: 4.5
   leftSense: 0
   varPrefab: {fileID: 1703773142901588, guid: 115a42cbc75989e45af78339cc9a7438, type: 2}
 --- !u!4 &1947042303
@@ -4601,11 +4611,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88327f7806ce4bd42b87bf2a9a4a2238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  step: 1
-  initialDelay: 5
+  step: 2
+  initialDelay: 0
   speed: 3
   leftSense: 1
-  varPrefab: {fileID: 1165128518071382, guid: 66b1d72b8e41d7249832e5e39b0d1b2d, type: 2}
+  varPrefab: {fileID: 1703773142901588, guid: 115a42cbc75989e45af78339cc9a7438, type: 2}
 --- !u!4 &2101288180
 Transform:
   m_ObjectHideFlags: 0
