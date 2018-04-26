@@ -99,8 +99,8 @@ public class Platform {
 			//Movimimiento principal
 			direction.x = Input.GetAxis ("Horizontal");
 			grounded = Physics2D.Linecast (go.transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground"));
-			if (Input.GetButtonDown ("Jump") && grounded)
-				jump = true;
+            if (Input.GetButtonDown("Jump") && grounded)
+                jump = true;
 		}
 	}
 	//Movimiento
