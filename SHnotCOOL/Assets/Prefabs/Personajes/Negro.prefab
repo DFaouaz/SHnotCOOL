@@ -238,9 +238,19 @@ MonoBehaviour:
   isComplete: 0
   isFriend: 0
   maxMision: 0
+  scene: CuartoDeLimpieza
   alreadyTalked: 0
   playerTarget: {fileID: 0}
   minDistance: 1.5
+  possibleScenes:
+  - Piso1
+  - Piso2
+  - Aula
+  - "Ba\xF1o"
+  - Cafeteria
+  - CuartoDeLimpieza
+  - Taller
+  - Gimnasio
 --- !u!114 &114529529654097792
 MonoBehaviour:
   m_ObjectHideFlags: 1

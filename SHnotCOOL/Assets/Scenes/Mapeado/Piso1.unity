@@ -289,7 +289,7 @@ RectTransform:
   m_GameObject: {fileID: 20099463}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5624998, y: 0.5624998, z: 0.5624998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1511633497}
   - {fileID: 721630766}
@@ -300,8 +300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000015258789}
-  m_SizeDelta: {x: 560, y: 315}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &20099465
 CanvasRenderer:
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -769,6 +769,11 @@ Prefab:
     - target: {fileID: 4675335370580176, guid: 820f6b76b24e28f40ae516e2b51e768f, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623287051566550, guid: 820f6b76b24e28f40ae516e2b51e768f,
+        type: 2}
+      propertyPath: scene
+      value: Piso1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 820f6b76b24e28f40ae516e2b51e768f, type: 2}
@@ -1129,7 +1134,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1494492636}
+    m_TransformParent: {fileID: 854184993}
     m_Modifications:
     - target: {fileID: 4613835526684826, guid: 439eadbab6fc89242bb5298ba570bdaa, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1161,7 +1166,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4613835526684826, guid: 439eadbab6fc89242bb5298ba570bdaa, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114325056063078926, guid: 439eadbab6fc89242bb5298ba570bdaa,
         type: 2}
@@ -1379,6 +1384,58 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 139572303}
+--- !u!1 &141962590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 141962591}
+  - component: {fileID: 141962592}
+  m_Layer: 0
+  m_Name: Emos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &141962591
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 141962590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 159305739}
+  - {fileID: 1374707195}
+  m_Father: {fileID: 854184993}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &141962592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 141962590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombrePersonaje: Emos
+  tituloDeLaMision: Entre el cuchillo y la pared
+  indiceMision: 0
+  tipoDeMision: 2
+  isAcepted: 0
+  isComplete: 0
+  isFriend: 0
+  maxMision: 0
+  scene: Piso1
+  alreadyTalked: 0
 --- !u!1001 &145006165
 Prefab:
   m_ObjectHideFlags: 0
@@ -2289,7 +2346,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 854184993}
+    m_TransformParent: {fileID: 1607185394}
     m_Modifications:
     - target: {fileID: 4892372474928526, guid: e0c78d6d1e46dce4796514411b5a77be, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2321,9 +2378,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4892372474928526, guid: e0c78d6d1e46dce4796514411b5a77be, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114882343017887248, guid: e0c78d6d1e46dce4796514411b5a77be,
+        type: 2}
+      propertyPath: scene
+      value: Piso1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114882343017887248, guid: e0c78d6d1e46dce4796514411b5a77be, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e0c78d6d1e46dce4796514411b5a77be, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &209987645
@@ -2883,6 +2946,7 @@ MonoBehaviour:
   movement: 0
   directions_4:
     speed: 4
+    playerSpeed: 0
     direction: {x: 0, y: 0}
   directions_8:
     speed: 0
@@ -14704,7 +14768,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4812488727313642, guid: 9b4c843302aa96f4a855f1a2c1c4a751, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114931127480045492, guid: 9b4c843302aa96f4a855f1a2c1c4a751,
+        type: 2}
+      propertyPath: scene
+      value: Piso1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b4c843302aa96f4a855f1a2c1c4a751, type: 2}
@@ -14812,6 +14881,7 @@ GameObject:
   - component: {fileID: 340536628}
   - component: {fileID: 340536630}
   - component: {fileID: 340536629}
+  - component: {fileID: 340536631}
   m_Layer: 5
   m_Name: MensajeEscena
   m_TagString: MensajeEscena
@@ -14881,6 +14951,26 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 647454705}
   m_GameObject: {fileID: 340536627}
+--- !u!114 &340536631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340536627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Piso1
+  - Piso2
+  - Gimnasio
+  - Aula
+  - Cafeteria
+  - "Ba\xF1o"
+  - CuartoDeLimpieza
+  - Taller
 --- !u!1 &344901805
 GameObject:
   m_ObjectHideFlags: 0
@@ -16392,7 +16482,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 854184993}
+    m_TransformParent: {fileID: 141962591}
     m_Modifications:
     - target: {fileID: 4370018221518518, guid: 88b209128b6b960478ef9ab6abe100d8, type: 2}
       propertyPath: m_LocalPosition.x
@@ -16424,17 +16514,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4370018221518518, guid: 88b209128b6b960478ef9ab6abe100d8, type: 2}
       propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 61273900155564586, guid: 88b209128b6b960478ef9ab6abe100d8,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.875
-      objectReference: {fileID: 0}
-    - target: {fileID: 61273900155564586, guid: 88b209128b6b960478ef9ab6abe100d8,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 1.1875
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88b209128b6b960478ef9ab6abe100d8, type: 2}
@@ -17941,6 +18021,53 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1216039851}
   m_Script: {fileID: 11500000, guid: a39a4fa39ca42a14b89e1be8fc3521b1, type: 3}
+--- !u!1001 &708253380
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 854184993}
+    m_Modifications:
+    - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &708253381 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4152173305378162, guid: d871f2555c6711741bbf9f1ef51ec4cd,
+    type: 2}
+  m_PrefabInternal: {fileID: 708253380}
 --- !u!1 &714975357
 GameObject:
   m_ObjectHideFlags: 0
@@ -18424,6 +18551,11 @@ Prefab:
     - target: {fileID: 4734935068044352, guid: 32ca1ed55c62f5846986fdfd4fda616a, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114149031551984500, guid: 32ca1ed55c62f5846986fdfd4fda616a,
+        type: 2}
+      propertyPath: scene
+      value: Piso1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32ca1ed55c62f5846986fdfd4fda616a, type: 2}
@@ -19600,6 +19732,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 854184993}
+  - component: {fileID: 854184994}
   m_Layer: 0
   m_Name: Personajes
   m_TagString: Untagged
@@ -19624,15 +19757,31 @@ Transform:
   - {fileID: 576403814}
   - {fileID: 211773497}
   - {fileID: 95452014}
-  - {fileID: 159305739}
-  - {fileID: 1374707195}
+  - {fileID: 1607185394}
+  - {fileID: 141962591}
   - {fileID: 1980167926}
-  - {fileID: 1296168813}
-  - {fileID: 1608349990}
   - {fileID: 1898373939}
+  - {fileID: 1704319817}
+  - {fileID: 222038592}
+  - {fileID: 708253381}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &854184994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 854184992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93dfb31288ee3f1459bb089a01cc4f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shops:
+  - {fileID: 1756818018}
+  - {fileID: 1864688299}
+  negro: {fileID: 1336881580}
 --- !u!1 &857978005
 GameObject:
   m_ObjectHideFlags: 0
@@ -19920,7 +20069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -20090,6 +20239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 898925527}
   - component: {fileID: 898925528}
+  - component: {fileID: 898925529}
   m_Layer: 5
   m_Name: Inventory/HUDCanvas
   m_TagString: Untagged
@@ -20161,6 +20311,26 @@ MonoBehaviour:
   moneyCount: {fileID: 1177577558}
   negroCount: {fileID: 1357532602}
   tagDarObjeto: 
+--- !u!114 &898925529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 898925526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Piso1
+  - Piso2
+  - Gimnasio
+  - Aula
+  - Cafeteria
+  - "Ba\xF1o"
+  - CuartoDeLimpieza
+  - Taller
 --- !u!4 &911995387 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4467589423422790, guid: 2cd639bd61d94aa4c94efd86f1406dd0,
@@ -20176,6 +20346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 915671838}
   - component: {fileID: 915671839}
+  - component: {fileID: 915671840}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -20196,7 +20367,7 @@ RectTransform:
   m_Children:
   - {fileID: 574498901}
   m_Father: {fileID: 925648479}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20222,6 +20393,32 @@ MonoBehaviour:
   - {fileID: 2052498639}
   - {fileID: 1521715131}
   panelOpciones: {fileID: 20099465}
+--- !u!114 &915671840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 915671837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Piso1
+  - Piso2
+  - Gimnasio
+  - Aula
+  - Cafeteria
+  - "Ba\xF1o"
+  - CuartoDeLimpieza
+  - Taller
+  - Geografia
+  - Historia
+  - Lengua
+  - Matematicas
+  - Maton
+  - Pasillos
 --- !u!1001 &924208539
 Prefab:
   m_ObjectHideFlags: 0
@@ -20506,9 +20703,9 @@ RectTransform:
   - {fileID: 1982549573}
   - {fileID: 898925527}
   - {fileID: 1151913372}
+  - {fileID: 1475521057}
   - {fileID: 915671838}
   - {fileID: 1526641532}
-  - {fileID: 1475521057}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20528,6 +20725,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d55004f4e486040b6bf251afc5c97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objs:
+  - {fileID: 340536631}
+  - {fileID: 1982549575}
+  - {fileID: 898925529}
+  - {fileID: 1151913374}
+  - {fileID: 915671840}
+  - {fileID: 1475521060}
 --- !u!1 &931988093
 GameObject:
   m_ObjectHideFlags: 0
@@ -20701,7 +20905,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1494492636}
+    m_TransformParent: {fileID: 854184993}
     m_Modifications:
     - target: {fileID: 114171945547170594, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b,
         type: 2}
@@ -20722,15 +20926,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -20738,7 +20942,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114171945547170594, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b,
         type: 2}
@@ -21364,6 +21568,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114960817479429168, guid: 1a565bf3996b41b43a1882b997bf616d,
+        type: 2}
+      propertyPath: scene
+      value: Piso1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a565bf3996b41b43a1882b997bf616d, type: 2}
   m_IsPrefabParent: 0
@@ -21602,7 +21811,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 854184993}
+    m_TransformParent: {fileID: 141962591}
     m_Modifications:
     - target: {fileID: 4574458444128470, guid: 1a5db538495101044a08d9d0a6cff659, type: 2}
       propertyPath: m_LocalPosition.x
@@ -21634,27 +21843,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4574458444128470, guid: 1a5db538495101044a08d9d0a6cff659, type: 2}
       propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 61129676572382908, guid: 1a5db538495101044a08d9d0a6cff659,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.875
-      objectReference: {fileID: 0}
-    - target: {fileID: 61129676572382908, guid: 1a5db538495101044a08d9d0a6cff659,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.1875
-      objectReference: {fileID: 0}
-    - target: {fileID: 61129676572382908, guid: 1a5db538495101044a08d9d0a6cff659,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 61129676572382908, guid: 1a5db538495101044a08d9d0a6cff659,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 0.38
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a5db538495101044a08d9d0a6cff659, type: 2}
@@ -21669,6 +21858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1151913372}
   - component: {fileID: 1151913373}
+  - component: {fileID: 1151913374}
   m_Layer: 5
   m_Name: MisionManager
   m_TagString: Untagged
@@ -21721,6 +21911,26 @@ MonoBehaviour:
   - {fileID: 1295645486}
   - {fileID: 833954122}
   - {fileID: 335582684}
+--- !u!114 &1151913374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151913371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Piso1
+  - Piso2
+  - Gimnasio
+  - Aula
+  - Cafeteria
+  - "Ba\xF1o"
+  - CuartoDeLimpieza
+  - Taller
 --- !u!1 &1158924980
 GameObject:
   m_ObjectHideFlags: 0
@@ -22048,7 +22258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -22342,11 +22552,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EscenaPiso1: Piso1
+  EscenaPiso2: Piso2
   botonInteractuar: 101
   Escena1PlayerPos: {x: 0, y: 0}
   Escena2PlayerPos: {x: 0, y: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
+  lastScene: 
   habladoNegro: 0
   ventanaAbierta: 0
   pauseMode: 0
@@ -23552,6 +23764,11 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 114891854478546932, guid: 7943ece2bfdded84f82e55162bc3cd41,
+        type: 2}
+      propertyPath: scene
+      value: Piso1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7943ece2bfdded84f82e55162bc3cd41, type: 2}
   m_IsPrefabParent: 0
@@ -23623,12 +23840,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1336881580 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114192127130471706, guid: d871f2555c6711741bbf9f1ef51ec4cd,
+    type: 2}
+  m_PrefabInternal: {fileID: 708253380}
+  m_Script: {fileID: 11500000, guid: dc54387dab2a75a438f7302ca581d5d9, type: 3}
 --- !u!1001 &1355161429
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 854184993}
+    m_TransformParent: {fileID: 1607185394}
     m_Modifications:
     - target: {fileID: 4074994087531834, guid: 89b4413ef2cdc534881bd9aa76963de3, type: 2}
       propertyPath: m_LocalPosition.x
@@ -23660,9 +23883,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4074994087531834, guid: 89b4413ef2cdc534881bd9aa76963de3, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114710193619050452, guid: 89b4413ef2cdc534881bd9aa76963de3, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 89b4413ef2cdc534881bd9aa76963de3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1357347155
@@ -29313,7 +29537,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4988781050799496, guid: 90f0b1bf386d30645994134a5051578f, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114185092833607998, guid: 90f0b1bf386d30645994134a5051578f,
+        type: 2}
+      propertyPath: scene
+      value: Piso1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90f0b1bf386d30645994134a5051578f, type: 2}
@@ -29631,6 +29860,7 @@ GameObject:
   - component: {fileID: 1475521057}
   - component: {fileID: 1475521059}
   - component: {fileID: 1475521058}
+  - component: {fileID: 1475521060}
   m_Layer: 5
   m_Name: Shops
   m_TagString: Untagged
@@ -29651,7 +29881,7 @@ RectTransform:
   - {fileID: 2090045018}
   - {fileID: 1096546440}
   m_Father: {fileID: 925648479}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -29691,6 +29921,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1475521056}
+--- !u!114 &1475521060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1475521056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - "Ba\xF1o"
+  - Cafeteria
 --- !u!1 &1484082530
 GameObject:
   m_ObjectHideFlags: 0
@@ -29898,48 +30142,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mensajeEscena: {fileID: 340536629}
   entrada: {fileID: 0}
---- !u!1 &1494492634
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1494492636}
-  - component: {fileID: 1494492635}
-  m_Layer: 0
-  m_Name: Tiendas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1494492635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1494492634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93dfb31288ee3f1459bb089a01cc4f7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1494492636
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1494492634}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1704319817}
-  - {fileID: 222038592}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1511633496
 GameObject:
   m_ObjectHideFlags: 0
@@ -30124,7 +30326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -30279,7 +30481,7 @@ Transform:
   m_LocalScale: {x: 1.8543153, y: 1.8543153, z: 1.8543153}
   m_Children: []
   m_Father: {fileID: 925648479}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1526688381
 GameObject:
@@ -34139,6 +34341,58 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1587343408}
+--- !u!1 &1607185393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1607185394}
+  - component: {fileID: 1607185395}
+  m_Layer: 0
+  m_Name: Pijas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1607185394
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607185393}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1296168813}
+  - {fileID: 1608349990}
+  m_Father: {fileID: 854184993}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1607185395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607185393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombrePersonaje: Pijas
+  tituloDeLaMision: Un secreto oscuro
+  indiceMision: 0
+  tipoDeMision: 1
+  isAcepted: 0
+  isComplete: 0
+  isFriend: 0
+  maxMision: 0
+  scene: Piso1
+  alreadyTalked: 0
 --- !u!4 &1608349990 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4074994087531834, guid: 89b4413ef2cdc534881bd9aa76963de3,
@@ -36158,6 +36412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1982549573}
   - component: {fileID: 1982549574}
+  - component: {fileID: 1982549575}
   m_Layer: 5
   m_Name: DialogueCanvas
   m_TagString: Untagged
@@ -36211,6 +36466,26 @@ MonoBehaviour:
   currentNPC: {fileID: 0}
   isTalking: 0
   ableInput: 0
+--- !u!114 &1982549575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1982549572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Piso1
+  - Piso2
+  - Gimnasio
+  - Aula
+  - Cafeteria
+  - "Ba\xF1o"
+  - CuartoDeLimpieza
+  - Taller
 --- !u!1 &1983650485
 GameObject:
   m_ObjectHideFlags: 0
@@ -36982,7 +37257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1999062952
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40146,7 +40421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -40646,6 +40921,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114649256699418010, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e,
+        type: 2}
+      propertyPath: scene
+      value: Piso1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1dd3dc4886a1b06449ea081a8bbbdc3e, type: 2}
   m_IsPrefabParent: 0
@@ -40667,7 +40947,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.564, y: 0.28800002}
   m_AnchorMax: {x: 0.91400003, y: 1}
-  m_AnchoredPosition: {x: 0.2999878, y: -4.899994}
+  m_AnchoredPosition: {x: 0.2999878, y: -4.9000244}
   m_SizeDelta: {x: -0.5999756, y: 9.699997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2091926088
@@ -40728,6 +41008,11 @@ Prefab:
         type: 2}
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 114443399096038410, guid: 2af783deffafdc0409e5f1dd0d3bba2c,
+        type: 2}
+      propertyPath: scene
+      value: Piso1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2af783deffafdc0409e5f1dd0d3bba2c, type: 2}

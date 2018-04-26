@@ -4,10 +4,12 @@ using UnityEngine;
 using System.IO;
 
 public class NPC : Mission {
+	public string scene;
 	public Queue<string> dialogo = new Queue<string> ();
 	public Queue<string> frasesEstandar = new Queue<string> ();
 	[HideInInspector]
 	public bool alreadyTalked = false;
+
 
 	protected override void Start(){
 		base.Start ();
@@ -64,4 +66,12 @@ public class NPC : Mission {
 		frasesEstandar.Enqueue (null);
 		file.Close();
     }
+
+	public void UpdateNPCs(){
+		string actualScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name;
+		if (scene == actualScene)
+			this.gameObject.SetActive (true);
+		else
+			this.gameObject.SetActive (false);
+	}
 }

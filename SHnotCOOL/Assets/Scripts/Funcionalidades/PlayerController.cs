@@ -11,13 +11,20 @@ public enum Movimiento{Directions_4, Free, Platform}
 public class Directions_4 {
 	//Variables
 	public float speed;
+	[HideInInspector]
+	public float playerSpeed;
 	public Vector2 direction;
+	bool isRunning=false;
 
 	//Movimiento
 	public void Move(Rigidbody2D rb){
 
+		if (isRunning)
+			playerSpeed = speed + speed / 2;
+		else 
+			playerSpeed = speed;
 		
-		rb.velocity = direction.normalized * speed;
+		rb.velocity = direction.normalized * playerSpeed;
 
 		GameManager.instance.ActualPlayerPosition = rb.position;
 
@@ -26,6 +33,7 @@ public class Directions_4 {
 	public void CheckInput()
 	{
 		direction = Vector2.zero;
+		isRunning = false;
 		if (!GameManager.instance.ventanaAbierta) {
 			if (Input.GetButton ("Vertical")) {
 				direction = Vector2.up * Mathf.Sign (Input.GetAxis ("Vertical"));
@@ -37,6 +45,8 @@ public class Directions_4 {
 
 				GameManager.instance.ActualPlayerDirecction = direction.normalized;
 			}
+			if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift))
+				isRunning = true;
 		}
 	}
 	//Animator
@@ -126,8 +136,16 @@ public class PlayerController : MonoBehaviour {
 	Animator animator;
 	void Start(){
 		animator = GetComponent<Animator> ();
-		if (GameManager.instance.ActualPlayerPosition != Vector2.zero && SceneManager.GetActiveScene().name == GameManager.instance.EscenaPiso1)
-			myRigidbody.position = GameManager.instance.Escena1PlayerPos;
+		if (GameManager.instance.Escena1PlayerPos == Vector2.zero)
+			GameManager.instance.Escena1PlayerPos = myRigidbody.position;
+		else if (GameManager.instance.Escena2PlayerPos == Vector2.zero)
+			GameManager.instance.Escena2PlayerPos = myRigidbody.position;
+		else {
+			if (SceneManager.GetActiveScene ().name == GameManager.instance.EscenaPiso1)
+				myRigidbody.position = GameManager.instance.Escena1PlayerPos;
+			else if (SceneManager.GetActiveScene ().name == GameManager.instance.EscenaPiso2)
+				myRigidbody.position = GameManager.instance.Escena2PlayerPos;
+		}
 	}
 
 	void Update () {

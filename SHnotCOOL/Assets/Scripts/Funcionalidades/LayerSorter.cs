@@ -7,7 +7,7 @@ public class LayerSorter : MonoBehaviour {
 	SpriteRenderer parentSp;
 	List<Obstacle> obstacles = new List<Obstacle>();
 
-	void Start(){
+	void Awake(){
 		parentSp = GetComponentInParent<SpriteRenderer> ();
 	}
 

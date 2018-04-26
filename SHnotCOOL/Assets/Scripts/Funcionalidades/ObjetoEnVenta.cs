@@ -9,21 +9,17 @@ public class ObjetoEnVenta : MonoBehaviour {
 	public Text texto_boton;
 	public int coste_;
 	// Use this for initialization
-	void Start()
-	{
+	void Start(){
 		texto_boton.text = objeto.NombreColeccionable + " " + coste_+"€";
 	}
 
-	public void BotonPulsado()
-	{
-		if (HUD.BuyObject (objeto)) {
-			if (coste_ <= GameManager.instance.dinero) {
-				GameManager.instance.dinero -= coste_;
-				texto_boton.text = "Agotado";
-				boton.interactable = false;
-
-			}
+	public void BotonPulsado(){		
+		if (HUD.BuyObject (objeto) && coste_ <= GameManager.instance.dinero) {
+			GameManager.instance.dinero -= coste_;
+			GameManager.instance.ActualizaDinero ();
+			texto_boton.text = "Agotado";
+			boton.FindSelectableOnDown ().Select ();
+			boton.interactable = false;
 		}
-
 	}
 }

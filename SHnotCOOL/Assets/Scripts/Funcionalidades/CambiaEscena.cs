@@ -8,8 +8,10 @@ public class CambiaEscena : MonoBehaviour {
 	public Text mensajeEscena;
 	[HideInInspector]
 	public Entrance entrada;
+	string actualScene;
 
 	void Start(){
+		actualScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name;
 		if (mensajeEscena == null)
 			mensajeEscena = GameObject.FindGameObjectWithTag ("MensajeEscena").GetComponent<Text> ();
 		if (entrada == null)
@@ -22,10 +24,12 @@ public class CambiaEscena : MonoBehaviour {
 		if(Input.GetKeyDown(GameManager.instance.botonInteractuar) && entrada != null) {
 			SavePositions ();
 			ChooseExam ();
-			if (isPasillosTime())
-                SceneManager.LoadScene("Pasillos");
-            else
-                SceneManager.LoadScene(entrada.escenaACambiar);
+			if (isPasillosTime ())
+				SceneManager.LoadScene ("Pasillos");
+			else if (actualScene != "Piso1" || actualScene != "Piso2")
+				SceneManager.LoadScene (entrada.escenaACambiar);
+			else
+				SceneManager.LoadScene (GameManager.instance.lastScene);
         }
     }
 
@@ -38,10 +42,12 @@ public class CambiaEscena : MonoBehaviour {
 	}
 
 	void SavePositions(){
-		if (entrada.escenaACambiar != "Piso1")
-			GameManager.instance.Escena1PlayerPos = GameManager.instance.ActualPlayerPosition;
-		if (entrada.escenaACambiar != "Piso2")
-			GameManager.instance.Escena2PlayerPos = GameManager.instance.ActualPlayerPosition;
+		if (actualScene == "Piso1" || actualScene == "Piso2") {
+			if (entrada.escenaACambiar != "Piso1" && actualScene != "Piso2")
+				GameManager.instance.Escena1PlayerPos = GameManager.instance.ActualPlayerPosition;
+			else if (entrada.escenaACambiar != "Piso2" && actualScene != "Piso1")
+				GameManager.instance.Escena2PlayerPos = GameManager.instance.ActualPlayerPosition;
+		}
 	}
 
 	void ChooseExam(){

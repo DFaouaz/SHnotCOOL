@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61594784997282764}
   - component: {fileID: 95413931884011002}
   - component: {fileID: 114754723339328350}
+  - component: {fileID: 114179007956766702}
   m_Layer: 0
   m_Name: Perro
   m_TagString: Untagged
@@ -140,6 +141,27 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114179007956766702
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1115711881737160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombrePersonaje: Perro
+  tituloDeLaMision: 
+  indiceMision: 0
+  tipoDeMision: 0
+  isAcepted: 0
+  isComplete: 0
+  isFriend: 0
+  maxMision: 0
+  scene: Piso1
+  alreadyTalked: 0
 --- !u!114 &114754723339328350
 MonoBehaviour:
   m_ObjectHideFlags: 1

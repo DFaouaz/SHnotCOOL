@@ -36,7 +36,10 @@ public class Shoping : MonoBehaviour {
 	void CheckInputDialogue(){
 		if (Input.GetKeyDown (botonInteraccion) && collisionn) {
 			tienda_.gameObject.SetActive (true);
-			primerBoton.Select ();
+			if (primerBoton.interactable)
+				primerBoton.Select ();
+			else
+				primerBoton.FindSelectableOnDown ().Select ();
 			dialogueMensaje.gameObject.SetActive (false);
 			GameManager.instance.ventanaAbierta = true;
 		} else if(!collisionn)
@@ -46,13 +49,11 @@ public class Shoping : MonoBehaviour {
 	void Update () {
 		CheckInputDialogue ();
 	}
-	public void Exit()
-	{
+	public void Exit(){
 		tienda_.gameObject.SetActive (false);
 		GameManager.instance.ventanaAbierta = false;
 	}
-	public void ActualizaPersonaje ()
-	{
+	public void ActualizaPersonaje (){
 		if (SceneManager.GetActiveScene ().name == currentScene)
 			this.gameObject.SetActive (true);
 		else

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class NegroBehaviour : NPC {
@@ -9,16 +10,7 @@ public class NegroBehaviour : NPC {
 	public float minDistance;
 	Rigidbody2D myRigidbody;
 	Animator animator;
-	public static NegroBehaviour instance = null;
-	void Awake() {
-		if (instance == null) {
-			instance = this;
-			DontDestroyOnLoad(this.gameObject);
-		}
-		else {
-			Destroy(this.gameObject);
-		} 
-	}
+	public string[] possibleScenes;
 
 	new void Start(){
 		animator = GetComponent<Animator> ();
@@ -39,15 +31,15 @@ public class NegroBehaviour : NPC {
 		
 
 	void FollowPlayer(){
-		if (playerTarget == null)
-			playerTarget = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ();
-		Vector2 x = playerTarget.myRigidbody.position - playerTarget.directions_4.direction.normalized - myRigidbody.position;
-		if (x.magnitude > 0 && (playerTarget.myRigidbody.position - myRigidbody.position).magnitude > minDistance) {
-			x.Normalize ();
-			myRigidbody.velocity = x * playerTarget.directions_4.speed;
-		} else
-			myRigidbody.velocity = Vector2.zero;
-		HandleAnimatorLayers (animator, x);
+		if (playerTarget != null) {
+			Vector2 x = playerTarget.myRigidbody.position - playerTarget.directions_4.direction.normalized - myRigidbody.position;
+			if (x.magnitude > 0 && (playerTarget.myRigidbody.position - myRigidbody.position).magnitude > minDistance) {
+				x.Normalize ();
+				myRigidbody.velocity = x * playerTarget.directions_4.playerSpeed;
+			} else
+				myRigidbody.velocity = Vector2.zero;
+			HandleAnimatorLayers (animator, x);
+		}			
 	}
 	void HandleAnimatorLayers(Animator animators, Vector2 x){
 		Vector2 direction = Vector2.zero;
@@ -73,5 +65,36 @@ public class NegroBehaviour : NPC {
 			animators.SetFloat("y", direction.y);
 		}else
 			animators.SetLayerWeight(1, 0f);
+	}
+
+	void UpdatePos(){
+		if(alreadyTalked)
+			this.gameObject.transform.position = playerTarget.myRigidbody.position;
+	}
+
+
+	public void UpdateNegro(){
+		if (scene == SceneManager.GetActiveScene ().name)
+			this.gameObject.SetActive (true);
+		else if (inScene () && alreadyTalked) {
+			this.gameObject.SetActive (true);
+			if (playerTarget == null && alreadyTalked)
+				try {
+				playerTarget = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ();
+				Invoke ("UpdatePos", 0.1f);
+			} catch {
+				Debug.Log ("No hay PlayerController");
+			}
+		}
+		else
+			this.gameObject.SetActive (false);
+	}
+
+	bool inScene(){
+		int i = 0;
+		string actualScene = SceneManager.GetActiveScene ().name;
+		while (i < possibleScenes.Length && possibleScenes [i] != actualScene)
+			i++;
+		return i < possibleScenes.Length;
 	}
 }

@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance = null;
 	//Nombre del piso principal
 	public string EscenaPiso1;
+	public string EscenaPiso2;
 	public KeyCode botonInteractuar;
 	[HideInInspector]
 	public Vector2 Escena1PlayerPos;
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour {
 	public Vector2 ActualPlayerPosition = Vector2.zero;
 	[HideInInspector]
 	public Vector2 ActualPlayerDirecction;
+	[HideInInspector]
+	public string lastScene;
 	[HideInInspector]
     public bool habladoNegro=false;
 	[HideInInspector]
