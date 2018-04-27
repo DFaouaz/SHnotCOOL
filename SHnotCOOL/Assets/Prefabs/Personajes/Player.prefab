@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 61773447716756950}
   - component: {fileID: 50636130799117640}
   - component: {fileID: 95433935520562406}
-  - component: {fileID: 114254201312473330}
   - component: {fileID: 82412719334559460}
   m_Layer: 0
   m_Name: Player
@@ -75,7 +74,7 @@ GameObject:
   - component: {fileID: 20188611251558728}
   - component: {fileID: 124632836235508534}
   - component: {fileID: 81725288001371230}
-  - component: {fileID: 82813153936136698}
+  - component: {fileID: 82739231453157756}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: Untagged
@@ -129,7 +128,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1617261582197984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: 3.68, z: 0}
+  m_LocalPosition: {x: -4, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4368580191509432}
@@ -188,7 +187,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -332,7 +331,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!82 &82813153936136698
+--- !u!82 &82739231453157756
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -342,9 +341,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 852d57f3a1e65ea4fbe8599c7d7f8eff,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: e819977099612b840bcb39dd8f64d914, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fbfeb2621fa739145bf7673aababbcaf, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.035
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -441,31 +440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c4ac59f21dd614f8b472e678619506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114254201312473330
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1617261582197984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b87291ada414e48b93a5f2a00c5ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movement: 2
-  directions_4:
-    speed: 0
-    playerSpeed: 0
-    direction: {x: 0, y: 0}
-  directions_8:
-    speed: 0
-    direction: {x: 0, y: 0}
-  platform:
-    jumpForce: 400
-    maxSpeed: 4
-    groundCheck: {fileID: 4368580191509432}
-    direction: {x: 0, y: 0}
-  myRigidbody: {fileID: 50636130799117640}
 --- !u!124 &124632836235508534
 Behaviour:
   m_ObjectHideFlags: 1

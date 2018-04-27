@@ -25,6 +25,7 @@ public class Pick : MonoBehaviour {
         { 
             GameManager.instance.GeoScore++;
             ActualizaItems();
+
             Destroy(this.gameObject);
             AudioSource.PlayClipAtPoint(SonidoRecogida, Camera.main.transform.position, VolumenRecogida);
             if (GameManager.instance.GeoScore == total)

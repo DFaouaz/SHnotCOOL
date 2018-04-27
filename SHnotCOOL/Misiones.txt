@@ -47,7 +47,7 @@ Britney:DICEN QUE ESTAS EMBARAZADA TIA!!
 Ariadna:Osea que mentira tia, jamas estare embarazada podria salir un rarito como Timmy
 Britney:Ya te digo, que persona mas rara antes le estaban criticando en el taller
 --
-Espia en el taller:Espia2
+Espia cerca del aula de matematicas:Espia3
 --
 Malote 1:Has visto al pringado de Timmy hoy
 Malote 2:Que asco de tio
