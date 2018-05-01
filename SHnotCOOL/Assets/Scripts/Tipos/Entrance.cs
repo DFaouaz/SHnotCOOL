@@ -11,14 +11,6 @@ public class Entrance : MonoBehaviour {
 	void Awake(){
 		ce = GetComponentInParent<CambiaEscena> ();
 	}
-	/*
-	void OnTriggerEnter2D(Collider2D col){
-		if (col.tag == "Player"&&ce.mensajeEscena!=null) {
-			MuestraMensaje ();
-			ce.entrada = this;
-		}
-	}
-	*/
 	void OnTriggerStay2D(Collider2D col){
 		if (col.tag == "Player"&&ce.mensajeEscena!=null) {
 			MuestraMensaje ();

@@ -24,6 +24,7 @@ TagManager:
   - GameManager
   - Limpieza
   - Arboles
+  - MensajeExamen
   layers:
   - Default
   - TransparentFX
