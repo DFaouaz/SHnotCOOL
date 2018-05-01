@@ -26,8 +26,8 @@ public class Pick : MonoBehaviour {
             GameManager.instance.GeoScore++;
             ActualizaItems();
 
+			AudioSource.PlayClipAtPoint(SonidoRecogida, Camera.main.transform.position, VolumenRecogida);
             Destroy(this.gameObject);
-            AudioSource.PlayClipAtPoint(SonidoRecogida, Camera.main.transform.position, VolumenRecogida);
             if (GameManager.instance.GeoScore == total)
                 GameManager.instance.FinExamenGeografia();
         }

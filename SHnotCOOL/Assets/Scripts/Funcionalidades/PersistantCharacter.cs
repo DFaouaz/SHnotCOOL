@@ -27,7 +27,6 @@ public class PersistantCharacter : MonoBehaviour {
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-		Debug.Log (scene.name);
 		UpdateShops ();
 		UpdateNPCs ();
 	}

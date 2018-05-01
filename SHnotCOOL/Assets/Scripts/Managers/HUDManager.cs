@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class HUDManager : MonoBehaviour {
@@ -41,7 +42,6 @@ public class HUDManager : MonoBehaviour {
 		modoDarObjeto = false;
 		mensajeCoger.text = "Pulsar " + GameManager.instance.botonInteractuar.ToString() + " para coger el objeto.";
 		InicializeSlots ();
-		UpdateExams ();
 		inventory.gameObject.SetActive (false);
 		mensajeCoger.gameObject.SetActive (false);
 		mensajeSustitucion.gameObject.SetActive (false);
@@ -57,7 +57,7 @@ public class HUDManager : MonoBehaviour {
 			//SUPER MEGA PROVISIONAL
 			CheckNegro (); 
 		}
-	}     
+	}
 
 	//Guarda el objeto
 	void SaveObject(){
@@ -191,7 +191,7 @@ public class HUDManager : MonoBehaviour {
 	}
 
 	//Actualiza el aspecto de los examenes
-	void UpdateExams(){
+	public void UpdateExams(){
 		//Mates
 		if (GameManager.instance.finMates)
 			exams [0].UpdateRender (Aprobado);

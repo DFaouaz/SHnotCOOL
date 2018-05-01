@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour {
     {
 		finHistoria = true;
         Invoke("CambiaAEscenaPrincipal",0.1f);
-        Time.timeScale = 0.2f;
+		Time.timeScale = 0.2f;
     }
     //Minijuego de Lengua
     public void FinExamenLengua(){
@@ -115,14 +115,12 @@ public class GameManager : MonoBehaviour {
     public void FinExamenGeografia(){
 		finGeo = true;
         Invoke("CambiaAEscenaPrincipal", 0.3f);
-        Time.timeScale = 0.1f;
+		Time.timeScale = 0.1f;
     }
-    public void FinPasillos()
-    {
+    public void FinPasillos(){
         Invoke("CambiaAEscenaPrincipal", 0.3f);
     }
-    public void FinMaton()
-    {
+    public void FinMaton(){
         Invoke("CambiaAEscenaPrincipal", 0);
     }
     public void SubePuntosLengua(){
@@ -136,6 +134,9 @@ public class GameManager : MonoBehaviour {
 	}
 	public void Destapa(char letra){
 		FindObjectOfType<Palabra> ().Destapa (letra);
+	}
+	public void UpdateExamsRender(){
+		FindObjectOfType<HUDManager> ().UpdateExams ();
 	}
 
 	//Amigos

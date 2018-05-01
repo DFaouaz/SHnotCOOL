@@ -125,20 +125,17 @@ public class Maton : MonoBehaviour {
             tiempoFlechaActiva = 0;
         }
 
-        else if(tiempoFlechaActiva>tiempoCambio)
-        {
+        else if(tiempoFlechaActiva>tiempoCambio){
             CambiaFlecha();
             ActivaFlecha();
             transform.position = new Vector2(transform.position.x - decremento, transform.position.y);
             tiempoFlechaActiva = 0;
         }
     }
-    public void CambiaFlecha()
-    {
+    public void CambiaFlecha(){
         flecha = Random.Range(0, 4);
     }
-    private void Start()
-    {
+    private void Start(){
         tiempoPasado = 0;
         enemigo = GameObject.FindGameObjectWithTag("Maton");
         CambiaFlecha();
@@ -146,10 +143,8 @@ public class Maton : MonoBehaviour {
         DisminuyeTiempo();
         fin = false;
     }
-    private void FixedUpdate()
-    {
-        if (!fin)
-        {
+    private void FixedUpdate(){
+        if (!fin){
             tiempoFlechaActiva += Time.deltaTime;
             //si alguna de las teclas es pulasada
             if (!cogido && !pulsado)
@@ -158,13 +153,11 @@ public class Maton : MonoBehaviour {
             //cuando no hay ninguna tecla pulsada
             if (!Input.anyKeyDown)
                 pulsado = false;
-            if (cogido)
-            {
+            if (cogido){
                 textoFinJuego.text = "El matón te ha cogido";
                 fin = true;
             }
-            if (tiempoPasado >= tiempo)
-            {
+            if (tiempoPasado >= tiempo){
                 textoFinJuego.text = "Has escapado";
                 cogido = true;
                 fin = true;
@@ -176,15 +169,12 @@ public class Maton : MonoBehaviour {
             FinJuego();
         }
     }
-    void FinJuego()
-    {
-        if (fin)
-        {
+	void FinJuego(){
+        if (fin){
             GameManager.instance.FinMaton();
         }
     }
-    void DisminuyeTiempo()
-    {
+    void DisminuyeTiempo(){
         tiempoPasado++;
         Invoke("DisminuyeTiempo", 1);
     }

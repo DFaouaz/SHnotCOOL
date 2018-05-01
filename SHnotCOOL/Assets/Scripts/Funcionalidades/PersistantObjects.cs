@@ -25,7 +25,6 @@ public class PersistantObjects : MonoBehaviour {
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-		Debug.Log (scene.name);
 		ActualizaObjetos ();
 	}
 	void OnDisable(){
