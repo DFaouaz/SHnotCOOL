@@ -161,6 +161,7 @@ MonoBehaviour:
   movement: 1
   directions_4:
     speed: 0
+    playerSpeed: 0
     direction: {x: 0, y: 0}
   directions_8:
     speed: 5
@@ -580,12 +581,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a812c32e542968458823ac9e2de98a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cadenciaDisparo: 0.95
+  cadenciaDisparo: 1
   speed: 10
   bala: {fileID: 1314383051331776, guid: 04dbe1ddebac5ad4c9f1d53d7050c704, type: 2}
-  numeroProyectiles: 4
+  numeroProyectiles: 10
   anguloGiro: 33.55
-  modoDisparo: 4
+  modoDisparo: 2
 --- !u!212 &1350397491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -953,10 +954,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EscenaPiso1: Piso1
+  EscenaPiso2: 
+  botonInteractuar: 0
   Escena1PlayerPos: {x: 0, y: 0}
   Escena2PlayerPos: {x: 0, y: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
+  lastScene: 
   habladoNegro: 0
   ventanaAbierta: 0
   pauseMode: 0

@@ -36,20 +36,25 @@ public class Vidas : MonoBehaviour {
 
     void Damage() {
 		if (vidas > 0 && !golpeado) {
-			vidas--;
+            golpeado = true;
+            vidas--;
 			ActualizaVidas ();
-			golpeado = true;
 			InvokeRepeating ("Invulnerable", 0, tiempo);
-			Invoke ("CancelInvoke", tiempo * repeticiones);
-			golpeado = false;
-            render.enabled = true;
-		} else if (vidas-- == 0)
+			Invoke ("FinInvul", tiempo * repeticiones);
+		} else if (vidas ==1)
 			GameManager.instance.FinExamenMatematicas ();
     }
 
     void Invulnerable() {
         render.enabled = parpadea;
         parpadea = !parpadea;
+    }
+
+    void FinInvul()
+    {
+        CancelInvoke();
+        golpeado = false;
+        render.enabled = true;
     }
 
 	void ActualizaVidas(){
