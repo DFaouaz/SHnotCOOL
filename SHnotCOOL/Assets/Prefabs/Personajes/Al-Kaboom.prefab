@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1871712577187226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.6, y: 27.9, z: 0}
+  m_LocalPosition: {x: -88, y: 91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4556501368495340}
@@ -112,7 +112,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.62, y: 0.76}
+    oldSize: {x: 1.0333333, y: 1.2666667}
     newSize: {x: 1.1725, y: 1.1125001}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
   isComplete: 0
   isFriend: 0
   maxMision: 0
-  scene: Piso1
+  scene: Escuela
   alreadyTalked: 0
 --- !u!212 &212795716841533940
 SpriteRenderer:

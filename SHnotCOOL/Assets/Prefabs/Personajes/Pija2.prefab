@@ -20,12 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4074994087531834}
   - component: {fileID: 212318249274684560}
-  - component: {fileID: 61210099669600090}
   - component: {fileID: 50097168805094576}
   - component: {fileID: 95857827709715664}
   - component: {fileID: 114519701640762040}
   - component: {fileID: 114429605857473038}
-  - component: {fileID: 114710193619050452}
   m_Layer: 0
   m_Name: Pija2
   m_TagString: Untagged
@@ -55,8 +53,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1121869324262496}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 57, y: 3.5, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4966795628442790}
@@ -121,31 +119,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.4}
   m_EdgeRadius: 0
---- !u!61 &61210099669600090
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1121869324262496}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.25}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1.25}
-    newSize: {x: 1, y: 1.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
-  m_EdgeRadius: 0
 --- !u!95 &95857827709715664
 Animator:
   serializedVersion: 3
@@ -185,27 +158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6266016e6a9ee094e8c1930552087c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114710193619050452
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1121869324262496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84a26b4871154ca4182014556d60b359, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nombrePersonaje: 
-  tituloDeLaMision: 
-  indiceMision: 0
-  tipoDeMision: 0
-  isAcepted: 0
-  isComplete: 0
-  isFriend: 0
-  maxMision: 0
-  scene: Piso1
-  alreadyTalked: 0
 --- !u!212 &212318249274684560
 SpriteRenderer:
   m_ObjectHideFlags: 1
