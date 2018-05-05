@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ExamManager : MonoBehaviour {
 
-	Text mensaje;
+	public Text mensaje;
 
 	void Start(){
 		mensaje = GameObject.FindGameObjectWithTag ("MensajeExamen").GetComponent<Text> ();

@@ -4,31 +4,45 @@ using UnityEngine;
 
 public class Entrance : MonoBehaviour {
 
-	CambiaEscena ce;
-	public string escenaACambiar;// Aula si es un examen
-	public string examen;
+	public string entranceName;
+	public Entrance entranceConnection;
+	[Header("Introduce el nombre de la escena del examen")]
+	public string examSceneName;
+	EntranceManager em;
+	[Header("Marcar si el una salida")]
+	public bool isExit;
 
 	void Awake(){
-		ce = GetComponentInParent<CambiaEscena> ();
+		em = GetComponentInParent<EntranceManager>();
 	}
-	void OnTriggerStay2D(Collider2D col){
-		if (col.tag == "Player"&&ce.mensajeEscena!=null) {
+	void OnTriggerEnter2D(Collider2D col){
+		if (col.tag == "Player") {
 			MuestraMensaje ();
-			ce.entrada = this;
+			em.entrance = this;
 		}
 	}
 	void OnTriggerExit2D(Collider2D col){
-		if (col.tag == "Player"&&ce.mensajeEscena!=null) {
-			ce.mensajeEscena.gameObject.SetActive (false);
-			ce.entrada = null;
+		if (col.tag == "Player") {
+			em.mensajeEscena.gameObject.SetActive (false);
+			em.entrance = null;
 		}
 	}
 
 	void MuestraMensaje(){
-		ce.mensajeEscena.gameObject.SetActive(true);
-		if (escenaACambiar != "Aula")
-			ce.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString() + " para acceder al\n" + escenaACambiar;
+		if (em.mensajeEscena != null) {
+			em.mensajeEscena.gameObject.SetActive (true);
+			if (!isExit)
+				em.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para acceder al\n" + entranceName;
+			else
+				em.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para salir de\n" + em.lastMovedEntrance.entranceName;
+		}
+	}
+
+	public void MoveToConnection(GameObject character){
+		if (isExit) 
+			character.transform.position = em.lastMovedEntrance.gameObject.transform.position;
 		else
-			ce.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString() + " para acceder al\nAula de " + examen;
+			character.transform.position = entranceConnection.gameObject.transform.position; 
+		em.lastMovedEntrance = this;
 	}
 }
