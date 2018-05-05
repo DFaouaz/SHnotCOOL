@@ -1581,6 +1581,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114467214785374914, guid: ab73ac8e2e9c69a458f3098fa8cfa700,
+        type: 2}
+      propertyPath: currentScene
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab73ac8e2e9c69a458f3098fa8cfa700, type: 2}
   m_IsPrefabParent: 0
@@ -3064,6 +3069,11 @@ Prefab:
       propertyPath: m_Navigation.m_Mode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114417655248246654, guid: 62d4b053109f7854faab2db99e289780,
+        type: 2}
+      propertyPath: objeto
+      value: 
+      objectReference: {fileID: 1788118316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 62d4b053109f7854faab2db99e289780, type: 2}
   m_IsPrefabParent: 0
@@ -19101,7 +19111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HUD: {fileID: 898925528}
   boton: {fileID: 812748531}
-  objeto: {fileID: 114467214785374914, guid: ab73ac8e2e9c69a458f3098fa8cfa700, type: 2}
+  objeto: {fileID: 1788118316}
   texto_boton: {fileID: 1249062608}
   coste_: 15
 --- !u!114 &812748531
@@ -35986,6 +35996,12 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1782396963}
+--- !u!114 &1788118316 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114467214785374914, guid: ab73ac8e2e9c69a458f3098fa8cfa700,
+    type: 2}
+  m_PrefabInternal: {fileID: 145006165}
+  m_Script: {fileID: 11500000, guid: a39a4fa39ca42a14b89e1be8fc3521b1, type: 3}
 --- !u!4 &1802020787 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4236662987220648, guid: 95f14c987c725b6488bb119d7c9e94ad,

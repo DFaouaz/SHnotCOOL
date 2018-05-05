@@ -68,6 +68,7 @@ public class Slot : MonoBehaviour
 					}
 				} else if (objeto != null && nombre == im.tagDarObjeto) {
 					//Le damos el objeto
+					objeto.ObjetoUsado();
 					Text textos = GetComponentInChildren<Text> ();
 					textos.text = "Vacio";
 					objeto = null; 
