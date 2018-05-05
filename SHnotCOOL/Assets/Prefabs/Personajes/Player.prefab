@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 61773447716756950}
   - component: {fileID: 50636130799117640}
   - component: {fileID: 95433935520562406}
-  - component: {fileID: 114559651373412504}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -128,7 +127,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1617261582197984}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.48, y: -31.79, z: 0}
+  m_LocalPosition: {x: 7.53, y: -12.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4368580191509432}
@@ -359,31 +358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c4ac59f21dd614f8b472e678619506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114559651373412504
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1617261582197984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b87291ada414e48b93a5f2a00c5ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movement: 0
-  directions_4:
-    speed: 4
-    playerSpeed: 0
-    direction: {x: 0, y: 0}
-  directions_8:
-    speed: 0
-    direction: {x: 0, y: 0}
-  platform:
-    jumpForce: 0
-    maxSpeed: 0
-    groundCheck: {fileID: 0}
-    direction: {x: 0, y: 0}
-  myRigidbody: {fileID: 50636130799117640}
 --- !u!124 &124632836235508534
 Behaviour:
   m_ObjectHideFlags: 1
