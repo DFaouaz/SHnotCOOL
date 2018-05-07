@@ -29,7 +29,8 @@ public class PlayerControllerEditor : Editor {
 		else if (po.movement == Movimiento.Platform) {
 			po.platform.maxSpeed = (float)EditorGUILayout.FloatField ("Max Speed", po.platform.maxSpeed);
 			po.platform.jumpForce = (float)EditorGUILayout.FloatField ("Jump Force", po.platform.jumpForce);
-			po.platform.groundCheck = (Transform)EditorGUILayout.ObjectField("GroundCheck",po.platform.groundCheck,typeof(Transform),true);;
+			po.platform.groundCheck = (Transform)EditorGUILayout.ObjectField("GroundCheck",po.platform.groundCheck,typeof(Transform),true);
+			po.platform.jumpClip = (AudioClip)EditorGUILayout.ObjectField("JumpClip",po.platform.jumpClip,typeof(AudioClip),true);
 			//po.myRigidbody.bodyType = RigidbodyType2D.Dynamic;
 			po.myRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
 			GUILayout.Label ("Physics Settings", EditorStyles.boldLabel);

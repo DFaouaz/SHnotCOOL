@@ -91,6 +91,7 @@ public class Platform {
 	public Vector2 direction;
 	bool jump = false;
 	bool grounded = true;
+	public AudioClip jumpClip;
 
 	//Métodos
 	//Input
@@ -99,8 +100,10 @@ public class Platform {
 			//Movimimiento principal
 			direction.x = Input.GetAxis ("Horizontal");
 			grounded = Physics2D.Linecast (go.transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground"));
-            if (Input.GetButtonDown("Jump") && grounded)
-                jump = true;
+			if (Input.GetButtonDown ("Jump") && grounded) {
+				jump = true;
+				AudioSource.PlayClipAtPoint (jumpClip, go.transform.position);
+			}
 		}
 	}
 	//Movimiento

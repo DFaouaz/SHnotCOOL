@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class Pick : MonoBehaviour {
     static int total;
-    public AudioClip SonidoRecogida;
-    public float VolumenRecogida = 1f;
-    
+    public AudioClip SonidoRecogida;    
     GameObject text;
     Text textoItems;
  
@@ -25,15 +23,13 @@ public class Pick : MonoBehaviour {
         { 
             GameManager.instance.GeoScore++;
             ActualizaItems();
-
-			AudioSource.PlayClipAtPoint(SonidoRecogida, Camera.main.transform.position, VolumenRecogida);
+			AudioSource.PlayClipAtPoint (SonidoRecogida, gameObject.transform.position);
             Destroy(this.gameObject);
             if (GameManager.instance.GeoScore == total)
                 GameManager.instance.FinExamenGeografia();
         }
     }
-    void ActualizaItems()
-    {
+    void ActualizaItems(){
         textoItems.text = "Items: " + GameManager.instance.GeoScore + "/" + total;
     }
 }
