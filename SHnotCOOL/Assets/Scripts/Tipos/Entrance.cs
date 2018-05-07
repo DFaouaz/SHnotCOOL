@@ -16,13 +16,14 @@ public class Entrance : MonoBehaviour {
 		em = GetComponentInParent<EntranceManager>();
 	}
 	void OnTriggerEnter2D(Collider2D col){
-		if (col.tag == "Player") {
+		if (col.tag == "Player" && !GameManager.instance.thereIsAnInteractiveEvent) {
 			MuestraMensaje ();
 			em.entrance = this;
 		}
 	}
 	void OnTriggerExit2D(Collider2D col){
 		if (col.tag == "Player") {
+			GameManager.instance.thereIsAnInteractiveEvent = false;
 			em.mensajeEscena.gameObject.SetActive (false);
 			em.entrance = null;
 		}
@@ -31,6 +32,7 @@ public class Entrance : MonoBehaviour {
 	void MuestraMensaje(){
 		if (em.mensajeEscena != null) {
 			em.mensajeEscena.gameObject.SetActive (true);
+			GameManager.instance.thereIsAnInteractiveEvent = true;
 			if (!isExit)
 				em.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para acceder al\n" + entranceName;
 			else
@@ -45,4 +47,7 @@ public class Entrance : MonoBehaviour {
 			character.transform.position = entranceConnection.gameObject.transform.position; 
 		em.lastMovedEntrance = this;
 	}
+
+
+
 }

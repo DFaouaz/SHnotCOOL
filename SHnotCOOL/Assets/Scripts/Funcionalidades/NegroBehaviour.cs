@@ -20,13 +20,8 @@ public class NegroBehaviour : NPC {
 	}
 
 	void FixedUpdate () {
-		if (alreadyTalked) {
-			if (!GameManager.instance.habladoNegro) {
-				GameManager.instance.habladoNegro = true;
-				FindObjectOfType<HUDManager> ().UpdateFriends ();
-			}
+		if (alreadyTalked) 
 			FollowPlayer ();
-		}
 	}
 		
 
@@ -66,12 +61,6 @@ public class NegroBehaviour : NPC {
 		}else
 			animators.SetLayerWeight(1, 0f);
 	}
-
-	void UpdatePos(){
-		if(alreadyTalked)
-			this.gameObject.transform.position = playerTarget.myRigidbody.position;
-	}
-
 
 	public void UpdateNegro(){
 		if (scene == SceneManager.GetActiveScene ().name)

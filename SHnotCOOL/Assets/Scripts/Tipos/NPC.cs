@@ -17,7 +17,8 @@ public class NPC : Mission {
 	}
 
     void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.gameObject.tag == "Player") {
+		if (collision.gameObject.tag == "Player" && !GameManager.instance.thereIsAnInteractiveEvent) {
+			GameManager.instance.thereIsAnInteractiveEvent = true;
 			DialogueManager.instance.dialogueMensaje.gameObject.SetActive (true);
 			DialogueManager.instance.currentNPC = this;
 		}
@@ -25,6 +26,7 @@ public class NPC : Mission {
 
 	void OnCollisionExit2D(Collision2D col){
 		if (col.gameObject.tag == "Player") {
+			GameManager.instance.thereIsAnInteractiveEvent = false;
 			DialogueManager.instance.dialogueMensaje.gameObject.SetActive (false);
 			DialogueManager.instance.currentNPC = null;
 		}

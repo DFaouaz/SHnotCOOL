@@ -172,6 +172,11 @@ public class DialogueManager : MonoBehaviour {
 		if (!currentNPC.alreadyTalked) {
 			frases = currentNPC.dialogo;
 			currentNPC.alreadyTalked = true;
+			//Si es el negro
+			if (currentNPC.nombrePersonaje == "Negro") {
+				GameManager.instance.habladoNegro = true;
+				FindObjectOfType<HUDManager> ().ActivateNegroSlot ();
+			}
 		} else
 			frases = new Queue<string>(currentNPC.frasesEstandar);			
 		MuestraFrases();

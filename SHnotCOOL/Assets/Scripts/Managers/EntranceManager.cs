@@ -10,19 +10,28 @@ public class EntranceManager : MonoBehaviour {
 	[HideInInspector]
 	public Entrance lastMovedEntrance;
 	public Text mensajeEscena;
+	GameObject player,negro;
+
+	void Start(){
+		player = GameObject.FindGameObjectWithTag ("Player");
+		negro = GameObject.FindGameObjectWithTag ("Negro");
+	}
 
 	void Update () {
 		CheckInteraction ();
 	}
 
 	void CheckInteraction(){
-		if (Input.GetKeyDown (GameManager.instance.botonInteractuar) && entrance != null) {
+		if (Input.GetKeyDown (GameManager.instance.botonInteractuar) && entrance != null) {			
 			//Movemos al jugador
-			entrance.MoveToConnection(GameObject.FindGameObjectWithTag("Player"));
+			entrance.MoveToConnection(player);
 			//Movemos al negro
-			if(GameManager.instance.habladoNegro)
-				entrance.MoveToConnection(GameObject.FindGameObjectWithTag("Negro"));
+			Invoke("MoveNegro",0.25f);
 		}
 	}
 
+	void MoveNegro(){
+		if(GameManager.instance.habladoNegro)
+		negro.transform.position = player.transform.position;
+	}
 }

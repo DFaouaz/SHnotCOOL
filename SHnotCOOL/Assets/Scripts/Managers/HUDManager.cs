@@ -54,8 +54,6 @@ public class HUDManager : MonoBehaviour {
 		if (!GameManager.instance.pauseMode && (!GameManager.instance.ventanaAbierta || !GameManager.instance.pauseMode)) {
 			CheckInputOpenCloseInventory ();
 			CheckInputObject ();
-			//SUPER MEGA PROVISIONAL
-			CheckNegro (); 
 		}
 	}
 
@@ -151,11 +149,32 @@ public class HUDManager : MonoBehaviour {
 				mensajeCoger.gameObject.SetActive (false);
 		}
 	//Comprueba si el negro ya esta desbloqueado
-	void CheckNegro(){
-		if (GameManager.instance.habladoNegro && !huecoNegro && GameManager.instance.tamInv < 4) {	//Cambiar porque es PROVISIONAL
+	public void ActivateNegroSlot(){
+		if (GameManager.instance.habladoNegro) {
+			UnlockSlot ();
+			UpdateFriends ();
+		}
+	}
+
+	public void UnlockSlot(){
+		int index = -1;
+		if (thereIsSlotBlocked (out index)) {
+			slots [index].estado = Slot.Estado.Desbloqueado;
+			slots [index].UpdateRender ();
 			GameManager.instance.tamInv++;
-			InicializeSlots ();
-			huecoNegro = true;
+		}			
+	}
+
+	bool thereIsSlotBlocked(out int index){
+		int i = 0;
+		while (i < slots.Length && slots [i].estado != Slot.Estado.Bloqueado)
+			i++;
+		if (i < slots.Length) {
+			index = i;
+			return true;
+		} else {
+			index = -1;
+			return false;
 		}
 	}
 

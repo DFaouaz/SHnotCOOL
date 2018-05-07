@@ -58,6 +58,8 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
 	public int numFriends = 0;
 	public int maxFriends;
+	[HideInInspector]
+	public bool thereIsAnInteractiveEvent = false;
 
     // En cuanto el objeto se active
     void Awake() {

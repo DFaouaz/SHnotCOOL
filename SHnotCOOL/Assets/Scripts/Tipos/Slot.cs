@@ -51,6 +51,8 @@ public class Slot : MonoBehaviour
 				if (DialogueManager.instance.currentNPC.nombrePersonaje == "Negro") {
 					if (objeto != null) {
 						Text textos = GetComponentInChildren<Text> ();
+						if (isBocata ())
+							im.UnlockSlot ();
 						textos.text = "Vacio";
 						objeto = null;
 						im.AbreYCierraInventario ();	//Cierra
@@ -135,4 +137,9 @@ public class Slot : MonoBehaviour
 		}
 
     }
+	bool isBocata(){
+		if (nombre == "Bocata")
+			return true;
+		return false;
+	}
 }
