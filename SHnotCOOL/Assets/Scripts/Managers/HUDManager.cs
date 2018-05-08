@@ -42,6 +42,7 @@ public class HUDManager : MonoBehaviour {
 		modoDarObjeto = false;
 		mensajeCoger.text = "Pulsar " + GameManager.instance.botonInteractuar.ToString() + " para coger el objeto.";
 		InicializeSlots ();
+		UpdateExams ();
 		inventory.gameObject.SetActive (false);
 		mensajeCoger.gameObject.SetActive (false);
 		mensajeSustitucion.gameObject.SetActive (false);

@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour {
     public Text nombre;
     public Text sentence;
     public GameObject dialogueBox;
+	public GameObject missionPanel;
 	public Text dialogueMensaje;
 	[HideInInspector]
 	public NPC currentNPC;
@@ -23,6 +24,7 @@ public class DialogueManager : MonoBehaviour {
 	public Queue<string> frases;
 	public Queue<FraseEspia> frasesEspia;
 	public static DialogueManager instance;
+	bool seeingMission = false;
 
 	void Awake(){
 		if (instance == null){
@@ -34,6 +36,8 @@ public class DialogueManager : MonoBehaviour {
     void Start(){
 		dialogueMensaje.text = "Pulsar " + GameManager.instance.botonInteractuar.ToString() + " para interactuar.";
 		dialogueMensaje.gameObject.SetActive (false);
+		dialogueBox.SetActive (false);
+		missionPanel.SetActive (false);
     }
 
     void Update() {
@@ -90,12 +94,9 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	//Misiones
-	public void AceptarMision(){
-		currentNPC.isAcepted = true;
-		MissionManager.instance.AñadirMision (currentNPC);
-		frases = currentNPC.conversacion;
-		if (currentNPC.tipoDeMision == Mission.TipoDeMision.Espionaje)
-			EmparejaEspia();
+	public void VerMision(){
+		seeingMission = true;
+		frases = new Queue<string>(currentNPC.conversacion);
 		MuestraFrases ();
 	}
 	public void DarObjeto(){
@@ -121,6 +122,7 @@ public class DialogueManager : MonoBehaviour {
 		if (!dialogueBox.activeInHierarchy && !GameManager.instance.ventanaAbierta) {
 			GameManager.instance.ventanaAbierta = true;
 			dialogueBox.SetActive (true);
+			dialogueMensaje.gameObject.SetActive (false);
 			if (currentNPC != null) {
 				ActualizaInicioDelCanvas ();
 				SeleccionaBoton ();
@@ -220,8 +222,54 @@ public class DialogueManager : MonoBehaviour {
    		string aux = frases.Dequeue(); 
 		if (aux != null)
 			sentence.text = aux;
+		else if (seeingMission) {
+			isTalking = false;
+			VerPanelDeMision ();
+		}
 		else
 			FinConversacion ();
+	}
+
+	public void AceptarMision(){
+		currentNPC.isAcepted = true;
+		if (currentNPC.tipoDeMision == Mission.TipoDeMision.Espionaje)
+			EmparejaEspia();
+		MissionManager.instance.AñadirMision (currentNPC);
+		seeingMission = false;
+		CerrarPanelDeMision ();
+	}
+
+	void VerPanelDeMision(){
+		missionPanel.SetActive (true);
+		DesactivaBotones ();
+		sentence.gameObject.SetActive(false);
+		missionPanel.GetComponentInChildren<Button> ().Select ();
+	}
+
+	public void CerrarPanelDeMision(){
+		seeingMission = false;
+		missionPanel.SetActive (false);
+		ActivaBotones ();
+		ActualizaInicioDelCanvas ();
+		SeleccionaBoton ();
+		sentence.gameObject.SetActive(false);
+	}
+
+	void CerrarDialogueBox(){
+		//Escondo el cuadro de texto
+		sentence.gameObject.SetActive(false);
+		//Muestro botones
+		ActivaBotones();
+		//Cierro el DialogueBox
+		CerrarPanelDeMision ();
+		AbreCierraDialogueCanvas();
+		//Vacio frases
+		frases.Clear();
+		//Ya no habla
+		isTalking = false;
+		ableInput = false;
+		//Ya no ventana abierta
+		GameManager.instance.ventanaAbierta = false;
 	}
 
 	public void FinConversacion(){
@@ -238,5 +286,8 @@ public class DialogueManager : MonoBehaviour {
 		ableInput = false;
 		//Ya no ventana abierta
 		GameManager.instance.ventanaAbierta = false;
+		//Vuelve a abrir el DialogueCanvas
+		AbreCierraDialogueCanvas();
+		botonHablar.Select ();
 	}
 }

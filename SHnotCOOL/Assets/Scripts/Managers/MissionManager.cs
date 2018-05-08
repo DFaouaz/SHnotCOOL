@@ -43,7 +43,7 @@ public class MissionManager : MonoBehaviour {
 			if (!missionBox.activeInHierarchy && !GameManager.instance.ventanaAbierta) {
 				missionBox.SetActive (true);
 				GameManager.instance.ventanaAbierta = true;
-			} else {
+			} else if(missionBox.activeInHierarchy){
 				GameManager.instance.ventanaAbierta = false;
 				missionBox.SetActive (false);
 			}
