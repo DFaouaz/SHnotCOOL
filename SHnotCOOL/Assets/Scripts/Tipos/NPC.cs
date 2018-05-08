@@ -9,9 +9,12 @@ public class NPC : Mission {
 	public Queue<string> frasesEstandar = new Queue<string> ();
 	[HideInInspector]
 	public bool alreadyTalked = false;
+	[HideInInspector]
+	public MissionMark missionMark;
 
 
 	protected override void Start(){
+		missionMark = GetComponentInChildren<MissionMark> ();
 		base.Start ();
 		LeeDialogo ();
 	}

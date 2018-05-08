@@ -23,8 +23,11 @@ public class DialogueManager : MonoBehaviour {
     // cola de strings( el primero en meterse es el primero en salir
 	public Queue<string> frases;
 	public Queue<FraseEspia> frasesEspia;
-	public static DialogueManager instance;
 	bool seeingMission = false;
+	public Sprite exclamacion, interrogacion;
+
+
+	public static DialogueManager instance;
 
 	void Awake(){
 		if (instance == null){
@@ -112,6 +115,7 @@ public class DialogueManager : MonoBehaviour {
 			currentNPC.TerminarMision ();
 		} else
 			FinConversacion ();
+		SelectMissionMark ();
 	}
 	public void EmparejaEspia(){
 		GameObject.FindGameObjectWithTag (currentNPC.pasos.ToArray () [0].tagObjeto).AddComponent<Espionaje> ().NPCMision = currentNPC;
@@ -237,6 +241,7 @@ public class DialogueManager : MonoBehaviour {
 		MissionManager.instance.AñadirMision (currentNPC);
 		seeingMission = false;
 		CerrarPanelDeMision ();
+		SelectMissionMark ();
 	}
 
 	void VerPanelDeMision(){
@@ -289,5 +294,15 @@ public class DialogueManager : MonoBehaviour {
 		//Vuelve a abrir el DialogueCanvas
 		AbreCierraDialogueCanvas();
 		botonHablar.Select ();
+		SelectMissionMark ();
+	}
+
+	void SelectMissionMark(){
+		if (currentNPC.alreadyTalked && !currentNPC.isAcepted && currentNPC.tipoDeMision != Mission.TipoDeMision.None)
+			currentNPC.missionMark.UpdateRender (MissionMark.Est.Exclamacion);
+		else if (currentNPC.alreadyTalked && currentNPC.isAcepted && currentNPC.tipoDeMision != Mission.TipoDeMision.None)
+			currentNPC.missionMark.UpdateRender (MissionMark.Est.Interrogacion);
+		else
+			currentNPC.missionMark.UpdateRender (MissionMark.Est.None);
 	}
 }
