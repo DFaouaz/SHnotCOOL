@@ -7,26 +7,25 @@ using UnityEngine.SceneManagement;
 public class ExamManager : MonoBehaviour {
 
 
-	public Text mensaje;
-
-	void Start(){
-		mensaje = GameObject.FindGameObjectWithTag ("MensajeExamen").GetComponent<Text> ();
-		mensaje.gameObject.SetActive (false);
-	}
+	GameObject player;
 
 
     void OnTriggerEnter2D(Collider2D col){
-		if (col.tag == "Player")
-			mensaje.gameObject.SetActive (true);			
+		if (col.tag == "Player") {
+			MessageManager.instance.ShowMessage ("Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para realizar el examen.");
+			player = col.gameObject;
+		}		
     }
 
 	void OnTriggerExit2D(Collider2D col){
-		if (col.tag == "Player")
-			mensaje.gameObject.SetActive (false);
+		if (col.tag == "Player") {
+			MessageManager.instance.CloseMessage ();
+			player = null;
+		}
 	}
 
 	void Update(){
-		if (mensaje.gameObject.activeInHierarchy && Input.GetKeyDown (GameManager.instance.botonInteractuar))
+		if (player != null && Input.GetKeyDown (GameManager.instance.botonInteractuar))
 			EnterExam ();
 	}
 

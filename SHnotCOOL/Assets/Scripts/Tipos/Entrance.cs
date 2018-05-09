@@ -24,20 +24,18 @@ public class Entrance : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D col){
 		if (col.tag == "Player") {
 			GameManager.instance.thereIsAnInteractiveEvent = false;
-			em.mensajeEscena.gameObject.SetActive (false);
+			MessageManager.instance.CloseMessage ();
 			em.entrance = null;
 		}
 	}
 
 	void MuestraMensaje(){
-		if (em.mensajeEscena != null) {
-			em.mensajeEscena.gameObject.SetActive (true);
-			GameManager.instance.thereIsAnInteractiveEvent = true;
-			if (!isExit)
-				em.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para acceder al\n" + entranceName;
-			else
-				em.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para salir de\n" + GameManager.instance.lastEntrance.entranceName;
-		}
+		GameManager.instance.thereIsAnInteractiveEvent = true;
+		if (!isExit)
+			MessageManager.instance.ShowMessage("Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para acceder al\n" + entranceName);
+		else
+			MessageManager.instance.ShowMessage("Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para salir de\n" + GameManager.instance.lastEntrance.entranceName);
+		
 	}
 
 	public void MoveToConnection(GameObject character){
@@ -47,6 +45,7 @@ public class Entrance : MonoBehaviour {
 			character.transform.position = entranceConnection.gameObject.transform.position; 
 		ChooseExam ();
 		GameManager.instance.lastEntrance = this;
+		GameManager.instance.lastPosEntrance = this.gameObject.transform.position;
 	}
 
 	void ChooseExam(){

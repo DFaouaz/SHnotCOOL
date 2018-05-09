@@ -10,27 +10,24 @@ public class Shoping : MonoBehaviour {
 	public CanvasRenderer tienda_;
 
 	public string currentScene;
-	public Text dialogueMensaje;
 	public KeyCode botonInteraccion;
 	public Button primerBoton;
 	bool collisionn;
 	// Use this for initialization
 	void Start () {
-		dialogueMensaje.gameObject.SetActive (false);
-		dialogueMensaje.text = "Pulsar " + botonInteraccion.ToString () + " para interactuar.";
 		tienda_.gameObject.SetActive (false);
 
 	}
 	void OnCollisionEnter2D(Collision2D collision) {
 		if (collision.gameObject.tag == "Player") {
-		    dialogueMensaje.gameObject.SetActive (true);
+			MessageManager.instance.ShowMessage ("Pulsar " + botonInteraccion.ToString () + " para interactuar.");
 			collisionn = true;
 		}
 	}
 	void OnCollisionExit2D(Collision2D col){
 		if (col.gameObject.tag == "Player") {
-			dialogueMensaje.gameObject.SetActive (false);
 			collisionn = false;
+			MessageManager.instance.CloseMessage ();
 		}
 	}
 	void CheckInputDialogue(){
@@ -40,7 +37,7 @@ public class Shoping : MonoBehaviour {
 				primerBoton.Select ();
 			else
 				primerBoton.FindSelectableOnDown ().Select ();
-			dialogueMensaje.gameObject.SetActive (false);
+			MessageManager.instance.CloseMessage ();
 			GameManager.instance.ventanaAbierta = true;
 		} else if(!collisionn)
 			tienda_.gameObject.SetActive (false);

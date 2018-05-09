@@ -94,7 +94,7 @@ public class Slot : MonoBehaviour
 					}			
 				} else {
 					im.AbreYCierraInventario ();
-					DialogueManager.instance.dialogueMensaje.gameObject.SetActive (true);
+					MessageManager.instance.ShowMessage("Pulsa " + GameManager.instance.botonInteractuar.ToString() + " para interactuar.");
 				}
 				im.modoDarObjeto = false;
 			} else {

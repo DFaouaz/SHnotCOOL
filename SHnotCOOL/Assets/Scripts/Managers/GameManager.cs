@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour {
 	public KeyCode botonInteractuar;
 	[HideInInspector]
 	public Entrance lastEntrance;
+	[HideInInspector]
+	public Vector3 lastPosEntrance;
 
 	// Añadimos las variables necesarias para almacenar información
 	[HideInInspector]
@@ -96,7 +98,6 @@ public class GameManager : MonoBehaviour {
 
 		Invoke ("CambiaAEscenaPrincipal", 0.6f);
 		Time.timeScale = 0.2f;
-		MuevePersonajes ();
 	}
 
     //Minijuego de Historia
@@ -105,21 +106,18 @@ public class GameManager : MonoBehaviour {
 		finHistoria = true;
         Invoke("CambiaAEscenaPrincipal",0.1f);
 		Time.timeScale = 0.2f;
-		MuevePersonajes ();
     }
     //Minijuego de Lengua
     public void FinExamenLengua(){
 		finLengua = true;
 		Invoke ("CambiaAEscenaPrincipal", 0.3f);
 		Time.timeScale = 0.1f;
-		MuevePersonajes ();
 	}
     //Minijuego de Geografía
     public void FinExamenGeografia(){
 		finGeo = true;
         Invoke("CambiaAEscenaPrincipal", 0.3f);
 		Time.timeScale = 0.1f;
-		MuevePersonajes ();
     }
     /*public void FinPasillos(){
 		Invoke("CambiaAEscenaPrincipal", 0.3f);
@@ -154,10 +152,10 @@ public class GameManager : MonoBehaviour {
 
 	//Mueve personajes
 	public void MuevePersonajes(){
-		if (lastEntrance != null) {
+		if (lastPosEntrance != Vector3.zero) {
 			//Movemos los personajes a la ultima entrada
-			GameObject.FindGameObjectWithTag ("Player").transform.position = lastEntrance.transform.position;
-			GameObject.FindGameObjectWithTag ("Negro").transform.position = lastEntrance.transform.position;
+			GameObject.FindGameObjectWithTag ("Player").transform.position = lastPosEntrance;
+			GameObject.FindGameObjectWithTag ("Negro").transform.position = lastPosEntrance;
 		}
 	}
 }

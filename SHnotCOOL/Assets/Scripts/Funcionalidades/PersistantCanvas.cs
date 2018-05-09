@@ -28,6 +28,7 @@ public class PersistantCanvas : MonoBehaviour {
 		}catch{
 			Debug.Log ("HUDMaganer gameobject desactivado en la jeranquía");
 		}
+		MessageManager.instance.CloseMessage ();
 	}
 	void OnDisable(){
 		SceneManager.sceneLoaded -= OnSceneLoaded;

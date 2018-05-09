@@ -14,7 +14,6 @@ public class HUDManager : MonoBehaviour {
 	int indice;
 	public CanvasRenderer inventory;
 	public KeyCode teclaParaAbrirYCerrar;
-	public Text mensajeCoger;
 	public Text mensajeSustitucion;
 	public Text mensajeNoSustitucion;
 	public Sprite Aprobado;
@@ -22,7 +21,6 @@ public class HUDManager : MonoBehaviour {
 	//Hace referencia al ultimo objeto que se ha tocado
 	[HideInInspector]
 	public Coleccionable objeto;
-	bool huecoNegro = false;
 	[HideInInspector]
 	public bool modoSustitucion=false;
 	[HideInInspector]
@@ -40,11 +38,9 @@ public class HUDManager : MonoBehaviour {
 
 	void Start () {
 		modoDarObjeto = false;
-		mensajeCoger.text = "Pulsar " + GameManager.instance.botonInteractuar.ToString() + " para coger el objeto.";
 		InicializeSlots ();
 		UpdateExams ();
 		inventory.gameObject.SetActive (false);
-		mensajeCoger.gameObject.SetActive (false);
 		mensajeSustitucion.gameObject.SetActive (false);
 		mensajeNoSustitucion.gameObject.SetActive (false);
 		negroCount.gameObject.SetActive (false);
@@ -142,13 +138,12 @@ public class HUDManager : MonoBehaviour {
 
 		//Comprueba si hay objeto y lo guarda en el inventario
 		void CheckInputObject(){
-			if (objeto != null) {
-				mensajeCoger.gameObject.SetActive (true);
+		if (objeto != null) {
+			MessageManager.instance.ShowMessage ("Pulsar " + GameManager.instance.botonInteractuar.ToString () + " para coger el objeto.");
 			if (Input.GetKeyDown (GameManager.instance.botonInteractuar))
-					SaveObject ();
-			} else
-				mensajeCoger.gameObject.SetActive (false);
+				SaveObject ();
 		}
+	}
 	//Comprueba si el negro ya esta desbloqueado
 	public void ActivateNegroSlot(){
 		if (GameManager.instance.habladoNegro) {
@@ -204,7 +199,7 @@ public class HUDManager : MonoBehaviour {
 	public void GiveObject () {
 		if (!wholeEmpty ()) {
 			DialogueManager.instance.AbreCierraDialogueCanvas (); 					//Cierra
-			DialogueManager.instance.dialogueMensaje.gameObject.SetActive(false);	//Desactiva el mensaje
+			MessageManager.instance.CloseMessage();	//Desactiva el mensaje
 			AbreYCierraInventario ();
 			modoDarObjeto = true;
 		}            

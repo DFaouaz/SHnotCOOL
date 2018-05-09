@@ -7,7 +7,6 @@ public class EntranceManager : MonoBehaviour {
 
 
 	public Entrance entrance;
-	public Text mensajeEscena;
 	[HideInInspector]
 	public GameObject player,negro;
 

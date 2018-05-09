@@ -12,7 +12,6 @@ public class DialogueManager : MonoBehaviour {
     public Text sentence;
     public GameObject dialogueBox;
 	public GameObject missionPanel;
-	public Text dialogueMensaje;
 	[HideInInspector]
 	public NPC currentNPC;
 	[HideInInspector]
@@ -37,8 +36,6 @@ public class DialogueManager : MonoBehaviour {
 	}
 
     void Start(){
-		dialogueMensaje.text = "Pulsar " + GameManager.instance.botonInteractuar.ToString() + " para interactuar.";
-		dialogueMensaje.gameObject.SetActive (false);
 		dialogueBox.SetActive (false);
 		missionPanel.SetActive (false);
 		InicializaMissionMarks ();
@@ -52,7 +49,7 @@ public class DialogueManager : MonoBehaviour {
 	void CheckInputDialogue(){
 		
 		if (Input.GetKeyDown (GameManager.instance.botonInteractuar) && !isTalking && currentNPC != null) {
-			dialogueMensaje.gameObject.SetActive (false);
+			MessageManager.instance.CloseMessage();
 			AbreCierraDialogueCanvas ();
 		} else if (isTalking && (Input.GetKeyDown (KeyCode.Space)
 			|| Input.GetKeyDown (KeyCode.Mouse0) || Input.GetKeyDown (GameManager.instance.botonInteractuar))) { 
@@ -127,7 +124,7 @@ public class DialogueManager : MonoBehaviour {
 		if (!dialogueBox.activeInHierarchy && !GameManager.instance.ventanaAbierta) {
 			GameManager.instance.ventanaAbierta = true;
 			dialogueBox.SetActive (true);
-			dialogueMensaje.gameObject.SetActive (false);
+			MessageManager.instance.CloseMessage();
 			if (currentNPC != null) {
 				ActualizaInicioDelCanvas ();
 				SeleccionaBoton ();
@@ -135,7 +132,7 @@ public class DialogueManager : MonoBehaviour {
 		} else {
 			dialogueBox.SetActive (false);
 			if (currentNPC != null)
-				dialogueMensaje.gameObject.SetActive (true);
+				MessageManager.instance.ShowMessage("Pulsa " + GameManager.instance.botonInteractuar.ToString() + " para interactuar.");
 			GameManager.instance.ventanaAbierta = false;
 		}
 	}
