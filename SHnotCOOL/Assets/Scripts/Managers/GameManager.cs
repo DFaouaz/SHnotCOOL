@@ -12,13 +12,11 @@ public class GameManager : MonoBehaviour {
 	// Creamos una variable estática para almacenar la instancia única
 	public static GameManager instance = null;
 	//Nombre del piso principal
-	public string EscenaPiso1;
+	public string escenaPrincipal;
 	public string EscenaPiso2;
 	public KeyCode botonInteractuar;
 	[HideInInspector]
-	public Vector2 Escena1PlayerPos;
-	[HideInInspector]
-    public Vector2 Escena2PlayerPos;
+	public Entrance lastEntrance;
 
 	// Añadimos las variables necesarias para almacenar información
 	[HideInInspector]
@@ -83,7 +81,7 @@ public class GameManager : MonoBehaviour {
 	// para conseguir las funcionalidades que pretendamos incluir.
 	//Métodos generales
 	void CambiaAEscenaPrincipal(){
-		SceneManager.LoadScene (EscenaPiso1);
+		SceneManager.LoadScene (escenaPrincipal);
 		Time.timeScale = 1;
 	}
 
@@ -98,6 +96,7 @@ public class GameManager : MonoBehaviour {
 
 		Invoke ("CambiaAEscenaPrincipal", 0.6f);
 		Time.timeScale = 0.2f;
+		MuevePersonajes ();
 	}
 
     //Minijuego de Historia
@@ -106,24 +105,27 @@ public class GameManager : MonoBehaviour {
 		finHistoria = true;
         Invoke("CambiaAEscenaPrincipal",0.1f);
 		Time.timeScale = 0.2f;
+		MuevePersonajes ();
     }
     //Minijuego de Lengua
     public void FinExamenLengua(){
 		finLengua = true;
 		Invoke ("CambiaAEscenaPrincipal", 0.3f);
 		Time.timeScale = 0.1f;
+		MuevePersonajes ();
 	}
     //Minijuego de Geografía
     public void FinExamenGeografia(){
 		finGeo = true;
         Invoke("CambiaAEscenaPrincipal", 0.3f);
 		Time.timeScale = 0.1f;
+		MuevePersonajes ();
     }
-    public void FinPasillos(){
-        Invoke("CambiaAEscenaPrincipal", 0.3f);
-    }
+    /*public void FinPasillos(){
+		Invoke("CambiaAEscenaPrincipal", 0.3f);
+    }*/
     public void FinMaton(){
-        Invoke("CambiaAEscenaPrincipal", 0);
+		Invoke("CambiaAEscenaPrincipal", 0);
     }
     public void SubePuntosLengua(){
 		FindObjectOfType<Puntos> ().SubePuntos ();
@@ -148,5 +150,14 @@ public class GameManager : MonoBehaviour {
 	}
 	public void ActualizaDinero(){
 		FindObjectOfType<HUDManager> ().UpdateMoney ();
+	}
+
+	//Mueve personajes
+	public void MuevePersonajes(){
+		if (lastEntrance != null) {
+			//Movemos los personajes a la ultima entrada
+			GameObject.FindGameObjectWithTag ("Player").transform.position = lastEntrance.transform.position;
+			GameObject.FindGameObjectWithTag ("Negro").transform.position = lastEntrance.transform.position;
+		}
 	}
 }

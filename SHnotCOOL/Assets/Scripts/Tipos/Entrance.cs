@@ -36,18 +36,30 @@ public class Entrance : MonoBehaviour {
 			if (!isExit)
 				em.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para acceder al\n" + entranceName;
 			else
-				em.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para salir de\n" + em.lastMovedEntrance.entranceName;
+				em.mensajeEscena.text = "Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para salir de\n" + GameManager.instance.lastEntrance.entranceName;
 		}
 	}
 
 	public void MoveToConnection(GameObject character){
 		if (isExit) 
-			character.transform.position = em.lastMovedEntrance.gameObject.transform.position;
+			character.transform.position = GameManager.instance.lastEntrance.gameObject.transform.position;
 		else
 			character.transform.position = entranceConnection.gameObject.transform.position; 
-		em.lastMovedEntrance = this;
+		ChooseExam ();
+		GameManager.instance.lastEntrance = this;
 	}
 
-
+	void ChooseExam(){
+		if (examSceneName == "Matematicas" && !GameManager.instance.finMates)
+			GameManager.instance.Examen = 0;
+		else if (examSceneName == "Historia" && !GameManager.instance.finHistoria)
+			GameManager.instance.Examen = 1;
+		else if (examSceneName == "Lengua" && !GameManager.instance.finLengua)
+			GameManager.instance.Examen = 2;
+		else if (examSceneName == "Geografia" && !GameManager.instance.finGeo)
+			GameManager.instance.Examen = 3;
+		else
+			GameManager.instance.Examen = 4;	
+	}
 
 }

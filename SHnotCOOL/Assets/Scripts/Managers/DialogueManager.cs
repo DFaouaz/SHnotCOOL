@@ -41,6 +41,7 @@ public class DialogueManager : MonoBehaviour {
 		dialogueMensaje.gameObject.SetActive (false);
 		dialogueBox.SetActive (false);
 		missionPanel.SetActive (false);
+		InicializaMissionMarks ();
     }
 
     void Update() {
@@ -54,7 +55,7 @@ public class DialogueManager : MonoBehaviour {
 			dialogueMensaje.gameObject.SetActive (false);
 			AbreCierraDialogueCanvas ();
 		} else if (isTalking && (Input.GetKeyDown (KeyCode.Space)
-		            || Input.GetKeyDown (KeyCode.Mouse0))) { 
+			|| Input.GetKeyDown (KeyCode.Mouse0) || Input.GetKeyDown (GameManager.instance.botonInteractuar))) { 
 			if (ableInput) {
 				if (currentNPC != null)
 					MuestraFrases ();
@@ -298,11 +299,21 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	void SelectMissionMark(){
-		if (currentNPC.alreadyTalked && !currentNPC.isAcepted && currentNPC.tipoDeMision != Mission.TipoDeMision.None)
+		if (!currentNPC.isAcepted && currentNPC.tipoDeMision != Mission.TipoDeMision.None)
 			currentNPC.missionMark.UpdateRender (MissionMark.Est.Exclamacion);
-		else if (currentNPC.alreadyTalked && currentNPC.isAcepted && currentNPC.tipoDeMision != Mission.TipoDeMision.None)
+		else if (currentNPC.isAcepted && currentNPC.tipoDeMision != Mission.TipoDeMision.None)
 			currentNPC.missionMark.UpdateRender (MissionMark.Est.Interrogacion);
 		else
 			currentNPC.missionMark.UpdateRender (MissionMark.Est.None);
+	}
+
+	void InicializaMissionMarks(){
+		NPC[] n = FindObjectsOfType<NPC> ();
+		foreach (NPC i in n) {
+			if (i.tipoDeMision != Mission.TipoDeMision.None && i.missionMark != null)
+				i.missionMark.UpdateRender (MissionMark.Est.Exclamacion);
+			else if(i.missionMark != null)
+				i.missionMark.UpdateRender (MissionMark.Est.None);
+		}
 	}
 }

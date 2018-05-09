@@ -139,16 +139,16 @@ public class PlayerController : MonoBehaviour {
 	Animator animator;
 	void Start(){
 		animator = GetComponent<Animator> ();
-		if (GameManager.instance.Escena1PlayerPos == Vector2.zero)
+		/*if (GameManager.instance.Escena1PlayerPos == Vector2.zero)
 			GameManager.instance.Escena1PlayerPos = myRigidbody.position;
 		else if (GameManager.instance.Escena2PlayerPos == Vector2.zero)
 			GameManager.instance.Escena2PlayerPos = myRigidbody.position;
 		else {
-			if (SceneManager.GetActiveScene ().name == GameManager.instance.EscenaPiso1)
+			if (SceneManager.GetActiveScene ().name == GameManager.instance.escenaPrincipal)
 				myRigidbody.position = GameManager.instance.Escena1PlayerPos;
 			else if (SceneManager.GetActiveScene ().name == GameManager.instance.EscenaPiso2)
 				myRigidbody.position = GameManager.instance.Escena2PlayerPos;
-		}
+		}*/
 	}
 
 	void Update () {

@@ -7,10 +7,9 @@ public class EntranceManager : MonoBehaviour {
 
 
 	public Entrance entrance;
-	[HideInInspector]
-	public Entrance lastMovedEntrance;
 	public Text mensajeEscena;
-	GameObject player,negro;
+	[HideInInspector]
+	public GameObject player,negro;
 
 	void Start(){
 		player = GameObject.FindGameObjectWithTag ("Player");

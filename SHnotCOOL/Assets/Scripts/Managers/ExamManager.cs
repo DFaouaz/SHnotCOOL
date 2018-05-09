@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ExamManager : MonoBehaviour {
 
+
 	public Text mensaje;
 
 	void Start(){

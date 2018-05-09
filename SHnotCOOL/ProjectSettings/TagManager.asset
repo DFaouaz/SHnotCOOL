@@ -25,6 +25,9 @@ TagManager:
   - Limpieza
   - Arboles
   - MensajeExamen
+  - VidaEnemigo
+  - FinHistoria
+  - VidaJugador
   layers:
   - Default
   - TransparentFX
@@ -70,6 +73,9 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: SobrePersonaje
+    uniqueID: 2460359967
     locked: 0
   - name: MissionMarker
     uniqueID: 3136193531

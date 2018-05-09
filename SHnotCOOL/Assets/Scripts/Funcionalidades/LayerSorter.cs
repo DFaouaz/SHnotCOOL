@@ -28,9 +28,9 @@ public class LayerSorter : MonoBehaviour {
 			obstacles.Remove (obs);
 			if (obstacles.Count == 0) {
 				if (this.gameObject.tag == "Negro")
-					parentSp.sortingOrder = 199;
+					parentSp.sortingOrder = 499;
 				else
-					parentSp.sortingOrder = 200; //Provisional
+					parentSp.sortingOrder = 500; //Provisional
 			}
 			else {
 				obstacles.Sort ();

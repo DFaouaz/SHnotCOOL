@@ -50,3 +50,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minijuegos/Pasillos.unity
     guid: 9de326ba0bdbb9b48a5ed3e309ae3b11
+  - enabled: 1
+    path: Assets/Scenes/Mapeado/Escuela.unity
+    guid: 07962e73716561b47b9d25832da11bf9

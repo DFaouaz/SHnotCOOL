@@ -16141,6 +16141,7 @@ GameObject:
   - component: {fileID: 240085452}
   - component: {fileID: 240085451}
   - component: {fileID: 240085450}
+  - component: {fileID: 240085449}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -16174,6 +16175,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &240085449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 240085447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d55004f4e486040b6bf251afc5c97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objs: []
 --- !u!114 &240085450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21858,9 +21871,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 250
+  m_SortingLayerID: -1834607329
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
@@ -22907,6 +22920,7 @@ GameObject:
   - component: {fileID: 281679185}
   - component: {fileID: 281679184}
   - component: {fileID: 281679183}
+  - component: {fileID: 281679186}
   m_Layer: 5
   m_Name: MensajeExamen
   m_TagString: MensajeExamen
@@ -23005,6 +23019,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 281679181}
+--- !u!114 &281679186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 281679181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Escuela
 --- !u!1 &286693788
 GameObject:
   m_ObjectHideFlags: 0
@@ -26275,9 +26302,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 250
+  m_SortingLayerID: -1834607329
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
@@ -27590,6 +27617,7 @@ GameObject:
   - component: {fileID: 464816009}
   - component: {fileID: 464816012}
   - component: {fileID: 464816011}
+  - component: {fileID: 464816010}
   m_Layer: 5
   m_Name: Shops
   m_TagString: Untagged
@@ -27617,6 +27645,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &464816010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464816008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Escuela
 --- !u!114 &464816011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29476,8 +29517,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entrance: {fileID: 0}
-  lastMovedEntrance: {fileID: 0}
   mensajeEscena: {fileID: 724623175}
+  player: {fileID: 0}
+  negro: {fileID: 0}
 --- !u!1 &564227287
 GameObject:
   m_ObjectHideFlags: 0
@@ -33229,6 +33271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 717611285}
   - component: {fileID: 717611286}
+  - component: {fileID: 717611287}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -33275,6 +33318,23 @@ MonoBehaviour:
   - {fileID: 1519774805}
   - {fileID: 1392219215}
   panelOpciones: {fileID: 63742529}
+--- !u!114 &717611287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717611284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Escuela
+  - Matematicas
+  - Lengua
+  - Geografia
+  - Historia
 --- !u!1 &719065052
 GameObject:
   m_ObjectHideFlags: 0
@@ -33416,6 +33476,7 @@ GameObject:
   - component: {fileID: 724623173}
   - component: {fileID: 724623176}
   - component: {fileID: 724623175}
+  - component: {fileID: 724623174}
   m_Layer: 5
   m_Name: MensajeEscena
   m_TagString: MensajeEscena
@@ -33442,6 +33503,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 175}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &724623174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 724623172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Escuela
 --- !u!114 &724623175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33686,6 +33760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 734891795}
   - component: {fileID: 734891796}
+  - component: {fileID: 734891797}
   m_Layer: 5
   m_Name: MisionManager
   m_TagString: Untagged
@@ -33738,6 +33813,19 @@ MonoBehaviour:
   - {fileID: 2042211178}
   - {fileID: 730923383}
   - {fileID: 1411721388}
+--- !u!114 &734891797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 734891794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Escuela
 --- !u!1001 &735545230
 Prefab:
   m_ObjectHideFlags: 0
@@ -33863,6 +33951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 749572994}
   - component: {fileID: 749572995}
+  - component: {fileID: 749572996}
   m_Layer: 5
   m_Name: DialogueCanvas
   m_TagString: Untagged
@@ -33919,6 +34008,19 @@ MonoBehaviour:
   ableInput: 0
   exclamacion: {fileID: 21300000, guid: fd466d92669b6874380e90baeb91a7a7, type: 3}
   interrogacion: {fileID: 21300002, guid: fd466d92669b6874380e90baeb91a7a7, type: 3}
+--- !u!114 &749572996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749572993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Escuela
 --- !u!1 &754510789
 GameObject:
   m_ObjectHideFlags: 0
@@ -35959,9 +36061,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 250
+  m_SortingLayerID: -1834607329
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
@@ -49786,7 +49888,7 @@ GameObject:
   - component: {fileID: 1104070865}
   - component: {fileID: 1104070864}
   m_Layer: 0
-  m_Name: Piso1-AulaLengua
+  m_Name: Piso2-AulaLengua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50020,9 +50122,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 250
+  m_SortingLayerID: -1834607329
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
@@ -61579,7 +61681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55446c2dd20782343be6a5f6a690dde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapHeight: 500
+  mapHeight: 250
 --- !u!1 &1325461662
 GameObject:
   m_ObjectHideFlags: 0
@@ -73483,11 +73585,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bda2c9c529deb749bc49f0f1adfe017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EscenaPiso1: Piso1
+  escenaPrincipal: Escuela
   EscenaPiso2: Piso2
   botonInteractuar: 101
-  Escena1PlayerPos: {x: 0, y: 0}
-  Escena2PlayerPos: {x: 0, y: 0}
+  lastEntrance: {fileID: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
   lastScene: 
@@ -83195,6 +83296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599306756}
   - component: {fileID: 1599306754}
+  - component: {fileID: 1599306755}
   m_Layer: 5
   m_Name: Inventory/HUDCanvas
   m_TagString: Untagged
@@ -83227,7 +83329,7 @@ MonoBehaviour:
   - {fileID: 719065057}
   - {fileID: 1113100585}
   inventory: {fileID: 663298952}
-  teclaParaAbrirYCerrar: 114
+  teclaParaAbrirYCerrar: 105
   mensajeCoger: {fileID: 824767659}
   mensajeSustitucion: {fileID: 1700664854}
   mensajeNoSustitucion: {fileID: 1432715045}
@@ -83242,6 +83344,19 @@ MonoBehaviour:
   moneyCount: {fileID: 1844066710}
   negroCount: {fileID: 754510790}
   tagDarObjeto: 
+--- !u!114 &1599306755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1599306753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Escuela
 --- !u!224 &1599306756
 RectTransform:
   m_ObjectHideFlags: 0
@@ -93328,7 +93443,7 @@ GameObject:
   - component: {fileID: 1952879997}
   - component: {fileID: 1952879996}
   m_Layer: 0
-  m_Name: Piso1-AulaGeografia
+  m_Name: Piso2-AulaGeografia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93425,6 +93540,11 @@ Prefab:
     - target: {fileID: 4911144613218930, guid: 6798309ad79c7b44bbdfcebd4077d326, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212755733806418140, guid: 6798309ad79c7b44bbdfcebd4077d326,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6798309ad79c7b44bbdfcebd4077d326, type: 2}
@@ -96108,9 +96228,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 250
+  m_SortingLayerID: -1834607329
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
