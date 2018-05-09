@@ -8,10 +8,8 @@ public class CambiaEscena : MonoBehaviour {
 	public Text mensajeEscena;
 	[HideInInspector]
 	public Entrance entrance;
-	string actualScene;
 
 	void Start(){
-		actualScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name;
 		if (mensajeEscena == null)
 			mensajeEscena = GameObject.FindGameObjectWithTag ("MensajeEscena").GetComponent<Text> ();
 		if (entrance == null)

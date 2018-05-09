@@ -152,10 +152,19 @@ public class GameManager : MonoBehaviour {
 
 	//Mueve personajes
 	public void MuevePersonajes(){
-		if (lastPosEntrance != Vector3.zero) {
-			//Movemos los personajes a la ultima entrada
-			GameObject.FindGameObjectWithTag ("Player").transform.position = lastPosEntrance;
-			GameObject.FindGameObjectWithTag ("Negro").transform.position = lastPosEntrance;
+		if(SceneManager.GetActiveScene().name == "Escuela"){
+			if (lastPosEntrance != Vector3.zero) {
+				//Movemos los personajes a la ultima entrada
+				GameObject.FindGameObjectWithTag ("Player").transform.position = lastPosEntrance;
+				if (habladoNegro)
+					Invoke ("MoveNegro", 0.25f);
+			}
 		}
+	}
+	void MoveNegro(){
+		GameObject player = GameObject.FindGameObjectWithTag ("Player");
+		GameObject negro = GameObject.FindGameObjectWithTag ("Negro");
+		if(habladoNegro)
+			negro.transform.position = player.transform.position;
 	}
 }

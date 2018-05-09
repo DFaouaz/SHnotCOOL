@@ -494,7 +494,7 @@ Prefab:
         type: 2}
       propertyPath: playerTarget
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 33144926}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
   m_IsPrefabParent: 0
@@ -16185,7 +16185,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d55004f4e486040b6bf251afc5c97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objs: []
+  objs:
+  - {fileID: 1668322799}
+  - {fileID: 749572996}
+  - {fileID: 1599306755}
+  - {fileID: 734891797}
+  - {fileID: 464816010}
+  - {fileID: 717611287}
 --- !u!114 &240085450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40966,7 +40972,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1665088771}
+    m_TransformParent: {fileID: 881825491}
     m_Modifications:
     - target: {fileID: 4114261313992518, guid: 542b21b1f343bb14e9b600a9797577f0, type: 2}
       propertyPath: m_LocalPosition.x
@@ -40998,7 +41004,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4114261313992518, guid: 542b21b1f343bb14e9b600a9797577f0, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 542b21b1f343bb14e9b600a9797577f0, type: 2}
@@ -46013,6 +46019,7 @@ Transform:
   - {fileID: 1795495817}
   - {fileID: 294733830}
   - {fileID: 1477632835}
+  - {fileID: 1304489944}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -51459,14 +51466,6 @@ CompositeCollider2D:
         Y: 272812512
       - X: 207812496
         Y: 272812512
-    - - X: 110000000
-        Y: 206250000
-      - X: 100000000
-        Y: 206250000
-      - X: 100000000
-        Y: 190000000
-      - X: 110000000
-        Y: 190000000
     - - X: 350000000
         Y: 206250000
       - X: 340000000
@@ -51474,6 +51473,14 @@ CompositeCollider2D:
       - X: 340000000
         Y: 190000000
       - X: 350000000
+        Y: 190000000
+    - - X: 110000000
+        Y: 206250000
+      - X: 100000000
+        Y: 206250000
+      - X: 100000000
+        Y: 190000000
+      - X: 110000000
         Y: 190000000
     - - X: 160000000
         Y: 204062496
@@ -51852,14 +51859,14 @@ CompositeCollider2D:
       - {x: 20.125, y: 27.5}
       - {x: 20.21875, y: 27.281252}
       - {x: 20.78125, y: 27.281252}
-    - - {x: 11, y: 20.625}
-      - {x: 10, y: 20.625}
-      - {x: 10, y: 19}
-      - {x: 11, y: 19}
     - - {x: 35, y: 20.625}
       - {x: 34, y: 20.625}
       - {x: 34, y: 19}
       - {x: 35, y: 19}
+    - - {x: 11, y: 20.625}
+      - {x: 10, y: 20.625}
+      - {x: 10, y: 19}
+      - {x: 11, y: 19}
     - - {x: 16, y: 20.40625}
       - {x: 13, y: 20.40625}
       - {x: 13, y: 18.625}
@@ -86497,7 +86504,6 @@ Transform:
   - {fileID: 1783086501}
   - {fileID: 1952321965}
   - {fileID: 490359954}
-  - {fileID: 1304489944}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -86525,6 +86531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668322797}
   - component: {fileID: 1668322798}
+  - component: {fileID: 1668322799}
   m_Layer: 5
   m_Name: MessageManager
   m_TagString: Untagged
@@ -86563,6 +86570,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensaje: {fileID: 281679184}
+--- !u!114 &1668322799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1668322796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4830a57cd5a064d989bbab7bc09eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Escuela
 --- !u!1 &1668941787
 GameObject:
   m_ObjectHideFlags: 0

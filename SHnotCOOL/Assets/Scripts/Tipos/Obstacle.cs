@@ -7,7 +7,7 @@ public class Obstacle : MonoBehaviour, IComparable<Obstacle>
 {
 	public SpriteRenderer MySpRenderer { get; set; }
 
-	void Start () {
+	void Awake () {
 		MySpRenderer = GetComponent<SpriteRenderer> ();
 	}
 	

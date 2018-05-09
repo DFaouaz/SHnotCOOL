@@ -296,12 +296,14 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	void SelectMissionMark(){
-		if (!currentNPC.isAcepted && currentNPC.tipoDeMision != Mission.TipoDeMision.None)
-			currentNPC.missionMark.UpdateRender (MissionMark.Est.Exclamacion);
-		else if (currentNPC.isAcepted && currentNPC.tipoDeMision != Mission.TipoDeMision.None)
-			currentNPC.missionMark.UpdateRender (MissionMark.Est.Interrogacion);
-		else
-			currentNPC.missionMark.UpdateRender (MissionMark.Est.None);
+		if (currentNPC.missionMark != null) {
+			if (!currentNPC.isAcepted && currentNPC.tipoDeMision != Mission.TipoDeMision.None)
+				currentNPC.missionMark.UpdateRender (MissionMark.Est.Exclamacion);
+			else if (currentNPC.isAcepted && currentNPC.tipoDeMision != Mission.TipoDeMision.None)
+				currentNPC.missionMark.UpdateRender (MissionMark.Est.Interrogacion);
+			else
+				currentNPC.missionMark.UpdateRender (MissionMark.Est.None);
+		}
 	}
 
 	void InicializaMissionMarks(){

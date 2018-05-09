@@ -29,6 +29,7 @@ public class PersistantCharacter : MonoBehaviour {
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode){
 		UpdateShops ();
 		UpdateNPCs ();
+		GameManager.instance.MuevePersonajes ();
 	}
 	void OnDisable(){
 		SceneManager.sceneLoaded -= OnSceneLoaded;

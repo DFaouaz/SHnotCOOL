@@ -26,7 +26,9 @@ public class NegroBehaviour : NPC {
 		
 
 	void FollowPlayer(){
-		if (playerTarget != null) {
+		if (playerTarget == null)
+			playerTarget = FindObjectOfType<PlayerController> ();
+		else {
 			Vector2 x = playerTarget.myRigidbody.position - playerTarget.directions_4.direction.normalized - myRigidbody.position;
 			if (x.magnitude > 0 && (playerTarget.myRigidbody.position - myRigidbody.position).magnitude > minDistance) {
 				x.Normalize ();

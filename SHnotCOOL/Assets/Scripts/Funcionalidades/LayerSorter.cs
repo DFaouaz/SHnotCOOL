@@ -27,14 +27,15 @@ public class LayerSorter : MonoBehaviour {
 			Obstacle obs = col.GetComponentInParent<Obstacle> ();
 			obstacles.Remove (obs);
 			if (obstacles.Count == 0) {
-				if (this.gameObject.tag == "Negro")
-					parentSp.sortingOrder = 499;
+				if (this.gameObject.transform.parent.tag == "Negro")
+					parentSp.sortingOrder = 599;
 				else
-					parentSp.sortingOrder = 500; //Provisional
+					parentSp.sortingOrder = 600; 
 			}
 			else {
 				obstacles.Sort ();
-				parentSp.sortingOrder = obstacles [0].MySpRenderer.sortingOrder - 1;
+				if (this.gameObject.transform.parent.tag == "Negro")
+					parentSp.sortingOrder = obstacles [0].MySpRenderer.sortingOrder - 1;
 			}
 		}
 	}

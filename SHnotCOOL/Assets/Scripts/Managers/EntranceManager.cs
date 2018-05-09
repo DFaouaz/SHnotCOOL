@@ -10,6 +10,15 @@ public class EntranceManager : MonoBehaviour {
 	[HideInInspector]
 	public GameObject player,negro;
 
+	public static EntranceManager instance = null;
+
+	void Awake(){
+		if (instance == null)
+			instance = this;
+		else
+			Destroy (this);
+	}
+
 	void Start(){
 		player = GameObject.FindGameObjectWithTag ("Player");
 		negro = GameObject.FindGameObjectWithTag ("Negro");
@@ -29,6 +38,10 @@ public class EntranceManager : MonoBehaviour {
 	}
 
 	void MoveNegro(){
+		if (player == null || negro == null) {
+			player = GameObject.FindGameObjectWithTag ("Player");
+			negro = GameObject.FindGameObjectWithTag ("Negro");
+		}
 		if(GameManager.instance.habladoNegro)
 		negro.transform.position = player.transform.position;
 	}
