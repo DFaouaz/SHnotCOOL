@@ -70,12 +70,16 @@ public class HUDManager : MonoBehaviour {
 		}
 	}
 
-	public bool BuyObject(Coleccionable compra){
+	public bool BuyObject(Coleccionable compra,PersistantObjects padre){
 		//Si hay espacio, guardalo
 		if (isEmpty ()) {
-			slots [indice].objeto = compra;
-			slots [indice].nombre = compra.NombreColeccionable;
-			slots [indice].imagenObjeto = compra.imagenRepresentacion;
+			GameObject comprado;
+			Coleccionable compradoCaract;
+			comprado=Instantiate (compra.gameObject, padre.gameObject.transform);
+			compradoCaract = comprado.GetComponent<Coleccionable> ();
+			slots [indice].objeto = compradoCaract;
+			slots [indice].nombre = compradoCaract.NombreColeccionable;
+			slots [indice].imagenObjeto = compradoCaract.imagenRepresentacion;
 			slots [indice].UpdateRender ();
 			return true;
 			//objeto.gameObject.SetActive (false);

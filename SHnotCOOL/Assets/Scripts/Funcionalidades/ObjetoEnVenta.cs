@@ -7,6 +7,7 @@ public class ObjetoEnVenta : MonoBehaviour {
 	public Button boton;
 	public Coleccionable objeto;
 	public Text texto_boton;
+	public PersistantObjects Padre_;
 	public int coste_;
 	// Use this for initialization
 	void Start(){
@@ -14,7 +15,7 @@ public class ObjetoEnVenta : MonoBehaviour {
 	}
 
 	public void BotonPulsado(){		
-		if (HUD.BuyObject (objeto) && coste_ <= GameManager.instance.dinero) {
+		if (HUD.BuyObject (objeto,Padre_) && coste_ <= GameManager.instance.dinero) {
 			GameManager.instance.dinero -= coste_;
 			GameManager.instance.ActualizaDinero ();
 			texto_boton.text = "Agotado";

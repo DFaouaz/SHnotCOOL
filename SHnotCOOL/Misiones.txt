@@ -24,7 +24,7 @@ exactamente ropa interior
 ¿Me podriás conseguir unas pantsus?
 #
 ##
-Obten las bragas para Timmy:Pantsus 
+Obten las bragas para Timmy:Pantsus
 ##
 ###
 "snif" "snif"
@@ -86,7 +86,7 @@ Aunque dudo que tu los tengas
 asi que ya me estas buscando unos.
 #
 ##
-Encuentra unos apuntes antes del examen:Apuntes 
+Encuentra unos apuntes antes del examen:Apuntes
 ##
 ###
 Ah muchas graci...Digo...
@@ -217,7 +217,7 @@ Emo 1:Podemos ser tus amigos por un tiempo, si nos ayudas
 Emo 1:Necesitamos que nos traigas algo cortante
 #
 ##
-Consigue un cuchillo para los emos:Cuchillo 
+Consigue un cuchillo para los emos:Cuchillo
 ##
 ###
 Emo 2:Para que queremos un cuchillo, yo me tarigo el almuerzo ya cortado

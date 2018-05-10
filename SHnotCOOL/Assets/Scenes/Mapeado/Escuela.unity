@@ -918,12 +918,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 97db6deadb7ebc546bbdfefe92e20d49, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &107174651 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114466291663084162, guid: 97db6deadb7ebc546bbdfefe92e20d49,
-    type: 2}
-  m_PrefabInternal: {fileID: 107174650}
-  m_Script: {fileID: 11500000, guid: a39a4fa39ca42a14b89e1be8fc3521b1, type: 3}
 --- !u!4 &107174652 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4192459560474354, guid: 97db6deadb7ebc546bbdfefe92e20d49,
@@ -27198,12 +27192,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5660e4a2303aec44688d71cbc228ded7, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &401897371 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114867314904974690, guid: 5660e4a2303aec44688d71cbc228ded7,
-    type: 2}
-  m_PrefabInternal: {fileID: 401897370}
-  m_Script: {fileID: 11500000, guid: a39a4fa39ca42a14b89e1be8fc3521b1, type: 3}
 --- !u!4 &401897372 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4067601199242024, guid: 5660e4a2303aec44688d71cbc228ded7,
@@ -33218,15 +33206,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114467214785374914, guid: ab73ac8e2e9c69a458f3098fa8cfa700,
+        type: 2}
+      propertyPath: NombreColeccionable
+      value: Apuntes
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab73ac8e2e9c69a458f3098fa8cfa700, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &692496006 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114467214785374914, guid: ab73ac8e2e9c69a458f3098fa8cfa700,
-    type: 2}
-  m_PrefabInternal: {fileID: 692496005}
-  m_Script: {fileID: 11500000, guid: a39a4fa39ca42a14b89e1be8fc3521b1, type: 3}
 --- !u!4 &692496007 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4457809369313702, guid: ab73ac8e2e9c69a458f3098fa8cfa700,
@@ -45929,15 +45916,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 114840101093280774, guid: 7509310d8729ff54f83dca1e0fa62577,
+        type: 2}
+      propertyPath: NombreColeccionable
+      value: Olla
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7509310d8729ff54f83dca1e0fa62577, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &879321740 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114840101093280774, guid: 7509310d8729ff54f83dca1e0fa62577,
-    type: 2}
-  m_PrefabInternal: {fileID: 879321739}
-  m_Script: {fileID: 11500000, guid: a39a4fa39ca42a14b89e1be8fc3521b1, type: 3}
 --- !u!4 &879321741 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4424755630893220, guid: 7509310d8729ff54f83dca1e0fa62577,
@@ -46615,8 +46601,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HUD: {fileID: 1599306754}
   boton: {fileID: 930825466}
-  objeto: {fileID: 107174651}
+  objeto: {fileID: 114466291663084162, guid: 97db6deadb7ebc546bbdfefe92e20d49, type: 2}
   texto_boton: {fileID: 1090545111}
+  Padre_: {fileID: 1628965108}
   coste_: 10
 --- !u!114 &930825466
 MonoBehaviour:
@@ -54184,15 +54171,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 114413715169940758, guid: 0aa174f07035b0a4b9b9a175f0005405,
+        type: 2}
+      propertyPath: NombreColeccionable
+      value: Cubiertos
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0aa174f07035b0a4b9b9a175f0005405, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1155736778 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114413715169940758, guid: 0aa174f07035b0a4b9b9a175f0005405,
-    type: 2}
-  m_PrefabInternal: {fileID: 1155736777}
-  m_Script: {fileID: 11500000, guid: a39a4fa39ca42a14b89e1be8fc3521b1, type: 3}
 --- !u!4 &1155736779 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4750647007406814, guid: 0aa174f07035b0a4b9b9a175f0005405,
@@ -60196,8 +60182,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HUD: {fileID: 1599306754}
   boton: {fileID: 1252530040}
-  objeto: {fileID: 879321740}
+  objeto: {fileID: 114840101093280774, guid: 7509310d8729ff54f83dca1e0fa62577, type: 2}
   texto_boton: {fileID: 846788914}
+  Padre_: {fileID: 1628965108}
   coste_: 10
 --- !u!114 &1252530040
 MonoBehaviour:
@@ -71804,8 +71791,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HUD: {fileID: 1599306754}
   boton: {fileID: 1447560418}
-  objeto: {fileID: 401897371}
+  objeto: {fileID: 114867314904974690, guid: 5660e4a2303aec44688d71cbc228ded7, type: 2}
   texto_boton: {fileID: 997841908}
+  Padre_: {fileID: 1628965108}
   coste_: 10
 --- !u!114 &1447560418
 MonoBehaviour:
@@ -86399,8 +86387,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HUD: {fileID: 1599306754}
   boton: {fileID: 1634122536}
-  objeto: {fileID: 692496006}
+  objeto: {fileID: 114467214785374914, guid: ab73ac8e2e9c69a458f3098fa8cfa700, type: 2}
   texto_boton: {fileID: 1790039662}
+  Padre_: {fileID: 1628965108}
   coste_: 15
 --- !u!224 &1634122540
 RectTransform:
@@ -90424,12 +90413,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 771e83750307e4e4892ef197bb340fe6, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1752572630 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114819568289554804, guid: 771e83750307e4e4892ef197bb340fe6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1752572629}
-  m_Script: {fileID: 11500000, guid: a39a4fa39ca42a14b89e1be8fc3521b1, type: 3}
 --- !u!4 &1752572631 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4764226108454584, guid: 771e83750307e4e4892ef197bb340fe6,
@@ -95270,8 +95253,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HUD: {fileID: 1599306754}
   boton: {fileID: 2031431636}
-  objeto: {fileID: 1155736778}
+  objeto: {fileID: 114413715169940758, guid: 0aa174f07035b0a4b9b9a175f0005405, type: 2}
   texto_boton: {fileID: 1930204515}
+  Padre_: {fileID: 1628965108}
   coste_: 10
 --- !u!114 &2031431636
 MonoBehaviour:
@@ -95504,8 +95488,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HUD: {fileID: 1599306754}
   boton: {fileID: 2033517570}
-  objeto: {fileID: 1752572630}
+  objeto: {fileID: 114819568289554804, guid: 771e83750307e4e4892ef197bb340fe6, type: 2}
   texto_boton: {fileID: 1106783439}
+  Padre_: {fileID: 1628965108}
   coste_: 10
 --- !u!224 &2033517574
 RectTransform:
