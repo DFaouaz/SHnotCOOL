@@ -25871,6 +25871,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &343364656
 BoxCollider2D:
@@ -26985,6 +26986,7 @@ MonoBehaviour:
   entranceName: "Aula de Matem\xE1ticas"
   entranceConnection: {fileID: 1454903597}
   examSceneName: Matematicas
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &380286543
 BoxCollider2D:
@@ -27055,6 +27057,7 @@ MonoBehaviour:
   entranceName: "Ba\xF1o"
   entranceConnection: {fileID: 1114066262}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &382343854
 BoxCollider2D:
@@ -28986,6 +28989,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &506371227
 BoxCollider2D:
@@ -30550,6 +30554,7 @@ MonoBehaviour:
   entranceName: Segundo Piso
   entranceConnection: {fileID: 2070069153}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &603583118
 BoxCollider2D:
@@ -40818,6 +40823,7 @@ MonoBehaviour:
   entranceName: Aula de Historia
   entranceConnection: {fileID: 1454903597}
   examSceneName: Historia
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &851432994
 BoxCollider2D:
@@ -40953,7 +40959,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4114261313992518, guid: 542b21b1f343bb14e9b600a9797577f0, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 542b21b1f343bb14e9b600a9797577f0, type: 2}
@@ -45969,6 +45975,7 @@ Transform:
   - {fileID: 1339740924}
   - {fileID: 1136080459}
   - {fileID: 1304489944}
+  - {fileID: 1654319472}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48884,6 +48891,7 @@ MonoBehaviour:
   entranceName: Taller
   entranceConnection: {fileID: 506371225}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1065739915
 BoxCollider2D:
@@ -49825,6 +49833,7 @@ MonoBehaviour:
   entranceName: Aula de Lengua
   entranceConnection: {fileID: 1454903597}
   examSceneName: Lengua
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1104070865
 BoxCollider2D:
@@ -50817,6 +50826,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &1114066264
 BoxCollider2D:
@@ -57803,6 +57813,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &1240163569
 BoxCollider2D:
@@ -61373,6 +61384,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &1301751175
 BoxCollider2D:
@@ -72028,6 +72040,7 @@ MonoBehaviour:
   entranceName: Gimnasio
   entranceConnection: {fileID: 1240163567}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1452123749
 BoxCollider2D:
@@ -72098,6 +72111,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &1454903599
 BoxCollider2D:
@@ -73521,10 +73535,10 @@ MonoBehaviour:
   finGeo: 0
   historiaScore: 0
   finHistoria: 0
-  Examen: 0
   numFriends: 0
   maxFriends: 15
   thereIsAnInteractiveEvent: 0
+  trimestre: 1
 --- !u!1 &1528630695
 GameObject:
   m_ObjectHideFlags: 0
@@ -86487,6 +86501,53 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1649941398}
+--- !u!1001 &1654319471
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 881825491}
+    m_Modifications:
+    - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 10.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1654319472 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1654319471}
 --- !u!1 &1662109468
 GameObject:
   m_ObjectHideFlags: 0
@@ -90245,8 +90306,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entranceName: "Ba\xF1o"
-  entranceConnection: {fileID: 1454903597}
+  entranceConnection: {fileID: 1114066262}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1749122123
 BoxCollider2D:
@@ -92345,6 +92407,7 @@ MonoBehaviour:
   entranceName: "Cafeter\xEDa"
   entranceConnection: {fileID: 343364654}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1847288008
 BoxCollider2D:
@@ -93192,6 +93255,7 @@ MonoBehaviour:
   entranceName: Cuarto de la Limpieza
   entranceConnection: {fileID: 1301751173}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1927569310
 BoxCollider2D:
@@ -93586,6 +93650,7 @@ MonoBehaviour:
   entranceName: "Aula de Geograf\xEDa"
   entranceConnection: {fileID: 1454903597}
   examSceneName: Geografia
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1952879997
 BoxCollider2D:
@@ -95650,7 +95715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2051788628
 Transform:
   m_ObjectHideFlags: 0
@@ -95799,6 +95864,7 @@ MonoBehaviour:
   entranceName: Primer Piso
   entranceConnection: {fileID: 603583117}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &2070069154
 BoxCollider2D:

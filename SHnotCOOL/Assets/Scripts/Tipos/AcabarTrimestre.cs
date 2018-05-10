@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class AcabarTrimestre : MonoBehaviour {
     bool col, finTrim;
     public GameObject TrimMark;
-    public Text mensaje;
 
     void TrimestreAcabado()
     {
