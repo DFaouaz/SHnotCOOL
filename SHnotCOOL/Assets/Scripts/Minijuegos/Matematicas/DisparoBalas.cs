@@ -18,21 +18,22 @@ public class DisparoBalas : MonoBehaviour {
     float incremento;
     float tamañoCamara;
     float giro;
-    public int modoDisparo;
     // Use this for initialization
     void Start () {
         tamañoCamara = Camera.main.orthographicSize;
         angulo = 360 / numeroProyectiles;
-        if (modoDisparo == 0)
-            DisparoAPosicion();
-        else if (modoDisparo == 1)
-            DisparoEspiral();
-        else if (modoDisparo == 2)
-            DisparoExplosion();
-        else if (modoDisparo == 3)
-            ExplosionEnEspiral();
-        else if (modoDisparo == 4)
-            EspiralVariosProyectiles();
+        switch(GameManager.instance.trimestre)
+        {
+            case (1):
+                SeleccionaDisparo(2);
+                break;
+            case (2):
+                SeleccionaDisparo(3);
+                break;
+            case (3):
+                SeleccionaDisparo(5);
+                break;
+        }
 
 	}
 	
@@ -104,5 +105,39 @@ public class DisparoBalas : MonoBehaviour {
         }
 
         Invoke("EspiralVariosProyectiles", cadenciaDisparo);
+    }
+    void DisparoVariante()
+    {
+        int disparo = Random.Range(1, 4);
+        float tiempo = Random.Range(5, 15);
+        SeleccionaDisparo(disparo);
+        Invoke("CancelInvoke", tiempo);
+        Invoke("DisparoVariante", tiempo);
+    }
+    void SeleccionaDisparo(int modoDisparo)
+    {
+        switch(modoDisparo)
+        {
+            case (0):
+                DisparoAPosicion();
+                break;
+            case (1):
+                DisparoEspiral();
+                break;
+            case (2):
+                DisparoExplosion();
+                break;
+            case (3):
+                ExplosionEnEspiral();
+                break;
+            case (4):
+                EspiralVariosProyectiles();
+                break;
+            case (5):
+                DisparoVariante();
+                break;
+
+        }
+
     }
     }
