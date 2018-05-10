@@ -21,7 +21,7 @@ public class CambiaEscena : MonoBehaviour {
 			mensajeEscena = GameObject.FindGameObjectWithTag ("MensajeEscena").GetComponent<Text> ();
 		if(Input.GetKeyDown(GameManager.instance.botonInteractuar) && entrance != null) {
 			//SavePositions ();
-			ChooseExam ();
+			//ChooseExam ();
 			if (isPasillosTime ())
 				SceneManager.LoadScene ("Pasillos");
 			/*else if (actualScene != "Piso1" || actualScene != "Piso2")
@@ -46,7 +46,7 @@ public class CambiaEscena : MonoBehaviour {
 			else if (entrada.escenaACambiar != "Piso2" && actualScene != "Piso1")
 				GameManager.instance.Escena2PlayerPos = GameManager.instance.ActualPlayerPosition;
 		}
-	}*/
+	}
 
 	void ChooseExam(){
 		if (entrance.isExit) {
@@ -61,7 +61,7 @@ public class CambiaEscena : MonoBehaviour {
 			else
 				GameManager.instance.Examen = 4;
 		}
-	}
+	}*/
 
 }
 

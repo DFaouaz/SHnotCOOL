@@ -11,7 +11,7 @@ public class ExamManager : MonoBehaviour {
 
 
     void OnTriggerEnter2D(Collider2D col){
-		if (col.tag == "Player") {
+		if (col.tag == "Player"&& GameManager.instance.trimestre>=GameManager.instance.exam.Trimestre()) {
 			MessageManager.instance.ShowMessage ("Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para realizar el examen.");
 			player = col.gameObject;
 		}		
@@ -32,9 +32,10 @@ public class ExamManager : MonoBehaviour {
 
 
 	void EnterExam(){
-		switch (GameManager.instance.Examen)
+		switch (GameManager.instance.exam.NExamen())
 		{
 		case (0):
+                
 			SceneManager.LoadScene("Matematicas");
 			break;
 		case (1):

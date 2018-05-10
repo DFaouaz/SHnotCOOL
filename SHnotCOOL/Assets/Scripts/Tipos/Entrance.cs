@@ -6,10 +6,11 @@ public class Entrance : MonoBehaviour {
 
 	public string entranceName;
 	public Entrance entranceConnection;
-	[Header("Introduce el nombre de la escena del examen")]
+	[Header("Introduce el nombre y el trimestre de la escena del examen")]
 	public string examSceneName;
+    public int trimestreAparicion;
 	EntranceManager em;
-	[Header("Marcar si el una salida")]
+	[Header("Marcar si es una salida")]
 	public bool isExit;
 
 	void Awake(){
@@ -50,15 +51,15 @@ public class Entrance : MonoBehaviour {
 
 	void ChooseExam(){
 		if (examSceneName == "Matematicas" && !GameManager.instance.finMates)
-			GameManager.instance.Examen = 0;
+			GameManager.instance.exam = new Examen(0,trimestreAparicion);
 		else if (examSceneName == "Historia" && !GameManager.instance.finHistoria)
-			GameManager.instance.Examen = 1;
-		else if (examSceneName == "Lengua" && !GameManager.instance.finLengua)
-			GameManager.instance.Examen = 2;
-		else if (examSceneName == "Geografia" && !GameManager.instance.finGeo)
-			GameManager.instance.Examen = 3;
-		else
-			GameManager.instance.Examen = 4;	
-	}
+            GameManager.instance.exam = new Examen(1, trimestreAparicion);
+        else if (examSceneName == "Lengua" && !GameManager.instance.finLengua)
+            GameManager.instance.exam = new Examen(2, trimestreAparicion);
+        else if (examSceneName == "Geografia" && !GameManager.instance.finGeo)
+            GameManager.instance.exam = new Examen(3, trimestreAparicion);
+        else
+            GameManager.instance.exam = new Examen(4, 0);
+    }
 
 }

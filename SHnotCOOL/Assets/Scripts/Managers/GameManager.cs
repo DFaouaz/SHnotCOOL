@@ -7,6 +7,24 @@ using UnityEngine.SceneManagement;
 /// y tendrá métodos llamados desde los distintos objetos que lo hacen avanzar.
 /// Debe haber una única instancia. 
 /// </summary>
+public class Examen
+{
+    int examen;//0 Mates 1 Lengua 2 Historia 3 Geo
+    int trim;//trimestre en e que aparece
+    public Examen(int exam,int term)
+    {
+        examen = exam;
+        trim = term;
+    }
+    public int NExamen()
+    {
+        return examen;
+    }
+    public int Trimestre()
+    {
+        return trim;
+    }
+}
 public class GameManager : MonoBehaviour {
 
 	// Creamos una variable estática para almacenar la instancia única
@@ -53,13 +71,15 @@ public class GameManager : MonoBehaviour {
     public int historiaScore = 0;
 	[HideInInspector]
 	public bool finHistoria = false;
-    [HideInInspector]
-    public int Examen = 0;//0 mates, 1 historia 2 lengua 3 geografia
 	[HideInInspector]
 	public int numFriends = 0;
 	public int maxFriends;
 	[HideInInspector]
 	public bool thereIsAnInteractiveEvent = false;
+    [HideInInspector]
+    public int trimestre = 1;
+    [HideInInspector]
+    public  Examen exam;
 
     // En cuanto el objeto se active
     void Awake() {
@@ -76,7 +96,7 @@ public class GameManager : MonoBehaviour {
 		else {
 			// Si ya existe un objeto GameManager, no necesitamos uno nuevo
 			Destroy(this.gameObject);
-		}      
+		}
 	}
 
 	// A partir de aquí añadiríamos los métodos que necesitemos implementar
@@ -90,6 +110,7 @@ public class GameManager : MonoBehaviour {
 	//Minijuego de matematicas.
 	public void FinExamenMatematicas()
 	{
+        finMates = true;
 		Text textoFin = GameObject.FindGameObjectWithTag("FinMatematicas").GetComponent<Text>();
 		if (matematicasScore >= 5)
 			textoFin.text = "Bien Hecho";
@@ -167,4 +188,6 @@ public class GameManager : MonoBehaviour {
 		if(habladoNegro)
 			negro.transform.position = player.transform.position;
 	}
+    
+
 }

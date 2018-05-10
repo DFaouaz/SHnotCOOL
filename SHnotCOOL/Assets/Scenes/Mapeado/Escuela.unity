@@ -141,7 +141,7 @@ Transform:
   - {fileID: 1332530019}
   - {fileID: 1668941788}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &20416049
 GameObject:
@@ -1161,6 +1161,63 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132112841}
+--- !u!1 &134224560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1288559153488078, guid: e66aed0919194e5489b49185c3792828,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 134224561}
+  - component: {fileID: 134224562}
+  m_Layer: 0
+  m_Name: 'LayerSorter '
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &134224561
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4610262135332286, guid: e66aed0919194e5489b49185c3792828,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 134224560}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 643062406}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &134224562
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 61848586682304482, guid: e66aed0919194e5489b49185c3792828,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 134224560}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.4}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.4}
+  m_EdgeRadius: 0
 --- !u!1 &140365980
 GameObject:
   m_ObjectHideFlags: 0
@@ -12708,7 +12765,7 @@ Transform:
   - {fileID: 667119375}
   - {fileID: 1908367282}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &163414438
 GameObject:
@@ -14872,7 +14929,7 @@ Transform:
   m_Children:
   - {fileID: 1321124373}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &239924430
 GameObject:
@@ -16167,7 +16224,7 @@ RectTransform:
   - {fileID: 717611285}
   - {fileID: 624932579}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -25871,6 +25928,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &343364656
 BoxCollider2D:
@@ -26985,6 +27043,7 @@ MonoBehaviour:
   entranceName: "Aula de Matem\xE1ticas"
   entranceConnection: {fileID: 1454903597}
   examSceneName: Matematicas
+  trimestreAparicion: 1
   isExit: 0
 --- !u!61 &380286543
 BoxCollider2D:
@@ -27055,6 +27114,7 @@ MonoBehaviour:
   entranceName: "Ba\xF1o"
   entranceConnection: {fileID: 1114066262}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &382343854
 BoxCollider2D:
@@ -28986,6 +29046,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &506371227
 BoxCollider2D:
@@ -29494,7 +29555,7 @@ Transform:
   - {fileID: 343364653}
   - {fileID: 1240163566}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &555058418
 MonoBehaviour:
@@ -30601,6 +30662,7 @@ MonoBehaviour:
   entranceName: Segundo Piso
   entranceConnection: {fileID: 2070069153}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &603583118
 BoxCollider2D:
@@ -31514,6 +31576,191 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636148358}
+--- !u!1 &643062398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1655788671104508, guid: e66aed0919194e5489b49185c3792828,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 643062406}
+  - component: {fileID: 643062405}
+  - component: {fileID: 643062404}
+  - component: {fileID: 643062403}
+  - component: {fileID: 643062402}
+  - component: {fileID: 643062401}
+  - component: {fileID: 643062400}
+  - component: {fileID: 643062399}
+  m_Layer: 0
+  m_Name: Profesora
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &643062399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 643062398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac7203eaa0f1894e8a17e19b8ce4a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrimMark: {fileID: 750095180}
+  mensaje: {fileID: 1489483849}
+--- !u!212 &643062400
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 643062398}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300002, guid: d866b79b5e56a4b429a32cb48986d0a0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.875, y: 1.25}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!114 &643062401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114606733162165696, guid: e66aed0919194e5489b49185c3792828,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 643062398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5576861b1d559944f9cf8e813e5973fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &643062402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114191897969820024, guid: e66aed0919194e5489b49185c3792828,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 643062398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6266016e6a9ee094e8c1930552087c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &643062403
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 95828971147793142, guid: e66aed0919194e5489b49185c3792828,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 643062398}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c74ac7982b6319e46abe8b36d2fbd8db, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!50 &643062404
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 50410015086145908, guid: e66aed0919194e5489b49185c3792828,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 643062398}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &643062405
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 61097079386044020, guid: e66aed0919194e5489b49185c3792828,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 643062398}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.875, y: 1.25}
+    newSize: {x: 0.875, y: 1.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &643062406
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4075471804020604, guid: e66aed0919194e5489b49185c3792828,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 643062398}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.87388, y: 9.959448, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 134224561}
+  - {fileID: 750095181}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &644695634
 GameObject:
   m_ObjectHideFlags: 0
@@ -33989,6 +34236,82 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenes:
   - Escuela
+--- !u!1 &750095180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1077989490528188, guid: 7943ece2bfdded84f82e55162bc3cd41,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 750095181}
+  - component: {fileID: 750095182}
+  m_Layer: 0
+  m_Name: TrimMark
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &750095181
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4064541339094538, guid: 7943ece2bfdded84f82e55162bc3cd41,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 750095180}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 1.04, z: 0}
+  m_LocalScale: {x: 0.2673692, y: 0.23425828, z: 1}
+  m_Children: []
+  m_Father: {fileID: 643062406}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &750095182
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 212635219411646206, guid: 7943ece2bfdded84f82e55162bc3cd41,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 750095180}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1158773765
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 24efb26100f6b4a4a94bdee6df289052, type: 3}
+  m_Color: {r: 1, g: 0.99599993, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.11, y: 3.56}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &754510789
 GameObject:
   m_ObjectHideFlags: 0
@@ -40869,6 +41192,7 @@ MonoBehaviour:
   entranceName: Aula de Historia
   entranceConnection: {fileID: 1454903597}
   examSceneName: Historia
+  trimestreAparicion: 1
   isExit: 0
 --- !u!61 &851432994
 BoxCollider2D:
@@ -46021,7 +46345,7 @@ Transform:
   - {fileID: 1477632835}
   - {fileID: 1304489944}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &918667154
 GameObject:
@@ -48935,6 +49259,7 @@ MonoBehaviour:
   entranceName: Taller
   entranceConnection: {fileID: 506371225}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1065739915
 BoxCollider2D:
@@ -49876,6 +50201,7 @@ MonoBehaviour:
   entranceName: Aula de Lengua
   entranceConnection: {fileID: 1454903597}
   examSceneName: Lengua
+  trimestreAparicion: 2
   isExit: 0
 --- !u!61 &1104070865
 BoxCollider2D:
@@ -50868,6 +51194,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &1114066264
 BoxCollider2D:
@@ -51466,14 +51793,6 @@ CompositeCollider2D:
         Y: 272812512
       - X: 207812496
         Y: 272812512
-    - - X: 350000000
-        Y: 206250000
-      - X: 340000000
-        Y: 206250000
-      - X: 340000000
-        Y: 190000000
-      - X: 350000000
-        Y: 190000000
     - - X: 110000000
         Y: 206250000
       - X: 100000000
@@ -51481,6 +51800,14 @@ CompositeCollider2D:
       - X: 100000000
         Y: 190000000
       - X: 110000000
+        Y: 190000000
+    - - X: 350000000
+        Y: 206250000
+      - X: 340000000
+        Y: 206250000
+      - X: 340000000
+        Y: 190000000
+      - X: 350000000
         Y: 190000000
     - - X: 160000000
         Y: 204062496
@@ -51859,14 +52186,14 @@ CompositeCollider2D:
       - {x: 20.125, y: 27.5}
       - {x: 20.21875, y: 27.281252}
       - {x: 20.78125, y: 27.281252}
-    - - {x: 35, y: 20.625}
-      - {x: 34, y: 20.625}
-      - {x: 34, y: 19}
-      - {x: 35, y: 19}
     - - {x: 11, y: 20.625}
       - {x: 10, y: 20.625}
       - {x: 10, y: 19}
       - {x: 11, y: 19}
+    - - {x: 35, y: 20.625}
+      - {x: 34, y: 20.625}
+      - {x: 34, y: 19}
+      - {x: 35, y: 19}
     - - {x: 16, y: 20.40625}
       - {x: 13, y: 20.40625}
       - {x: 13, y: 18.625}
@@ -57803,6 +58130,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &1240163569
 BoxCollider2D:
@@ -61373,6 +61701,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &1301751175
 BoxCollider2D:
@@ -71977,6 +72306,7 @@ MonoBehaviour:
   entranceName: Gimnasio
   entranceConnection: {fileID: 1240163567}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1452123749
 BoxCollider2D:
@@ -72047,6 +72377,7 @@ MonoBehaviour:
   entranceName: No es necesario si es salida
   entranceConnection: {fileID: 0}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 1
 --- !u!61 &1454903599
 BoxCollider2D:
@@ -72932,6 +73263,115 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1483400738}
+--- !u!1 &1489483846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1489483847}
+  - component: {fileID: 1489483850}
+  - component: {fileID: 1489483849}
+  - component: {fileID: 1489483848}
+  m_Layer: 5
+  m_Name: Cambio Trimestre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1489483847
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489483846}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99999744, y: 0.99999744, z: 0.99999744}
+  m_Children: []
+  m_Father: {fileID: 1668322797}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 174.99998}
+  m_SizeDelta: {x: 400, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!23 &1489483848
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489483846}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &1489483849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489483846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.08235294, g: 0.36862746, b: 0.5647059, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1489483850
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489483846}
 --- !u!1 &1495794060
 GameObject:
   m_ObjectHideFlags: 0
@@ -73487,7 +73927,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1524343188
 MonoBehaviour:
@@ -73521,10 +73961,10 @@ MonoBehaviour:
   finGeo: 0
   historiaScore: 0
   finHistoria: 0
-  Examen: 0
   numFriends: 0
   maxFriends: 15
   thereIsAnInteractiveEvent: 0
+  trimestre: 1
 --- !u!1 &1528630695
 GameObject:
   m_ObjectHideFlags: 0
@@ -86199,7 +86639,7 @@ Transform:
   - {fileID: 1079256859}
   - {fileID: 1155736779}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1628965108
 MonoBehaviour:
@@ -86505,7 +86945,7 @@ Transform:
   - {fileID: 1952321965}
   - {fileID: 490359954}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1665088772
 MonoBehaviour:
@@ -86550,6 +86990,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 281679182}
+  - {fileID: 1489483847}
   m_Father: {fileID: 240085448}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -90196,6 +90637,7 @@ MonoBehaviour:
   entranceName: "Ba\xF1o"
   entranceConnection: {fileID: 1454903597}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1749122123
 BoxCollider2D:
@@ -92396,6 +92838,7 @@ MonoBehaviour:
   entranceName: "Cafeter\xEDa"
   entranceConnection: {fileID: 343364654}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1847288008
 BoxCollider2D:
@@ -93192,6 +93635,7 @@ MonoBehaviour:
   entranceName: Cuarto de la Limpieza
   entranceConnection: {fileID: 1301751173}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &1927569310
 BoxCollider2D:
@@ -93591,6 +94035,7 @@ MonoBehaviour:
   entranceName: "Aula de Geograf\xEDa"
   entranceConnection: {fileID: 1454903597}
   examSceneName: Geografia
+  trimestreAparicion: 3
   isExit: 0
 --- !u!61 &1952879997
 BoxCollider2D:
@@ -95808,6 +96253,7 @@ MonoBehaviour:
   entranceName: Primer Piso
   entranceConnection: {fileID: 603583117}
   examSceneName: 
+  trimestreAparicion: 0
   isExit: 0
 --- !u!61 &2070069154
 BoxCollider2D:
