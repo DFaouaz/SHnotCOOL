@@ -35,14 +35,19 @@ public class Vidas : MonoBehaviour {
     }
 
     void Damage() {
-		if (vidas > 0 && !golpeado) {
+        if (vidas > 0 && !golpeado)
+        {
             golpeado = true;
             vidas--;
-			ActualizaVidas ();
-			InvokeRepeating ("Invulnerable", 0, tiempo);
-			Invoke ("FinInvul", tiempo * repeticiones);
-		} else if (vidas ==1)
-			GameManager.instance.FinExamenMatematicas ();
+            ActualizaVidas();
+            InvokeRepeating("Invulnerable", 0, tiempo);
+            Invoke("FinInvul", tiempo * repeticiones);
+        }
+        else if (vidas == 1)
+        {
+            vidas--;
+            GameManager.instance.FinExamenMatematicas();
+        }
     }
 
     void Invulnerable() {
