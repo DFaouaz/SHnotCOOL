@@ -40,10 +40,10 @@ public class MissionManager : MonoBehaviour {
 
 	void CheckInput(){
 		if (Input.GetKeyDown (botonAbrirYCerrar)) {
-			if (!missionBox.activeInHierarchy && !GameManager.instance.ventanaAbierta) {
+			if (!missionBox.activeInHierarchy && !GameManager.instance.ventanaAbierta && !GameManager.instance.pauseMode) {
 				missionBox.SetActive (true);
 				GameManager.instance.ventanaAbierta = true;
-			} else if(missionBox.activeInHierarchy){
+			} else if(missionBox.activeInHierarchy && !GameManager.instance.pauseMode){
 				GameManager.instance.ventanaAbierta = false;
 				missionBox.SetActive (false);
 			}

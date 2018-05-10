@@ -48,10 +48,8 @@ public class HUDManager : MonoBehaviour {
 
 
 	void Update () {
-		if (!GameManager.instance.pauseMode && (!GameManager.instance.ventanaAbierta || !GameManager.instance.pauseMode)) {
 			CheckInputOpenCloseInventory ();
 			CheckInputObject ();
-		}
 	}
 
 	//Guarda el objeto
@@ -176,13 +174,13 @@ public class HUDManager : MonoBehaviour {
 
 
 	public void AbreYCierraInventario(){
-		if (!inventory.gameObject.activeInHierarchy && !DialogueManager.instance.dialogueBox.activeInHierarchy) {
+		if (!inventory.gameObject.activeInHierarchy && !DialogueManager.instance.dialogueBox.activeInHierarchy && !GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
 			inventory.gameObject.SetActive (true);
 			GameManager.instance.ventanaAbierta = true;
 			//Selecciona el primer Slot en el inventario
 			slots [0].boton.Select ();
 			mensajeNoSustitucion.gameObject.SetActive (true);
-		} else {
+		} else if(inventory.gameObject.activeInHierarchy && !GameManager.instance.pauseMode){
 			if (mensajeSustitucion.IsActive ()) {
 				mensajeSustitucion.gameObject.SetActive (false);
 				modoSustitucion = false;
