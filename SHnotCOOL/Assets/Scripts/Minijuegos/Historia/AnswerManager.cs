@@ -29,9 +29,25 @@ public class AnswerManager : MonoBehaviour {
         string[] lineasBuenas;
         string fraseMala;
         string[] lineasMalas;
+        StreamReader texto2= new StreamReader("MalasJisus.txt", Encoding.Default);
+        StreamReader texto= new StreamReader("BuenasJisus.txt", Encoding.Default); ;
         pulsado = false;
-		StreamReader texto = new StreamReader("buena.txt", Encoding.Default);
-		StreamReader texto2 = new StreamReader("mala.txt", Encoding.Default);
+        switch(GameManager.instance.trimestre)
+        {
+            case (1):
+                texto = new StreamReader("BuenasTrump.txt", Encoding.Default);
+                texto2 = new StreamReader("MalasTrump.txt", Encoding.Default);
+                break;
+            case (2):
+                texto = new StreamReader("buena.txt", Encoding.Default);
+                texto2 = new StreamReader("mala.txt", Encoding.Default);
+                break;
+            case (3):
+                texto = new StreamReader("BuenasJisus.txt", Encoding.Default);
+                texto2 = new StreamReader("MalasJisus.txt", Encoding.Default);
+                break;
+        }
+
 		opciones = new List<opcion> ();
 		Buenas = new opcion[10];
 		Malas = new opcion[30];

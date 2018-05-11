@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DisparoBalas : MonoBehaviour {
 
+    public AudioClip disparo;
     public float cadenciaDisparo;
     public float speed;
     public GameObject bala;
@@ -25,7 +26,7 @@ public class DisparoBalas : MonoBehaviour {
         switch(GameManager.instance.trimestre)
         {
             case (1):
-                SeleccionaDisparo(2);
+                SeleccionaDisparo(3);
                 break;
             case (2):
                 SeleccionaDisparo(3);
@@ -43,6 +44,7 @@ public class DisparoBalas : MonoBehaviour {
         posicionJugador = GameManager.instance.ActualPlayerPosition;
         velocidadDisparo= posicionJugador- new Vector2(transform.position.x,transform.position.y);
         GameObject bullet=Instantiate(bala,transform.position, Quaternion.identity );
+        AudioSource.PlayClipAtPoint(disparo, transform.position);
         bullet.GetComponent<Rigidbody2D>().velocity =velocidadDisparo.normalized*speed;
         Destroy(bullet, tamañoCamara * (3/speed));
         Invoke("DisparoAPosicion", cadenciaDisparo);
@@ -52,6 +54,7 @@ public class DisparoBalas : MonoBehaviour {
     {
         velocidadDisparo = new Vector2(Mathf.Sin(incremento*Mathf.Deg2Rad),Mathf.Cos(incremento*Mathf.Deg2Rad));
         GameObject bullet = Instantiate(bala, transform.position, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(disparo, transform.position);
         bullet.GetComponent<Rigidbody2D>().velocity = velocidadDisparo.normalized * speed;
         Destroy(bullet, tamañoCamara * (3 / speed));
         incremento=(incremento+anguloGiro)%360;
@@ -66,6 +69,7 @@ public class DisparoBalas : MonoBehaviour {
             velocidadDisparo =  new Vector2(Mathf.Sin(incremento*Mathf.Deg2Rad), Mathf.Cos(incremento*Mathf.Deg2Rad));
 
             GameObject bullet = Instantiate(bala, new Vector2(transform.position.x, transform.position.y) + velocidadDisparo, Quaternion.identity);
+            AudioSource.PlayClipAtPoint(disparo, transform.position);
             bullet.GetComponent<Rigidbody2D>().velocity = velocidadDisparo.normalized * speed;
             Destroy(bullet, tamañoCamara * (3 / speed));
             incremento+=angulo;
@@ -82,6 +86,7 @@ public class DisparoBalas : MonoBehaviour {
             velocidadDisparo = new Vector2(Mathf.Sin(giro * Mathf.Deg2Rad), Mathf.Cos(giro * Mathf.Deg2Rad));
 
             GameObject bullet = Instantiate(bala, new Vector2(transform.position.x, transform.position.y) + velocidadDisparo, Quaternion.identity);
+            AudioSource.PlayClipAtPoint(disparo, transform.position);
             bullet.GetComponent<Rigidbody2D>().velocity = velocidadDisparo.normalized * speed;
             Destroy(bullet, tamañoCamara * (3 / speed));
             giro += angulo;
@@ -99,6 +104,7 @@ public class DisparoBalas : MonoBehaviour {
             velocidadDisparo = new Vector2(Mathf.Sin(giro * Mathf.Deg2Rad), Mathf.Cos(giro * Mathf.Deg2Rad));
 
             GameObject bullet = Instantiate(bala, new Vector2(transform.position.x, transform.position.y) + velocidadDisparo, Quaternion.identity);
+            AudioSource.PlayClipAtPoint(disparo, transform.position);
             bullet.GetComponent<Rigidbody2D>().velocity = velocidadDisparo.normalized * speed;
             giro = (giro + anguloGiro) % 360;
             incremento += angulo;

@@ -817,6 +817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a812c32e542968458823ac9e2de98a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disparo: {fileID: 8300000, guid: dbd295a0c23797f4dac27cde1642c32f, type: 3}
   cadenciaDisparo: 1
   speed: 10
   bala: {fileID: 1314383051331776, guid: 04dbe1ddebac5ad4c9f1d53d7050c704, type: 2}

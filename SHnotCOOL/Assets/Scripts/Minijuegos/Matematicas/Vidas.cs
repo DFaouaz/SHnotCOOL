@@ -46,6 +46,7 @@ public class Vidas : MonoBehaviour {
         else if (vidas == 1)
         {
             vidas--;
+            ActualizaVidas();
             GameManager.instance.FinExamenMatematicas();
         }
     }

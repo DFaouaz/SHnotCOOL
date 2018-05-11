@@ -6,6 +6,7 @@ using UnityEngine;
 public class AcabarTrimestre : MonoBehaviour {
     bool col, finTrim;
     public GameObject TrimMark;
+    public HUDManager hud;
 
     void TrimestreAcabado()
     {
@@ -48,6 +49,7 @@ public class AcabarTrimestre : MonoBehaviour {
         GameManager.instance.finMates = false;
         GameManager.instance.trimestre++;
         GameManager.instance.dinero += 100;
+        hud.UpdateMoney();
         finTrim = false;
         TrimMark.SetActive(false);
     }
