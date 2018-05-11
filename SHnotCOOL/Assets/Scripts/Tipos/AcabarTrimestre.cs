@@ -20,6 +20,7 @@ public class AcabarTrimestre : MonoBehaviour {
         }
         else if (GameManager.instance.trimestre == 3 && (GameManager.instance.finHistoria && GameManager.instance.finMates && GameManager.instance.finLengua && GameManager.instance.finGeo))
         {
+            GameManager.instance.notaFinal = GameManager.instance.media / 3;
             //fin juego
         }
         else
@@ -43,10 +44,16 @@ public class AcabarTrimestre : MonoBehaviour {
     }
     void CambioTrimestre()
     {
+
+        GameManager.instance.media += (GameManager.instance.historiaScore + GameManager.instance.matematicasScore + GameManager.instance.lenguaScore + GameManager.instance.GeoScore) / (GameManager.instance.trimestre + 1);
         GameManager.instance.finGeo = false;
         GameManager.instance.finHistoria = false;
         GameManager.instance.finLengua=false;
         GameManager.instance.finMates = false;
+        GameManager.instance.GeoScore = 0;
+        GameManager.instance.historiaScore = 0;
+        GameManager.instance.matematicasScore = 0;
+        GameManager.instance.lenguaScore = 0;
         GameManager.instance.trimestre++;
         GameManager.instance.dinero += 100;
         hud.UpdateMoney();

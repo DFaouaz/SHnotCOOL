@@ -6,32 +6,36 @@ using UnityEngine.UI;
 public class DisparoBalas : MonoBehaviour {
 
     public AudioClip disparo;
-    public float cadenciaDisparo;
     public float speed;
     public GameObject bala;
-    public int numeroProyectiles;
-    public float anguloGiro;
+
+    float cadenciaDisparo;
+    int numeroProyectiles;
+    float anguloGiro;
     Vector2 velocidadDisparo;
-
     Vector2 posicionJugador;
-
     float angulo;
     float incremento;
     float tamañoCamara;
     float giro;
     // Use this for initialization
     void Start () {
+        numeroProyectiles = Random.Range(4, 10);
         tamañoCamara = Camera.main.orthographicSize;
         angulo = 360 / numeroProyectiles;
+        anguloGiro = 90 / numeroProyectiles;
         switch(GameManager.instance.trimestre)
         {
             case (1):
+                cadenciaDisparo = Random.Range(1.25f, 1.5f);
                 SeleccionaDisparo(3);
                 break;
             case (2):
+                cadenciaDisparo = Random.Range(1f, 1.25f);
                 SeleccionaDisparo(3);
                 break;
             case (3):
+                cadenciaDisparo = Random.Range(0.75f, 1f);
                 SeleccionaDisparo(5);
                 break;
         }

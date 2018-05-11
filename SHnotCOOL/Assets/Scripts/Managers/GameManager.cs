@@ -80,6 +80,10 @@ public class GameManager : MonoBehaviour {
     public int trimestre = 1;
     [HideInInspector]
     public  Examen exam;
+    [HideInInspector]
+    public float media;
+    [HideInInspector]
+    public float notaFinal;
 
     // En cuanto el objeto se active
     void Awake() {

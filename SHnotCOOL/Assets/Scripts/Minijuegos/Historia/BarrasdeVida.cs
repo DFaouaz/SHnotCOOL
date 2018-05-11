@@ -28,11 +28,14 @@ public class Health
     }
 }
 public class BarrasdeVida : MonoBehaviour {
+    public Animator enemyAnimator;
+
     Health enemigo;
     Health player;
     GameObject barraEnemigo, barraPlayer;
     Text finHistoria;
-    int indiceVida=15;//Limite de vida a partir del cual regenera
+    int indiceVida=20;//Limite de vida a partir del cual regenera
+    bool resucitado=false;
 	// Use this for initialization
 	void Start () {
         barraEnemigo = GameObject.FindGameObjectWithTag("VidaEnemigo");
@@ -40,7 +43,7 @@ public class BarrasdeVida : MonoBehaviour {
         finHistoria = GameObject.FindGameObjectWithTag("FinHistoria").GetComponent<Text>();
         player = new Health();
         enemigo = new Health();
-     
+        enemyAnimator.SetInteger("trimestre", GameManager.instance.trimestre);
 
     }
 
@@ -85,11 +88,18 @@ public class BarrasdeVida : MonoBehaviour {
             GameManager.instance.historiaScore = (int)enemigo.DevuelveVida();
             GameManager.instance.FinExamenHistoria();
         }
-        else if (enemigo.DevuelveVida() <= 0)
+        else if (enemigo.DevuelveVida() <= 0 && (GameManager.instance.trimestre != 3 || resucitado))
         {
             finHistoria.text = "Bien Hecho";
             GameManager.instance.historiaScore = (int)player.DevuelveVida();
             GameManager.instance.FinExamenHistoria();
+        }
+        else if (enemigo.DevuelveVida() <= 0 && GameManager.instance.trimestre == 3 && !resucitado)
+        {
+            enemyAnimator.SetBool("resucitado", true);
+            resucitado = true;
+            enemigo.ModificaVida(-100);
+            ActualizaBarras();
         }
         
     }

@@ -16,7 +16,9 @@ public class cambioMaton : MonoBehaviour {
         int prob = Random.Range(0, 100);
         if (prob < probInicial - ((GameManager.instance.numFriends * probInicial) / GameManager.instance.maxFriends)
             && !GameManager.instance.ventanaAbierta)
-			SceneManager.LoadScene("Maton");
-        
-	}
+        {
+            SceneManager.LoadScene("Maton");
+        }
+        Invoke("probMaton", time);
+    }
 }

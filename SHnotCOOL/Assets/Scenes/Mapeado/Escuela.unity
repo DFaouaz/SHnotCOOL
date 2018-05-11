@@ -73527,6 +73527,8 @@ MonoBehaviour:
   maxFriends: 15
   thereIsAnInteractiveEvent: 0
   trimestre: 1
+  media: 0
+  notaFinal: 0
 --- !u!1 &1528630695
 GameObject:
   m_ObjectHideFlags: 0
@@ -86529,6 +86531,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114363732752102802, guid: 2f926308cb0c222478680c786cd709c9,
+        type: 2}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 1599306754}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
   m_IsPrefabParent: 0
@@ -95700,7 +95707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2051788628
 Transform:
   m_ObjectHideFlags: 0

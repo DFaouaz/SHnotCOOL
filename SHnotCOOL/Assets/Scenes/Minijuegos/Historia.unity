@@ -2589,6 +2589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22b6b74aa28aa74cb2ea01c5458eacd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyAnimator: {fileID: 1514885401}
 --- !u!224 &1623601947
 RectTransform:
   m_ObjectHideFlags: 0
