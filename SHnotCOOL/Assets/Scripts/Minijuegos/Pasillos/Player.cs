@@ -7,6 +7,7 @@ public class Player : MonoBehaviour {
 	Rigidbody2D playerRB;
 	Transform playerTR;
 	Animator playerAnim;
+	Vector3 lastPos;
 
     float tiempo;
 	bool alive = true;
@@ -19,10 +20,10 @@ public class Player : MonoBehaviour {
 	}
 
 	void Start () {
-	
 		playerAnim = GetComponentInChildren<Animator> ();
 		movX = 0;
 		movY = 0;
+		lastPos = playerTR.position;
 	}
 
 	void Update () {
@@ -33,7 +34,7 @@ public class Player : MonoBehaviour {
 		}
         tiempo += Time.deltaTime;
 	}
-
+		
 	// MÉTODOS
 
 	// Entrada del usuario
@@ -78,10 +79,11 @@ public class Player : MonoBehaviour {
 	void  Move (int x, int y)
 	{
 		//Vector2 targetPosition = new Vector2 (transform.position.x + x, transform.position.y + y); //  
-		Vector3 movement = new Vector3 (x, y);
-		Vector3 targetPosition = playerTR.position + movement;
-
-		if (!PasillosManager.instance.IsOutOfBounds (targetPosition)) 
+		Vector2 movement = new Vector2 (x, y);
+		Vector2 offset = new Vector2 (0.5f, 0.5f);
+		Vector2 targetPosition = (Vector2)playerTR.position + movement;
+		bool collision = Physics2D.Raycast ((Vector2)gameObject.transform.position + offset, movement, 1, 1 << LayerMask.NameToLayer ("Ground"));
+		if (!PasillosManager.instance.IsOutOfBounds (targetPosition) && !collision) 
 		{
             HandleAnimatorLayers();
 			playerRB.MovePosition (targetPosition); // Mueve la rana a la posición indicada

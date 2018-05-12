@@ -76,7 +76,7 @@ public class PasillosManager : MonoBehaviour
     {
         if (vidas > 0)
         {
-            SceneManager.LoadScene("Escuela");
+			SceneManager.LoadScene(level);
         }
         else
         {

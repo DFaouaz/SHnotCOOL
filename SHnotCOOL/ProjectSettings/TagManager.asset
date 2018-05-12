@@ -28,6 +28,7 @@ TagManager:
   - VidaEnemigo
   - FinHistoria
   - VidaJugador
+  - Coche
   layers:
   - Default
   - TransparentFX
