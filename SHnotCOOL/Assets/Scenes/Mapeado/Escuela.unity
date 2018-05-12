@@ -13023,7 +13023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16204,13 +16204,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1668322797}
   - {fileID: 749572994}
   - {fileID: 1599306756}
   - {fileID: 734891795}
   - {fileID: 464816009}
   - {fileID: 717611285}
-  - {fileID: 624932579}
+  - {fileID: 498233465}
+  - {fileID: 1668322797}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23042,7 +23042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.08235294, g: 0.36862746, b: 0.5647059, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -25866,6 +25866,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 0}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 1
 --- !u!61 &343364656
 BoxCollider2D:
@@ -26981,6 +26983,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 1454903597}
   examSceneName: Matematicas
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 1
   isExit: 0
 --- !u!61 &380286543
 BoxCollider2D:
@@ -27052,6 +27056,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 1114066262}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 0
 --- !u!61 &382343854
 BoxCollider2D:
@@ -27363,7 +27369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.85813147, g: 0.9073261, b: 0.9117647, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -27428,7 +27434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -27620,7 +27626,7 @@ RectTransform:
   - {fileID: 1331667656}
   - {fileID: 418538972}
   m_Father: {fileID: 240085448}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -28744,6 +28750,68 @@ Transform:
   m_PrefabParentObject: {fileID: 4091490694512366, guid: 2ac0c3b30b60e7647b6b70d9db1afd8b,
     type: 2}
   m_PrefabInternal: {fileID: 490359952}
+--- !u!1 &498233464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 498233465}
+  - component: {fileID: 498233467}
+  - component: {fileID: 498233466}
+  m_Layer: 5
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &498233465
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498233464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 240085448}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &498233466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498233464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &498233467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498233464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
 --- !u!1 &498941544
 GameObject:
   m_ObjectHideFlags: 0
@@ -28792,7 +28860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -28978,6 +29046,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 0}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 1
 --- !u!61 &506371227
 BoxCollider2D:
@@ -30543,6 +30613,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 2070069153}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 0
 --- !u!61 &603583118
 BoxCollider2D:
@@ -31320,68 +31392,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &624932578
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 624932579}
-  - component: {fileID: 624932581}
-  - component: {fileID: 624932580}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &624932579
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 624932578}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -639.9999, y: -406.24304, z: 0}
-  m_LocalScale: {x: 1.8543153, y: 1.8543153, z: 1.8543153}
-  m_Children: []
-  m_Father: {fileID: 240085448}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &624932580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 624932578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &624932581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 624932578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 5
 --- !u!1 &636148358
 GameObject:
   m_ObjectHideFlags: 0
@@ -31430,7 +31440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -33275,8 +33285,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 717611285}
-  - component: {fileID: 717611286}
   - component: {fileID: 717611287}
+  - component: {fileID: 717611286}
+  - component: {fileID: 717611288}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -33297,7 +33308,7 @@ RectTransform:
   m_Children:
   - {fileID: 1283358719}
   m_Father: {fileID: 240085448}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33340,6 +33351,12 @@ MonoBehaviour:
   - Lengua
   - Geografia
   - Historia
+--- !u!222 &717611288
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717611284}
 --- !u!1 &719065052
 GameObject:
   m_ObjectHideFlags: 0
@@ -33672,6 +33689,7 @@ GameObject:
   - component: {fileID: 734891795}
   - component: {fileID: 734891796}
   - component: {fileID: 734891797}
+  - component: {fileID: 734891798}
   m_Layer: 5
   m_Name: MisionManager
   m_TagString: Untagged
@@ -33692,7 +33710,7 @@ RectTransform:
   m_Children:
   - {fileID: 45088250}
   m_Father: {fileID: 240085448}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33737,6 +33755,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenes:
   - Escuela
+--- !u!222 &734891798
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 734891794}
 --- !u!1001 &735545230
 Prefab:
   m_ObjectHideFlags: 0
@@ -33832,7 +33856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -33863,6 +33887,7 @@ GameObject:
   - component: {fileID: 749572994}
   - component: {fileID: 749572995}
   - component: {fileID: 749572996}
+  - component: {fileID: 749572997}
   m_Layer: 5
   m_Name: DialogueCanvas
   m_TagString: Untagged
@@ -33883,7 +33908,7 @@ RectTransform:
   m_Children:
   - {fileID: 286693789}
   m_Father: {fileID: 240085448}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33930,6 +33955,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenes:
   - Escuela
+--- !u!222 &749572997
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749572993}
 --- !u!1 &754510789
 GameObject:
   m_ObjectHideFlags: 0
@@ -40811,6 +40842,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 1454903597}
   examSceneName: Historia
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 1
   isExit: 0
 --- !u!61 &851432994
 BoxCollider2D:
@@ -46765,7 +46798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -48265,7 +48298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -48489,7 +48522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -48879,6 +48912,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 506371225}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 0
 --- !u!61 &1065739915
 BoxCollider2D:
@@ -49821,6 +49856,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 1454903597}
   examSceneName: Lengua
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 1
   isExit: 0
 --- !u!61 &1104070865
 BoxCollider2D:
@@ -50814,6 +50851,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 0}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 1
 --- !u!61 &1114066264
 BoxCollider2D:
@@ -50891,7 +50930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -51463,14 +51502,6 @@ CompositeCollider2D:
         Y: 272812512
       - X: 207812496
         Y: 272812512
-    - - X: 110000000
-        Y: 206250000
-      - X: 100000000
-        Y: 206250000
-      - X: 100000000
-        Y: 190000000
-      - X: 110000000
-        Y: 190000000
     - - X: 350000000
         Y: 206250000
       - X: 340000000
@@ -51478,6 +51509,14 @@ CompositeCollider2D:
       - X: 340000000
         Y: 190000000
       - X: 350000000
+        Y: 190000000
+    - - X: 110000000
+        Y: 206250000
+      - X: 100000000
+        Y: 206250000
+      - X: 100000000
+        Y: 190000000
+      - X: 110000000
         Y: 190000000
     - - X: 160000000
         Y: 204062496
@@ -51856,14 +51895,14 @@ CompositeCollider2D:
       - {x: 20.125, y: 27.5}
       - {x: 20.21875, y: 27.281252}
       - {x: 20.78125, y: 27.281252}
-    - - {x: 11, y: 20.625}
-      - {x: 10, y: 20.625}
-      - {x: 10, y: 19}
-      - {x: 11, y: 19}
     - - {x: 35, y: 20.625}
       - {x: 34, y: 20.625}
       - {x: 34, y: 19}
       - {x: 35, y: 19}
+    - - {x: 11, y: 20.625}
+      - {x: 10, y: 20.625}
+      - {x: 10, y: 19}
+      - {x: 11, y: 19}
     - - {x: 16, y: 20.40625}
       - {x: 13, y: 20.40625}
       - {x: 13, y: 18.625}
@@ -57800,6 +57839,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 0}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 1
 --- !u!61 &1240163569
 BoxCollider2D:
@@ -60410,7 +60451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0.21568629, b: 0.57254905, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -61372,6 +61413,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 0}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 1
 --- !u!61 &1301751175
 BoxCollider2D:
@@ -62891,7 +62934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.9191176, g: 0.896932, b: 0.80422795, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -63737,7 +63780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -69147,7 +69190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -69206,7 +69249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -72029,6 +72072,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 1240163567}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 0
 --- !u!61 &1452123749
 BoxCollider2D:
@@ -72100,6 +72145,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 0}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 1
 --- !u!61 &1454903599
 BoxCollider2D:
@@ -73507,6 +73554,8 @@ MonoBehaviour:
   botonInteractuar: 101
   lastEntrance: {fileID: 0}
   lastPosEntrance: {x: 0, y: 0, z: 0}
+  lastEntranceName: 
+  lastEntrancePasillos: {x: 0, y: 0, z: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
   lastScene: 
@@ -83337,6 +83386,7 @@ GameObject:
   - component: {fileID: 1599306756}
   - component: {fileID: 1599306754}
   - component: {fileID: 1599306755}
+  - component: {fileID: 1599306757}
   m_Layer: 5
   m_Name: Inventory/HUDCanvas
   m_TagString: Untagged
@@ -83415,13 +83465,19 @@ RectTransform:
   - {fileID: 1552974716}
   - {fileID: 1700395264}
   m_Father: {fileID: 240085448}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1599306757
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1599306753}
 --- !u!1 &1608399229
 GameObject:
   m_ObjectHideFlags: 0
@@ -86640,6 +86696,7 @@ GameObject:
   - component: {fileID: 1668322797}
   - component: {fileID: 1668322798}
   - component: {fileID: 1668322799}
+  - component: {fileID: 1668322800}
   m_Layer: 5
   m_Name: MessageManager
   m_TagString: Untagged
@@ -86659,7 +86716,7 @@ RectTransform:
   m_Children:
   - {fileID: 281679182}
   m_Father: {fileID: 240085448}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -86691,6 +86748,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenes:
   - Escuela
+--- !u!222 &1668322800
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1668322796}
 --- !u!1 &1668941787
 GameObject:
   m_ObjectHideFlags: 0
@@ -87063,7 +87126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -90305,6 +90368,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 1114066262}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 0
 --- !u!61 &1749122123
 BoxCollider2D:
@@ -92305,7 +92370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -92398,6 +92463,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 343364654}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 0
 --- !u!61 &1847288008
 BoxCollider2D:
@@ -92472,7 +92539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -92858,7 +92925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -93246,6 +93313,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 1301751173}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 0
 --- !u!61 &1927569310
 BoxCollider2D:
@@ -93382,7 +93451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -93641,6 +93710,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 1454903597}
   examSceneName: Geografia
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 1
   isExit: 0
 --- !u!61 &1952879997
 BoxCollider2D:
@@ -95857,6 +95928,8 @@ MonoBehaviour:
   entranceConnection: {fileID: 603583117}
   examSceneName: 
   trimestreAparicion: 0
+  pos: {x: 0, y: 0, z: 0}
+  isClass: 0
   isExit: 0
 --- !u!61 &2070069154
 BoxCollider2D:
@@ -96605,7 +96678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -98133,7 +98206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

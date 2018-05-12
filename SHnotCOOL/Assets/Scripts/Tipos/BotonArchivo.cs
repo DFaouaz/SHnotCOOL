@@ -12,7 +12,7 @@ public class BotonArchivo : MonoBehaviour {
 	public string nombre, fecha, hora, ruta;
 
 	public void ReferenciaEnMenu(){
-		FindObjectOfType<MenuManager> ().botonRef = this;
+		//FindObjectOfType<MenuManager> ().botonRef = this;
 	}
 
 	public void ActualizaDatos(){

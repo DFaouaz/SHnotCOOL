@@ -37,6 +37,10 @@ public class GameManager : MonoBehaviour {
 	public Entrance lastEntrance;
 	[HideInInspector]
 	public Vector3 lastPosEntrance;
+	[HideInInspector]
+	public string lastEntranceName;
+	[HideInInspector]
+	public Vector3 lastEntrancePasillos;
 
 	// Añadimos las variables necesarias para almacenar información
 	[HideInInspector]

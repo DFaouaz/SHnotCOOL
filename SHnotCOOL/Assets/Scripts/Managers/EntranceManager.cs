@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EntranceManager : MonoBehaviour {
 
@@ -29,11 +30,18 @@ public class EntranceManager : MonoBehaviour {
 	}
 
 	void CheckInteraction(){
-		if (Input.GetKeyDown (GameManager.instance.botonInteractuar) && entrance != null) {			
-			//Movemos al jugador
-			entrance.MoveToConnection(player);
-			//Movemos al negro
-			Invoke("MoveNegro",0.25f);
+		if (Input.GetKeyDown (GameManager.instance.botonInteractuar) && entrance != null) {		
+			if (isPasillosTime ()) {
+				GameManager.instance.lastEntrancePasillos = entrance.pos;
+				GameManager.instance.lastEntranceName = entrance.entranceName;
+				GameManager.instance.lastPosEntrance = entrance.entranceConnection.transform.position;
+				SceneManager.LoadScene ("Pasillos");
+			}else{
+				//Movemos al jugador
+				entrance.MoveToConnection(player);
+				//Movemos al negro
+				Invoke("MoveNegro",0.25f);
+			}
 		}
 	}
 
@@ -44,5 +52,13 @@ public class EntranceManager : MonoBehaviour {
 		}
 		if(GameManager.instance.habladoNegro)
 		negro.transform.position = player.transform.position;
+	}
+
+	bool isPasillosTime(){
+		if (entrance.isClass) {
+			int num = Random.Range (0, 10);
+			return num < 3;
+		} else
+			return false;
 	}
 }

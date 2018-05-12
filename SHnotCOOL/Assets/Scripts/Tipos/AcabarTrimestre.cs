@@ -8,6 +8,11 @@ public class AcabarTrimestre : MonoBehaviour {
     public GameObject TrimMark;
     public HUDManager hud;
 
+	void Start(){
+		if (hud != null)
+			hud = FindObjectOfType<HUDManager> ();
+	}
+
     void TrimestreAcabado()
     {
         if ((GameManager.instance.trimestre == 1 && (GameManager.instance.finMates && GameManager.instance.finHistoria)) || (GameManager.instance.trimestre == 2 && (GameManager.instance.finHistoria && GameManager.instance.finMates && GameManager.instance.finLengua)))
@@ -30,7 +35,7 @@ public class AcabarTrimestre : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player"&&finTrim)
         {
-            MessageManager.instance.ShowMessage("Pulsa " + GameManager.instance.botonInteractuar.ToString() + "pasar al siguiente trimestre");
+            MessageManager.instance.ShowMessage("Pulsa " + GameManager.instance.botonInteractuar.ToString() + " para pasar al siguiente\ntrimestre");
             col = true;
         }
     }
@@ -59,6 +64,7 @@ public class AcabarTrimestre : MonoBehaviour {
         hud.UpdateMoney();
         finTrim = false;
         TrimMark.SetActive(false);
+		col = false;
     }
     private void Update()
     {

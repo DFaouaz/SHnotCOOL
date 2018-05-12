@@ -54,7 +54,7 @@ public class PasillosManager : MonoBehaviour
 	public int TiempoRestante()
 	{
 		if (tiempo < 0) {
-            SceneManager.LoadScene("Aula");
+            SceneManager.LoadScene("Escuela");
         }
 		return tiempo;
 	}
@@ -65,7 +65,7 @@ public class PasillosManager : MonoBehaviour
 	}
 	public void Home ()
 	{
-        SceneManager.LoadScene("Aula");
+        SceneManager.LoadScene("Escuela");
 	}
 
 
@@ -76,7 +76,7 @@ public class PasillosManager : MonoBehaviour
     {
         if (vidas > 0)
         {
-            SceneManager.LoadScene("Aula");
+            SceneManager.LoadScene("Escuela");
         }
         else
         {

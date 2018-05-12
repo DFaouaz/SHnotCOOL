@@ -8,29 +8,29 @@ using System.IO;
 public class MenuManager : MonoBehaviour {
 
 	public string EscenaPredeterminada;
-	public Button botonReanudar, botonNuevaPartida, botonOpciones;
+	public Button /*botonReanudar,*/ botonNuevaPartida, botonOpciones;
 	public GameObject botones;
-	public CanvasRenderer panelNuevaPartida, panelReanudar,panelOpciones;
-	public BotonArchivo botonArchivo;
+	public CanvasRenderer /*panelNuevaPartida, panelReanudar,*/panelOpciones;
+	//public BotonArchivo botonArchivo;
 	RectTransform content;
-	[HideInInspector]
+	/*[HideInInspector]
 	public string fileName;
 	[HideInInspector]
 	public BotonArchivo botonRef;
-	string [] files;
+	string [] files;*/
 
 	void Start(){
 		//Asignamos a los elementos
-		content = panelReanudar.GetComponentInChildren<ScrollRect>().content;
+		//content = panelReanudar.GetComponentInChildren<ScrollRect>().content;
 		//Buscamos archivos existentes
-		BuscarArchivos();
+		//BuscarArchivos();
 		//Creamos tantos botonArchivo como archivos y cambiamos Scroll.Size a 1 por archivo
-		CreaBotonArchivo();
+		//CreaBotonArchivo();
 		//Desactiva los paneles
-		panelNuevaPartida.gameObject.SetActive (false);
-		panelReanudar.gameObject.SetActive (false);
+		//panelNuevaPartida.gameObject.SetActive (false);
+		//panelReanudar.gameObject.SetActive (false);
 		panelOpciones.gameObject.SetActive (false);
-		botonReanudar.Select ();
+		botonNuevaPartida.Select ();
 	}
 
 
@@ -56,7 +56,7 @@ public class MenuManager : MonoBehaviour {
 		//Desactiva botones
 		botones.gameObject.SetActive(false);
 		//Saca el panel de reanudar
-		panelReanudar.gameObject.SetActive(true);
+		//panelReanudar.gameObject.SetActive(true);
 	}
 
 	//Lee archivo y lo decodifica
@@ -75,17 +75,17 @@ public class MenuManager : MonoBehaviour {
 
 	public void CancelarReanudar(){
 		//Desactiva panelReanudar
-		panelReanudar.gameObject.SetActive(false);
-		botonRef = null;
+		//panelReanudar.gameObject.SetActive(false);
+		//botonRef = null;
 		//Activa botones
 		botones.gameObject.SetActive(true);
-		botonReanudar.Select ();
+		//botonReanudar.Select ();
 	}
 
 	//Metodos para NuevaPartida()
 	//Crea los archivos necesarios para empezar a guardar la partida
 	public void NuevaPartida(){
-		CrearArchivoNuevo (fileName);
+		//CrearArchivoNuevo (fileName);
 		SceneManager.LoadScene (EscenaPredeterminada);
 	}
 
@@ -93,7 +93,7 @@ public class MenuManager : MonoBehaviour {
 		//Desactiva botones
 		botones.gameObject.SetActive(false);
 		//Saca pantalla para pedir nombre
-		panelNuevaPartida.gameObject.SetActive(true);
+		//panelNuevaPartida.gameObject.SetActive(true);
 	}
 
 	void CrearArchivoNuevo(string fileName){
@@ -115,26 +115,26 @@ public class MenuManager : MonoBehaviour {
 
 	//Vuelve al menuPrincipal
 	public void CancelarNuevaPartida(){
-		panelNuevaPartida.gameObject.SetActive (false);
-		panelNuevaPartida.GetComponentInChildren<InputField>().text = "";
+		//panelNuevaPartida.gameObject.SetActive (false);
+		//panelNuevaPartida.GetComponentInChildren<InputField>().text = "";
 		botones.SetActive (true);
 		botonNuevaPartida.Select ();
 	}
 
 	//Crea el archivo con el nombre
 	public void AceptarNuevaPartida(){
-		fileName = panelNuevaPartida.GetComponentInChildren<InputField> ().text;
+		//fileName = panelNuevaPartida.GetComponentInChildren<InputField> ().text;
 		NuevaPartida ();
 	}
 
 
 	//Metodos generales
 	void BuscarArchivos(){
-		files = Directory.GetFiles (Application.dataPath,"fileName.*.txt");
+		//files = Directory.GetFiles (Application.dataPath,"fileName.*.txt");
 	}
 
 	//Crea botonArchivos
-	void CreaBotonArchivo(){
+	/*void CreaBotonArchivo(){
 		//Si existen archivos
 		if (files.Length > 0) {
 			//Instanciamos botones y ajustamos.
@@ -152,7 +152,7 @@ public class MenuManager : MonoBehaviour {
 		}
 		//Ajusta la barra
 		content.sizeDelta = new Vector2 (0, 75 * (files.Length + 1));
-	}
+	}*/
 
 	//Resetea para cuando se elimine un archivo
 	public void ReseteaLista(){
@@ -163,7 +163,7 @@ public class MenuManager : MonoBehaviour {
 			Destroy(item.gameObject);
 		}
 		BuscarArchivos ();
-		CreaBotonArchivo ();
+		//CreaBotonArchivo ();
 	}
 
 	//Métodos para el panel de opciones

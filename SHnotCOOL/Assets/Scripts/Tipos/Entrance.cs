@@ -10,13 +10,27 @@ public class Entrance : MonoBehaviour {
 	public string examSceneName;
     public int trimestreAparicion;
 	EntranceManager em;
+	[HideInInspector]
+	public Vector3 pos;
+	public bool isClass;
 	[Header("Marcar si es una salida")]
 	public bool isExit;
 
+	public Entrance (Entrance entrance)
+	{
+		entranceName = entrance.entranceName;
+		entranceConnection = null;
+		em = entrance.em;
+		pos = entrance.pos;
+		isClass = entrance.isClass;
+		isExit = entrance.isExit;
+	}
+
 	void Awake(){
 		em = GetComponentInParent<EntranceManager>();
+		pos = transform.position;
 	}
-	void OnTriggerEnter2D(Collider2D col){
+	void OnTriggerStay2D(Collider2D col){
 		if (col.tag == "Player" && !GameManager.instance.thereIsAnInteractiveEvent) {
 			MuestraMensaje ();
 			em.entrance = this;
@@ -35,17 +49,22 @@ public class Entrance : MonoBehaviour {
 		if (!isExit)
 			MessageManager.instance.ShowMessage("Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para acceder al\n" + entranceName);
 		else
-			MessageManager.instance.ShowMessage("Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para salir de\n" + GameManager.instance.lastEntrance.entranceName);
+			MessageManager.instance.ShowMessage("Pulsa " + GameManager.instance.botonInteractuar.ToString () + " para salir de\n" + GameManager.instance.lastEntranceName);
 		
 	}
 
 	public void MoveToConnection(GameObject character){
-		if (isExit) 
-			character.transform.position = GameManager.instance.lastEntrance.gameObject.transform.position;
+		if (isExit) {
+			if (GameManager.instance.lastEntrance != null)
+				character.transform.position = GameManager.instance.lastEntrance.pos;
+			else
+				character.transform.position = GameManager.instance.lastEntrancePasillos;
+		}
 		else
 			character.transform.position = entranceConnection.gameObject.transform.position; 
 		ChooseExam ();
 		GameManager.instance.lastEntrance = this;
+		GameManager.instance.lastEntranceName = entranceName;
 		GameManager.instance.lastPosEntrance = this.gameObject.transform.position;
 	}
 

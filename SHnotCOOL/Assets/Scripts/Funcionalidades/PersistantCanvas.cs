@@ -22,6 +22,8 @@ public class PersistantCanvas : MonoBehaviour {
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+		if (SceneManager.GetActiveScene ().name == "MenuPrincipal")
+			Destroy (this.gameObject);
 		UpdateCanvasObjects ();
 		try{
 			GameManager.instance.UpdateExamsRender ();
