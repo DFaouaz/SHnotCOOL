@@ -7,7 +7,6 @@ public class Player : MonoBehaviour {
 	Rigidbody2D playerRB;
 	Transform playerTR;
 	Animator playerAnim;
-	Vector3 lastPos;
 
     float tiempo;
 	bool alive = true;
@@ -23,7 +22,6 @@ public class Player : MonoBehaviour {
 		playerAnim = GetComponentInChildren<Animator> ();
 		movX = 0;
 		movY = 0;
-		lastPos = playerTR.position;
 	}
 
 	void Update () {

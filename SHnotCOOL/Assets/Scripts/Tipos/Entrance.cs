@@ -30,7 +30,7 @@ public class Entrance : MonoBehaviour {
 		em = GetComponentInParent<EntranceManager>();
 		pos = transform.position;
 	}
-	void OnTriggerStay2D(Collider2D col){
+	void OnTriggerEnter2D(Collider2D col){
 		if (col.tag == "Player" && !GameManager.instance.thereIsAnInteractiveEvent) {
 			MuestraMensaje ();
 			em.entrance = this;
@@ -61,22 +61,23 @@ public class Entrance : MonoBehaviour {
 				character.transform.position = GameManager.instance.lastEntrancePasillos;
 		}
 		else
-			character.transform.position = entranceConnection.gameObject.transform.position; 
-		ChooseExam ();
+			character.transform.position = entranceConnection.gameObject.transform.position;
 		GameManager.instance.lastEntrance = this;
 		GameManager.instance.lastEntranceName = entranceName;
 		GameManager.instance.lastPosEntrance = this.gameObject.transform.position;
 	}
 
-	void ChooseExam(){
-		if (examSceneName == "Matematicas" && !GameManager.instance.finMates)
-			GameManager.instance.exam = new Examen(0,trimestreAparicion);
-		else if (examSceneName == "Historia" && !GameManager.instance.finHistoria)
-            GameManager.instance.exam = new Examen(1, trimestreAparicion);
-        else if (examSceneName == "Lengua" && !GameManager.instance.finLengua)
-            GameManager.instance.exam = new Examen(2, trimestreAparicion);
-        else if (examSceneName == "Geografia" && !GameManager.instance.finGeo)
-            GameManager.instance.exam = new Examen(3, trimestreAparicion);
+	public void ChooseExam(){
+		if (isClass) {
+			if (examSceneName == "Matematicas" && !GameManager.instance.finMates)
+				GameManager.instance.exam = new Examen (0, trimestreAparicion);
+			else if (examSceneName == "Historia" && !GameManager.instance.finHistoria)
+				GameManager.instance.exam = new Examen (1, trimestreAparicion);
+			else if (examSceneName == "Lengua" && !GameManager.instance.finLengua)
+				GameManager.instance.exam = new Examen (2, trimestreAparicion);
+			else if (examSceneName == "Geografia" && !GameManager.instance.finGeo)
+				GameManager.instance.exam = new Examen (3, trimestreAparicion);
+		}
         else
             GameManager.instance.exam = new Examen(4, 0);
     }

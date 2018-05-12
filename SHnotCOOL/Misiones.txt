@@ -1,4 +1,4 @@
-Autista-0-2-En busca de la tabla perdida.
+Autista-0-2-1-En busca de la tabla perdida.
 #
 Hola...
 Niño busca a tabla
@@ -13,9 +13,18 @@ Te he echado de menos
 Tabla este niño es bueno 
 ###
 
-Autista-1-0
+Autista-1-2-2-En busca de la tabla perdida.
+#
+PRUEBA
+#
+##
+PRUEABA:Tabla
+##
+###
+PRUEBA 
+###
 
-Timmy-0-2-Vistiendo a la waifu
+Timmy-0-2-1-Vistiendo a la waifu
 #
 ¿Nakama me harías un favor?
 Te acuerdas antes que te he hablado de mi nueva Waifu...
@@ -34,7 +43,7 @@ No, perdón no la verás
 Es solo mía
 ###
 
-Timmy-1-1-¿Espia o es pio?.
+Timmy-1-1-2-¿Espia o es pio?.
 #
 Dicen que en el baño están hablando mal de mi
 Mira a ver que dicen
@@ -60,9 +69,9 @@ Ya verán, se las tendrán que ver conmigo
 y con mi puño de furia de nivel 15
 ###
 
-Timmy-2-0
+Timmy-2-0-3
 
-Negro-0-2-Comida para Africa
+Negro-0-2-1-Comida para Africa
 #
 Tengo hambre, no tengo casi fuerza 
 hace dias que no como
@@ -76,9 +85,9 @@ Mmmm, que rico.
 Gracias amigo te ayudare en lo que me pidas 
 ###
 
-Negro-1-0
+Negro-1-0-1
 
-Deportista-0-2-Apuntame esta
+Deportista-0-2-1-Apuntame esta
 #
 A ver pringao mañana tengo un examen 
 no me vendría nada mal tener unos buenos apuntes.
@@ -95,7 +104,7 @@ Me gusta ser el dominante
 Aunque a veces... ejem no he dicho nada
 ###
 
-Deportista-1-2-Que la fuerza te acompañe
+Deportista-1-2-2-Que la fuerza te acompañe
 #
 Maldito pardillo la otra vez me diste los apuntes de otro examen
 ¿Sabes qué? Te voy a dar otra oportunidad
@@ -113,9 +122,9 @@ Me siento mucho más masculino
 como el profesor de gimnasia,tiene unos biceps...
 ###
 
-Deportista-2-0
+Deportista-2-0-2
 
-Delegada-0-2-El anillo de poder
+Delegada-0-2-2-El anillo de poder
 #
 Por favor ayudame estoy en un problema
 me han robado mi anillo preferido
@@ -133,7 +142,7 @@ te lo agradezco con todo mi corazón
 A partir de ahora seremos buenos AMIGOS
 ###
 
-Delegada-1-2-Un collar para dominarlos a todos
+Delegada-1-2-2-Un collar para dominarlos a todos
 #
 Ay justo el amigo al que estaba buscando
 soy un desastre, me ha vuelto a pasar
@@ -151,7 +160,7 @@ Eres genial de verdad
 no podria estar más agradecida de tener un amigo como tú
 ###
 
-Delegada-2-1-El cerezo en flor
+Delegada-2-1-3-El cerezo en flor
 #
 Muchas gracias por haberme ayudado durante el curso
 ...
@@ -175,9 +184,9 @@ Bueno...venga ... lo voy a decir... a a ti .. te gustaría...
 ...
 ###
 
-Delegada-3-0
+Delegada-3-0-1
 
-Pijas-0-1-Un secreto oscuro
+Pijas-0-1-1-Un secreto oscuro
 #
 Anda el niño raro
 Ariadna: Bueno ahora eres algo más conocido
@@ -204,9 +213,9 @@ Britney:Ay que mantenerse alejadas de ese asqueroso pedofilo
 Ariadna: Ya tía, a saber lo que nos puede llegar a hacer
 ###
 
-Pijas-1-0
+Pijas-1-0-1
 
-Emos-0-2-Entre el cuchillo y la pared
+Emos-0-2-1-Entre el cuchillo y la pared
 #
 Emo 2:Esto da mucho asco
 Emo 1:Pues sí, deberíamos hacer algo al respecto
@@ -226,7 +235,7 @@ Emo 1:Gracias de todas formas
 Emo 1:Probaremos aunque sea
 ###
 
-Emos-1-2-Al filo del mañana
+Emos-1-2-2-Al filo del mañana
 #
 Emo 2:Quiero acabar con todo
 Emo 1:Tengo la solución pero necesitamos ayuda
@@ -244,9 +253,9 @@ Emo 2:Está bien, yo confío en ti
 Emos:Gracias po el cúter, esto si que es lo que de verdad necesitamos
 ###
 
-Emos-2-0
+Emos-2-0-1
 
-Minusvalido-0-1-A todo Gas
+Minusvalido-0-1-1-A todo Gas
 #
 Necesito ir al taller, pero esta en el piso de arriba
 Yo no puedo subir escaleras por razones obvias
@@ -262,7 +271,7 @@ Luego a ver como bajo...
 Bueno hasta la próxima
 ###
 
-Minusvalido-1-2-Saliva o Aceite?
+Minusvalido-1-2-1-Saliva o Aceite?
 #
 Hola de nuevo
 Buah tengo otro problema, resulta que me chirrian las ruedas
@@ -279,9 +288,9 @@ Mira ya no chirrian
 Gracias por todo
 ###
 
-Minusvalido-2-0
+Minusvalido-2-0-1
 
-AlKaboom-0-2-Rogue two
+AlKaboom-0-2-1-Rogue two
 #
 Hola ando un poco perdido
 Estoy buscando una clase en especial pero no se donde está
@@ -299,7 +308,7 @@ Quiero decir, que podré encontrar la clase que buscaba
 Gracias
 ###
 
-AlKaboom-1-2-Objetivo enCubierto
+AlKaboom-1-2-2-Objetivo enCubierto
 #
 Necesito tu ayuda otra vez, estoy haciendo un trabajo de ciencias
 Me hace falta algun objeto metálico
@@ -316,7 +325,7 @@ Y están afilados
 
 AlKaboom-2-0
 
-Chino-0-2-Lluvia de albondigas
+Chino-0-2-1-Lluvia de albondigas
 #
 Te voy a pedil un favol, si me tlaes unas albóndigas de la cafetelia selemos buenos amigos
 No tlanquilo no son pala mi, yo no como esto
@@ -331,7 +340,7 @@ Se le ve muy sabloso
 Ahola solo queda sepalal´le de este tonto
 ###
 
-Chino-1-2-Mastelchef
+Chino-1-2-1-Mastelchef
 #
 Ya estoy mas celca de mi plan
 Pelo necesito que me hagas otlo favol
@@ -346,7 +355,7 @@ Pelfecto, ya no necesito nada mas
 Ahola podle comel en condiciones
 ###
 
-Conserje-0-2-Un dulce prohibido
+Conserje-0-2-1-Un dulce prohibido
 #
 Hola muchacho
 ¿Necesitabas algo?

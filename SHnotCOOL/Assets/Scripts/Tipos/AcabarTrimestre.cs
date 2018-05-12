@@ -47,9 +47,7 @@ public class AcabarTrimestre : MonoBehaviour {
             col = false;
         }
     }
-    void CambioTrimestre()
-    {
-
+    void CambioTrimestre(){
         GameManager.instance.media += (GameManager.instance.historiaScore + GameManager.instance.matematicasScore + GameManager.instance.lenguaScore + GameManager.instance.GeoScore) / (GameManager.instance.trimestre + 1);
         GameManager.instance.finGeo = false;
         GameManager.instance.finHistoria = false;
@@ -65,9 +63,23 @@ public class AcabarTrimestre : MonoBehaviour {
         finTrim = false;
         TrimMark.SetActive(false);
 		col = false;
+		LoadNewMissions ();
     }
     private void Update()
     {
         TrimestreAcabado();
     }
+
+	void LoadNewMissions(){
+		NPC[] npcs = FindObjectsOfType<NPC> ();
+		foreach (NPC i in npcs) {
+			if (!i.isAcepted && i.tipoDeMision == Mission.TipoDeMision.None) {
+				i.LeeMision ();
+				if (i.tipoDeMision != Mission.TipoDeMision.None && i.missionMark != null)
+					i.missionMark.UpdateRender (MissionMark.Est.Exclamacion);
+				else if(i.missionMark != null)
+					i.missionMark.UpdateRender (MissionMark.Est.None);
+			}
+		}
+	}
 }

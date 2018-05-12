@@ -24,6 +24,7 @@ public class Mission : MonoBehaviour {
 	public bool isComplete = false;
 	[HideInInspector]
 	public bool isFriend = false;
+	[Header("No. de misiones para ser amigos")]
 	[SerializeField]
 	int maxMision = 0;
 
@@ -34,16 +35,22 @@ public class Mission : MonoBehaviour {
 	}
 
 	//Busca la mision
-	void LeeMision(){
+	public void LeeMision(){
 		StreamReader file = new StreamReader ("Misiones.txt");
 		//Busca el nombre en clave y el numero
 		string [] partes = new string[1];
 		do{
 			partes = file.ReadLine().Split('-');
 		}while(!file.EndOfStream && ((partes[0] != nombrePersonaje)
-			|| (partes[0] == nombrePersonaje && int.Parse(partes[1]) != indiceMision)));	
-		if(!file.EndOfStream)							
+			|| (partes[0] == nombrePersonaje && int.Parse(partes[1]) != indiceMision)
+			|| (partes[0] == nombrePersonaje && int.Parse(partes[1]) == indiceMision && !(int.Parse(partes[3]) <= GameManager.instance.trimestre))));	
+		if (!file.EndOfStream)
 			DecodificaMision (file, partes);
+		else {
+			tipoDeMision = TipoDeMision.None;
+			isAcepted = false;
+			isComplete = false;
+		}
 		file.Close ();
 	}
 	//Decodifica la mision
@@ -52,7 +59,7 @@ public class Mission : MonoBehaviour {
 		tipoDeMision = (TipoDeMision)int.Parse(partes[2]);
 		//Asignamos el titulo de la mision si la mision no es de tipo None
 		if (tipoDeMision != TipoDeMision.None)
-			tituloDeLaMision = partes [3];
+			tituloDeLaMision = partes [4];
 		else
 			tituloDeLaMision = null;
 		//Comenzamos decodificacion de los textos
@@ -116,9 +123,6 @@ public class Mission : MonoBehaviour {
 			if (tipoDeMision != TipoDeMision.None) {
 				isComplete = false;
 				isAcepted = false;
-			} else {
-				isComplete = true;
-				isAcepted = true;
 			}
 		}
 	}
