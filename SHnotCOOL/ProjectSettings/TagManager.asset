@@ -29,6 +29,7 @@ TagManager:
   - FinHistoria
   - VidaJugador
   - Coche
+  - Time
   layers:
   - Default
   - TransparentFX

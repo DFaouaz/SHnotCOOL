@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Save : MonoBehaviour {
-    GameObject respawn, go;
+    GameObject respawn;
     Animator animator;
 
     void Start () {
@@ -11,10 +11,9 @@ public class Save : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             respawn.transform.position = transform.position;
             animator.SetBool("Llegado", true);

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4880823108812632}
   - component: {fileID: 61397909222062404}
   m_Layer: 0
-  m_Name: Bound
+  m_Name: Limite
   m_TagString: Limite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

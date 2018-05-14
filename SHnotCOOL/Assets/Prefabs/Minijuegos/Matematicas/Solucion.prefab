@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61363265950634714}
   - component: {fileID: 114773477784566476}
   m_Layer: 0
-  m_Name: Soluciones
+  m_Name: Solucion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
