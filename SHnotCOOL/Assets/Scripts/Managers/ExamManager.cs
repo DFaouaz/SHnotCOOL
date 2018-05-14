@@ -25,8 +25,10 @@ public class ExamManager : MonoBehaviour {
 	}
 
 	void Update(){
-		if (player != null && Input.GetKeyDown (GameManager.instance.botonInteractuar))
-			EnterExam ();
+        if (player != null && Input.GetKeyDown(GameManager.instance.botonInteractuar))
+        {
+            EnterExam();
+        }
 	}
 
 

@@ -1,32 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class AcabarTrimestre : MonoBehaviour {
     bool col, finTrim;
     public GameObject TrimMark;
-    public HUDManager hud;
 
-	void Start(){
-		if (hud != null)
-			hud = FindObjectOfType<HUDManager> ();
-	}
 
     void TrimestreAcabado()
     {
-        if ((GameManager.instance.trimestre == 1 && (GameManager.instance.finMates && GameManager.instance.finHistoria)) || (GameManager.instance.trimestre == 2 && (GameManager.instance.finHistoria && GameManager.instance.finMates && GameManager.instance.finLengua)))
+        if ((GameManager.instance.trimestre == 1 && (GameManager.instance.finMates && GameManager.instance.finHistoria)) || (GameManager.instance.trimestre == 2 && (GameManager.instance.finHistoria && GameManager.instance.finMates && GameManager.instance.finLengua))||( GameManager.instance.trimestre == 3 && (GameManager.instance.finHistoria && GameManager.instance.finMates && GameManager.instance.finLengua && GameManager.instance.finGeo)))
         {
             finTrim = true;
             TrimMark.SetActive(true);
             if (col && Input.GetKeyDown(GameManager.instance.botonInteractuar))
                 CambioTrimestre();
                 
-        }
-        else if (GameManager.instance.trimestre == 3 && (GameManager.instance.finHistoria && GameManager.instance.finMates && GameManager.instance.finLengua && GameManager.instance.finGeo))
-        {
-            GameManager.instance.notaFinal = GameManager.instance.media / 3;
-            //fin juego
         }
         else
             TrimMark.SetActive(false);
@@ -48,22 +39,33 @@ public class AcabarTrimestre : MonoBehaviour {
         }
     }
     void CambioTrimestre(){
-        GameManager.instance.media += (GameManager.instance.historiaScore + GameManager.instance.matematicasScore + GameManager.instance.lenguaScore + GameManager.instance.GeoScore) / (GameManager.instance.trimestre + 1);
-        GameManager.instance.finGeo = false;
-        GameManager.instance.finHistoria = false;
-        GameManager.instance.finLengua=false;
-        GameManager.instance.finMates = false;
-        GameManager.instance.GeoScore = 0;
-        GameManager.instance.historiaScore = 0;
-        GameManager.instance.matematicasScore = 0;
-        GameManager.instance.lenguaScore = 0;
-        GameManager.instance.trimestre++;
-        GameManager.instance.dinero += 100;
-        hud.UpdateMoney();
+        GameManager.instance.media = (GameManager.instance.historiaScore + GameManager.instance.matematicasScore + GameManager.instance.lenguaScore + GameManager.instance.GeoScore) / (float)(GameManager.instance.trimestre + 1);
+        GameManager.instance.notaFinal += GameManager.instance.media;
         finTrim = false;
         TrimMark.SetActive(false);
 		col = false;
-		LoadNewMissions ();
+        if (GameManager.instance.trimestre != 3)
+        {
+       
+            SceneManager.LoadScene("CambioTrimestre");
+            GameManager.instance.finGeo = false;
+            GameManager.instance.finHistoria = false;
+            GameManager.instance.finLengua = false;
+            GameManager.instance.finMates = false;
+            GameManager.instance.GeoScore = 0;
+            GameManager.instance.historiaScore = 0;
+            GameManager.instance.matematicasScore = 0;
+            GameManager.instance.lenguaScore = 0;
+            GameManager.instance.trimestre++;
+            GameManager.instance.dinero += 100;
+            LoadNewMissions();
+        }
+        else
+        {
+            GameManager.instance.notaFinal = GameManager.instance.notaFinal / 3;
+            SceneManager.LoadScene("FinJuego");
+
+        }
     }
     private void Update()
     {

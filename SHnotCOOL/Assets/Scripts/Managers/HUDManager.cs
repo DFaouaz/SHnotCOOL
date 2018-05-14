@@ -48,8 +48,9 @@ public class HUDManager : MonoBehaviour {
 
 
 	void Update () {
-			CheckInputOpenCloseInventory ();
-			CheckInputObject ();
+		CheckInputOpenCloseInventory ();
+		CheckInputObject ();
+        UpdateMoney();
 	}
 
 	//Guarda el objeto

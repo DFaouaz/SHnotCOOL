@@ -111,9 +111,11 @@ public class GameManager : MonoBehaviour {
 	// para conseguir las funcionalidades que pretendamos incluir.
 	//Métodos generales
 	void CambiaAEscenaPrincipal(){
+        
 		SceneManager.LoadScene (escenaPrincipal);
-		Time.timeScale = 1;
-	}
+
+        Time.timeScale = 1;
+    }
 
 	//Minijuego de matematicas.
 	public void FinExamenMatematicas()
@@ -153,6 +155,7 @@ public class GameManager : MonoBehaviour {
     }*/
     public void FinMaton(){
 		Invoke("CambiaAEscenaPrincipal", 0);
+
     }
     public void SubePuntosLengua(){
 		FindObjectOfType<Puntos> ().SubePuntos ();

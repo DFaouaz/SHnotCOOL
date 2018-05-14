@@ -147,7 +147,7 @@ public class Maton : MonoBehaviour {
         if (!fin){
             tiempoFlechaActiva += Time.deltaTime;
             //si alguna de las teclas es pulasada
-            if (!cogido && !pulsado)
+            if (!pulsado)
                 CheckeaInput();
 
             //cuando no hay ninguna tecla pulsada
@@ -158,8 +158,7 @@ public class Maton : MonoBehaviour {
                 fin = true;
             }
             if (tiempoPasado >= tiempo){
-                textoFinJuego.text = "Has escapado";
-                cogido = true;
+                textoFinJuego.text = "Has escapado";               
                 fin = true;
             }
             else
@@ -171,6 +170,9 @@ public class Maton : MonoBehaviour {
     }
 	void FinJuego(){
         if (fin){
+            if (cogido)
+                GameManager.instance.dinero -= 20;
+
             GameManager.instance.FinMaton();
         }
     }

@@ -12,7 +12,7 @@ public class PasillosManager : MonoBehaviour
     public static PasillosManager instance = null;
 
     // Añadimos las variables necesarias para almacenar información
-    int tiempo=20, vidas = 5;
+    int tiempo=20;
 
     //Ancho y altura del juego
     int ancho = 17, altura = 10;
@@ -46,10 +46,6 @@ public class PasillosManager : MonoBehaviour
 
 
     // Devuelve el valor de vidas
-    public int Frogs()
-    {
-        return vidas;
-    }
 
 	public int TiempoRestante()
 	{
@@ -74,13 +70,7 @@ public class PasillosManager : MonoBehaviour
     // Si no: Reinicializa las variables y llama a Menu
     public void PlayerDead()
     {
-        if (vidas > 0)
-        {
-			SceneManager.LoadScene(level);
-        }
-        else
-        {
-            vidas = 5;
-        }
+			SceneManager.LoadScene("Escuela");
+        
     }
 }

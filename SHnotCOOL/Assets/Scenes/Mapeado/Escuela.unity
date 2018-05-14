@@ -26982,7 +26982,7 @@ MonoBehaviour:
   entranceName: "Aula de Matem\xE1ticas"
   entranceConnection: {fileID: 1454903597}
   examSceneName: Matematicas
-  trimestreAparicion: 0
+  trimestreAparicion: 1
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
   isExit: 0
@@ -40841,7 +40841,7 @@ MonoBehaviour:
   entranceName: Aula de Historia
   entranceConnection: {fileID: 1454903597}
   examSceneName: Historia
-  trimestreAparicion: 0
+  trimestreAparicion: 1
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
   isExit: 0
@@ -49855,7 +49855,7 @@ MonoBehaviour:
   entranceName: Aula de Lengua
   entranceConnection: {fileID: 1454903597}
   examSceneName: Lengua
-  trimestreAparicion: 0
+  trimestreAparicion: 2
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
   isExit: 0
@@ -93709,7 +93709,7 @@ MonoBehaviour:
   entranceName: "Aula de Geograf\xEDa"
   entranceConnection: {fileID: 1454903597}
   examSceneName: Geografia
-  trimestreAparicion: 0
+  trimestreAparicion: 3
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
   isExit: 0
@@ -95778,7 +95778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2051788628
 Transform:
   m_ObjectHideFlags: 0
@@ -95803,7 +95803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac9cc9bd8b59fe408a03dc8835372af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  probInicial: 20
+  probInicial: 100
   time: 20
 --- !u!1 &2054791205
 GameObject:

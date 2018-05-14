@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
-
+    public Text textoTiempo;
 	Rigidbody2D playerRB;
 	Transform playerTR;
 	Animator playerAnim;
@@ -25,11 +26,15 @@ public class Player : MonoBehaviour {
 	}
 
 	void Update () {
-		if (alive&&tiempo>5) 
-		{
-			// Comprobar la entrada del usuario
-			CheckInput ();
-		}
+        if (alive && tiempo > 5)
+        {
+
+            // Comprobar la entrada del usuario
+            CheckInput();
+            textoTiempo.text = "";
+        }
+        else
+            textoTiempo.text = (5 - ((int)tiempo)).ToString();
         tiempo += Time.deltaTime;
 	}
 		
