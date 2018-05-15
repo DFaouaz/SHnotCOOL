@@ -56,12 +56,12 @@ public class Maton : MonoBehaviour {
     public void CheckeaInput()
     {
 
-        if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.DownArrow)))
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.S)))
         {
             switch (flecha)
             {
                 case 0:
-                    if (Input.GetKeyDown(KeyCode.RightArrow))
+                    if (Input.GetKeyDown(KeyCode.D))
                     {
                         CambiaFlecha();
                         ActivaFlecha();
@@ -76,7 +76,7 @@ public class Maton : MonoBehaviour {
 
                     break;
                 case 1:
-                    if (Input.GetKeyDown(KeyCode.DownArrow))
+                    if (Input.GetKeyDown(KeyCode.S))
                     {
                         CambiaFlecha();
                         ActivaFlecha();
@@ -91,7 +91,7 @@ public class Maton : MonoBehaviour {
 
                     break;
                 case 2:
-                    if (Input.GetKeyDown(KeyCode.LeftArrow))
+                    if (Input.GetKeyDown(KeyCode.A))
                     {
                         CambiaFlecha();
                         ActivaFlecha();
@@ -106,7 +106,7 @@ public class Maton : MonoBehaviour {
 
                     break;
                 case 3:
-                    if (Input.GetKeyDown(KeyCode.UpArrow))
+                    if (Input.GetKeyDown(KeyCode.W))
                     {
                         CambiaFlecha();
                         ActivaFlecha();

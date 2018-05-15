@@ -533,9 +533,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '^
-
-    |'
+  m_Text: W
 --- !u!222 &559558588
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1331,9 +1329,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '|
-
-    v'
+  m_Text: S
 --- !u!222 &1866851308
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1592,7 +1588,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: -->
+  m_Text: D
 --- !u!222 &2007102526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1851,7 +1847,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <--
+  m_Text: A
 --- !u!222 &2101841706
 CanvasRenderer:
   m_ObjectHideFlags: 0

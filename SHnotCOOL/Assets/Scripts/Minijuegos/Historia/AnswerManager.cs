@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.IO;
 using System.Text;
 
@@ -12,6 +13,8 @@ public struct opcion{
 public class AnswerManager : MonoBehaviour {
 
 	public static AnswerManager instance = null;
+    public Text nombreEnemigo;
+
     float danio=0;
 	opcion[] respuestas;
 	List<opcion> opciones;
@@ -37,14 +40,17 @@ public class AnswerManager : MonoBehaviour {
             case (1):
                 texto = new StreamReader("BuenasTrump.txt", Encoding.Default);
                 texto2 = new StreamReader("MalasTrump.txt", Encoding.Default);
+                nombreEnemigo.text = "Trump";
                 break;
             case (2):
                 texto = new StreamReader("buena.txt", Encoding.Default);
                 texto2 = new StreamReader("mala.txt", Encoding.Default);
+                nombreEnemigo.text = "Hitler";
                 break;
             case (3):
                 texto = new StreamReader("BuenasJisus.txt", Encoding.Default);
                 texto2 = new StreamReader("MalasJisus.txt", Encoding.Default);
+                nombreEnemigo.text = "Jesus";
                 break;
         }
 

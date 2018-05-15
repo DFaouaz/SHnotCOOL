@@ -30,6 +30,7 @@ public class Health
 public class BarrasdeVida : MonoBehaviour {
     public Animator enemyAnimator;
 
+
     Health enemigo;
     Health player;
     GameObject barraEnemigo, barraPlayer;

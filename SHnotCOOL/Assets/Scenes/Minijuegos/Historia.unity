@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd1bfdb5d83c094a89f13454096de9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombreEnemigo: {fileID: 1239669073}
 --- !u!4 &131250061
 Transform:
   m_ObjectHideFlags: 0
@@ -2117,6 +2118,8 @@ MonoBehaviour:
   botonInteractuar: 0
   lastEntrance: {fileID: 0}
   lastPosEntrance: {x: 0, y: 0, z: 0}
+  lastEntranceName: 
+  lastEntrancePasillos: {x: 0, y: 0, z: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
   lastScene: 
@@ -2137,6 +2140,8 @@ MonoBehaviour:
   maxFriends: 0
   thereIsAnInteractiveEvent: 0
   trimestre: 1
+  media: 0
+  notaFinal: 0
 --- !u!4 &1375475287
 Transform:
   m_ObjectHideFlags: 0
