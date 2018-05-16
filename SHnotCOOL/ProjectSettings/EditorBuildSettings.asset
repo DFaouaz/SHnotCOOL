@@ -8,30 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuPrincipal.unity
     guid: de5d3cfc275fbd54781b1222152b846a
-  - enabled: 0
-    path: Assets/Scenes/Mapeado/Aula.unity
-    guid: d5901f1c3a02a6a42bd041f1c77216a3
-  - enabled: 0
-    path: "Assets/Scenes/Mapeado/Ba\xF1o.unity"
-    guid: 35b611fb798628b47b0efbe64f25438c
-  - enabled: 0
-    path: Assets/Scenes/Mapeado/Cafeteria.unity
-    guid: 3ec3b249d90a0e742868642ca31bfea6
-  - enabled: 0
-    path: Assets/Scenes/Mapeado/CuartoDeLimpieza.unity
-    guid: 1f15bd290cddb6d48b5c9fd4353bf515
-  - enabled: 0
-    path: Assets/Scenes/Mapeado/Gimnasio.unity
-    guid: f65d971c1778c0d4284c1ec60321b44f
-  - enabled: 0
-    path: Assets/Scenes/Mapeado/Piso1.unity
-    guid: ff3befae2d25c4c40af5f87d7c406498
-  - enabled: 0
-    path: Assets/Scenes/Mapeado/Piso2.unity
-    guid: 8ecabac4778cd3f4fbc649f591702a0d
-  - enabled: 0
-    path: Assets/Scenes/Mapeado/Taller.unity
-    guid: 24888355066aecc4da13ba8405d04a36
   - enabled: 1
     path: Assets/Scenes/Minijuegos/Matematicas.unity
     guid: a72e80fdb77fd7f4985b9ef12f82a285
@@ -39,19 +15,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Minijuegos/Historia.unity
     guid: 5864cf3bf3153d34b866b015b9630268
   - enabled: 1
-    path: Assets/Scenes/Minijuegos/Geografia.unity
-    guid: 4b47664e2dc1c624e9ac179a16c29365
+    path: Assets/Scenes/Minijuegos/Maton.unity
+    guid: 31572b385c474784dbfb4469a1bec3ab
   - enabled: 1
     path: Assets/Scenes/Minijuegos/Lengua.unity
     guid: 3a0630d2575955546a228efe47c9f84d
   - enabled: 1
-    path: Assets/Scenes/Minijuegos/Maton.unity
-    guid: 31572b385c474784dbfb4469a1bec3ab
-  - enabled: 1
     path: Assets/Scenes/Minijuegos/Pasillos.unity
     guid: 9de326ba0bdbb9b48a5ed3e309ae3b11
   - enabled: 1
-    path: Assets/Scenes/Mapeado/Escuela.unity
+    path: Assets/Scenes/Escuela.unity
     guid: 07962e73716561b47b9d25832da11bf9
   - enabled: 1
     path: Assets/Scenes/Transiciones/FinJuego.unity

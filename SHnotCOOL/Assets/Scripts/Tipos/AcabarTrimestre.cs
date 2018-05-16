@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class AcabarTrimestre : MonoBehaviour {
     bool col, finTrim;
     public GameObject TrimMark;
+	public Vector3 posInicial;
 
 
     void TrimestreAcabado()
@@ -15,8 +16,10 @@ public class AcabarTrimestre : MonoBehaviour {
         {
             finTrim = true;
             TrimMark.SetActive(true);
-            if (col && Input.GetKeyDown(GameManager.instance.botonInteractuar))
-                CambioTrimestre();
+			if (col && Input.GetKeyDown (GameManager.instance.botonInteractuar)) {
+				GameManager.instance.lastPosEntrance = posInicial;
+				CambioTrimestre ();
+			}
                 
         }
         else

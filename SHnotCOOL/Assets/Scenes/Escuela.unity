@@ -86592,6 +86592,16 @@ Prefab:
       propertyPath: hud
       value: 
       objectReference: {fileID: 1599306754}
+    - target: {fileID: 114363732752102802, guid: 2f926308cb0c222478680c786cd709c9,
+        type: 2}
+      propertyPath: posInicial.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114363732752102802, guid: 2f926308cb0c222478680c786cd709c9,
+        type: 2}
+      propertyPath: posInicial.y
+      value: -12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
   m_IsPrefabParent: 0
