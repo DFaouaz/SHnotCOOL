@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour {
 	public string EscenaPredeterminada;
 	public Button /*botonReanudar,*/ botonNuevaPartida, botonOpciones;
 	public GameObject botones;
+    public Animator logoAnimator;
 	public CanvasRenderer /*panelNuevaPartida, panelReanudar,*/panelOpciones;
 	//public BotonArchivo botonArchivo;
 	RectTransform content;
@@ -81,11 +82,16 @@ public class MenuManager : MonoBehaviour {
 		botones.gameObject.SetActive(true);
 		//botonReanudar.Select ();
 	}
-
+    public void BotonStartPulsado()
+    {
+        logoAnimator.SetBool("pulsado", true);
+        Invoke("NuevaPartida", 2.40f);
+    }
 	//Metodos para NuevaPartida()
 	//Crea los archivos necesarios para empezar a guardar la partida
 	public void NuevaPartida(){
-		//CrearArchivoNuevo (fileName);
+        //CrearArchivoNuevo (fileName);
+
 		SceneManager.LoadScene (EscenaPredeterminada);
 	}
 
