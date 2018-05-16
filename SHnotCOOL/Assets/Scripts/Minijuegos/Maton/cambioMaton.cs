@@ -14,10 +14,11 @@ public class cambioMaton : MonoBehaviour {
 	
     void probMaton() {
         int prob = Random.Range(0, 100);
-        if (prob < probInicial - ((GameManager.instance.numFriends * probInicial) / GameManager.instance.maxFriends)
+		if (prob < (probInicial - ((GameManager.instance.numFriends * probInicial) / GameManager.instance.maxFriends)) && GameManager.instance.matonAble
             && !GameManager.instance.ventanaAbierta)
         {
-			GameManager.instance.lastPosEntrance = GameObject.FindGameObjectWithTag ("Player").transform.position;
+			GameManager.instance.lastPosPasillos = GameObject.FindGameObjectWithTag ("Player").transform.position;
+			GameManager.instance.lastPosEntrance = Vector3.zero;
             SceneManager.LoadScene("Maton");
         }
         Invoke("probMaton", time);

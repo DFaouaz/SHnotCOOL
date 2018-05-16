@@ -32,8 +32,9 @@ public class EntranceManager : MonoBehaviour {
 	void CheckInteraction(){
 		if (Input.GetKeyDown (GameManager.instance.botonInteractuar) && entrance != null) {		
 			entrance.ChooseExam ();
+			entrance.CheckMaton ();
+			GameManager.instance.lastPosPasillos = entrance.pos;
 			if (isPasillosTime ()) {
-				GameManager.instance.lastEntrancePasillos = entrance.pos;
 				GameManager.instance.lastEntranceName = entrance.entranceName;
 				GameManager.instance.lastPosEntrance = entrance.entranceConnection.transform.position;
 				SceneManager.LoadScene ("Pasillos");

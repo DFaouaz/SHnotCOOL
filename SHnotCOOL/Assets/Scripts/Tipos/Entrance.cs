@@ -13,6 +13,8 @@ public class Entrance : MonoBehaviour {
 	[HideInInspector]
 	public Vector3 pos;
 	public bool isClass;
+	[Header("Marcar si es una sala")]
+	public bool isRoom;
 	[Header("Marcar si es una salida")]
 	public bool isExit;
 
@@ -58,7 +60,7 @@ public class Entrance : MonoBehaviour {
 			if (GameManager.instance.lastEntrance != null)
 				character.transform.position = GameManager.instance.lastEntrance.pos;
 			else
-				character.transform.position = GameManager.instance.lastEntrancePasillos;
+				character.transform.position = GameManager.instance.lastPosPasillos;
 		}
 		else
 			character.transform.position = entranceConnection.gameObject.transform.position;
@@ -81,5 +83,11 @@ public class Entrance : MonoBehaviour {
         else
             GameManager.instance.exam = new Examen(4, 0);
     }
+	public void CheckMaton(){
+		if (isRoom)
+			GameManager.instance.matonAble = false;
+		else
+			GameManager.instance.matonAble = true;
+	}
 
 }

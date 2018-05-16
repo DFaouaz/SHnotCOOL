@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector]
 	public string lastEntranceName;
 	[HideInInspector]
-	public Vector3 lastEntrancePasillos;
+	public Vector3 lastPosPasillos;
 
 	// Añadimos las variables necesarias para almacenar información
 	[HideInInspector]
@@ -57,6 +57,8 @@ public class GameManager : MonoBehaviour {
 	public bool pauseMode = false;
 	[HideInInspector]
 	public int dinero = 100;
+	[HideInInspector]
+	public bool matonAble = false;
     
 	public int tamInv = 0;
 	[HideInInspector]
@@ -91,7 +93,7 @@ public class GameManager : MonoBehaviour {
 
     // En cuanto el objeto se active
     void Awake() {
-		
+		matonAble = true;
 		// Si no hay ningún objeto GameManager ya creado
 		if (instance == null) {
 			// Almacenamos la instancia actual
@@ -188,6 +190,11 @@ public class GameManager : MonoBehaviour {
 			if (lastPosEntrance != Vector3.zero) {
 				//Movemos los personajes a la ultima entrada
 				GameObject.FindGameObjectWithTag ("Player").transform.position = lastPosEntrance;
+				if (habladoNegro)
+					Invoke ("MoveNegro", 0.25f);
+			} else if (lastPosPasillos != Vector3.zero) {
+				//Movemos los personajes a la ultima pos en los Pasillos
+				GameObject.FindGameObjectWithTag ("Player").transform.position = lastPosPasillos;
 				if (habladoNegro)
 					Invoke ("MoveNegro", 0.25f);
 			}

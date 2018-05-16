@@ -17,7 +17,8 @@ public class AcabarTrimestre : MonoBehaviour {
             finTrim = true;
             TrimMark.SetActive(true);
 			if (col && Input.GetKeyDown (GameManager.instance.botonInteractuar)) {
-				GameManager.instance.lastPosEntrance = posInicial;
+				GameManager.instance.lastPosPasillos = posInicial;
+				GameManager.instance.lastPosEntrance = Vector3.zero;
 				CambioTrimestre ();
 			}
                 

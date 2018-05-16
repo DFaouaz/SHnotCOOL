@@ -28,6 +28,8 @@ public class ExamManager : MonoBehaviour {
         if (player != null && Input.GetKeyDown(GameManager.instance.botonInteractuar))
         {
             EnterExam();
+			GameManager.instance.lastPosEntrance = Vector3.zero;
+			GameManager.instance.matonAble = true;
         }
 	}
 

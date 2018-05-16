@@ -25868,6 +25868,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 0
   isExit: 1
 --- !u!61 &343364656
 BoxCollider2D:
@@ -26985,6 +26986,7 @@ MonoBehaviour:
   trimestreAparicion: 1
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
+  isRoom: 1
   isExit: 0
 --- !u!61 &380286543
 BoxCollider2D:
@@ -27058,6 +27060,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 1
   isExit: 0
 --- !u!61 &382343854
 BoxCollider2D:
@@ -29048,6 +29051,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 0
   isExit: 1
 --- !u!61 &506371227
 BoxCollider2D:
@@ -30615,6 +30619,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 0
   isExit: 0
 --- !u!61 &603583118
 BoxCollider2D:
@@ -40844,6 +40849,7 @@ MonoBehaviour:
   trimestreAparicion: 1
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
+  isRoom: 1
   isExit: 0
 --- !u!61 &851432994
 BoxCollider2D:
@@ -48914,6 +48920,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 1
   isExit: 0
 --- !u!61 &1065739915
 BoxCollider2D:
@@ -49858,6 +49865,7 @@ MonoBehaviour:
   trimestreAparicion: 2
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
+  isRoom: 1
   isExit: 0
 --- !u!61 &1104070865
 BoxCollider2D:
@@ -50853,6 +50861,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 0
   isExit: 1
 --- !u!61 &1114066264
 BoxCollider2D:
@@ -57841,6 +57850,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 0
   isExit: 1
 --- !u!61 &1240163569
 BoxCollider2D:
@@ -61415,6 +61425,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 0
   isExit: 1
 --- !u!61 &1301751175
 BoxCollider2D:
@@ -72074,6 +72085,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 1
   isExit: 0
 --- !u!61 &1452123749
 BoxCollider2D:
@@ -72147,6 +72159,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 0
   isExit: 1
 --- !u!61 &1454903599
 BoxCollider2D:
@@ -73555,7 +73568,7 @@ MonoBehaviour:
   lastEntrance: {fileID: 0}
   lastPosEntrance: {x: 0, y: 0, z: 0}
   lastEntranceName: 
-  lastEntrancePasillos: {x: 0, y: 0, z: 0}
+  lastPosPasillos: {x: 0, y: 0, z: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
   lastScene: 
@@ -73563,6 +73576,7 @@ MonoBehaviour:
   ventanaAbierta: 0
   pauseMode: 0
   dinero: 100
+  matonAble: 0
   tamInv: 3
   matematicasScore: 0
   finMates: 0
@@ -90380,6 +90394,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 1
   isExit: 0
 --- !u!61 &1749122123
 BoxCollider2D:
@@ -92475,6 +92490,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 1
   isExit: 0
 --- !u!61 &1847288008
 BoxCollider2D:
@@ -93325,6 +93341,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 1
   isExit: 0
 --- !u!61 &1927569310
 BoxCollider2D:
@@ -93722,6 +93739,7 @@ MonoBehaviour:
   trimestreAparicion: 3
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
+  isRoom: 1
   isExit: 0
 --- !u!61 &1952879997
 BoxCollider2D:
@@ -95940,6 +95958,7 @@ MonoBehaviour:
   trimestreAparicion: 0
   pos: {x: 0, y: 0, z: 0}
   isClass: 0
+  isRoom: 0
   isExit: 0
 --- !u!61 &2070069154
 BoxCollider2D:
