@@ -25,9 +25,11 @@ public class PersistantObjects : MonoBehaviour {
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-		if (SceneManager.GetActiveScene ().name == "MenuPrincipal")
+		if (SceneManager.GetActiveScene ().name == "MenuPrincipal") {
 			Destroy (this.gameObject);
-		ActualizaObjetos ();
+			PersistantObjects.instance = null;
+		}else
+			ActualizaObjetos ();
 	}
 	void OnDisable(){
 		SceneManager.sceneLoaded -= OnSceneLoaded;

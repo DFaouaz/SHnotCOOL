@@ -27,11 +27,14 @@ public class PersistantCharacter : MonoBehaviour {
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-		if (SceneManager.GetActiveScene ().name == "MenuPrincipal")
+		if (SceneManager.GetActiveScene ().name == "MenuPrincipal") {
 			Destroy (this.gameObject);
-		UpdateShops ();
-		UpdateNPCs ();
-		GameManager.instance.MuevePersonajes ();
+			PersistantCharacter.instance = null;
+		} else {
+			UpdateShops ();
+			UpdateNPCs ();
+			GameManager.instance.MuevePersonajes ();
+		}
 	}
 	void OnDisable(){
 		SceneManager.sceneLoaded -= OnSceneLoaded;

@@ -22,15 +22,22 @@ public class PersistantCanvas : MonoBehaviour {
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-		if (SceneManager.GetActiveScene ().name == "MenuPrincipal")
+		if (SceneManager.GetActiveScene ().name == "MenuPrincipal") {
+			PersistantCanvas.instance = null;
+			DialogueManager.instance = null;
+			MissionManager.instance = null;
+			MessageManager.instance = null;
+			EntranceManager.instance = null;
 			Destroy (this.gameObject);
-		UpdateCanvasObjects ();
-		try{
-			GameManager.instance.UpdateExamsRender ();
-		}catch{
-			Debug.Log ("HUDMaganer gameobject desactivado en la jeranquía");
+		} else {
+			UpdateCanvasObjects ();
+			try {
+				GameManager.instance.UpdateExamsRender ();
+			} catch {
+				Debug.Log ("HUDMaganer gameobject desactivado en la jeranquía");
+			}
+			MessageManager.instance.CloseMessage ();
 		}
-		MessageManager.instance.CloseMessage ();
 	}
 	void OnDisable(){
 		SceneManager.sceneLoaded -= OnSceneLoaded;

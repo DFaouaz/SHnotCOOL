@@ -10,7 +10,7 @@ public class MissionMark : MonoBehaviour {
 	public Est estado;
 	SpriteRenderer render;
 
-	void Start () {
+	void Awake () {
 		estado = Est.None;
 		render = GetComponent<SpriteRenderer> ();
 		UpdateRender (estado);
