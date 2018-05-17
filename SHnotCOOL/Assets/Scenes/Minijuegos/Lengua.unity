@@ -601,6 +601,8 @@ MonoBehaviour:
   botonInteractuar: 0
   lastEntrance: {fileID: 0}
   lastPosEntrance: {x: 0, y: 0, z: 0}
+  lastEntranceName: 
+  lastPosPasillos: {x: 0, y: 0, z: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
   lastScene: 
@@ -608,6 +610,7 @@ MonoBehaviour:
   ventanaAbierta: 0
   pauseMode: 0
   dinero: 100
+  matonAble: 0
   tamInv: 3
   matematicasScore: 0
   finMates: 0
@@ -621,6 +624,8 @@ MonoBehaviour:
   maxFriends: 0
   thereIsAnInteractiveEvent: 0
   trimestre: 1
+  media: 0
+  notaFinal: 0
 --- !u!4 &748829743
 Transform:
   m_ObjectHideFlags: 0
@@ -860,8 +865,8 @@ Canvas:
   m_GameObject: {fileID: 892033607}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 792924128}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

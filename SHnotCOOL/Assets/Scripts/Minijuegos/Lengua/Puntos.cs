@@ -8,28 +8,35 @@ public class Puntos : MonoBehaviour {
 	Text texto;
 	public int puntosParaAprobar;
 	public int puntosPorLetra;
+	int puntosLlevados;
+
 
 	void Start(){
 		texto = GetComponent<Text> ();
 		ActualizaPuntos ();
+		puntosLlevados = 0;
+	
 	}
 	public void SubePuntos(){
-		if (GameManager.instance.lenguaScore < puntosParaAprobar) {
-			GameManager.instance.lenguaScore += puntosPorLetra;
+		
+			puntosLlevados += puntosPorLetra;
 			PuntosPorVida ();
 			ActualizaPuntos ();
-			if (CompruebaAprobado ())
-				GameManager.instance.FinExamenLengua ();
-		}
+			//if (CompruebaAprobado ())
+			//	GameManager.instance.FinExamenLengua ();
 	}
 	void ActualizaPuntos(){
+		if (FindObjectOfType<VidasLengua> ().vidas >= 5)
+			GameManager.instance.lenguaScore = 10;
+		else
+			GameManager.instance.lenguaScore = FindObjectOfType<VidasLengua> ().vidas * 2;
 		texto.text = "Puntos: " + GameManager.instance.lenguaScore;
 	}
-	bool CompruebaAprobado(){
+/*	bool CompruebaAprobado(){
 		return (GameManager.instance.lenguaScore >= puntosParaAprobar);
-	}
+	}*/
 	void PuntosPorVida(){
-		if (GameManager.instance.lenguaScore % 5 == 0)
+		if (puntosLlevados % 10 == 0)
 			FindObjectOfType<VidasLengua> ().SubeVida ();
 	}
 }
