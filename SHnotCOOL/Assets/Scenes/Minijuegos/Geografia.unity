@@ -5545,7 +5545,7 @@ MonoBehaviour:
   lastEntrance: {fileID: 0}
   lastPosEntrance: {x: 0, y: 0, z: 0}
   lastEntranceName: 
-  lastEntrancePasillos: {x: 0, y: 0, z: 0}
+  lastPosPasillos: {x: 0, y: 0, z: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
   lastScene: 
@@ -5553,6 +5553,9 @@ MonoBehaviour:
   ventanaAbierta: 0
   pauseMode: 0
   dinero: 100
+  matonAble: 0
+  emosMuerto: 0
+  perroComido: 0
   tamInv: 0
   matematicasScore: 0
   finMates: 0
