@@ -8,28 +8,34 @@ public class InfoPanel : MonoBehaviour
     public GameObject mesagePanel;
     public Text text;
     public string mesage;
-    bool active = true;
+    static bool inicio = true;
+
+    void Awake()
+    {
+        if(inicio)
+            OpenPanel();
+        inicio = false;
+    }
 
     void OpenPanel()
     {
         text.text = mesage;
-        mesagePanel.SetActive(active);
+        mesagePanel.SetActive(true);
         Time.timeScale = 0;
     }
 
     public void ClosePanel()
     {
-        mesagePanel.SetActive(!active);
+        mesagePanel.SetActive(false);
         Time.timeScale = 1;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-		if (collision.gameObject.CompareTag("Player") && active)
+		if (collision.gameObject.CompareTag("Player"))
         {
             OpenPanel();
-			active = false;
-			gameObject.SetActive (false);
+			this.gameObject.SetActive (false);
         }
     }
 }
