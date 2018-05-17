@@ -61,6 +61,8 @@ public class GameManager : MonoBehaviour {
 	public bool matonAble = false;
 	[HideInInspector]
 	public bool emosMuerto = false;
+	[HideInInspector]
+	public bool perroComido = false;
     
 	public int tamInv = 0;
 	[HideInInspector]

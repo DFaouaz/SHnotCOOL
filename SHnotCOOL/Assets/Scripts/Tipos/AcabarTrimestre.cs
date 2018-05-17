@@ -50,8 +50,10 @@ public class AcabarTrimestre : MonoBehaviour {
 		col = false;
         if (GameManager.instance.trimestre != 3)
         {       
-			if(GameManager.instance.trimestre == 2)
+			if (GameManager.instance.trimestre == 2) {
+				chinoGordinflon.CheckComida ();
 				EmosSuicidasion.CheckMuerte ();
+			}
             SceneManager.LoadScene("CambioTrimestre");
             GameManager.instance.finGeo = false;
             GameManager.instance.finHistoria = false;
