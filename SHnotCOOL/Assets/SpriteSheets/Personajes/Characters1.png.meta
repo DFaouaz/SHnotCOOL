@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d866b79b5e56a4b429a32cb48986d0a0
-timeCreated: 1519729996
+timeCreated: 1526577374
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -102,6 +102,104 @@ TextureImporter:
     21300190: Characters_95
     21300192: Characters_96
     21300194: Characters_97
+    21300196: Characters1_0
+    21300198: Characters1_1
+    21300200: Characters1_2
+    21300202: Characters1_3
+    21300204: Characters1_4
+    21300206: Characters1_5
+    21300208: Characters1_6
+    21300210: Characters1_7
+    21300212: Characters1_8
+    21300214: Characters1_9
+    21300216: Characters1_10
+    21300218: Characters1_11
+    21300220: Characters1_12
+    21300222: Characters1_13
+    21300224: Characters1_14
+    21300226: Characters1_15
+    21300228: Characters1_16
+    21300230: Characters1_17
+    21300232: Characters1_18
+    21300234: Characters1_19
+    21300236: Characters1_20
+    21300238: Characters1_21
+    21300240: Characters1_22
+    21300242: Characters1_23
+    21300244: Characters1_24
+    21300246: Characters1_25
+    21300248: Characters1_26
+    21300250: Characters1_27
+    21300252: Characters1_28
+    21300254: Characters1_29
+    21300256: Characters1_30
+    21300258: Characters1_31
+    21300260: Characters1_32
+    21300262: Characters1_33
+    21300264: Characters1_34
+    21300266: Characters1_35
+    21300268: Characters1_36
+    21300270: Characters1_37
+    21300272: Characters1_38
+    21300274: Characters1_39
+    21300276: Characters1_40
+    21300278: Characters1_41
+    21300280: Characters1_42
+    21300282: Characters1_43
+    21300284: Characters1_44
+    21300286: Characters1_45
+    21300288: Characters1_46
+    21300290: Characters1_47
+    21300292: Characters1_48
+    21300294: Characters1_49
+    21300296: Characters1_50
+    21300298: Characters1_51
+    21300300: Characters1_52
+    21300302: Characters1_53
+    21300304: Characters1_54
+    21300306: Characters1_55
+    21300308: Characters1_56
+    21300310: Characters1_57
+    21300312: Characters1_58
+    21300314: Characters1_59
+    21300316: Characters1_60
+    21300318: Characters1_61
+    21300320: Characters1_62
+    21300322: Characters1_63
+    21300324: Characters1_64
+    21300326: Characters1_65
+    21300328: Characters1_66
+    21300330: Characters1_67
+    21300332: Characters1_68
+    21300334: Characters1_69
+    21300336: Characters1_70
+    21300338: Characters1_71
+    21300340: Characters1_72
+    21300342: Characters1_73
+    21300344: Characters1_74
+    21300346: Characters1_75
+    21300348: Characters1_76
+    21300350: Characters1_77
+    21300352: Characters1_78
+    21300354: Characters1_79
+    21300356: Characters1_80
+    21300358: Characters1_81
+    21300360: Characters1_82
+    21300362: Characters1_83
+    21300364: Characters1_84
+    21300366: Characters1_85
+    21300368: Characters1_86
+    21300370: Characters1_87
+    21300372: Characters1_88
+    21300374: Characters1_89
+    21300376: Characters1_90
+    21300378: Characters1_91
+    21300380: Characters1_92
+    21300382: Characters1_93
+    21300384: Characters1_94
+    21300386: Characters1_95
+    21300388: Characters1_96
+    21300390: Characters1_97
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -178,7 +276,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Characters_0
+      name: Characters1_0
       rect:
         serializedVersion: 2
         x: 18
@@ -192,7 +290,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_1
+      name: Characters1_1
       rect:
         serializedVersion: 2
         x: 114
@@ -206,7 +304,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_2
+      name: Characters1_2
       rect:
         serializedVersion: 2
         x: 146
@@ -220,7 +318,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_3
+      name: Characters1_3
       rect:
         serializedVersion: 2
         x: 178
@@ -234,7 +332,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_4
+      name: Characters1_4
       rect:
         serializedVersion: 2
         x: 210
@@ -248,7 +346,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_5
+      name: Characters1_5
       rect:
         serializedVersion: 2
         x: 354
@@ -262,7 +360,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_6
+      name: Characters1_6
       rect:
         serializedVersion: 2
         x: 386
@@ -276,7 +374,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_7
+      name: Characters1_7
       rect:
         serializedVersion: 2
         x: 418
@@ -290,7 +388,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_8
+      name: Characters1_8
       rect:
         serializedVersion: 2
         x: 450
@@ -304,7 +402,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_9
+      name: Characters1_9
       rect:
         serializedVersion: 2
         x: 594
@@ -318,7 +416,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_10
+      name: Characters1_10
       rect:
         serializedVersion: 2
         x: 626
@@ -332,7 +430,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_11
+      name: Characters1_11
       rect:
         serializedVersion: 2
         x: 658
@@ -346,7 +444,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_12
+      name: Characters1_12
       rect:
         serializedVersion: 2
         x: 690
@@ -360,7 +458,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_13
+      name: Characters1_13
       rect:
         serializedVersion: 2
         x: 116
@@ -374,7 +472,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_14
+      name: Characters1_14
       rect:
         serializedVersion: 2
         x: 148
@@ -388,7 +486,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_15
+      name: Characters1_15
       rect:
         serializedVersion: 2
         x: 180
@@ -402,7 +500,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_16
+      name: Characters1_16
       rect:
         serializedVersion: 2
         x: 212
@@ -416,7 +514,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_17
+      name: Characters1_17
       rect:
         serializedVersion: 2
         x: 268
@@ -430,7 +528,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_18
+      name: Characters1_18
       rect:
         serializedVersion: 2
         x: 354
@@ -444,7 +542,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_19
+      name: Characters1_19
       rect:
         serializedVersion: 2
         x: 386
@@ -458,7 +556,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_20
+      name: Characters1_20
       rect:
         serializedVersion: 2
         x: 418
@@ -472,7 +570,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_21
+      name: Characters1_21
       rect:
         serializedVersion: 2
         x: 450
@@ -486,7 +584,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_22
+      name: Characters1_22
       rect:
         serializedVersion: 2
         x: 498
@@ -500,7 +598,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_23
+      name: Characters1_23
       rect:
         serializedVersion: 2
         x: 594
@@ -514,7 +612,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_24
+      name: Characters1_24
       rect:
         serializedVersion: 2
         x: 626
@@ -528,7 +626,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_25
+      name: Characters1_25
       rect:
         serializedVersion: 2
         x: 658
@@ -542,7 +640,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_26
+      name: Characters1_26
       rect:
         serializedVersion: 2
         x: 690
@@ -556,7 +654,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_27
+      name: Characters1_27
       rect:
         serializedVersion: 2
         x: 114
@@ -570,7 +668,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_28
+      name: Characters1_28
       rect:
         serializedVersion: 2
         x: 146
@@ -584,7 +682,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_29
+      name: Characters1_29
       rect:
         serializedVersion: 2
         x: 178
@@ -598,7 +696,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_30
+      name: Characters1_30
       rect:
         serializedVersion: 2
         x: 208
@@ -612,7 +710,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_31
+      name: Characters1_31
       rect:
         serializedVersion: 2
         x: 354
@@ -626,7 +724,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_32
+      name: Characters1_32
       rect:
         serializedVersion: 2
         x: 386
@@ -640,7 +738,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_33
+      name: Characters1_33
       rect:
         serializedVersion: 2
         x: 418
@@ -654,7 +752,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_34
+      name: Characters1_34
       rect:
         serializedVersion: 2
         x: 450
@@ -668,7 +766,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_35
+      name: Characters1_35
       rect:
         serializedVersion: 2
         x: 564
@@ -682,7 +780,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_36
+      name: Characters1_36
       rect:
         serializedVersion: 2
         x: 594
@@ -696,7 +794,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_37
+      name: Characters1_37
       rect:
         serializedVersion: 2
         x: 626
@@ -710,7 +808,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_38
+      name: Characters1_38
       rect:
         serializedVersion: 2
         x: 658
@@ -724,7 +822,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_39
+      name: Characters1_39
       rect:
         serializedVersion: 2
         x: 690
@@ -738,7 +836,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_40
+      name: Characters1_40
       rect:
         serializedVersion: 2
         x: 114
@@ -752,7 +850,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_41
+      name: Characters1_41
       rect:
         serializedVersion: 2
         x: 146
@@ -766,7 +864,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_42
+      name: Characters1_42
       rect:
         serializedVersion: 2
         x: 178
@@ -780,7 +878,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_43
+      name: Characters1_43
       rect:
         serializedVersion: 2
         x: 210
@@ -794,7 +892,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_44
+      name: Characters1_44
       rect:
         serializedVersion: 2
         x: 354
@@ -808,7 +906,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_45
+      name: Characters1_45
       rect:
         serializedVersion: 2
         x: 572
@@ -822,7 +920,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_46
+      name: Characters1_46
       rect:
         serializedVersion: 2
         x: 594
@@ -836,7 +934,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_47
+      name: Characters1_47
       rect:
         serializedVersion: 2
         x: 658
@@ -850,7 +948,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_48
+      name: Characters1_48
       rect:
         serializedVersion: 2
         x: 386
@@ -864,7 +962,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_49
+      name: Characters1_49
       rect:
         serializedVersion: 2
         x: 418
@@ -878,7 +976,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_50
+      name: Characters1_50
       rect:
         serializedVersion: 2
         x: 450
@@ -892,7 +990,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_51
+      name: Characters1_51
       rect:
         serializedVersion: 2
         x: 626
@@ -906,7 +1004,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_52
+      name: Characters1_52
       rect:
         serializedVersion: 2
         x: 690
@@ -920,7 +1018,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_53
+      name: Characters1_53
       rect:
         serializedVersion: 2
         x: 20
@@ -934,7 +1032,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_54
+      name: Characters1_54
       rect:
         serializedVersion: 2
         x: 114
@@ -948,7 +1046,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_55
+      name: Characters1_55
       rect:
         serializedVersion: 2
         x: 146
@@ -962,7 +1060,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_56
+      name: Characters1_56
       rect:
         serializedVersion: 2
         x: 178
@@ -976,7 +1074,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_57
+      name: Characters1_57
       rect:
         serializedVersion: 2
         x: 210
@@ -990,7 +1088,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_58
+      name: Characters1_58
       rect:
         serializedVersion: 2
         x: 352
@@ -1004,7 +1102,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_59
+      name: Characters1_59
       rect:
         serializedVersion: 2
         x: 594
@@ -1018,7 +1116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_60
+      name: Characters1_60
       rect:
         serializedVersion: 2
         x: 626
@@ -1032,7 +1130,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_61
+      name: Characters1_61
       rect:
         serializedVersion: 2
         x: 658
@@ -1046,7 +1144,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_62
+      name: Characters1_62
       rect:
         serializedVersion: 2
         x: 690
@@ -1060,7 +1158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_63
+      name: Characters1_63
       rect:
         serializedVersion: 2
         x: 114
@@ -1074,7 +1172,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_64
+      name: Characters1_64
       rect:
         serializedVersion: 2
         x: 146
@@ -1088,7 +1186,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_65
+      name: Characters1_65
       rect:
         serializedVersion: 2
         x: 178
@@ -1102,7 +1200,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_66
+      name: Characters1_66
       rect:
         serializedVersion: 2
         x: 210
@@ -1116,7 +1214,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_67
+      name: Characters1_67
       rect:
         serializedVersion: 2
         x: 268
@@ -1130,7 +1228,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_68
+      name: Characters1_68
       rect:
         serializedVersion: 2
         x: 356
@@ -1144,7 +1242,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_69
+      name: Characters1_69
       rect:
         serializedVersion: 2
         x: 388
@@ -1158,7 +1256,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_70
+      name: Characters1_70
       rect:
         serializedVersion: 2
         x: 420
@@ -1172,7 +1270,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_71
+      name: Characters1_71
       rect:
         serializedVersion: 2
         x: 452
@@ -1186,7 +1284,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_72
+      name: Characters1_72
       rect:
         serializedVersion: 2
         x: 514
@@ -1200,7 +1298,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_73
+      name: Characters1_73
       rect:
         serializedVersion: 2
         x: 596
@@ -1214,7 +1312,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_74
+      name: Characters1_74
       rect:
         serializedVersion: 2
         x: 628
@@ -1228,7 +1326,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_75
+      name: Characters1_75
       rect:
         serializedVersion: 2
         x: 660
@@ -1242,7 +1340,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_76
+      name: Characters1_76
       rect:
         serializedVersion: 2
         x: 692
@@ -1256,7 +1354,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_77
+      name: Characters1_77
       rect:
         serializedVersion: 2
         x: 114
@@ -1270,7 +1368,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_78
+      name: Characters1_78
       rect:
         serializedVersion: 2
         x: 146
@@ -1284,7 +1382,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_79
+      name: Characters1_79
       rect:
         serializedVersion: 2
         x: 178
@@ -1298,7 +1396,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_80
+      name: Characters1_80
       rect:
         serializedVersion: 2
         x: 210
@@ -1312,7 +1410,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_81
+      name: Characters1_81
       rect:
         serializedVersion: 2
         x: 354
@@ -1326,7 +1424,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_82
+      name: Characters1_82
       rect:
         serializedVersion: 2
         x: 386
@@ -1340,7 +1438,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_83
+      name: Characters1_83
       rect:
         serializedVersion: 2
         x: 418
@@ -1354,7 +1452,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_84
+      name: Characters1_84
       rect:
         serializedVersion: 2
         x: 450
@@ -1368,7 +1466,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_85
+      name: Characters1_85
       rect:
         serializedVersion: 2
         x: 594
@@ -1382,7 +1480,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_86
+      name: Characters1_86
       rect:
         serializedVersion: 2
         x: 626
@@ -1396,7 +1494,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_87
+      name: Characters1_87
       rect:
         serializedVersion: 2
         x: 658
@@ -1410,7 +1508,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_88
+      name: Characters1_88
       rect:
         serializedVersion: 2
         x: 690
@@ -1424,7 +1522,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_89
+      name: Characters1_89
       rect:
         serializedVersion: 2
         x: 114
@@ -1438,7 +1536,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_90
+      name: Characters1_90
       rect:
         serializedVersion: 2
         x: 146
@@ -1452,7 +1550,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_91
+      name: Characters1_91
       rect:
         serializedVersion: 2
         x: 178
@@ -1466,7 +1564,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_92
+      name: Characters1_92
       rect:
         serializedVersion: 2
         x: 210
@@ -1480,7 +1578,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_93
+      name: Characters1_93
       rect:
         serializedVersion: 2
         x: 352
@@ -1494,7 +1592,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_94
+      name: Characters1_94
       rect:
         serializedVersion: 2
         x: 594
@@ -1508,7 +1606,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_95
+      name: Characters1_95
       rect:
         serializedVersion: 2
         x: 626
@@ -1522,7 +1620,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_96
+      name: Characters1_96
       rect:
         serializedVersion: 2
         x: 658
@@ -1536,7 +1634,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Characters_97
+      name: Characters1_97
       rect:
         serializedVersion: 2
         x: 690

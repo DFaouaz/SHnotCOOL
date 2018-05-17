@@ -159,7 +159,6 @@ MonoBehaviour:
   - {fileID: 0}
   tienda_: {fileID: 0}
   currentScene: Escuela
-  dialogueMensaje: {fileID: 0}
   botonInteraccion: 101
   primerBoton: {fileID: 0}
 --- !u!114 &114825724160140628
