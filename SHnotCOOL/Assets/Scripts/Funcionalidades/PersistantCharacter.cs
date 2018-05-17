@@ -49,7 +49,7 @@ public class PersistantCharacter : MonoBehaviour {
 		foreach (NPC i in npcs) {
 			if (i.nombrePersonaje == "Negro")
 				negro.UpdateNegro ();
-			else
+			else 
 				i.UpdateNPCs ();
 		}
 	}

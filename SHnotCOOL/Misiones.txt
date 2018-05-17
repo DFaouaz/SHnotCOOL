@@ -13,6 +13,8 @@ Te he echado de menos
 Tabla este niño es bueno 
 ###
 
+Autista-1-0-1
+
 Timmy-0-2-1-Vistiendo a la waifu
 #
 ¿Nakama me harías un favor?
@@ -39,13 +41,13 @@ Mira a ver que dicen
 Menudos mierdas seguro que tienen envidia de mi
 #
 ##
-Ve al baño a espiar:Espia1
+Ve al baño del primer piso a espiar:Espia1
 --
 Britney:DICEN QUE ESTAS EMBARAZADA TIA!!
 Ariadna:Osea que mentira tia, jamas estare embarazada podria salir un rarito como Timmy
-Britney:Ya te digo, que persona mas rara antes le estaban criticando en el taller
+Britney:Ya te digo, que persona mas rara antes le estaban criticando en el baño del segundo piso.
 --
-Espia cerca del aula de matematicas:Espia3
+Ve al baño del segundo piso a espiar:Espia2
 --
 Malote 1:Has visto al pringado de Timmy hoy
 Malote 2:Que asco de tio
@@ -58,23 +60,7 @@ Ya verán, se las tendrán que ver conmigo
 y con mi puño de furia de nivel 15
 ###
 
-Timmy-2-0-3
-
-Negro-0-2-1-Comida para Africa
-#
-Tengo hambre, no tengo casi fuerza 
-hace dias que no como
-haria cualquier cosa por algo de comer
-#
-##
-Consigue un bocata para el negro:Bocata
-##
-###
-Mmmm, que rico.
-Gracias amigo te ayudare en lo que me pidas 
-###
-
-Negro-1-0-1
+Timmy-2-0-1
 
 Deportista-0-2-1-Apuntame esta
 #
@@ -113,7 +99,7 @@ como el profesor de gimnasia,tiene unos biceps...
 
 Deportista-2-0-2
 
-Delegada-0-2-2-El anillo de poder
+Delegada-0-2-1-El anillo de poder
 #
 Por favor ayudame estoy en un problema
 me han robado mi anillo preferido
@@ -159,6 +145,9 @@ un lugar más bonito.
 #
 ##
 Busca un lugar con árboles en el patio:Arboles
+--
+Delegada:...
+--
 ##
 ###
 ...
@@ -175,7 +164,7 @@ Bueno...venga ... lo voy a decir... a a ti .. te gustaría...
 
 Delegada-3-0-1
 
-Pijas-0-1-1-Un secreto oscuro
+Pijas-0-1-3-Un secreto oscuro
 #
 Anda el niño raro
 Ariadna: Bueno ahora eres algo más conocido
@@ -251,16 +240,19 @@ Yo no puedo subir escaleras por razones obvias
 Podrías hecharme una mano, bueno las dos mejor
 #
 ##
-LLeva al minusvalido al taller:Espia2
+LLeva al minusvalido al taller:Espia3
+--
+Minusvalido:Perfecto, muchas gracias amigo
+Minusvalido:Espero que no haya sido muy pesado
+Minusvalido:Luego a ver como bajo...
+Minusvalido:Bueno hasta la próxima
+--
 ##
 ###
-Perfecto, muchas gracias amigo
-Espero que no haya sido muy pesado
-Luego a ver como bajo...
-Bueno hasta la próxima
+Ahora tendré que pensar una manera para poder bajar
 ###
 
-Minusvalido-1-2-1-Saliva o Aceite?
+Minusvalido-1-2-2-Saliva o Aceite?
 #
 Hola de nuevo
 Buah tengo otro problema, resulta que me chirrian las ruedas
@@ -279,7 +271,7 @@ Gracias por todo
 
 Minusvalido-2-0-1
 
-AlKaboom-0-2-1-Rogue two
+AlKaboom-0-2-2-Rogue two
 #
 Hola ando un poco perdido
 Estoy buscando una clase en especial pero no se donde está
@@ -297,7 +289,7 @@ Quiero decir, que podré encontrar la clase que buscaba
 Gracias
 ###
 
-AlKaboom-1-2-2-Objetivo enCubierto
+AlKaboom-1-2-3-Objetivo enCubierto
 #
 Necesito tu ayuda otra vez, estoy haciendo un trabajo de ciencias
 Me hace falta algun objeto metálico
@@ -312,7 +304,7 @@ Además pesan un poco, saldrán con fuerza
 Y están afilados
 ###
 
-AlKaboom-2-0
+AlKaboom-2-0-1
 
 Chino-0-2-1-Lluvia de albondigas
 #
@@ -329,7 +321,7 @@ Se le ve muy sabloso
 Ahola solo queda sepalal´le de este tonto
 ###
 
-Chino-1-2-1-Mastelchef
+Chino-1-2-2-Mastelchef
 #
 Ya estoy mas celca de mi plan
 Pelo necesito que me hagas otlo favol
@@ -343,6 +335,8 @@ Encuentra utensilios de cocina:Olla
 Pelfecto, ya no necesito nada mas
 Ahola podle comel en condiciones
 ###
+
+Chino-2-0-1
 
 Conserje-0-2-1-Un dulce prohibido
 #
@@ -362,3 +356,5 @@ Adquiere carmelos para las actividades sospechosas del conserje:Caramelos
 A vosotros los niños os gustan mucho eh
 Si quieres aguno, ya sabes donde encontrarme
 ###
+
+Conserje-1-0-1

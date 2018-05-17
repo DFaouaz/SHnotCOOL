@@ -41,6 +41,7 @@ public class Slot : MonoBehaviour
 				//Asignamos el nuevo objeto
 				objeto = im.objeto;
 				nombre = im.objeto.NombreColeccionable;
+				im.objeto.isTaken = true;
 				imagenObjeto = im.objeto.imagenRepresentacion;
 				//Desactivamos el objeto
 				im.objeto.gameObject.SetActive (false);
@@ -54,10 +55,12 @@ public class Slot : MonoBehaviour
 						if (isBocata ())
 							im.UnlockSlot ();
 						textos.text = "Vacio";
+						objeto.ObjetoUsado ();
+						objeto.ActualizaObjeto ();
 						objeto = null;
 						im.AbreYCierraInventario ();	//Cierra
 						DialogueManager.instance.HUD.tagDarObjeto = null;
-						DialogueManager.instance.AbreCierraDialogueCanvas ();//Abre
+						DialogueManager.instance.AbreCierraDialogueCanvas ();	//Abre
 						DialogueManager.instance.frases = new Queue<string> (DialogueManager.instance.currentNPC.finMision);
 						DialogueManager.instance.MuestraFrases ();
 						DialogueManager.instance.currentNPC.indiceMision--;
@@ -115,6 +118,7 @@ public class Slot : MonoBehaviour
             //Dropeamos en la posicion
             objeto.transform.position = GameManager.instance.ActualPlayerPosition;
 			objeto.currentScene = SceneManager.GetActiveScene ().name;
+			objeto.isTaken = false;
             objeto.gameObject.SetActive(true);
 			textoBoton.text = "Vacio";
             objeto = null;

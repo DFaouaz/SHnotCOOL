@@ -12,7 +12,7 @@ public class Shoping : MonoBehaviour {
 	public string currentScene;
 	public KeyCode botonInteraccion;
 	public Button primerBoton;
-	bool collisionn;
+	bool shopping = false;
 	// Use this for initialization
 	void Start () {
 		tienda_.gameObject.SetActive (false);
@@ -21,26 +21,29 @@ public class Shoping : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collision) {
 		if (collision.gameObject.tag == "Player") {
 			MessageManager.instance.ShowMessage ("Pulsar " + botonInteraccion.ToString () + " para interactuar.");
-			collisionn = true;
+			shopping = true;
 		}
 	}
 	void OnCollisionExit2D(Collision2D col){
 		if (col.gameObject.tag == "Player") {
-			collisionn = false;
+			shopping = false;
 			MessageManager.instance.CloseMessage ();
 		}
 	}
 	void CheckInputDialogue(){
-		if (Input.GetKeyDown (botonInteraccion) && collisionn) {
+		if (Input.GetKeyDown (botonInteraccion) && shopping) {
 			tienda_.gameObject.SetActive (true);
+			shopping = false;
 			if (primerBoton.interactable)
 				primerBoton.Select ();
 			else
 				primerBoton.FindSelectableOnDown ().Select ();
 			MessageManager.instance.CloseMessage ();
 			GameManager.instance.ventanaAbierta = true;
-		} else if(!collisionn)
-			tienda_.gameObject.SetActive (false);
+		} else if (Input.GetKeyDown (botonInteraccion) && tienda_.gameObject.activeInHierarchy) {
+			Exit ();
+			shopping = true;
+		}
 	}
 	// Update is called once per frame
 	void Update () {

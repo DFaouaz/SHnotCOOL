@@ -49,8 +49,9 @@ public class AcabarTrimestre : MonoBehaviour {
         TrimMark.SetActive(false);
 		col = false;
         if (GameManager.instance.trimestre != 3)
-        {
-       
+        {       
+			if(GameManager.instance.trimestre == 2)
+				EmosSuicidasion.CheckMuerte ();
             SceneManager.LoadScene("CambioTrimestre");
             GameManager.instance.finGeo = false;
             GameManager.instance.finHistoria = false;

@@ -150,9 +150,9 @@ public class Mission : MonoBehaviour {
 	void CheckFriendship(){
 		if (maxMision <= indiceMision && !isFriend) {
 			isFriend = true;
+			if (nombrePersonaje == "Pijas" || nombrePersonaje == "Emos")
+				GameManager.instance.SubeAmigos();
 			GameManager.instance.SubeAmigos();
 		}
-		
 	}
-
 }

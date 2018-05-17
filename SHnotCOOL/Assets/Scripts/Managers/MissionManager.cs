@@ -47,7 +47,7 @@ public class MissionManager : MonoBehaviour {
 			} else if(missionBox.activeInHierarchy && !GameManager.instance.pauseMode){
 				GameManager.instance.ventanaAbierta = false;
 				missionBox.SetActive (false);
-				paginaCont = 0;
+				paginaCont = 1;
 			}
 		}
 	}

@@ -32,3 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Transiciones/CambioTrimestre.unity
     guid: e4db8171895c96a44bda9b3dc044af47
+  - enabled: 1
+    path: Assets/Scenes/Minijuegos/Geografia.unity
+    guid: 4b47664e2dc1c624e9ac179a16c29365

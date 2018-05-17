@@ -30,6 +30,7 @@ TagManager:
   - VidaJugador
   - Coche
   - Time
+  - Espia3
   layers:
   - Default
   - TransparentFX

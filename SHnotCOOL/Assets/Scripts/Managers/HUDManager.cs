@@ -61,6 +61,7 @@ public class HUDManager : MonoBehaviour {
 			slots [indice].nombre = objeto.NombreColeccionable;
 			slots [indice].imagenObjeto = objeto.imagenRepresentacion;
 			slots [indice].UpdateRender ();
+			objeto.isTaken = true;
 			objeto.gameObject.SetActive (false);
 		} else {
 			//Abrir el inventario con el mensaje de sustituir para que el jugador diga que objeto quiere sustituir
@@ -82,6 +83,9 @@ public class HUDManager : MonoBehaviour {
 			slots [indice].nombre = compradoCaract.NombreColeccionable;
 			slots [indice].imagenObjeto = compradoCaract.imagenRepresentacion;
 			slots [indice].UpdateRender ();
+			compradoCaract.isTaken = true;
+			compradoCaract.currentScene = "Escuela";
+			compradoCaract.ActualizaObjeto ();
 			return true;
 			//objeto.gameObject.SetActive (false);
 		} else {
@@ -236,6 +240,8 @@ public class HUDManager : MonoBehaviour {
 		if (GameManager.instance.habladoNegro && !negroCount.gameObject.activeInHierarchy)
 			negroCount.gameObject.SetActive (true);
 		friendsCount.text = GameManager.instance.numFriends.ToString();
+		if (GameManager.instance.emosMuerto)
+			friendsCount.text += " - 2";
 	}
 	public void UpdateMoney(){
 		moneyCount.text = GameManager.instance.dinero.ToString();

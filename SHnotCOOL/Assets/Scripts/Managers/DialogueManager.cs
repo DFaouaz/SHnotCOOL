@@ -116,7 +116,9 @@ public class DialogueManager : MonoBehaviour {
 		SelectMissionMark ();
 	}
 	public void EmparejaEspia(){
-		GameObject.FindGameObjectWithTag (currentNPC.pasos.ToArray () [0].tagObjeto).AddComponent<Espionaje> ().NPCMision = currentNPC;
+		Espionaje go = GameObject.FindGameObjectWithTag (currentNPC.pasos.ToArray () [0].tagObjeto).AddComponent<Espionaje> ();
+		go.NPCMision = currentNPC;
+		go.scene = "Escuela";
 	}
 
 	//Dialogo
@@ -289,10 +291,12 @@ public class DialogueManager : MonoBehaviour {
 		ableInput = false;
 		//Ya no ventana abierta
 		GameManager.instance.ventanaAbierta = false;
-		//Vuelve a abrir el DialogueCanvas
-		AbreCierraDialogueCanvas();
-		botonHablar.Select ();
-		SelectMissionMark ();
+		if (currentNPC != null) {
+			//Vuelve a abrir el DialogueCanvas
+			AbreCierraDialogueCanvas();
+			botonHablar.Select ();
+			SelectMissionMark ();
+		}
 	}
 
 	void SelectMissionMark(){

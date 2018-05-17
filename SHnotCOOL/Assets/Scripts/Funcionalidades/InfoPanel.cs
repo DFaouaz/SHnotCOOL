@@ -10,14 +10,6 @@ public class InfoPanel : MonoBehaviour
     public string mesage;
     bool active = true;
 
-    void Awake()
-    {
-        if (active)
-        {
-            OpenPanel();
-        }
-    }
-
     void OpenPanel()
     {
         text.text = mesage;
@@ -33,10 +25,11 @@ public class InfoPanel : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+		if (collision.gameObject.CompareTag("Player") && active)
         {
             OpenPanel();
-            Destroy(this);
+			active = false;
+			gameObject.SetActive (false);
         }
     }
 }

@@ -59,6 +59,8 @@ public class GameManager : MonoBehaviour {
 	public int dinero = 100;
 	[HideInInspector]
 	public bool matonAble = false;
+	[HideInInspector]
+	public bool emosMuerto = false;
     
 	public int tamInv = 0;
 	[HideInInspector]
@@ -178,6 +180,10 @@ public class GameManager : MonoBehaviour {
 	//Amigos
 	public void SubeAmigos(){
 		numFriends++;
+		FindObjectOfType<HUDManager> ().UpdateFriends ();
+	}
+	public void BajaNAmigos(int n){
+		numFriends -= n;
 		FindObjectOfType<HUDManager> ().UpdateFriends ();
 	}
 	public void ActualizaDinero(){
