@@ -50391,7 +50391,7 @@ MonoBehaviour:
   entranceName: Aula de Lengua
   entranceConnection: {fileID: 1454903597}
   examSceneName: Lengua
-  trimestreAparicion: 2
+  trimestreAparicion: 1
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
   isRoom: 1
@@ -51989,14 +51989,6 @@ CompositeCollider2D:
         Y: 272812512
       - X: 207812496
         Y: 272812512
-    - - X: 350000000
-        Y: 206250000
-      - X: 340000000
-        Y: 206250000
-      - X: 340000000
-        Y: 190000000
-      - X: 350000000
-        Y: 190000000
     - - X: 110000000
         Y: 206250000
       - X: 100000000
@@ -52004,6 +51996,14 @@ CompositeCollider2D:
       - X: 100000000
         Y: 190000000
       - X: 110000000
+        Y: 190000000
+    - - X: 350000000
+        Y: 206250000
+      - X: 340000000
+        Y: 206250000
+      - X: 340000000
+        Y: 190000000
+      - X: 350000000
         Y: 190000000
     - - X: 160000000
         Y: 204062496
@@ -52382,14 +52382,14 @@ CompositeCollider2D:
       - {x: 20.125, y: 27.5}
       - {x: 20.21875, y: 27.281252}
       - {x: 20.78125, y: 27.281252}
-    - - {x: 35, y: 20.625}
-      - {x: 34, y: 20.625}
-      - {x: 34, y: 19}
-      - {x: 35, y: 19}
     - - {x: 11, y: 20.625}
       - {x: 10, y: 20.625}
       - {x: 10, y: 19}
       - {x: 11, y: 19}
+    - - {x: 35, y: 20.625}
+      - {x: 34, y: 20.625}
+      - {x: 34, y: 19}
+      - {x: 35, y: 19}
     - - {x: 16, y: 20.40625}
       - {x: 13, y: 20.40625}
       - {x: 13, y: 18.625}
@@ -94484,7 +94484,7 @@ MonoBehaviour:
   entranceName: "Aula de Geograf\xEDa"
   entranceConnection: {fileID: 1454903597}
   examSceneName: Geografia
-  trimestreAparicion: 3
+  trimestreAparicion: 1
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
   isRoom: 1

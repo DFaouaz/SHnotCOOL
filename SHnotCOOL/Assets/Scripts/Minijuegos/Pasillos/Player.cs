@@ -102,7 +102,7 @@ public class Player : MonoBehaviour {
 	public void Dead()
 	{
         playerAnim.SetLayerWeight(2,2f);
-        alive = false;
+    
 		Invoke("Reset", 1.0f);
 	}
 

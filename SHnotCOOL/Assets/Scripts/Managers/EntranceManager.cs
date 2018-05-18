@@ -35,6 +35,7 @@ public class EntranceManager : MonoBehaviour {
 			entrance.CheckMaton ();
 			GameManager.instance.lastPosPasillos = entrance.pos;
 			if (isPasillosTime ()) {
+               
 				GameManager.instance.lastEntranceName = entrance.entranceName;
 				GameManager.instance.lastPosEntrance = entrance.entranceConnection.transform.position;
 				SceneManager.LoadScene ("Pasillos");
@@ -59,7 +60,7 @@ public class EntranceManager : MonoBehaviour {
 	bool isPasillosTime(){
 		if (entrance.isClass) {
 			int num = Random.Range (0, 10);
-			return num < 3;
+			return num < 0;
 		} else
 			return false;
 	}

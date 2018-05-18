@@ -10,12 +10,7 @@ public class InfoPanel : MonoBehaviour
     public string mesage;
     static bool inicio = true;
 
-   /* void Awake()
-    {
-        if(inicio)
-            OpenPanel();
-        inicio = false;
-    }*/
+
 
     void OpenPanel()
     {
