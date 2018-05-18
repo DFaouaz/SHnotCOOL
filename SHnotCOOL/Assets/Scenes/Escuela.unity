@@ -50058,6 +50058,22 @@ RectTransform:
   m_AnchoredPosition: {x: 195, y: 6}
   m_SizeDelta: {x: 195, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1094078421 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1662386461280982, guid: 7b21a06adfb45bf4b87fcf86a49f59d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 999934319}
+--- !u!114 &1094078422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1094078421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab384e739d9f2594f983ae916d2cdb1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1095584367
 GameObject:
   m_ObjectHideFlags: 0
@@ -51973,14 +51989,6 @@ CompositeCollider2D:
         Y: 272812512
       - X: 207812496
         Y: 272812512
-    - - X: 110000000
-        Y: 206250000
-      - X: 100000000
-        Y: 206250000
-      - X: 100000000
-        Y: 190000000
-      - X: 110000000
-        Y: 190000000
     - - X: 350000000
         Y: 206250000
       - X: 340000000
@@ -51988,6 +51996,14 @@ CompositeCollider2D:
       - X: 340000000
         Y: 190000000
       - X: 350000000
+        Y: 190000000
+    - - X: 110000000
+        Y: 206250000
+      - X: 100000000
+        Y: 206250000
+      - X: 100000000
+        Y: 190000000
+      - X: 110000000
         Y: 190000000
     - - X: 160000000
         Y: 204062496
@@ -52366,14 +52382,14 @@ CompositeCollider2D:
       - {x: 20.125, y: 27.5}
       - {x: 20.21875, y: 27.281252}
       - {x: 20.78125, y: 27.281252}
-    - - {x: 11, y: 20.625}
-      - {x: 10, y: 20.625}
-      - {x: 10, y: 19}
-      - {x: 11, y: 19}
     - - {x: 35, y: 20.625}
       - {x: 34, y: 20.625}
       - {x: 34, y: 19}
       - {x: 35, y: 19}
+    - - {x: 11, y: 20.625}
+      - {x: 10, y: 20.625}
+      - {x: 10, y: 19}
+      - {x: 11, y: 19}
     - - {x: 16, y: 20.40625}
       - {x: 13, y: 20.40625}
       - {x: 13, y: 18.625}
