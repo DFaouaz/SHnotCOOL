@@ -33,11 +33,12 @@ public class EntranceManager : MonoBehaviour {
 		if (Input.GetKeyDown (GameManager.instance.botonInteractuar) && entrance != null) {		
 			entrance.ChooseExam ();
 			entrance.CheckMaton ();
-			GameManager.instance.lastPosPasillos = entrance.pos;
+			if(entrance.isRoom)
+				GameManager.instance.lastPosPasillos = entrance.pos;
 			if (isPasillosTime ()) {
                
 				GameManager.instance.lastEntranceName = entrance.entranceName;
-				GameManager.instance.lastPosEntrance = entrance.entranceConnection.transform.position;
+				GameManager.instance.lastPosEntrance = entrance.entranceConnection.pos;
 				SceneManager.LoadScene ("Pasillos");
 			}else{
 				//Movemos al jugador
@@ -60,7 +61,7 @@ public class EntranceManager : MonoBehaviour {
 	bool isPasillosTime(){
 		if (entrance.isClass) {
 			int num = Random.Range (0, 10);
-			return num < 0;
+			return num < 3;
 		} else
 			return false;
 	}

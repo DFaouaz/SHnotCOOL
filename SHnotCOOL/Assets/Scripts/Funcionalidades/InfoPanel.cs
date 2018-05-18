@@ -8,9 +8,6 @@ public class InfoPanel : MonoBehaviour
     public GameObject mesagePanel;
     public Text text;
     public string mesage;
-    static bool inicio = true;
-
-
 
     void OpenPanel()
     {

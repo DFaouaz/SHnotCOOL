@@ -63,10 +63,10 @@ public class Entrance : MonoBehaviour {
 				character.transform.position = GameManager.instance.lastPosPasillos;
 		}
 		else
-			character.transform.position = entranceConnection.gameObject.transform.position;
+			character.transform.position = entranceConnection.pos;
 		GameManager.instance.lastEntrance = this;
 		GameManager.instance.lastEntranceName = entranceName;
-		GameManager.instance.lastPosEntrance = this.gameObject.transform.position;
+		GameManager.instance.lastPosEntrance = this.pos;
 	}
 
 	public void ChooseExam(){
