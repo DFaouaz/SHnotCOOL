@@ -240,7 +240,7 @@ public class HUDManager : MonoBehaviour {
 		//Lengua
 		if (GameManager.instance.finLengua && GameManager.instance.trimestre >= 2)
 			exams [3].UpdateRender (Aprobado);
-		else if (GameManager.instance.finLengua && GameManager.instance.trimestre >= 2)
+		else if (!GameManager.instance.finLengua && GameManager.instance.trimestre >= 2)
 			exams [3].UpdateRender (Suspenso);
 		else
 			exams [3].UpdateRender (Nada);
