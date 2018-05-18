@@ -18,6 +18,8 @@ public class HUDManager : MonoBehaviour {
 	public Text mensajeNoSustitucion;
 	public Sprite Aprobado;
 	public Sprite Suspenso;
+	[HideInInspector]
+	public Sprite Nada;
 	//Hace referencia al ultimo objeto que se ha tocado
 	[HideInInspector]
 	public Coleccionable objeto;
@@ -215,25 +217,33 @@ public class HUDManager : MonoBehaviour {
 	//Actualiza el aspecto de los examenes
 	public void UpdateExams(){
 		//Mates
-		if (GameManager.instance.finMates)
+		if (GameManager.instance.finMates && GameManager.instance.trimestre >= 1)
 			exams [0].UpdateRender (Aprobado);
-		else
+		else if (!GameManager.instance.finMates && GameManager.instance.trimestre >= 1)
 			exams [0].UpdateRender (Suspenso);
+		else
+			exams [0].UpdateRender (Nada);
 		//Historia
-		if (GameManager.instance.finHistoria)
+		if (GameManager.instance.finHistoria && GameManager.instance.trimestre >= 1)
 			exams [1].UpdateRender (Aprobado);
-		else
+		else if (!GameManager.instance.finHistoria && GameManager.instance.trimestre >= 1)
 			exams [1].UpdateRender (Suspenso);
+		else
+			exams [1].UpdateRender (Nada);
 		//Geografia
-		if (GameManager.instance.finGeo)
+		if (GameManager.instance.finGeo && GameManager.instance.trimestre >= 3)
 			exams [2].UpdateRender (Aprobado);
-		else
+		else if (!GameManager.instance.finGeo && GameManager.instance.trimestre >= 3)
 			exams [2].UpdateRender (Suspenso);
-		//Lengua
-		if (GameManager.instance.finLengua)
-			exams [3].UpdateRender (Aprobado);
 		else
+			exams [2].UpdateRender (Nada);
+		//Lengua
+		if (GameManager.instance.finLengua && GameManager.instance.trimestre >= 2)
+			exams [3].UpdateRender (Aprobado);
+		else if (GameManager.instance.finLengua && GameManager.instance.trimestre >= 2)
 			exams [3].UpdateRender (Suspenso);
+		else
+			exams [3].UpdateRender (Nada);
 	}
 
 	public void UpdateFriends(){

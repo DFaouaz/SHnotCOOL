@@ -8,6 +8,10 @@ public class ExamenSlot : MonoBehaviour {
 	public Image image;
 
 	public void UpdateRender(Sprite imagen){
-		image.sprite = imagen;
+		if (imagen != null) {
+			image.color = new Color (1f, 1f, 1f, 1f);
+			image.sprite = imagen;
+		} else
+			image.color = new Color ();;
 	}
 }
