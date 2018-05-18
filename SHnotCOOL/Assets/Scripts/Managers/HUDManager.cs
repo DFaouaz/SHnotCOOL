@@ -67,9 +67,9 @@ public class HUDManager : MonoBehaviour {
 			objeto.gameObject.SetActive (false);
 		} else {
 			//Abrir el inventario con el mensaje de sustituir para que el jugador diga que objeto quiere sustituir
+			AbreYCierraInventario();
 			mensajeSustitucion.gameObject.SetActive (true);
 			mensajeNoSustitucion.gameObject.SetActive (false);
-			inventory.gameObject.SetActive (true);
 			modoSustitucion = true;
 		}
 	}

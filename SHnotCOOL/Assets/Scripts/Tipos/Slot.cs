@@ -46,8 +46,7 @@ public class Slot : MonoBehaviour
 				//Desactivamos el objeto
 				im.objeto.gameObject.SetActive (false);
 				im.modoSustitucion = false;
-				im.mensajeSustitucion.gameObject.SetActive (false);
-				im.inventory.gameObject.SetActive (false);
+				im.AbreYCierraInventario ();
 			} else if (im.modoDarObjeto) {
 				if (DialogueManager.instance.currentNPC.nombrePersonaje == "Negro") {
 					if (objeto != null) {
