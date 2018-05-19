@@ -56,81 +56,57 @@ public class Maton : MonoBehaviour {
     public void CheckeaInput()
     {
 
-        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.S)))
-        {
-            switch (flecha)
-            {
-                case 0:
-                    if (Input.GetKeyDown(KeyCode.D))
-                    {
-                        CambiaFlecha();
-                        ActivaFlecha();
-
-                    }
-                    else
-                    {
-                        transform.position = new Vector2(transform.position.x - decremento, transform.position.y);
-                        CambiaFlecha();
-                        ActivaFlecha();
-                    }
-
-                    break;
-                case 1:
-                    if (Input.GetKeyDown(KeyCode.S))
-                    {
-                        CambiaFlecha();
-                        ActivaFlecha();
-
-                    }
-                    else
-                    {
-                        CambiaFlecha();
-                        ActivaFlecha();
-                        transform.position = new Vector2(transform.position.x - decremento, transform.position.y);
-                    }
-
-                    break;
-                case 2:
-                    if (Input.GetKeyDown(KeyCode.A))
-                    {
-                        CambiaFlecha();
-                        ActivaFlecha();
-
-                    }
-                    else
-                    {
-                        CambiaFlecha();
-                        ActivaFlecha();
-                        transform.position = new Vector2(transform.position.x - decremento, transform.position.y);
-                    }
-
-                    break;
-                case 3:
-                    if (Input.GetKeyDown(KeyCode.W))
-                    {
-                        CambiaFlecha();
-                        ActivaFlecha();
-
-                    }
-                    else
-                    {
-                        CambiaFlecha();
-                        ActivaFlecha();
-                        transform.position = new Vector2(transform.position.x - decremento, transform.position.y);
-                    }
-
-                    break;
-            }
-            pulsado = true;
-            tiempoFlechaActiva = 0;
-        }
-
-        else if(tiempoFlechaActiva>tiempoCambio){
-            CambiaFlecha();
-            ActivaFlecha();
-            transform.position = new Vector2(transform.position.x - decremento, transform.position.y);
-            tiempoFlechaActiva = 0;
-        }
+		if ((Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.S))) {			
+			switch (flecha) {
+			case 0:
+				if (Input.GetKeyDown (KeyCode.D)) {
+					CambiaFlecha ();
+					ActivaFlecha ();
+				} else {
+					transform.position = new Vector2 (transform.position.x - decremento, transform.position.y);
+					CambiaFlecha ();
+					ActivaFlecha ();
+				}
+				break;
+			case 1:
+				if (Input.GetKeyDown (KeyCode.S)) {
+					CambiaFlecha ();
+					ActivaFlecha ();
+				} else {
+					CambiaFlecha ();
+					ActivaFlecha ();
+					transform.position = new Vector2 (transform.position.x - decremento, transform.position.y);
+				}
+				break;
+			case 2:
+				if (Input.GetKeyDown (KeyCode.A)) {
+					CambiaFlecha ();
+					ActivaFlecha ();
+				} else {
+					CambiaFlecha ();
+					ActivaFlecha ();
+					transform.position = new Vector2 (transform.position.x - decremento, transform.position.y);
+				}
+				break;
+			case 3:
+				if (Input.GetKeyDown (KeyCode.W)) {
+					CambiaFlecha ();
+					ActivaFlecha ();
+				} else {
+					CambiaFlecha ();
+					ActivaFlecha ();
+					transform.position = new Vector2 (transform.position.x - decremento, transform.position.y);
+				}
+				break;
+			}
+			pulsado = true;
+			tiempoFlechaActiva = 0;
+		} else if (tiempoFlechaActiva > tiempoCambio) {
+			CambiaFlecha ();
+			ActivaFlecha ();
+			transform.position = new Vector2 (transform.position.x - decremento, transform.position.y);
+			tiempoFlechaActiva = 0;
+		}
     }
     public void CambiaFlecha(){
         flecha = Random.Range(0, 4);
@@ -143,7 +119,7 @@ public class Maton : MonoBehaviour {
         DisminuyeTiempo();
         fin = false;
     }
-    private void FixedUpdate(){
+    private void Update(){
 		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
 			if (!fin) {
 				tiempoFlechaActiva += Time.deltaTime;

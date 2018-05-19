@@ -70,14 +70,12 @@ public class InputConfiguration : StandaloneInputModule {
 		bool selected = false;
 		int indice = 0;
 		Selectable[] aux = Button.allSelectables.ToArray ();
-		if (indice < aux.Length) {
-			while (!selected) {
-				if (aux [indice].interactable) {
-					aux [indice].Select ();
-					selected = true;
-				} else
-					indice++;
-			}
+		while (indice < aux.Length && !selected) {
+			if (aux [indice].interactable) {
+				aux [indice].Select ();
+				selected = true;
+			} else
+				indice++;	
 		}
 		if (!selected)
 			DeselectButton ();

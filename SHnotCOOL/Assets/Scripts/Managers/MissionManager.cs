@@ -61,8 +61,9 @@ public class MissionManager : MonoBehaviour {
 	}
 
 	public void PasaPaginaDerecha(){
-		if (misiones.Count > huecos.Count && misiones.Count / huecos.Count > paginaCont) {
+		if (misiones.Count > huecos.Count && (float)misiones.Count / (float)huecos.Count > paginaCont) {
 			paginaCont++;
+			VaciaTodo ();
 			AsignaMisiones ();
 		}
 	}
@@ -70,14 +71,15 @@ public class MissionManager : MonoBehaviour {
 	public void PasaPaginaIzquierda(){
 		if (paginaCont - 1 > 0) {
 			paginaCont--;
+			VaciaTodo ();
 			AsignaMisiones ();
 		}
 	}
 
 	void AsignaMisiones(){
 		for (int i = (huecos.Count * paginaCont) - huecos.Count; i < huecos.Count * paginaCont && i < misiones.Count; i++) {
-			huecos [i].mision = misiones [i];
-			huecos [i].UpdateLooking ();
+			huecos [i % huecos.Count].mision = misiones [i];
+			huecos [i % huecos.Count].UpdateLooking ();
 		}
 	}
 

@@ -16,21 +16,26 @@ public class AparecenRandoms : MonoBehaviour {
     public Text suma;
     public Text hechas;
     public float tiempo;
+	float tiempoAux;
     public GameObject coleccionable;
+	GameObject copia;
+	bool iniciado = false;
+
 	// Use this for initialization
 	void Start () {
         Altura = (Camera.main.orthographicSize*2)-0.25f;
         Anchura = (Altura*Camera.main.aspect)-0.25f;
         camaraPosX = (Camera.main.transform.position.x)-0.25f;
-        camaraPosY = (Camera.main.transform.position.y)-0.25f;
-        
+        camaraPosY = (Camera.main.transform.position.y)-0.25f;        
         CambiaOperacion();
-
     }
 
     public void CambiaOperacion()
     {
+		if (copia != null)
+			Destroy (copia);
         tiempoPasado = 0;
+		tiempoAux = tiempo;
         operacionesHechas++;
         resultado = CalculaOperacion();
         suma.text = cuenta;
@@ -41,14 +46,13 @@ public class AparecenRandoms : MonoBehaviour {
     }
 	// Update is called once per frame
 	public void SpawnSoluciones  () {
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
-			Vector2 spawn = new Vector2 (Random.Range (camaraPosX - Anchura / 2, camaraPosX - 1 + Anchura / 2), Random.Range (camaraPosY - Altura / 2 + 1, camaraPosY + Altura / 2));
-			GameObject copia = Instantiate (coleccionable, spawn, Quaternion.identity);
-			copia.GetComponent<TextMesh> ().text = resultado.ToString ();
-			Destroy (copia, tiempo);
-		}
-			Invoke ("SpawnSoluciones", tiempo);
-    }
+		Vector2 spawn = new Vector2 (Random.Range (camaraPosX - Anchura / 2, camaraPosX - 1 + Anchura / 2), Random.Range (camaraPosY - Altura / 2 + 1, camaraPosY + Altura / 2));
+		copia = Instantiate (coleccionable, spawn, Quaternion.identity);
+		copia.GetComponent<TextMesh> ().text = resultado.ToString ();
+		//Destroy (copia, tiempo);
+		//Invoke ("SpawnSoluciones", tiempo);
+
+	}
     public int CalculaOperacion()
     {
         int operando1 = Random.Range(0, 9);
@@ -66,15 +70,15 @@ public class AparecenRandoms : MonoBehaviour {
             return operando1 - operando2;
         }
     }
-    private void FixedUpdate()
-    {
+    private void Update()
+	{
 		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
 			tiempoPasado += Time.deltaTime;
-			if (tiempoPasado >= tiempoMax) {
+			tiempoAux -= Time.deltaTime;
+			if (tiempoPasado >= tiempoMax || tiempoAux <= 0 || copia == null) 
 				CambiaOperacion ();
-			}
 		}    
-    }
+	}
 
 	void ActualizaOperacion(){
 		hechas.text = GameManager.instance.matematicasScore.ToString() + "/" + operacionesHechas.ToString();
