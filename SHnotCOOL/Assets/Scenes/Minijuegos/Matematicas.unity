@@ -355,7 +355,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &568155682
 Transform:
@@ -772,7 +772,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1494390912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 61f9e50286c57cd47a272979b2dbefe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
@@ -1132,6 +1132,7 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+  timeToDisableMouse: 3.25
 --- !u!114 &1494390914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,6 +1192,8 @@ MonoBehaviour:
   botonInteractuar: 0
   lastEntrance: {fileID: 0}
   lastPosEntrance: {x: 0, y: 0, z: 0}
+  lastEntranceName: 
+  lastPosPasillos: {x: 0, y: 0, z: 0}
   ActualPlayerPosition: {x: 0, y: 0}
   ActualPlayerDirecction: {x: 0, y: 0}
   lastScene: 
@@ -1198,6 +1201,9 @@ MonoBehaviour:
   ventanaAbierta: 0
   pauseMode: 0
   dinero: 100
+  matonAble: 0
+  emosMuerto: 0
+  perroComido: 0
   tamInv: 0
   matematicasScore: 0
   finMates: 0
@@ -1211,6 +1217,8 @@ MonoBehaviour:
   maxFriends: 0
   thereIsAnInteractiveEvent: 0
   trimestre: 1
+  media: 0
+  notaFinal: 0
 --- !u!4 &1500597927
 Transform:
   m_ObjectHideFlags: 0

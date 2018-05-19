@@ -14,7 +14,7 @@ public class InputConfiguration : StandaloneInputModule {
 
 
 	void Update(){
-		if (!Cursor.visible && Input.GetAxis ("Mouse X") != 0)
+		if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetAxis ("Mouse X") != 0)
 			VisibleMouse ();
 		else if (Cursor.visible && time > -1f) {
 			time -= Time.deltaTime;

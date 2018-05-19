@@ -22,6 +22,7 @@ public class InfoWindow : MonoBehaviour
         mesagePanel.SetActive(false);
 		GameManager.instance.ventanaAbierta = false;
 		GameManager.instance.pauseMode = false;
+		InputConfiguration.SelectFirstFoundButton ();
         //Time.timeScale = 1;
     }
 }
