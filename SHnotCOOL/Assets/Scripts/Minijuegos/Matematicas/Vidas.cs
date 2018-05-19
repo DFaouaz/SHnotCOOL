@@ -31,7 +31,7 @@ public class Vidas : MonoBehaviour {
 
     void Damage()
     {
-        if (vidas > 1 && !golpeado)
+        if (vidas > -1 && !golpeado)
         {
             golpeado = true;
             vidas--;
@@ -39,9 +39,9 @@ public class Vidas : MonoBehaviour {
             InvokeRepeating("Invulnerable", 0, tiempo);
             Invoke("FinInvulnerable", tiempo * repeticiones);
         }
-        else if (vidas == 1)
+        else if (vidas < 0)
         {
-            vidas--;
+			vidas = 0;
             ActualizaVidas();
             GameManager.instance.FinExamenMatematicas();
         }

@@ -14,43 +14,49 @@ public class AparecenRandoms : MonoBehaviour {
     public GameObject coleccionable;
     public Text operacionTexto, progreso;
     public float tiempo;
+	float tiempoAux;
 
     void Start() {
 
         alto = (Camera.main.orthographicSize * 2) - 0.5f;
         ancho = (ancho * Camera.main.aspect) - 0.5f;
-
         camaraPosX = (Camera.main.transform.position.x) - 0.5f;
         camaraPosY = (Camera.main.transform.position.y) - 0.5f;
-
-        operacionTexto.text = operacion;
-        progreso.text = GameManager.instance.matematicasScore + "/" + 10;
-
+		ActualizaAspecto ();
         GeneraSolucion();
     }
 
     void Update() {
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+			tiempoAux -= Time.deltaTime;
+			if (tiempoAux <= 0 || copiaColeccionable == null) {
+				GeneraSolucion ();
+				ActualizaAspecto ();
+			}
+		}
+		if (GameManager.instance.matematicasScore >= 10) {
+			GameManager.instance.matematicasScore = 10;
+			ActualizaAspecto ();
+			GameManager.instance.FinExamenMatematicas ();
+		}
 
-        if (GameManager.instance.matematicasScore >= 10)
-            CancelInvoke();
-
-        operacionTexto.text = operacion;
-        progreso.text = GameManager.instance.matematicasScore + "/" + 10;
+        
     }
 
     public void GeneraSolucion()
-    {
-        if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
-        {
-            pos = new Vector2(Random.Range(camaraPosX - alto / 2, camaraPosX - 1 + ancho / 2), Random.Range(camaraPosY + 1 - alto / 2, camaraPosY + alto / 2));
-            copiaColeccionable = Instantiate(coleccionable, pos, Quaternion.identity);
+	{
+		if (copiaColeccionable != null)
+			Destroy (copiaColeccionable);
+		tiempoAux = tiempo;
+		pos = new Vector2 (Random.Range (camaraPosX - alto / 2, camaraPosX - 1 + ancho / 2), Random.Range (camaraPosY + 1 - alto / 2, camaraPosY + alto / 2));
+		copiaColeccionable = Instantiate (coleccionable, pos, Quaternion.identity);
 
-            int resultado = CalculaOperacion();
-            copiaColeccionable.GetComponent<TextMesh>().text = resultado.ToString();
-            Destroy(copiaColeccionable, tiempo);
-            Invoke("GeneraSolucion", tiempo);
-        }
-    }
+		int resultado = CalculaOperacion ();
+		copiaColeccionable.GetComponent<TextMesh> ().text = resultado.ToString ();
+		//Destroy(copiaColeccionable, tiempo);
+		//Invoke("GeneraSolucion", tiempo);
+        
+	}
 
     int CalculaOperacion()
     {
@@ -70,4 +76,9 @@ public class AparecenRandoms : MonoBehaviour {
             return operando1 - operando2;
         }
     }
+
+	void ActualizaAspecto(){
+		operacionTexto.text = operacion;
+		progreso.text = GameManager.instance.matematicasScore + "/" + 10;
+	}
 }
