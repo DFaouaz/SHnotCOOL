@@ -9,19 +9,19 @@ public class InfoWindow : MonoBehaviour
     public Text text;
     public string mesage;
 
-	void Awake ()
-    {
-        Time.timeScale = 0;
-	}
-
 	void Start ()
     {
         text.text = mesage;
+		GameManager.instance.pauseMode = true;
+		GameManager.instance.ventanaAbierta = true;
+		mesagePanel.GetComponentInChildren<Button> ().Select ();
 	}
 
     public void ClosePanel()
     {
         mesagePanel.SetActive(false);
-        Time.timeScale = 1;
+		GameManager.instance.ventanaAbierta = false;
+		GameManager.instance.pauseMode = false;
+        //Time.timeScale = 1;
     }
 }

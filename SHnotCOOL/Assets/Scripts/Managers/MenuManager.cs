@@ -85,6 +85,7 @@ public class MenuManager : MonoBehaviour {
     public void BotonStartPulsado()
     {
         logoAnimator.SetBool("pulsado", true);
+		botonNuevaPartida.transform.parent.gameObject.SetActive (false);
         Invoke("NuevaPartida", 2.40f);
     }
 	//Metodos para NuevaPartida()

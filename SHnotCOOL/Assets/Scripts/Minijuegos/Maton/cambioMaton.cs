@@ -15,7 +15,7 @@ public class cambioMaton : MonoBehaviour {
     void probMaton() {
         int prob = Random.Range(0, 100);
 		if (prob < (probInicial - ((GameManager.instance.numFriends * probInicial) / GameManager.instance.maxFriends)) && GameManager.instance.matonAble
-            && !GameManager.instance.ventanaAbierta)
+			&& !GameManager.instance.ventanaAbierta && !GameManager.instance.pauseMode)
         {
 			GameManager.instance.lastPosPasillos = GameObject.FindGameObjectWithTag ("Player").transform.position;
 			GameManager.instance.lastPosEntrance = Vector3.zero;

@@ -12,14 +12,16 @@ public class InfoPanel : MonoBehaviour
     void OpenPanel()
     {
         text.text = mesage;
+		mesagePanel.GetComponentInParent<Transform> ().SetAsLastSibling ();
+		mesagePanel.GetComponentInChildren<Button> ().Select ();
         mesagePanel.SetActive(true);
-        Time.timeScale = 0;
+		GameManager.instance.ventanaAbierta = true;
     }
 
     public void ClosePanel()
     {
         mesagePanel.SetActive(false);
-        Time.timeScale = 1;
+		GameManager.instance.ventanaAbierta = false;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

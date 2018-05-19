@@ -26,21 +26,22 @@ public class EnemyController : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if (Time.time >= timeChange)
-        {
-            randomX = Random.Range(-2f, 2f);
-            randomY = Random.Range(-2f, 2f);
-            timeChange = Time.time + Random.Range(0.5f, 1.5f);
-        }
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+			if (Time.time >= timeChange) {
+				randomX = Random.Range (-2f, 2f);
+				randomY = Random.Range (-2f, 2f);
+				timeChange = Time.time + Random.Range (0.5f, 1.5f);
+			}
 
-        transform.Translate(new Vector2(randomX, randomY) * moveSpeed * Time.deltaTime);
-        if (transform.position.x >= maxX || transform.position.x <= minX)
-            randomX = -randomX;
+			transform.Translate (new Vector2 (randomX, randomY) * moveSpeed * Time.deltaTime);
+			if (transform.position.x >= maxX || transform.position.x <= minX)
+				randomX = -randomX;
 
-        if (transform.position.y >= maxY || transform.position.y <= minY)
-            randomY = -randomY;
+			if (transform.position.y >= maxY || transform.position.y <= minY)
+				randomY = -randomY;
         
-        Mathf.Clamp(transform.position.x, minX, maxX);
-        Mathf.Clamp(transform.position.y, minY, maxY);
-    }
+			Mathf.Clamp (transform.position.x, minX, maxX);
+			Mathf.Clamp (transform.position.y, minY, maxY);
+		}
+	}
 }

@@ -41,11 +41,13 @@ public class MissionManager : MonoBehaviour {
 	void CheckInput(){
 		if (Input.GetKeyDown (botonAbrirYCerrar)) {
 			if (!missionBox.activeInHierarchy && !GameManager.instance.ventanaAbierta && !GameManager.instance.pauseMode) {
+				transform.SetAsLastSibling ();
 				missionBox.SetActive (true);
 				GameManager.instance.ventanaAbierta = true;
 				derecha.Select ();
 			} else if(missionBox.activeInHierarchy && !GameManager.instance.pauseMode){
 				GameManager.instance.ventanaAbierta = false;
+				InputConfiguration.DeselectButton ();
 				missionBox.SetActive (false);
 				paginaCont = 1;
 			}

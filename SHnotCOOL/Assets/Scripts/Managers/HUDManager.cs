@@ -186,6 +186,7 @@ public class HUDManager : MonoBehaviour {
 
 	public void AbreYCierraInventario(){
 		if (!inventory.gameObject.activeInHierarchy && !DialogueManager.instance.dialogueBox.activeInHierarchy && !GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+			transform.SetAsLastSibling ();
 			inventory.gameObject.SetActive (true);
 			GameManager.instance.ventanaAbierta = true;
 			//Selecciona el primer Slot en el inventario
@@ -198,6 +199,7 @@ public class HUDManager : MonoBehaviour {
 			}
 			if(!DialogueManager.instance.dialogueBox.activeInHierarchy)
 				GameManager.instance.ventanaAbierta = false;
+			InputConfiguration.DeselectButton ();
 			inventory.gameObject.SetActive (false);
 			mensajeNoSustitucion.gameObject.SetActive (false);
 		}

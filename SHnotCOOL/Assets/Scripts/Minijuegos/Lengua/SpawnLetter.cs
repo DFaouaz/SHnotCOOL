@@ -18,10 +18,12 @@ public class SpawnLetter : MonoBehaviour {
 	}
 
 	void Spawn(){
-		//Elige al azar una letra
-		Vector2 randomPos = new Vector2 (Random.Range (bounds.bounds.min.x + 1, bounds.bounds.max.x - 1), this.gameObject.transform.position.y);
-		Letter letra = Instantiate<Letter> (letraPrefab, randomPos, Quaternion.identity);
-		letra.letra = (char)letras[Random.Range(0, letras.Length)];
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+			//Elige al azar una letra
+			Vector2 randomPos = new Vector2 (Random.Range (bounds.bounds.min.x + 1, bounds.bounds.max.x - 1), this.gameObject.transform.position.y);
+			Letter letra = Instantiate<Letter> (letraPrefab, randomPos, Quaternion.identity);
+			letra.letra = (char)letras [Random.Range (0, letras.Length)];
+		}
 	}
 
 }

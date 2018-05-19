@@ -13,7 +13,8 @@ public class Goal : MonoBehaviour {
     }
 
     void Update() {
-        Timer();
+		if(!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+			Timer();
     }
 
     void OnTriggerEnter2D(Collider2D collision)

@@ -32,6 +32,7 @@ public class Shoping : MonoBehaviour {
 	}
 	void CheckInputDialogue(){
 		if (Input.GetKeyDown (botonInteraccion) && shopping) {
+			tienda_.GetComponentInParent<Transform>().SetAsLastSibling ();
 			tienda_.gameObject.SetActive (true);
 			shopping = false;
 			if (primerBoton.interactable)
@@ -52,6 +53,7 @@ public class Shoping : MonoBehaviour {
 	public void Exit(){
 		tienda_.gameObject.SetActive (false);
 		GameManager.instance.ventanaAbierta = false;
+		InputConfiguration.DeselectButton ();
 	}
 	public void ActualizaPersonaje (){
 		if (SceneManager.GetActiveScene ().name == currentScene)

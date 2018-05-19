@@ -17,11 +17,13 @@ public class temporizador : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		temp = (int)Time.time;
-		if (temp > temporizadorapoyo) {
-			temporizadorapoyo = temp;
-			PasillosManager.instance.RestarTiempo ();
-			temporiza.text=PasillosManager.instance.TiempoRestante().ToString() +"S";
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+			temp = (int)Time.time;
+			if (temp > temporizadorapoyo) {
+				temporizadorapoyo = temp;
+				PasillosManager.instance.RestarTiempo ();
+				temporiza.text = PasillosManager.instance.TiempoRestante ().ToString () + "S";
+			}
 		}
 	}
 }

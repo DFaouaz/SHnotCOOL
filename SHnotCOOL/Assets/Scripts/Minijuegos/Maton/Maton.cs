@@ -144,29 +144,30 @@ public class Maton : MonoBehaviour {
         fin = false;
     }
     private void FixedUpdate(){
-        if (!fin){
-            tiempoFlechaActiva += Time.deltaTime;
-            //si alguna de las teclas es pulasada
-            if (!pulsado)
-                CheckeaInput();
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+			if (!fin) {
+				tiempoFlechaActiva += Time.deltaTime;
+				//si alguna de las teclas es pulasada
+				if (!pulsado)
+					CheckeaInput ();
 
-            //cuando no hay ninguna tecla pulsada
-            if (!Input.anyKeyDown)
-                pulsado = false;
-            if (cogido){
-                textoFinJuego.text = "El matón te ha cogido";
-                fin = true;
-            }
-            if (tiempoPasado >= tiempo){
-                textoFinJuego.text = "Has escapado";               
-                fin = true;
-            }
-            else
-                time.text = (tiempo - tiempoPasado).ToString();
-            if (transform.position.x - enemigo.transform.position.x < distMinima)
-                cogido = true;
-            FinJuego();
-        }
+				//cuando no hay ninguna tecla pulsada
+				if (!Input.anyKeyDown)
+					pulsado = false;
+				if (cogido) {
+					textoFinJuego.text = "El matón te ha cogido";
+					fin = true;
+				}
+				if (tiempoPasado >= tiempo) {
+					textoFinJuego.text = "Has escapado";               
+					fin = true;
+				} else
+					time.text = (tiempo - tiempoPasado).ToString ();
+				if (transform.position.x - enemigo.transform.position.x < distMinima)
+					cogido = true;
+				FinJuego ();
+			}
+		}
     }
 	void FinJuego(){
         if (fin){
@@ -177,7 +178,8 @@ public class Maton : MonoBehaviour {
         }
     }
     void DisminuyeTiempo(){
-        tiempoPasado++;
+		if(!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+			tiempoPasado++;
         Invoke("DisminuyeTiempo", 1);
     }
 }

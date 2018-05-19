@@ -16,9 +16,11 @@ public class Spawner : MonoBehaviour {
 	//funcion Move de RowMovement para poner el objeto en movimiento
 	void Spawn()
 	{
-		GameObject obj = Instantiate (varPrefab,transform.position,Quaternion.identity);
-		RowMovement row = obj.GetComponent<RowMovement> ();
-		row.Move (speed, leftSense);
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+			GameObject obj = Instantiate (varPrefab, transform.position, Quaternion.identity);
+			RowMovement row = obj.GetComponent<RowMovement> ();
+			row.Move (speed, leftSense);
+		}
 		//LLamada recursiva a la funcion de spawn para crear varios
 		Invoke ("Spawn", step);
 	}

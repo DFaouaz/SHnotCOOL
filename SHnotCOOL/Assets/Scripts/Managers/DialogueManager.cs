@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 
 public class DialogueManager : MonoBehaviour {
@@ -124,6 +125,7 @@ public class DialogueManager : MonoBehaviour {
 	//Dialogo
 	public void AbreCierraDialogueCanvas(){
 		if (!dialogueBox.activeInHierarchy && !GameManager.instance.ventanaAbierta) {
+			transform.SetAsLastSibling ();
 			GameManager.instance.ventanaAbierta = true;
 			dialogueBox.SetActive (true);
 			MessageManager.instance.CloseMessage();
@@ -131,8 +133,9 @@ public class DialogueManager : MonoBehaviour {
 				ActualizaInicioDelCanvas ();
 				SeleccionaBoton ();
 			}
-		} else {
+		} else if (dialogueBox.activeInHierarchy && !GameManager.instance.pauseMode) {
 			dialogueBox.SetActive (false);
+			InputConfiguration.DeselectButton ();
 			if (currentNPC != null)
 				MessageManager.instance.ShowMessage("Pulsa " + GameManager.instance.botonInteractuar.ToString() + " para interactuar.");
 			GameManager.instance.ventanaAbierta = false;

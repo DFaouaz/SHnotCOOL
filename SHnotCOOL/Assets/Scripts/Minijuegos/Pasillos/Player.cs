@@ -26,16 +26,16 @@ public class Player : MonoBehaviour {
 	}
 
 	void Update () {
-        if (alive && tiempo > 5)
-        {
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+			if (alive && tiempo > 5) {
 
-            // Comprobar la entrada del usuario
-            CheckInput();
-            textoTiempo.text = "";
-        }
-        else
-            textoTiempo.text = (5 - ((int)tiempo)).ToString();
-        tiempo += Time.deltaTime;
+				// Comprobar la entrada del usuario
+				CheckInput ();
+				textoTiempo.text = "";
+			} else
+				textoTiempo.text = (5 - ((int)tiempo)).ToString ();
+			tiempo += Time.deltaTime;
+		}
 	}
 		
 	// MÉTODOS

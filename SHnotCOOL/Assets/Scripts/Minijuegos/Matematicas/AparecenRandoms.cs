@@ -41,13 +41,13 @@ public class AparecenRandoms : MonoBehaviour {
     }
 	// Update is called once per frame
 	public void SpawnSoluciones  () {
-
-        Vector2 spawn = new Vector2(Random.Range(camaraPosX-Anchura/2,camaraPosX-1+Anchura/2) , Random.Range(camaraPosY-Altura/2+1, camaraPosY+Altura/2));
-        GameObject copia=Instantiate(coleccionable, spawn, Quaternion.identity);
-        copia.GetComponent<TextMesh>().text =resultado.ToString();
-        Destroy(copia, tiempo);
-        Invoke("SpawnSoluciones", tiempo);
-        
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+			Vector2 spawn = new Vector2 (Random.Range (camaraPosX - Anchura / 2, camaraPosX - 1 + Anchura / 2), Random.Range (camaraPosY - Altura / 2 + 1, camaraPosY + Altura / 2));
+			GameObject copia = Instantiate (coleccionable, spawn, Quaternion.identity);
+			copia.GetComponent<TextMesh> ().text = resultado.ToString ();
+			Destroy (copia, tiempo);
+		}
+			Invoke ("SpawnSoluciones", tiempo);
     }
     public int CalculaOperacion()
     {
@@ -68,11 +68,12 @@ public class AparecenRandoms : MonoBehaviour {
     }
     private void FixedUpdate()
     {
-        tiempoPasado += Time.deltaTime;
-        if(tiempoPasado>=tiempoMax)
-        {
-            CambiaOperacion();
-        }        
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+			tiempoPasado += Time.deltaTime;
+			if (tiempoPasado >= tiempoMax) {
+				CambiaOperacion ();
+			}
+		}    
     }
 
 	void ActualizaOperacion(){

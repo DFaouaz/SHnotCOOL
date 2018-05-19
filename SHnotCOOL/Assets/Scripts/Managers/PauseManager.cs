@@ -28,13 +28,16 @@ public class PauseManager : MonoBehaviour {
 				panelOpciones.gameObject.SetActive (false);
 				botones.gameObject.SetActive (false);
 				GameManager.instance.pauseMode = false;
-				Time.timeScale = 1;
+				//Time.timeScale = 1;
+				InputConfiguration.SelectFirstFoundButton ();
 			}else {
+				transform.SetAsLastSibling ();
 				pausaMenu.SetActive (true);
 				botones.SetActive (true);
+				InputConfiguration.DeselectButton ();
 				botonesDelMenu [0].Select ();
 				GameManager.instance.pauseMode = true;
-				Time.timeScale = 0;
+				//Time.timeScale = 0;
 			}
 		}
 	}
@@ -43,7 +46,7 @@ public class PauseManager : MonoBehaviour {
 	public void Continuar(){
 		pausaMenu.SetActive (false);
 		GameManager.instance.pauseMode = false;
-		Time.timeScale = 1;
+		//Time.timeScale = 1;
 	}
 
 	//Sale al menu principal

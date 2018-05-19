@@ -17,7 +17,8 @@ public class boton : MonoBehaviour {
 
 	void Update()
 	{
-
+		if(!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+		
 			AsignarOpcion ();
 		
 	}

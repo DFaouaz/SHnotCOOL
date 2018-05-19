@@ -148,6 +148,7 @@ Transform:
   - {fileID: 1747835607}
   - {fileID: 1752930439}
   - {fileID: 2069676606}
+  - {fileID: 711922700}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28787,7 +28788,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 498233464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 61f9e50286c57cd47a272979b2dbefe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
@@ -28797,6 +28798,7 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+  timeToDisableMouse: 3.25
 --- !u!114 &498233467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33303,6 +33305,89 @@ RectTransform:
   m_AnchoredPosition: {x: -211, y: 0}
   m_SizeDelta: {x: 850, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &711922699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 711922700}
+  - component: {fileID: 711922703}
+  - component: {fileID: 711922702}
+  - component: {fileID: 711922701}
+  m_Layer: 0
+  m_Name: PanelInicio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &711922700
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 711922699}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.3, y: -11.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6410269}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &711922701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 711922699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8679deea2b66a6b4eb0424f646cec8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Escuela
+--- !u!114 &711922702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 711922699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbec170e95b9b3f49b6747bf219021a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mesagePanel: {fileID: 1095584367}
+  text: {fileID: 1298238372}
+  mesage: "\xA1Bienvenido! Es tu primer d\xEDa de clase. Recuerda que si no apruebas
+    el curso te castigar\xE1n sin videojuegos..."
+--- !u!61 &711922703
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 711922699}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4, y: 3}
+  m_EdgeRadius: 0
 --- !u!1001 &713533560
 Prefab:
   m_ObjectHideFlags: 0
@@ -33425,6 +33510,8 @@ MonoBehaviour:
   - Lengua
   - Geografia
   - Historia
+  - Maton
+  - Pasillos
 --- !u!222 &717611288
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -48784,6 +48871,7 @@ GameObject:
   - component: {fileID: 992684132}
   - component: {fileID: 992684134}
   - component: {fileID: 992684133}
+  - component: {fileID: 992684135}
   m_Layer: 0
   m_Name: PanelTrismestres
   m_TagString: Untagged
@@ -48844,6 +48932,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &992684135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 992684131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8679deea2b66a6b4eb0424f646cec8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Escuela
 --- !u!1 &997841907
 GameObject:
   m_ObjectHideFlags: 0
@@ -50090,7 +50190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1095584368
 RectTransform:
   m_ObjectHideFlags: 0
@@ -63621,8 +63721,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1634122540}
   - {fileID: 1862020635}
+  - {fileID: 1634122540}
   m_Father: {fileID: 464816009}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -84123,6 +84223,7 @@ MonoBehaviour:
   mensajeNoSustitucion: {fileID: 1432715045}
   Aprobado: {fileID: 21300000, guid: 24efb26100f6b4a4a94bdee6df289052, type: 3}
   Suspenso: {fileID: 21300000, guid: 067af8d8f244ac14784a49c1f3f4c0d4, type: 3}
+  Nada: {fileID: 0}
   objeto: {fileID: 0}
   modoSustitucion: 0
   modoDarObjeto: 0
@@ -87156,7 +87257,7 @@ RectTransform:
   - {fileID: 1088211001}
   - {fileID: 1790039664}
   m_Father: {fileID: 1331667656}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -91065,6 +91166,7 @@ GameObject:
   - component: {fileID: 1747835607}
   - component: {fileID: 1747835609}
   - component: {fileID: 1747835608}
+  - component: {fileID: 1747835610}
   m_Layer: 0
   m_Name: PanelClases
   m_TagString: Untagged
@@ -91124,6 +91226,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1747835610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1747835606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8679deea2b66a6b4eb0424f646cec8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Escuela
 --- !u!1 &1749122120
 GameObject:
   m_ObjectHideFlags: 0
@@ -91255,6 +91369,7 @@ GameObject:
   - component: {fileID: 1752930439}
   - component: {fileID: 1752930441}
   - component: {fileID: 1752930440}
+  - component: {fileID: 1752930442}
   m_Layer: 0
   m_Name: "PanelTiendaBa\xF1o"
   m_TagString: Untagged
@@ -91314,6 +91429,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &1752930442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1752930438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8679deea2b66a6b4eb0424f646cec8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Escuela
 --- !u!1 &1758466514
 GameObject:
   m_ObjectHideFlags: 0
@@ -93421,7 +93548,7 @@ RectTransform:
   m_Children:
   - {fileID: 564227288}
   m_Father: {fileID: 1331667656}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -96627,6 +96754,7 @@ GameObject:
   - component: {fileID: 2069676606}
   - component: {fileID: 2069676608}
   - component: {fileID: 2069676607}
+  - component: {fileID: 2069676609}
   m_Layer: 0
   m_Name: PanelTiendaCafeteria
   m_TagString: Untagged
@@ -96687,6 +96815,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &2069676609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069676605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8679deea2b66a6b4eb0424f646cec8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Escuela
 --- !u!1 &2070069151
 GameObject:
   m_ObjectHideFlags: 0
