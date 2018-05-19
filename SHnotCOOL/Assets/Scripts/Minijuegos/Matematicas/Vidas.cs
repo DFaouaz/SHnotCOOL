@@ -5,43 +5,39 @@ using UnityEngine.UI;
 
 public class Vidas : MonoBehaviour {
 
-    GameObject text;
-    
     Text textoVidas;
-    SpriteRenderer render;
-    public int vidas = 5;
+    SpriteRenderer playerRender;
+    public int vidas;
     int repeticiones = 16;
     float tiempo = 0.1f;
     bool golpeado = false, parpadea = false;
 
 	void Start () {
-        text = GameObject.FindGameObjectWithTag("Vidas");
-        textoVidas = text.GetComponent<Text>();
-        
-        render = GetComponent<SpriteRenderer>();
+        textoVidas = GameObject.FindGameObjectWithTag("Vidas").GetComponent<Text>();
+        playerRender = GetComponent<SpriteRenderer>();
 		ActualizaVidas ();
 	}
 
-    void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Bala") {
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bala"))
+        {
             Damage();
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.tag == "Enemigo")
-        {
+        else if (collision.gameObject.CompareTag("Enemigo"))
             Damage();
-            
-        }
     }
 
-    void Damage() {
-        if (vidas > 0 && !golpeado)
+    void Damage()
+    {
+        if (vidas > 1 && !golpeado)
         {
             golpeado = true;
             vidas--;
             ActualizaVidas();
             InvokeRepeating("Invulnerable", 0, tiempo);
-            Invoke("FinInvul", tiempo * repeticiones);
+            Invoke("FinInvulnerable", tiempo * repeticiones);
         }
         else if (vidas == 1)
         {
@@ -51,19 +47,21 @@ public class Vidas : MonoBehaviour {
         }
     }
 
-    void Invulnerable() {
-        render.enabled = parpadea;
+    void Invulnerable()
+    {
+        playerRender.enabled = parpadea;
         parpadea = !parpadea;
     }
 
-    void FinInvul()
+    void FinInvulnerable()
     {
         CancelInvoke();
         golpeado = false;
-        render.enabled = true;
+        playerRender.enabled = true;
     }
 
-	void ActualizaVidas(){
+	void ActualizaVidas()
+    {
 		textoVidas.text = "Vidas: " + vidas;
 	}
 }

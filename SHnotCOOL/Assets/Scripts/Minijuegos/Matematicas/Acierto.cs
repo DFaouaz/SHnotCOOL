@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Acierto : MonoBehaviour {
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if(other.gameObject.CompareTag("Player"))
-        {            
+        if (collision.gameObject.CompareTag("Player"))
+        {
             GameManager.instance.matematicasScore++;
-            FindObjectOfType<AparecenRandoms>().CambiaOperacion();
-            
             Destroy(this.gameObject);
         }
     }

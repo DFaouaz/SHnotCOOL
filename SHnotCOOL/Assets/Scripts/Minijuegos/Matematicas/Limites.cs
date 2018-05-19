@@ -3,29 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Limites : MonoBehaviour {
-    float camaraPosX, camaraPosY, Altura, Anchura;
-    public GameObject bound;
-   
+
+    public GameObject limite;
+    float camaraPosX, camaraPosY, alto, ancho;
     BoxCollider2D borde;
-	// Use this for initialization
-	void Start () {
-        Altura = Camera.main.orthographicSize * 2;
-        Anchura = Altura * Camera.main.aspect;
-  
+
+    void Start() {
+
+        alto = Camera.main.orthographicSize * 2;
+        ancho = alto * Camera.main.aspect;
+
         camaraPosX = Camera.main.transform.position.x;
         camaraPosY = Camera.main.transform.position.y;
-        borde=Instantiate(bound,new Vector2(camaraPosX,camaraPosY+Altura/2),Quaternion.identity).GetComponent<BoxCollider2D>();
-        borde.size=new Vector2(Anchura,1);
 
-        borde=Instantiate(bound, new Vector2(camaraPosX, camaraPosY - Altura / 2), Quaternion.identity).GetComponent<BoxCollider2D>();
-        borde.size=new Vector2(Anchura, 1);
-       
-        borde =Instantiate(bound, new Vector2(camaraPosX+Anchura/2, camaraPosY ), Quaternion.identity).GetComponent<BoxCollider2D>();
-        borde.size=new Vector2( 1,Altura);
-
-        borde =Instantiate(bound, new Vector2(camaraPosX-Anchura/2, camaraPosY ), Quaternion.identity).GetComponent<BoxCollider2D>();
-        borde.size=new Vector2(1,Altura);
+        CreaLimite(camaraPosX, camaraPosY + alto / 2, ancho, 1f);
+        CreaLimite(camaraPosX, camaraPosY - alto / 2, ancho, 1f);
+        CreaLimite(camaraPosX + ancho / 2, camaraPosY, 1f, alto);
+        CreaLimite(camaraPosX - ancho / 2, camaraPosY, 1f, alto);
     }
-	
 
+    void CreaLimite(float posX, float posY, float tamañoX, float tamañoY)
+    {
+        borde = Instantiate(limite, new Vector2(posX, posY), Quaternion.identity).GetComponent<BoxCollider2D>();
+        borde.size = new Vector2(tamañoX, tamañoY);
+    }
 }

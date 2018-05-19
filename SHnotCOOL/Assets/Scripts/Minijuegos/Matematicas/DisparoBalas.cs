@@ -5,155 +5,126 @@ using UnityEngine.UI;
 
 public class DisparoBalas : MonoBehaviour {
 
-    public AudioClip disparo;
-    public float speed;
+    public AudioClip sonidoDisparo;
     public GameObject bala;
+    public float velocidad;
+    
+    Vector3 velocidadDisparo;
+    Vector3 posicionJugador;
+    float numeroProyectiles, tamañoCamara, angulo, anguloGiro, giro, cadenciaDisparo, tiempoCambio;
+    int modoDisparo = 3;
 
-    float cadenciaDisparo;
-    int numeroProyectiles;
-    float anguloGiro;
-    Vector2 velocidadDisparo;
-    Vector2 posicionJugador;
-    float angulo;
-    float incremento;
-    float tamañoCamara;
-    float giro;
-    // Use this for initialization
+    public int modoDisparo1, modoDisparo2, modoDisparo3;
+
     void Start () {
+
         numeroProyectiles = Random.Range(4, 10);
         tamañoCamara = Camera.main.orthographicSize;
         angulo = 360 / numeroProyectiles;
         anguloGiro = 90 / numeroProyectiles;
-        switch(GameManager.instance.trimestre)
+
+        switch (GameManager.instance.trimestre)
         {
             case (1):
-                cadenciaDisparo = Random.Range(1.25f, 1.5f);
-                SeleccionaDisparo(3);
+                cadenciaDisparo = Random.Range(1f, 1.5f);
+                if (modoDisparo1 <= 3 || modoDisparo1 >= 0)
+                    SeleccionaDisparo(modoDisparo1);
                 break;
             case (2):
-                cadenciaDisparo = Random.Range(1f, 1.25f);
-                SeleccionaDisparo(3);
+                cadenciaDisparo = Random.Range(1f, 1.5f);
+                if (modoDisparo2 <= 3 || modoDisparo2 >= 0)
+                    SeleccionaDisparo(modoDisparo2);
                 break;
             case (3):
-                cadenciaDisparo = Random.Range(0.75f, 1f);
-                SeleccionaDisparo(5);
+                cadenciaDisparo = Random.Range(1f, 1.5f);
+                if (modoDisparo3 <= 3 || modoDisparo3 >= 0)
+                    SeleccionaDisparo(modoDisparo3);
                 break;
         }
-
 	}
 	
-    void DisparoAPosicion()
-	{
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {        
-			posicionJugador = GameManager.instance.ActualPlayerPosition;
-			velocidadDisparo = posicionJugador - new Vector2 (transform.position.x, transform.position.y);
-			GameObject bullet = Instantiate (bala, transform.position, Quaternion.identity);
-			AudioSource.PlayClipAtPoint (disparo, transform.position);
-			bullet.GetComponent<Rigidbody2D> ().velocity = velocidadDisparo.normalized * speed;
-			Destroy (bullet, tamañoCamara * (3 / speed));
-		}
-        Invoke("DisparoAPosicion", cadenciaDisparo);
-       
-    }
-    void DisparoEspiral()
+    void CreaBala(Vector3 pos)
     {
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
-			velocidadDisparo = new Vector2 (Mathf.Sin (incremento * Mathf.Deg2Rad), Mathf.Cos (incremento * Mathf.Deg2Rad));
-			GameObject bullet = Instantiate (bala, transform.position, Quaternion.identity);
-			AudioSource.PlayClipAtPoint (disparo, transform.position);
-			bullet.GetComponent<Rigidbody2D> ().velocity = velocidadDisparo.normalized * speed;
-			Destroy (bullet, tamañoCamara * (3 / speed));
-			incremento = (incremento + anguloGiro) % 360;
-		}
-        Invoke("DisparoEspiral", cadenciaDisparo);
+        GameObject bullet = Instantiate(bala, pos, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(sonidoDisparo, transform.position);
 
+        bullet.GetComponent<Rigidbody2D>().velocity = velocidadDisparo.normalized * velocidad;
+        Destroy(bullet, tamañoCamara * (3 / velocidad));
     }
+
+    void DisparoPosicion()
+	{
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+        {        
+			posicionJugador = GameManager.instance.ActualPlayerPosition;
+			velocidadDisparo = posicionJugador - new Vector3 (transform.position.x, transform.position.y);
+            CreaBala(transform.position);
+		}
+        Invoke("DisparoPosicion", cadenciaDisparo);
+    }
+
     void DisparoExplosion()
     {       
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
-			incremento = 0;
-			while (incremento / 360 < 1) {
-				velocidadDisparo = new Vector2 (Mathf.Sin (incremento * Mathf.Deg2Rad), Mathf.Cos (incremento * Mathf.Deg2Rad));
-
-				GameObject bullet = Instantiate (bala, new Vector2 (transform.position.x, transform.position.y) + velocidadDisparo, Quaternion.identity);
-				AudioSource.PlayClipAtPoint (disparo, transform.position);
-				bullet.GetComponent<Rigidbody2D> ().velocity = velocidadDisparo.normalized * speed;
-				Destroy (bullet, tamañoCamara * (3 / speed));
-				incremento += angulo;
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+        {
+			float i = 0;
+			while (i / 360 < 1)
+            {
+				velocidadDisparo = new Vector2 (Mathf.Sin (i * Mathf.Deg2Rad), Mathf.Cos (i * Mathf.Deg2Rad));
+                CreaBala(transform.position + velocidadDisparo);
+				i += angulo;
 			}
 		}
         Invoke("DisparoExplosion", cadenciaDisparo);
-
     }
-    void ExplosionEnEspiral()
-    {
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
-			incremento = 0;
-			giro = (giro + anguloGiro) % 360;
-			while (incremento / 360 < 1) {
-				velocidadDisparo = new Vector2 (Mathf.Sin (giro * Mathf.Deg2Rad), Mathf.Cos (giro * Mathf.Deg2Rad));
 
-				GameObject bullet = Instantiate (bala, new Vector2 (transform.position.x, transform.position.y) + velocidadDisparo, Quaternion.identity);
-				AudioSource.PlayClipAtPoint (disparo, transform.position);
-				bullet.GetComponent<Rigidbody2D> ().velocity = velocidadDisparo.normalized * speed;
-				Destroy (bullet, tamañoCamara * (3 / speed));
-				giro += angulo;
-				incremento += angulo;
-			}
-		}
-        Invoke("ExplosionEnEspiral", cadenciaDisparo);
-    }
     void EspiralVariosProyectiles()
     {
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
-			incremento = 0;
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+        {
 			giro = giro % 360;
-			while (incremento / 360 < 1) {
-				velocidadDisparo = new Vector2 (Mathf.Sin (giro * Mathf.Deg2Rad), Mathf.Cos (giro * Mathf.Deg2Rad));
 
-				GameObject bullet = Instantiate (bala, new Vector2 (transform.position.x, transform.position.y) + velocidadDisparo, Quaternion.identity);
-				AudioSource.PlayClipAtPoint (disparo, transform.position);
-				bullet.GetComponent<Rigidbody2D> ().velocity = velocidadDisparo.normalized * speed;
-				giro = (giro + anguloGiro) % 360;
-				incremento += angulo;
+            float i = 0;
+            while (i / 360 < 1)
+            {
+				velocidadDisparo = new Vector2 (Mathf.Sin (giro * Mathf.Deg2Rad), Mathf.Cos (giro * Mathf.Deg2Rad));
+                CreaBala(transform.position + velocidadDisparo);
+                giro = (giro + anguloGiro) % 360;
+				i += angulo;
 			}
 		}
         Invoke("EspiralVariosProyectiles", cadenciaDisparo);
     }
+
     void DisparoVariante()
-	{
-			int disparo = Random.Range (1, 4);
-			float tiempo = Random.Range (5, 15);
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
-			SeleccionaDisparo (disparo);
-			Invoke ("CancelInvoke", tiempo);
-		}
-        Invoke("DisparoVariante", tiempo);
+    {
+        CancelInvoke();
+        tiempoCambio = Random.Range(5f, 10f);
+        if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+        {
+            SeleccionaDisparo(modoDisparo % 3);
+            modoDisparo++;
+        }
+        Invoke("DisparoVariante", tiempoCambio);
     }
+
     void SeleccionaDisparo(int modoDisparo)
     {
         switch(modoDisparo)
         {
             case (0):
-                DisparoAPosicion();
+                DisparoPosicion();
                 break;
             case (1):
-                DisparoEspiral();
-                break;
-            case (2):
                 DisparoExplosion();
                 break;
-            case (3):
-                ExplosionEnEspiral();
-                break;
-            case (4):
+            case (2):
                 EspiralVariosProyectiles();
                 break;
-            case (5):
+            case (3):
                 DisparoVariante();
                 break;
 
         }
-
     }
 }

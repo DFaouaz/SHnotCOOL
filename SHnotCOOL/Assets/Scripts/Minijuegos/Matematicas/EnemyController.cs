@@ -4,36 +4,36 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    float Altura;
-    float Anchura;
-    float camaraPosX;
-    float camaraPosY;
-    float randomX, randomY, maxX = 6f, minX = -6f, maxY = 6f, minY = -6f, timeChange = 0;
-    public float randomRate, moveSpeed;
-    // Use this for initialization
+    float alto, ancho, camaraPosX, camaraPosY;
+    float randomX, randomY, maxX, minX, maxY, minY, timeChange = 0;
+    public float moveSpeed;
+
     void Start() {
-        //x = transform.position.x;
-        //y = transform.position.y;
-        Altura = Camera.main.orthographicSize * 2;
-        Anchura = Altura * Camera.main.aspect;
+
+        alto = Camera.main.orthographicSize * 2;
+        ancho = alto * Camera.main.aspect;
+
         camaraPosX = Camera.main.transform.position.x;
         camaraPosY = Camera.main.transform.position.y;
-        maxX = -1+camaraPosX + Anchura / 2;
-        maxY = -1+camaraPosY + Altura / 2;
-        minX = 1+camaraPosX - Anchura / 2;
-        minY = 1+camaraPosY - Altura / 2;
-    }
 
-    // Update is called once per frame
+        maxX = -1 + camaraPosX + alto / 2;
+        maxY = -1 + camaraPosY + alto / 2;
+        minX = 1 + camaraPosX - alto / 2;
+        minY = 1 + camaraPosY - alto / 2;
+    }
+    
     void Update() {
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
-			if (Time.time >= timeChange) {
+
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+        {
+			if (Time.time >= timeChange)
+            {
 				randomX = Random.Range (-2f, 2f);
 				randomY = Random.Range (-2f, 2f);
 				timeChange = Time.time + Random.Range (0.5f, 1.5f);
 			}
-
 			transform.Translate (new Vector2 (randomX, randomY) * moveSpeed * Time.deltaTime);
+
 			if (transform.position.x >= maxX || transform.position.x <= minX)
 				randomX = -randomX;
 

@@ -4,89 +4,70 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class AparecenRandoms : MonoBehaviour {
-    float Altura;
-    float Anchura;
-    float camaraPosX;
-    float camaraPosY;
-    string cuenta;
-    int resultado;
-    int tiempoMax = 10;
-    float tiempoPasado;
-    int operacionesHechas=-1;
-    public Text suma;
-    public Text hechas;
-    public float tiempo;
-	float tiempoAux;
+
+    float alto, ancho, camaraPosX, camaraPosY;
+    int cambiaOperacion = 2;
+    string operacion;
+    GameObject copiaColeccionable;
+    Vector2 pos;
+
     public GameObject coleccionable;
-	GameObject copia;
-	bool iniciado = false;
+    public Text operacionTexto, progreso;
+    public float tiempo;
 
-	// Use this for initialization
-	void Start () {
-        Altura = (Camera.main.orthographicSize*2)-0.25f;
-        Anchura = (Altura*Camera.main.aspect)-0.25f;
-        camaraPosX = (Camera.main.transform.position.x)-0.25f;
-        camaraPosY = (Camera.main.transform.position.y)-0.25f;        
-        CambiaOperacion();
+    void Start() {
+
+        alto = (Camera.main.orthographicSize * 2) - 0.5f;
+        ancho = (ancho * Camera.main.aspect) - 0.5f;
+
+        camaraPosX = (Camera.main.transform.position.x) - 0.5f;
+        camaraPosY = (Camera.main.transform.position.y) - 0.5f;
+
+        operacionTexto.text = operacion;
+        progreso.text = GameManager.instance.matematicasScore + "/" + 10;
+
+        GeneraSolucion();
     }
 
-    public void CambiaOperacion()
-    {
-		if (copia != null)
-			Destroy (copia);
-        tiempoPasado = 0;
-		tiempoAux = tiempo;
-        operacionesHechas++;
-        resultado = CalculaOperacion();
-        suma.text = cuenta;
-        CancelInvoke();
-        SpawnSoluciones();
-		ActualizaOperacion ();
-		CompruebaOperacion ();
+    void Update() {
+
+        if (GameManager.instance.matematicasScore >= 10)
+            CancelInvoke();
+
+        operacionTexto.text = operacion;
+        progreso.text = GameManager.instance.matematicasScore + "/" + 10;
     }
-	// Update is called once per frame
-	public void SpawnSoluciones  () {
-		Vector2 spawn = new Vector2 (Random.Range (camaraPosX - Anchura / 2, camaraPosX - 1 + Anchura / 2), Random.Range (camaraPosY - Altura / 2 + 1, camaraPosY + Altura / 2));
-		copia = Instantiate (coleccionable, spawn, Quaternion.identity);
-		copia.GetComponent<TextMesh> ().text = resultado.ToString ();
-		//Destroy (copia, tiempo);
-		//Invoke ("SpawnSoluciones", tiempo);
 
-	}
-    public int CalculaOperacion()
+    public void GeneraSolucion()
     {
-        int operando1 = Random.Range(0, 9);
-        int operando2 = Random.Range(0, 9);
-        int operacion = Random.Range(0, 1);
-
-        if(operacion==0)
+        if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
         {
-            cuenta = operando1.ToString()+ "+" +operando2.ToString();
+            pos = new Vector2(Random.Range(camaraPosX - alto / 2, camaraPosX - 1 + ancho / 2), Random.Range(camaraPosY + 1 - alto / 2, camaraPosY + alto / 2));
+            copiaColeccionable = Instantiate(coleccionable, pos, Quaternion.identity);
+
+            int resultado = CalculaOperacion();
+            copiaColeccionable.GetComponent<TextMesh>().text = resultado.ToString();
+            Destroy(copiaColeccionable, tiempo);
+            Invoke("GeneraSolucion", tiempo);
+        }
+    }
+
+    int CalculaOperacion()
+    {
+        int operando1 = Random.Range(1, 10);
+        int operando2 = Random.Range(1, 10);
+
+        if ((cambiaOperacion % 2) == 0)
+        {
+            operacion = operando1.ToString() + "+" + operando2.ToString();
+            cambiaOperacion++;
             return operando1 + operando2;
         }
         else
         {
-            cuenta = operando1.ToString() + "+" + operando2.ToString();
+            operacion = operando1.ToString() + "-" + operando2.ToString();
+            cambiaOperacion++;
             return operando1 - operando2;
         }
     }
-    private void Update()
-	{
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
-			tiempoPasado += Time.deltaTime;
-			tiempoAux -= Time.deltaTime;
-			if (tiempoPasado >= tiempoMax || tiempoAux <= 0 || copia == null) 
-				CambiaOperacion ();
-		}    
-	}
-
-	void ActualizaOperacion(){
-		hechas.text = GameManager.instance.matematicasScore.ToString() + "/" + operacionesHechas.ToString();
-	}
-	void CompruebaOperacion(){
-		if (operacionesHechas == 10)
-		{
-			GameManager.instance.FinExamenMatematicas();
-		}
-	}
 }
