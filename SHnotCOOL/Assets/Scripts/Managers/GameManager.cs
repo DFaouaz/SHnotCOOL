@@ -94,6 +94,8 @@ public class GameManager : MonoBehaviour {
     public float media;
     [HideInInspector]
     public float notaFinal;
+    [HideInInspector]
+    public bool marcaExamen;
 
     // En cuanto el objeto se active
     void Awake() {

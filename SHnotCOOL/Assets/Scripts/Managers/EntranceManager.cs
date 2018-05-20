@@ -10,6 +10,7 @@ public class EntranceManager : MonoBehaviour {
 	public Entrance entrance;
 	[HideInInspector]
 	public GameObject player,negro;
+    public GameObject marcaExam;
 
 	public static EntranceManager instance = null;
 
@@ -32,6 +33,7 @@ public class EntranceManager : MonoBehaviour {
 	void CheckInteraction(){
 		if (Input.GetKeyDown (GameManager.instance.botonInteractuar) && entrance != null) {		
 			entrance.ChooseExam ();
+            marcaExam.SetActive(GameManager.instance.marcaExamen);
 			entrance.CheckMaton ();
 			if(entrance.isRoom)
 				GameManager.instance.lastPosPasillos = entrance.pos;

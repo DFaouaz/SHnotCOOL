@@ -40,7 +40,7 @@ public class Goal : MonoBehaviour {
             timeLimit -= (float)Time.deltaTime;
             text.text = timeLimit.ToString();
         }
-        else if (timeLimit == 0)
+        else if (timeLimit <= 0)
         {
             finJuego.text = "Das asco";
             GameManager.instance.FinExamenGeografia();

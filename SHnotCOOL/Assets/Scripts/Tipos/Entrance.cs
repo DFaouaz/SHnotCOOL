@@ -71,15 +71,39 @@ public class Entrance : MonoBehaviour {
 
 	public void ChooseExam(){
 		if (isClass) {
-			if (examSceneName == "Matematicas" && !GameManager.instance.finMates)
-				GameManager.instance.exam = new Examen (0, trimestreAparicion);
-			else if (examSceneName == "Historia" && !GameManager.instance.finHistoria)
-				GameManager.instance.exam = new Examen (1, trimestreAparicion);
-			else if (examSceneName == "Lengua" && !GameManager.instance.finLengua)
-				GameManager.instance.exam = new Examen (2, trimestreAparicion);
-			else if (examSceneName == "Geografia" && !GameManager.instance.finGeo)
-				GameManager.instance.exam = new Examen (3, trimestreAparicion);
-		}
+            if (examSceneName == "Matematicas" && !GameManager.instance.finMates)
+            {
+                GameManager.instance.exam = new Examen(0, trimestreAparicion);
+                if (trimestreAparicion <= GameManager.instance.trimestre)
+                    GameManager.instance.marcaExamen = true;
+                else
+                    GameManager.instance.marcaExamen = false;
+            }
+            else if (examSceneName == "Historia" && !GameManager.instance.finHistoria)
+            {
+                GameManager.instance.exam = new Examen(1, trimestreAparicion);
+                if (trimestreAparicion <= GameManager.instance.trimestre)
+                    GameManager.instance.marcaExamen = true;
+                else
+                    GameManager.instance.marcaExamen = false;
+            }
+            else if (examSceneName == "Lengua" && !GameManager.instance.finLengua)
+            {
+                GameManager.instance.exam = new Examen(2, trimestreAparicion);
+                if (trimestreAparicion <= GameManager.instance.trimestre)
+                    GameManager.instance.marcaExamen = true;
+                else
+                    GameManager.instance.marcaExamen = false;
+            }
+            else if (examSceneName == "Geografia" && !GameManager.instance.finGeo)
+            {
+                GameManager.instance.exam = new Examen(3, trimestreAparicion);
+                if (trimestreAparicion <= GameManager.instance.trimestre)
+                    GameManager.instance.marcaExamen = true;
+                else
+                    GameManager.instance.marcaExamen = false;
+            }
+            }
         else
             GameManager.instance.exam = new Examen(4, 0);
     }
