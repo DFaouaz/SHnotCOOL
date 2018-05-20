@@ -13,6 +13,7 @@ public class Vidas : MonoBehaviour {
     bool golpeado = false, parpadea = false;
 
 	void Start () {
+
         textoVidas = GameObject.FindGameObjectWithTag("Vidas").GetComponent<Text>();
         playerRender = GetComponent<SpriteRenderer>();
 		ActualizaVidas ();
@@ -31,7 +32,7 @@ public class Vidas : MonoBehaviour {
 
     void Damage()
     {
-        if (vidas > -1 && !golpeado)
+        if (vidas > 0 && !golpeado)
         {
             golpeado = true;
             vidas--;
@@ -39,12 +40,8 @@ public class Vidas : MonoBehaviour {
             InvokeRepeating("Invulnerable", 0, tiempo);
             Invoke("FinInvulnerable", tiempo * repeticiones);
         }
-        else if (vidas < 0)
-        {
-			vidas = 0;
-            ActualizaVidas();
+        else if (vidas == 0)
             GameManager.instance.FinExamenMatematicas();
-        }
     }
 
     void Invulnerable()

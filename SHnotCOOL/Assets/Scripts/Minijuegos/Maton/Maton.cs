@@ -4,158 +4,159 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Maton : MonoBehaviour {
-    public Button flechaDerecha;
-    public Button flechaAbajo;
-    public Button flechaIzquierda;
-    public Button flechaArriba;
-    public Text time;
-    public Text textoFinJuego;
-    public float decremento;
-    public float distMinima;
+
+    public Button flechaDerecha, flechaAbajo, flechaIzquierda, flechaArriba;
+    public Text tiempo, textoFin;
+    public float decremento, tiempoLimite, tiempoCambioTecla;
+
     GameObject enemigo;
-    bool pulsado=false;
-    bool cogido = false;
-    bool fin;
-    float tiempoPasado;
-    float tiempo=10;
-    float tiempoCambio= 1f;
-    float tiempoFlechaActiva;
-    
-    int flecha;//0 derecha, 1 abajo, 2 izquierda, 3 arriba
-    public void ActivaFlecha()
+    float tiempoPasado = 0, tiempoFlechaActiva, distanciaMin;
+    int flecha;
+    bool pulsaTecla = false;
+
+    void Start() {
+
+        if (decremento % 2 == 0)
+            decremento++;
+        distanciaMin = decremento + 0.5f;
+        enemigo = GameObject.FindGameObjectWithTag("Enemigo");
+        AsignaTecla();
+        DisminuyeTiempo();
+    }
+
+    void Update() {
+
+        if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+        {
+            tiempoFlechaActiva += Time.deltaTime;
+            tiempo.text = (tiempoLimite - tiempoPasado).ToString();
+
+            if (Input.anyKeyDown)
+                pulsaTecla = true;
+
+            if (pulsaTecla)
+            {
+                CheckInput();
+                CompruebaTiempo();
+                pulsaTecla = false;
+            }
+            else
+                CompruebaTiempo();
+
+            if (transform.position.x - enemigo.transform.position.x < distanciaMin)
+            {
+                textoFin.text = "Te ha cogido";
+                GameManager.instance.dinero -= 20;
+                GameManager.instance.FinMaton();
+            }
+            else if (tiempoPasado >= tiempoLimite)
+            {
+                textoFin.text = "Has escapado";
+                GameManager.instance.FinMaton();
+            }
+        }
+    }
+
+    void AsignaTecla()
     {
-        
+        flecha = Random.Range(0, 4);
+
+        flechaDerecha.gameObject.SetActive(false);
+        flechaAbajo.gameObject.SetActive(false);
+        flechaIzquierda.gameObject.SetActive(false);
+        flechaArriba.gameObject.SetActive(false);
+
+        Invoke("MuestraTecla", 0.25f);
+    }
+
+    void MuestraTecla()
+    {
         switch (flecha)
         {
             case 0:
                 flechaDerecha.gameObject.SetActive(true);
-                flechaAbajo.gameObject.SetActive(false);
-                flechaIzquierda.gameObject.SetActive(false);
-                flechaArriba.gameObject.SetActive(false);
                 break;
             case 1:
-                flechaDerecha.gameObject.SetActive(false);
                 flechaAbajo.gameObject.SetActive(true);
-                flechaIzquierda.gameObject.SetActive(false);
-                flechaArriba.gameObject.SetActive(false);
                 break;
             case 2:
-                flechaDerecha.gameObject.SetActive(false);
-                flechaAbajo.gameObject.SetActive(false);
                 flechaIzquierda.gameObject.SetActive(true);
-                flechaArriba.gameObject.SetActive(false);
                 break;
             case 3:
-                flechaDerecha.gameObject.SetActive(false);
-                flechaAbajo.gameObject.SetActive(false);
-                flechaIzquierda.gameObject.SetActive(false);
                 flechaArriba.gameObject.SetActive(true);
                 break;
         }
+        CancelInvoke("MuestraTecla");
     }
-    public void CheckeaInput()
+
+    void CompruebaTiempo()
     {
-
-		if ((Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.S))) {			
-			switch (flecha) {
-			case 0:
-				if (Input.GetKeyDown (KeyCode.D)) {
-					CambiaFlecha ();
-					ActivaFlecha ();
-				} else {
-					transform.position = new Vector2 (transform.position.x - decremento, transform.position.y);
-					CambiaFlecha ();
-					ActivaFlecha ();
-				}
-				break;
-			case 1:
-				if (Input.GetKeyDown (KeyCode.S)) {
-					CambiaFlecha ();
-					ActivaFlecha ();
-				} else {
-					CambiaFlecha ();
-					ActivaFlecha ();
-					transform.position = new Vector2 (transform.position.x - decremento, transform.position.y);
-				}
-				break;
-			case 2:
-				if (Input.GetKeyDown (KeyCode.A)) {
-					CambiaFlecha ();
-					ActivaFlecha ();
-				} else {
-					CambiaFlecha ();
-					ActivaFlecha ();
-					transform.position = new Vector2 (transform.position.x - decremento, transform.position.y);
-				}
-				break;
-			case 3:
-				if (Input.GetKeyDown (KeyCode.W)) {
-					CambiaFlecha ();
-					ActivaFlecha ();
-				} else {
-					CambiaFlecha ();
-					ActivaFlecha ();
-					transform.position = new Vector2 (transform.position.x - decremento, transform.position.y);
-				}
-				break;
-			}
-			pulsado = true;
-			tiempoFlechaActiva = 0;
-		} else if (tiempoFlechaActiva > tiempoCambio) {
-			CambiaFlecha ();
-			ActivaFlecha ();
-			transform.position = new Vector2 (transform.position.x - decremento, transform.position.y);
-			tiempoFlechaActiva = 0;
-		}
-    }
-    public void CambiaFlecha(){
-        flecha = Random.Range(0, 4);
-    }
-    private void Start(){
-        tiempoPasado = 0;
-        enemigo = GameObject.FindGameObjectWithTag("Maton");
-        CambiaFlecha();
-        ActivaFlecha();
-        DisminuyeTiempo();
-        fin = false;
-    }
-    private void Update(){
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
-			if (!fin) {
-				tiempoFlechaActiva += Time.deltaTime;
-				//si alguna de las teclas es pulasada
-				if (!pulsado)
-					CheckeaInput ();
-
-				//cuando no hay ninguna tecla pulsada
-				if (!Input.anyKeyDown)
-					pulsado = false;
-				if (cogido) {
-					textoFinJuego.text = "El matón te ha cogido";
-					fin = true;
-				}
-				if (tiempoPasado >= tiempo) {
-					textoFinJuego.text = "Has escapado";               
-					fin = true;
-				} else
-					time.text = (tiempo - tiempoPasado).ToString ();
-				if (transform.position.x - enemigo.transform.position.x < distMinima)
-					cogido = true;
-				FinJuego ();
-			}
-		}
-    }
-	void FinJuego(){
-        if (fin){
-            if (cogido)
-                GameManager.instance.dinero -= 20;
-
-            GameManager.instance.FinMaton();
+        if (tiempoFlechaActiva > tiempoCambioTecla)
+        {
+            AsignaTecla();
+            DisminuyeDistancia();
+            tiempoFlechaActiva = 0;
         }
     }
-    void DisminuyeTiempo(){
-		if(!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
-			tiempoPasado++;
+
+    void DisminuyeTiempo()
+    {
+        if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta && tiempoPasado < tiempoLimite)
+            tiempoPasado++;
+
         Invoke("DisminuyeTiempo", 1);
+    }
+
+    void DisminuyeDistancia()
+    {
+        if (transform.position.x > enemigo.transform.position.x + distanciaMin)
+            transform.position = new Vector2(transform.position.x - decremento, transform.position.y);
+    }
+
+    void CheckInput()
+    {
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.S)))
+        {
+            switch (flecha)
+            {
+                case 0:
+                    if (!Input.GetKeyDown(KeyCode.D))
+                        DisminuyeDistancia();
+                    else
+                    {
+                        AsignaTecla();
+                        tiempoFlechaActiva = 0;
+                    }
+                    break;
+                case 1:
+                    if (!Input.GetKeyDown(KeyCode.S))
+                        DisminuyeDistancia();
+                    else
+                    {
+                        AsignaTecla();
+                        tiempoFlechaActiva = 0;
+                    }
+                    break;
+                case 2:
+                    if (!Input.GetKeyDown(KeyCode.A))
+                        DisminuyeDistancia();
+                    else
+                    {
+                        AsignaTecla();
+                        tiempoFlechaActiva = 0;
+                    }
+                    break;
+                case 3:
+                    if (!Input.GetKeyDown(KeyCode.W))
+                        DisminuyeDistancia();
+                    else
+                    {
+                        AsignaTecla();
+                        tiempoFlechaActiva = 0;
+                    }
+                    break;
+            }
+        }
     }
 }

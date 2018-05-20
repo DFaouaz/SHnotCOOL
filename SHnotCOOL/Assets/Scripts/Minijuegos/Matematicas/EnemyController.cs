@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
-{
-    float alto, ancho, camaraPosX, camaraPosY;
+public class EnemyController : MonoBehaviour {
+    float alto, camaraPosX, camaraPosY;
     float randomX, randomY, maxX, minX, maxY, minY, timeChange = 0;
     public float moveSpeed;
 
     void Start() {
 
         alto = Camera.main.orthographicSize * 2;
-        ancho = alto * Camera.main.aspect;
-
         camaraPosX = Camera.main.transform.position.x;
         camaraPosY = Camera.main.transform.position.y;
 
