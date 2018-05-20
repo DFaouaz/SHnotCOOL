@@ -15,6 +15,7 @@ public class AparecenRandoms : MonoBehaviour {
     public Text operacionTexto, progreso;
     public float tiempo;
 	float tiempoAux;
+	bool fin = false;
 
     void Start() {
 
@@ -27,17 +28,19 @@ public class AparecenRandoms : MonoBehaviour {
     }
 
     void Update() {
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta && GameManager.instance.matematicasScore <= 10 && !fin) {
 			tiempoAux -= Time.deltaTime;
 			if (tiempoAux <= 0 || copiaColeccionable == null) {
 				GeneraSolucion ();
 				ActualizaAspecto ();
 			}
+			if (GameManager.instance.matematicasScore == 10) {
+				fin = true;
+				GameManager.instance.FinExamenMatematicas ();
+			}				
 		}
-		if (GameManager.instance.matematicasScore >= 10) {
+		else if (GameManager.instance.matematicasScore > 10) {
 			GameManager.instance.matematicasScore = 10;
-			ActualizaAspecto ();
-			GameManager.instance.FinExamenMatematicas ();
 		}
 
         
