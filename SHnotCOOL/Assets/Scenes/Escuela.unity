@@ -41135,7 +41135,7 @@ MonoBehaviour:
   entranceName: Aula de Historia
   entranceConnection: {fileID: 1454903597}
   examSceneName: Historia
-  trimestreAparicion: 2
+  trimestreAparicion: 1
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
   isRoom: 1
@@ -50506,7 +50506,7 @@ MonoBehaviour:
   entranceName: Aula de Lengua
   entranceConnection: {fileID: 1454903597}
   examSceneName: Lengua
-  trimestreAparicion: 1
+  trimestreAparicion: 2
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
   isRoom: 1
@@ -96677,8 +96677,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac9cc9bd8b59fe408a03dc8835372af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  probInicial: 20
-  tiempo: 20
 --- !u!1 &2054791205
 GameObject:
   m_ObjectHideFlags: 0
