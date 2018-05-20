@@ -96677,8 +96677,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac9cc9bd8b59fe408a03dc8835372af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  probInicial: 100
-  time: 20
+  probInicial: 20
+  tiempo: 20
 --- !u!1 &2054791205
 GameObject:
   m_ObjectHideFlags: 0

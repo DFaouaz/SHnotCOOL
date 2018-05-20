@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Pick : MonoBehaviour {
+
     Text textItems;
     public AudioClip soundPick;
     static int total;
 
     void Start () {
+
         textItems = GameObject.FindGameObjectWithTag("Items").GetComponent<Text>();
         total++;
         UpdateItems();

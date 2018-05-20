@@ -3,24 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class cambioMaton : MonoBehaviour {
-	public int probInicial = 20;
-	public int time = 20;
-   
+public class CambioMaton : MonoBehaviour {
+
+	public int probInicial, tiempo;
 
 	void Start () {
-		Invoke("probMaton", time);
+
+		Invoke("ProMaton", tiempo);
 	}
 	
-    void probMaton() {
+    void ProMaton()
+    {
         int prob = Random.Range(0, 100);
-		if (prob < (probInicial - ((GameManager.instance.numFriends * probInicial) / GameManager.instance.maxFriends)) && GameManager.instance.matonAble
-			&& !GameManager.instance.ventanaAbierta && !GameManager.instance.pauseMode)
+
+		if (prob < (probInicial - ((GameManager.instance.numFriends * probInicial) / GameManager.instance.maxFriends)) && GameManager.instance.matonAble 
+            && !GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
         {
 			GameManager.instance.lastPosPasillos = GameObject.FindGameObjectWithTag ("Player").transform.position;
 			GameManager.instance.lastPosEntrance = Vector3.zero;
             SceneManager.LoadScene("Maton");
         }
-        Invoke("probMaton", time);
+        Invoke("ProMaton", tiempo);
     }
 }

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Save : MonoBehaviour {
+
     GameObject respawn;
     Animator animator;
 
     void Start () {
+
         respawn = GameObject.FindGameObjectWithTag("Respawn");
         animator = GetComponent<Animator>();
     }
