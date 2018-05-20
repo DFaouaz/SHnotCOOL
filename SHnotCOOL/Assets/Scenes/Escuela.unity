@@ -23271,6 +23271,7 @@ GameObject:
   - component: {fileID: 290796274}
   - component: {fileID: 290796273}
   - component: {fileID: 290796272}
+  - component: {fileID: 290796275}
   m_Layer: 5
   m_Name: TrueInfoPanel
   m_TagString: Untagged
@@ -23343,6 +23344,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 290796270}
+--- !u!114 &290796275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 290796270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbec170e95b9b3f49b6747bf219021a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mesagePanel: {fileID: 1095584367}
+  text: {fileID: 0}
+  mesage: 
 --- !u!1 &299876649
 GameObject:
   m_ObjectHideFlags: 0
@@ -52089,14 +52104,6 @@ CompositeCollider2D:
         Y: 272812512
       - X: 207812496
         Y: 272812512
-    - - X: 110000000
-        Y: 206250000
-      - X: 100000000
-        Y: 206250000
-      - X: 100000000
-        Y: 190000000
-      - X: 110000000
-        Y: 190000000
     - - X: 350000000
         Y: 206250000
       - X: 340000000
@@ -52104,6 +52111,14 @@ CompositeCollider2D:
       - X: 340000000
         Y: 190000000
       - X: 350000000
+        Y: 190000000
+    - - X: 110000000
+        Y: 206250000
+      - X: 100000000
+        Y: 206250000
+      - X: 100000000
+        Y: 190000000
+      - X: 110000000
         Y: 190000000
     - - X: 160000000
         Y: 204062496
@@ -52482,14 +52497,14 @@ CompositeCollider2D:
       - {x: 20.125, y: 27.5}
       - {x: 20.21875, y: 27.281252}
       - {x: 20.78125, y: 27.281252}
-    - - {x: 11, y: 20.625}
-      - {x: 10, y: 20.625}
-      - {x: 10, y: 19}
-      - {x: 11, y: 19}
     - - {x: 35, y: 20.625}
       - {x: 34, y: 20.625}
       - {x: 34, y: 19}
       - {x: 35, y: 19}
+    - - {x: 11, y: 20.625}
+      - {x: 10, y: 20.625}
+      - {x: 10, y: 19}
+      - {x: 11, y: 19}
     - - {x: 16, y: 20.40625}
       - {x: 13, y: 20.40625}
       - {x: 13, y: 18.625}
@@ -58376,7 +58391,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747835608}
+      - m_Target: {fileID: 290796275}
         m_MethodName: ClosePanel
         m_Mode: 1
         m_Arguments:

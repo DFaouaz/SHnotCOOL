@@ -29,7 +29,7 @@ public class InfoPanel : MonoBehaviour
 		if (collision.gameObject.CompareTag("Player"))
         {
             OpenPanel();
-			this.gameObject.SetActive (false);
+			Destroy (this.gameObject);
         }
     }
 }

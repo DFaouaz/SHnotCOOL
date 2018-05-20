@@ -37,7 +37,8 @@ public class PersistantTriggers : MonoBehaviour {
 
 	void UpdateTriggers(){
 		foreach (TriggerPers i in triggers) {
-			i.UpdateTrigger ();
+			if (i != null)
+				i.UpdateTrigger ();
 		}
 	}
 
