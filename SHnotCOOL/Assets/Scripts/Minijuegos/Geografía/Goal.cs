@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Goal : MonoBehaviour {
+    public Text finJuego;
     Text text;
     public float timeLimit;
 
@@ -21,6 +22,10 @@ public class Goal : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            if (GameManager.instance.GeoScore >= 5)
+                finJuego.text = "No esta mal";
+            else
+                finJuego.text = "Das asco";
             GameManager.instance.FinExamenGeografia();
         }
     }
@@ -33,6 +38,12 @@ public class Goal : MonoBehaviour {
             text.text = timeLimit.ToString();
         }
         else if (timeLimit == 0)
+        {
+            if (GameManager.instance.GeoScore >= 5)
+                finJuego.text = "No esta mal";
+            else
+                finJuego.text = "Das asco";
             GameManager.instance.FinExamenGeografia();
+        }
     }
 }

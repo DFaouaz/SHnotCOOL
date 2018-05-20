@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DeadZone : MonoBehaviour {
     GameObject player, respawn;
     Text textVidas;
+    public Text finJuego;
     public int vidas;
 
     void Start() {
@@ -34,7 +35,13 @@ public class DeadZone : MonoBehaviour {
             vidas--;
             UpdateVidas();
             if (vidas == 0)
+            {
+                if (GameManager.instance.GeoScore >= 5)
+                    finJuego.text = "No esta mal";
+                else
+                    finJuego.text = "Das asco";
                 GameManager.instance.FinExamenGeografia();
+            }
         }
     }
 }
