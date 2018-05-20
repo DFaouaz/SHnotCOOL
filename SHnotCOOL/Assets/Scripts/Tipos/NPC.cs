@@ -37,7 +37,7 @@ public class NPC : Mission {
 
 
    public void LeeDialogo() {
-		StreamReader file = new StreamReader ("Dialogos.txt");
+		StreamReader file = new StreamReader ("Dialogos.txt",System.Text.Encoding.Default);
         string linea;
 		//Buscamos el nombre
         do{
