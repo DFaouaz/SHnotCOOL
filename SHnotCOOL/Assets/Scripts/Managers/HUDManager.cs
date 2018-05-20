@@ -211,8 +211,9 @@ public class HUDManager : MonoBehaviour {
 		if (!wholeEmpty ()) {
 			DialogueManager.instance.AbreCierraDialogueCanvas (); 					//Cierra
 			MessageManager.instance.CloseMessage();	//Desactiva el mensaje
-			AbreYCierraInventario ();
 			modoDarObjeto = true;
+			modoSustitucion = false;
+			AbreYCierraInventario ();
 		}            
 	}
 

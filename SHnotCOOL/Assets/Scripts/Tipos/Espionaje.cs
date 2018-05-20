@@ -12,13 +12,19 @@ public class Espionaje : MonoBehaviour {
 		if (other.tag == "Player")
 			SacaConversacion ();			
     }
+
+	void OnTriggerExit2D(Collider2D other){
+		if (other.tag == "Player")
+			Destroy (this.gameObject);
+	}
+
 	void SacaConversacion(){
 		//TP de los personajes espaciales
 		if ((NPCMision.nombrePersonaje == "Delegada" && NPCMision.indiceMision == 2) ||
 			(NPCMision.nombrePersonaje == "Minusvalido" && NPCMision.indiceMision == 0))
 			NPCMision.transform.position = transform.position;
 		Debug.Log ("Saca conversacion espia");
-		DialogueManager.instance.frasesEspia = NPCMision.pasos.Dequeue ().frasesEspia;
+		DialogueManager.instance.frasesEspia = new Queue<FraseEspia>(NPCMision.pasos.Dequeue ().frasesEspia);
 		DialogueManager.instance.AbreCierraDialogueCanvas ();
 		DialogueManager.instance.MuestraFrasesEspia ();
 		DialogueManager.instance.ableInput = true;

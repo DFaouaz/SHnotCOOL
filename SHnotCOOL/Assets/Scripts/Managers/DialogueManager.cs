@@ -102,8 +102,8 @@ public class DialogueManager : MonoBehaviour {
 		MuestraFrases ();
 	}
 	public void DarObjeto(){
-		if(currentNPC.nombrePersonaje != "Negro")
-			HUD.tagDarObjeto = currentNPC.pasos.ToArray () [0].tagObjeto;
+		if (currentNPC.nombrePersonaje != "Negro")
+			HUD.tagDarObjeto = string.Copy (currentNPC.pasos.ToArray () [0].tagObjeto);
 		HUD.GiveObject ();
 	}
 	public void CompletarMision(){
@@ -154,7 +154,7 @@ public class DialogueManager : MonoBehaviour {
 						HUD.tagDarObjeto = null;
 					}
 				}else if(currentNPC.pasos.ToArray () [0] != null){
-					HUD.tagDarObjeto = currentNPC.pasos.ToArray () [0].tagObjeto;					
+					HUD.tagDarObjeto = string.Copy(currentNPC.pasos.ToArray () [0].tagObjeto);					
 					if (HUD.ExistingObject ()) {
 						botonDarObjeto.gameObject.SetActive (true);
 						HUD.tagDarObjeto = null;
@@ -203,12 +203,15 @@ public class DialogueManager : MonoBehaviour {
 		ActualizaDialogoEspia ();
 	}
 	public void ActualizaDialogoEspia(){
-		FraseEspia fe = frasesEspia.Dequeue();
-		if (fe != null) {
-			sentence.text = fe.frase;
-			nombre.text = fe.nombre;
+		if (frasesEspia.ToArray () [0] != null) {
+			FraseEspia fe = frasesEspia.Dequeue ();
+			if (fe != null) {
+				sentence.text = fe.frase;
+				nombre.text = fe.nombre;
+			} else
+				FinConversacion ();	
 		} else
-			FinConversacion ();	
+			FinConversacion ();
 	}
 
 	public void MuestraFrases(){

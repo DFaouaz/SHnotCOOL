@@ -14529,11 +14529,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4734935068044352, guid: 32ca1ed55c62f5846986fdfd4fda616a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -83
+      value: 25.23
       objectReference: {fileID: 0}
     - target: {fileID: 4734935068044352, guid: 32ca1ed55c62f5846986fdfd4fda616a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -85.6
+      value: 87.73
       objectReference: {fileID: 0}
     - target: {fileID: 4734935068044352, guid: 32ca1ed55c62f5846986fdfd4fda616a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -41135,7 +41135,7 @@ MonoBehaviour:
   entranceName: Aula de Historia
   entranceConnection: {fileID: 1454903597}
   examSceneName: Historia
-  trimestreAparicion: 1
+  trimestreAparicion: 2
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
   isRoom: 1
@@ -63628,11 +63628,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4912391867452184, guid: b1d9370908ab8a542988323e92947cb9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 22.84
+      value: 59.44
       objectReference: {fileID: 0}
     - target: {fileID: 4912391867452184, guid: b1d9370908ab8a542988323e92947cb9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 87.8
+      value: 7.67
       objectReference: {fileID: 0}
     - target: {fileID: 4912391867452184, guid: b1d9370908ab8a542988323e92947cb9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -83822,7 +83822,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4401138192730628, guid: b4068663b1dc02c47970dd3ad79eac8b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -135.5
+      value: -134.326
       objectReference: {fileID: 0}
     - target: {fileID: 4401138192730628, guid: b4068663b1dc02c47970dd3ad79eac8b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -87634,11 +87634,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4644471717153392, guid: 7943ece2bfdded84f82e55162bc3cd41, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 60
+      value: 13.4
       objectReference: {fileID: 0}
     - target: {fileID: 4644471717153392, guid: 7943ece2bfdded84f82e55162bc3cd41, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.8
+      value: 16.9
       objectReference: {fileID: 0}
     - target: {fileID: 4644471717153392, guid: 7943ece2bfdded84f82e55162bc3cd41, type: 2}
       propertyPath: m_LocalPosition.z
@@ -92200,11 +92200,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4812488727313642, guid: 9b4c843302aa96f4a855f1a2c1c4a751, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -15.7
+      value: -135.545
       objectReference: {fileID: 0}
     - target: {fileID: 4812488727313642, guid: 9b4c843302aa96f4a855f1a2c1c4a751, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 88.6
+      value: 5.96
       objectReference: {fileID: 0}
     - target: {fileID: 4812488727313642, guid: 9b4c843302aa96f4a855f1a2c1c4a751, type: 2}
       propertyPath: m_LocalPosition.z
@@ -94146,11 +94146,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4218072558169672, guid: 6bfc17d2b3b1694419ce2f5358d17182, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -130.6
+      value: -77.56
       objectReference: {fileID: 0}
     - target: {fileID: 4218072558169672, guid: 6bfc17d2b3b1694419ce2f5358d17182, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.3
+      value: -84.43
       objectReference: {fileID: 0}
     - target: {fileID: 4218072558169672, guid: 6bfc17d2b3b1694419ce2f5358d17182, type: 2}
       propertyPath: m_LocalPosition.z
@@ -94624,7 +94624,7 @@ MonoBehaviour:
   entranceName: "Aula de Geograf\xEDa"
   entranceConnection: {fileID: 1454903597}
   examSceneName: Geografia
-  trimestreAparicion: 1
+  trimestreAparicion: 3
   pos: {x: 0, y: 0, z: 0}
   isClass: 1
   isRoom: 1

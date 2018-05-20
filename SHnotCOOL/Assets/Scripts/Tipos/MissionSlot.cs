@@ -14,7 +14,7 @@ public class MissionSlot : MonoBehaviour {
 		if (mision != null) {
 			nombre.text = mision.nombrePersonaje;
 			titulo.text = mision.tituloDeLaMision;
-			paso.text = mision.pasos.ToArray () [0].lineaPaso;
+			paso.text = string.Copy (mision.pasos.ToArray () [0].lineaPaso);
 		}else{
 			VaciaSlot();
 		}
