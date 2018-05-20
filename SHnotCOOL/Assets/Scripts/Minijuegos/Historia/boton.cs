@@ -2,38 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class boton : MonoBehaviour {
-	public int index;
-	opcion MiOpcion;
-	int valor;
 
-	Text texto;
-	void Start () {
-		texto = GetComponentInChildren<Text> ();
-		AsignarOpcion ();
-	
-	}
+public class Boton : MonoBehaviour {
 
+    public int index;
+    Opcion miOpcion;
+    Text text;
+    int value;
 
-	void Update()
-	{
-		if(!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
-		
-			AsignarOpcion ();
-		
-	}
-	void AsignarOpcion()
-	{
-		MiOpcion = AnswerManager.instance.getOpcion (index);
-		texto.text = MiOpcion.frase;
-		valor = MiOpcion.valor;
+    void Start() {
 
-	}
-	public void clikado()
-	{
-        AnswerManager.instance.setDanio(valor);
-        AnswerManager.instance.setPulsado (true);
-		AnswerManager.instance.InitButtons ();
-		AsignarOpcion ();
-	}
+        text = GetComponentInChildren<Text>();
+        AsignarOpcion();
+    }
+
+    void Update() {
+
+        if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+            AsignarOpcion();
+    }
+
+    void AsignarOpcion()
+    {
+        miOpcion = AnswerManager.instance.GetOpcion(index);
+        text.text = miOpcion.frase;
+        value = miOpcion.valor;
+    }
+
+    public void Clickado()
+    {
+        AnswerManager.instance.SetDamage(value);
+        AnswerManager.instance.SetPulsado(true);
+        AnswerManager.instance.InitButtons();
+        AsignarOpcion();
+    }
 }

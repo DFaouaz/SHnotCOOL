@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class DeadZone : MonoBehaviour {
-    GameObject player, respawn;
-    Text textVidas;
+
     public Text finJuego;
     public int vidas;
+    GameObject player, respawn;
+    Text textVidas;
 
     void Start() {
+
         player = GameObject.FindGameObjectWithTag("Player");
         respawn = GameObject.FindGameObjectWithTag("Respawn");
         textVidas = GameObject.FindGameObjectWithTag("Vidas").GetComponent<Text>();
@@ -36,10 +38,7 @@ public class DeadZone : MonoBehaviour {
             UpdateVidas();
             if (vidas == 0)
             {
-                if (GameManager.instance.GeoScore >= 5)
-                    finJuego.text = "No esta mal";
-                else
-                    finJuego.text = "Das asco";
+                finJuego.text = "Das asco";
                 GameManager.instance.FinExamenGeografia();
             }
         }

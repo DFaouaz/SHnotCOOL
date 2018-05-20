@@ -4,16 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Goal : MonoBehaviour {
+
     public Text finJuego;
-    Text text;
     public float timeLimit;
+    Text text;
 
     void Start() {
+
         text = GameObject.FindGameObjectWithTag("Time").GetComponent<Text>();
         text.text = timeLimit.ToString();
     }
 
     void Update() {
+
 		if(!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
 			Timer();
     }
@@ -39,10 +42,7 @@ public class Goal : MonoBehaviour {
         }
         else if (timeLimit == 0)
         {
-            if (GameManager.instance.GeoScore >= 5)
-                finJuego.text = "No esta mal";
-            else
-                finJuego.text = "Das asco";
+            finJuego.text = "Das asco";
             GameManager.instance.FinExamenGeografia();
         }
     }
