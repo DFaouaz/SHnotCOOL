@@ -70,7 +70,8 @@ public class Entrance : MonoBehaviour {
 	}
 
 	public void ChooseExam(){
-		if (isClass) {
+        if (isClass)
+        {
             if (examSceneName == "Matematicas" && !GameManager.instance.finMates)
             {
                 GameManager.instance.exam = new Examen(0, trimestreAparicion);
@@ -103,9 +104,13 @@ public class Entrance : MonoBehaviour {
                 else
                     GameManager.instance.marcaExamen = false;
             }
-            }
-        else
+            else 
+                GameManager.instance.marcaExamen = false;
+        }
+        else        
             GameManager.instance.exam = new Examen(4, 0);
+
+        
     }
 	public void CheckMaton(){
 		if (isRoom)
