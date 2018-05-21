@@ -29,7 +29,7 @@ public class Palabra : MonoBehaviour {
 	}
 
 	void EligePalabra(){
-		entrada = new StreamReader ("Palabras.txt",System.Text.Encoding.Default);
+		entrada = new StreamReader ("Palabras.txt",System.Text.Encoding.UTF8);
 		string [] palabras = entrada.ReadToEnd ().Split ('.');
 		palabraElegida = palabras [Random.Range (0, palabras.Length)].ToUpper();
 		Inicializa ();

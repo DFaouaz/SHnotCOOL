@@ -9,7 +9,7 @@
 -25 Jugador profesional de baloncesto
 -35 Entrenador Pokemon
 -22 Amigo intimo de Stalin
--17 Murio a los 88 aÃ±os
+-17 Murio a los 88 años
 -20 Era el fhurry de Alemania 
 -35 En realidad no murio sigue viviendo en la luna
 -99 No hizo nada malo
@@ -27,5 +27,5 @@
 -16 Fue el Lider del segundo Reich aleman
 -26 Es un personaje de la saga Harry Potter
 -19 Su nombre real era Adolf Ferdinand Hitler
--15 Su matrimonio con Eva Braun duro cinco aÃ±os
+-15 Su matrimonio con Eva Braun duro cinco años
 
