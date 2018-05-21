@@ -100,7 +100,7 @@ public class BarrasDeVida : MonoBehaviour {
         {
             enemyAnimator.SetBool("Resucitado", true);
             resucitado = true;
-            enemigo.ModificaVida(-100);
+            enemigo=new Health();
             ActualizaBarras();
         }
 

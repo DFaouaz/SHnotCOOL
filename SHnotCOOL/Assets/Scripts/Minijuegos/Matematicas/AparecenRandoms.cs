@@ -19,7 +19,7 @@ public class AparecenRandoms : MonoBehaviour {
     void Start() {
 
         alto = (Camera.main.orthographicSize * 2) - 0.5f;
-        ancho = (ancho * Camera.main.aspect) - 0.5f;
+        ancho = (alto * Camera.main.aspect) - 0.5f;
         camaraPosX = (Camera.main.transform.position.x) - 0.5f;
         camaraPosY = (Camera.main.transform.position.y) - 0.5f;
 
@@ -56,7 +56,7 @@ public class AparecenRandoms : MonoBehaviour {
 			Destroy (copiaColeccionable);
 
 		tiempoAux = tiempo;
-		pos = new Vector2 (Random.Range (camaraPosX - alto / 2, camaraPosX - 1 + ancho / 2), Random.Range (camaraPosY + 1 - alto / 2, camaraPosY + alto / 2));
+		pos = new Vector2 (Random.Range (camaraPosX - ancho / 2, camaraPosX  + ancho / 2), Random.Range (camaraPosY + 1 - alto / 2, camaraPosY + alto / 2));
 		copiaColeccionable = Instantiate (coleccionable, pos, Quaternion.identity);
 
 		int resultado = CalculaOperacion ();

@@ -32,8 +32,9 @@ public class Player : MonoBehaviour {
 				// Comprobar la entrada del usuario
 				CheckInput ();
 				textoTiempo.text = "";
-			} else
-				textoTiempo.text = (5 - ((int)tiempo)).ToString ();
+			} else 
+                if (tiempo<=5)
+				    textoTiempo.text = (5 - ((int)tiempo)).ToString ();
 			tiempo += Time.deltaTime;
 		}
 	}
@@ -102,15 +103,12 @@ public class Player : MonoBehaviour {
 	public void Dead()
 	{
         playerAnim.SetLayerWeight(2,2f);
-    
-		Invoke("Reset", 1.0f);
-	}
+        alive = false;
+        PasillosManager.instance.PlayerDead();
 
-	// La llamada a PlayerDead se hace con un Invoke a un método distinto a Dead
-	// para que dé tiempo a ver la animación de muerte de la rana
-	void Reset () {
-		PasillosManager.instance.PlayerDead ();
-	}
+    }
+
+		
 
     public void HandleAnimatorLayers()
     {

@@ -158,9 +158,11 @@ public class GameManager : MonoBehaviour {
         Invoke("CambiaAEscenaPrincipal", 0.3f);
 		Time.timeScale = 0.1f;
     }
-    /*public void FinPasillos(){
-		Invoke("CambiaAEscenaPrincipal", 0.3f);
-    }*/
+    public void FinPasillos(){
+       
+		Invoke("CambiaAEscenaPrincipal", 0);
+        Time.timeScale = 0.1f;
+    }
     public void FinMaton(){
 		Invoke("CambiaAEscenaPrincipal", 0);
 

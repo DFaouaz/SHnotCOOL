@@ -50,7 +50,8 @@ public class PasillosManager : MonoBehaviour
 	public int TiempoRestante()
 	{
 		if (tiempo < 0) {
-            SceneManager.LoadScene("Escuela");
+            GameManager.instance.FinPasillos();
+            
         }
 		return tiempo;
 	}
@@ -60,9 +61,9 @@ public class PasillosManager : MonoBehaviour
 		tiempo--;
 	}
 	public void Home ()
-	{
-        SceneManager.LoadScene("Escuela");
-	}
+    {
+        GameManager.instance.FinPasillos();
+    }
 
 
 
@@ -70,7 +71,7 @@ public class PasillosManager : MonoBehaviour
     // Si no: Reinicializa las variables y llama a Menu
     public void PlayerDead()
     {
-			SceneManager.LoadScene("Escuela");
+        GameManager.instance.FinPasillos();
         
     }
 }
