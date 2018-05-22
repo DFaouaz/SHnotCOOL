@@ -1145,6 +1145,7 @@ MonoBehaviour:
   trimestre: 1
   media: 0
   notaFinal: 0
+  marcaExamen: 0
 --- !u!4 &1225571200
 Transform:
   m_ObjectHideFlags: 0
@@ -2238,6 +2239,6 @@ MonoBehaviour:
   flechaArriba: {fileID: 1998561623}
   tiempo: {fileID: 2084381100}
   textoFin: {fileID: 1281111753}
-  decremento: 1.5
-  tiempoLimite: 15
-  tiempoCambioTecla: 1.5
+  decremento: 3
+  tiempoLimite: 10
+  tiempoCambioTecla: 0.75

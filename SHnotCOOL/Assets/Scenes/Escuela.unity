@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.3602941, g: 0.3602941, b: 0.3602941, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -14522,7 +14522,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.3602941, g: 0.3602941, b: 0.3602941, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -16381,7 +16381,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.3602941, g: 0.3602941, b: 0.3602941, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -16671,7 +16671,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.3602941, g: 0.3602941, b: 0.3602941, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -32741,7 +32741,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.3602941, g: 0.3602941, b: 0.3602941, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -49387,7 +49387,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.3602941, g: 0.3602941, b: 0.3602941, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -52191,14 +52191,6 @@ CompositeCollider2D:
         Y: 272812512
       - X: 207812496
         Y: 272812512
-    - - X: 350000000
-        Y: 206250000
-      - X: 340000000
-        Y: 206250000
-      - X: 340000000
-        Y: 190000000
-      - X: 350000000
-        Y: 190000000
     - - X: 110000000
         Y: 206250000
       - X: 100000000
@@ -52206,6 +52198,14 @@ CompositeCollider2D:
       - X: 100000000
         Y: 190000000
       - X: 110000000
+        Y: 190000000
+    - - X: 350000000
+        Y: 206250000
+      - X: 340000000
+        Y: 206250000
+      - X: 340000000
+        Y: 190000000
+      - X: 350000000
         Y: 190000000
     - - X: 160000000
         Y: 204062496
@@ -52584,14 +52584,14 @@ CompositeCollider2D:
       - {x: 20.125, y: 27.5}
       - {x: 20.21875, y: 27.281252}
       - {x: 20.78125, y: 27.281252}
-    - - {x: 35, y: 20.625}
-      - {x: 34, y: 20.625}
-      - {x: 34, y: 19}
-      - {x: 35, y: 19}
     - - {x: 11, y: 20.625}
       - {x: 10, y: 20.625}
       - {x: 10, y: 19}
       - {x: 11, y: 19}
+    - - {x: 35, y: 20.625}
+      - {x: 34, y: 20.625}
+      - {x: 34, y: 19}
+      - {x: 35, y: 19}
     - - {x: 16, y: 20.40625}
       - {x: 13, y: 20.40625}
       - {x: 13, y: 18.625}
@@ -74500,7 +74500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   escenaPrincipal: Escuela
   EscenaPiso2: Piso2
-  botonInteractuar: 101
+  botonInteractuar: 32
   lastEntrance: {fileID: 0}
   lastPosEntrance: {x: 0, y: 0, z: 0}
   lastEntranceName: 
@@ -92361,11 +92361,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4812488727313642, guid: 9b4c843302aa96f4a855f1a2c1c4a751, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -135.545
+      value: -15.49
       objectReference: {fileID: 0}
     - target: {fileID: 4812488727313642, guid: 9b4c843302aa96f4a855f1a2c1c4a751, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.96
+      value: 89.97
       objectReference: {fileID: 0}
     - target: {fileID: 4812488727313642, guid: 9b4c843302aa96f4a855f1a2c1c4a751, type: 2}
       propertyPath: m_LocalPosition.z
@@ -96922,8 +96922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac9cc9bd8b59fe408a03dc8835372af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  probInicial: 20
-  tiempo: 20
+  probInicial: 70
+  tiempo: 30
 --- !u!1 &2054791205
 GameObject:
   m_ObjectHideFlags: 0

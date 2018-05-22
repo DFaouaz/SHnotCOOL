@@ -1,4 +1,4 @@
-
+﻿
 Autista
 #
 Tabla...
@@ -20,6 +20,7 @@ Seremos amigos para siempre
 ##
 ¿Te molesto?
 La proxima vez no me acercaré tanto
+Si me das comida seguro que te sere de ayuda
 ##
 
 Deportista
