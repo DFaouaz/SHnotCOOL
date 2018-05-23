@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1207858205519028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.5, y: 88.5, z: 0}
+  m_LocalPosition: {x: 3.94, y: 88.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,6 +82,7 @@ MonoBehaviour:
   NombreColeccionable: Collar
   imagenRepresentacion: {fileID: 21300000, guid: 008bb7c54a27da343a9cd69720f75bdf,
     type: 3}
+  isTaken: 0
 --- !u!212 &212934222505941804
 SpriteRenderer:
   m_ObjectHideFlags: 1

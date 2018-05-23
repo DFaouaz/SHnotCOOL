@@ -18,7 +18,7 @@ public class DisparoBalas : MonoBehaviour {
 
     void Start () {
 
-        numeroProyectiles = Random.Range(4, 10);
+        numeroProyectiles = Random.Range(4, 6);
         tamañoCamara = Camera.main.orthographicSize;
         angulo = 360 / numeroProyectiles;
         anguloGiro = 90 / numeroProyectiles;

@@ -9,26 +9,32 @@ public class VidasLengua : MonoBehaviour {
 	Text texto;
 
 	void Start(){
+
 		texto = GetComponent<Text> ();
 		ActualizaVidas ();
 	}
 		
 
-	public void BajaVida(){
-		if (vidas > 0) {
+	public void BajaVida()
+    {
+		if (vidas > 0)
+        {
 			vidas--;
 			ActualizaVidas ();
-		} else if (vidas == 0) {
-			vidas--;
+		}
+        else if (vidas == 0)
+        {
 			GameManager.instance.FinExamenLengua ();
 		}
 	}
-	public void SubeVida(){
+	public void SubeVida()
+    {
 		vidas++;
 		ActualizaVidas ();
 	}
 
-	void ActualizaVidas(){
+	void ActualizaVidas()
+    {
 		texto.text = "Vidas: " + vidas;
 	}
 }

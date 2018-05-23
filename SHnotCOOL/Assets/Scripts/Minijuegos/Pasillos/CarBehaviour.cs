@@ -6,10 +6,7 @@ public class CarBehaviour : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col)
 	{
-		//Llama al metodo Dead de player cuando la rana es atropellada
-		if (col.gameObject.CompareTag ("player"))
+		if (col.gameObject.CompareTag ("Player"))
 			col.gameObject.GetComponent<Player> ().Dead ();
 	}
-
-	
 }

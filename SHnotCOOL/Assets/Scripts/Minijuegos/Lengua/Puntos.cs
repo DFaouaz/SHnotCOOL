@@ -11,31 +11,32 @@ public class Puntos : MonoBehaviour {
 	int puntosLlevados;
 
 
-	void Start(){
+	void Start() {
+
 		texto = GetComponent<Text> ();
 		ActualizaPuntos ();
 		puntosLlevados = 0;
 	
 	}
-	public void SubePuntos(){
-		
-			puntosLlevados += puntosPorLetra;
-			PuntosPorVida ();
-			ActualizaPuntos ();
-			//if (CompruebaAprobado ())
-			//	GameManager.instance.FinExamenLengua ();
-	}
-	void ActualizaPuntos(){
+
+    public void SubePuntos()
+    {
+        puntosLlevados += puntosPorLetra;
+        PuntosPorVida();
+        ActualizaPuntos();
+    }
+
+	void ActualizaPuntos()
+    {
 		if (FindObjectOfType<VidasLengua> ().vidas >= 5)
 			GameManager.instance.lenguaScore = 10;
 		else
 			GameManager.instance.lenguaScore = FindObjectOfType<VidasLengua> ().vidas * 2;
 		texto.text = "Puntos: " + GameManager.instance.lenguaScore;
 	}
-/*	bool CompruebaAprobado(){
-		return (GameManager.instance.lenguaScore >= puntosParaAprobar);
-	}*/
-	void PuntosPorVida(){
+
+	void PuntosPorVida()
+    {
 		if (puntosLlevados % 10 == 0)
 			FindObjectOfType<VidasLengua> ().SubeVida ();
 	}

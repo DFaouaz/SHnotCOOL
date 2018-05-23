@@ -20,7 +20,6 @@ TagManager:
   - Items
   - Enemigo
   - MensajeEscena
-  - player
   - GameManager
   - Limpieza
   - Arboles

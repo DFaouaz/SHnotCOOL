@@ -86,13 +86,13 @@ public class BarrasDeVida : MonoBehaviour {
     {
         if (player.DevuelveVida() <= 0)
         {
-            finHistoria.text = "Una Pena";
+            finHistoria.text = "Das asco";
             GameManager.instance.historiaScore = 0;
             GameManager.instance.FinExamenHistoria();
         }
         else if (enemigo.DevuelveVida() <= 0 && (GameManager.instance.trimestre != 3 || resucitado))
         {
-            finHistoria.text = "Bien Hecho";
+            finHistoria.text = "No está mal";
             GameManager.instance.historiaScore = (int)(player.DevuelveVida() / 10);
             GameManager.instance.FinExamenHistoria();
         }

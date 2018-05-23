@@ -12,7 +12,7 @@ public class PasillosManager : MonoBehaviour
     public static PasillosManager instance = null;
 
     // Añadimos las variables necesarias para almacenar información
-    int tiempo=20;
+    int tiempo = 20;
 
     //Ancho y altura del juego
     int ancho = 17, altura = 10;
@@ -37,22 +37,16 @@ public class PasillosManager : MonoBehaviour
     // para conseguir las funcionalidades que pretendamos incluir. 
 
     // Método que devuelve true si la posición queda fuera de los límites del juego
+
     public bool IsOutOfBounds(Vector2 position)
     {
         return (position.x < -9 || position.x >= ancho || position.y < 0 || position.y > altura);
     }
-
-
-
-
-    // Devuelve el valor de vidas
-
+    
 	public int TiempoRestante()
 	{
-		if (tiempo < 0) {
+		if (tiempo < 0)
             GameManager.instance.FinPasillos();
-            
-        }
 		return tiempo;
 	}
 
@@ -60,18 +54,14 @@ public class PasillosManager : MonoBehaviour
 	{
 		tiempo--;
 	}
+
 	public void Home ()
     {
         GameManager.instance.FinPasillos();
     }
 
-
-
-    // Si quedan vidas: Actualiza el valor de vidas y llama a Game
-    // Si no: Reinicializa las variables y llama a Menu
     public void PlayerDead()
     {
         GameManager.instance.FinPasillos();
-        
     }
 }

@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1565563060699380}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 69.25, y: 52.24, z: 0}
+  m_LocalPosition: {x: 68.5, y: 53.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,6 +82,7 @@ MonoBehaviour:
   NombreColeccionable: Anillo
   imagenRepresentacion: {fileID: 21300000, guid: 849c1800f00c21c4cb2bf640c426b258,
     type: 3}
+  isTaken: 0
 --- !u!212 &212208204483977474
 SpriteRenderer:
   m_ObjectHideFlags: 1

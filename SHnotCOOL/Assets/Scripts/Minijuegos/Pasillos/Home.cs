@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Home : MonoBehaviour {
 	
-	// Llama al método Game del GameManager
 	public void OnTriggerEnter2D(Collider2D other)
 	{
 		GameObject go = other.gameObject;
-        if (go.CompareTag("player"))
+        if (go.CompareTag("Player"))
             PasillosManager.instance.Home();
 	}
 }

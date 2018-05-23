@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 61136958008586668}
   - component: {fileID: 61442302889013080}
   - component: {fileID: 114455056398871404}
+  - component: {fileID: 114331399066796814}
   m_Layer: 0
   m_Name: Emos
   m_TagString: Untagged
@@ -396,6 +397,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5576861b1d559944f9cf8e813e5973fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114331399066796814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1662386461280982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab384e739d9f2594f983ae916d2cdb1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114440303583552962

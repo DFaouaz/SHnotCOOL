@@ -11,44 +11,55 @@ public class Letter : MonoBehaviour {
 	public Color colorCorrecto;
 	bool enPalabra = false;
 
-	void Start(){
+	void Start() {
+
 		caracter = GetComponent<TextMesh>();
 		caracter.text = letra.ToString();
-		if (BuscaLetra ()) {
+
+		if (BuscaLetra ())
+        {
 			caracter.color = colorCorrecto;
 			enPalabra = true;
 		}
 	}
 
-	void Update(){
+	void Update() {
+
 		CheckLetter ();
 	}
 
-	void OnTriggerEnter2D(Collider2D col){
-		if (col.tag == "DeathZone") {
-			if (enPalabra) {
+	void OnTriggerEnter2D(Collider2D collision)
+    {
+		if (collision.gameObject.CompareTag("DeathZone"))
+        {
+			if (enPalabra)
+            {
 				Destroy (this.gameObject);
 				GameManager.instance.Destapa(letra);
 			}
-			else{			
+			else
+            {			
 				Destroy (this.gameObject);
 				GameManager.instance.BajaVidaLengua ();
 			}
 		}
 	}
 
-	void CheckLetter(){
-		if (Input.inputString.ToLower() == letra.ToString ()) {
+	void CheckLetter()
+    {
+		if (Input.inputString.ToLower() == letra.ToString ())
+        {
 			Destroy (this.gameObject);
 			GameManager.instance.SubePuntosLengua ();
 		}
 	}
-	public bool BuscaLetra(){
+
+	public bool BuscaLetra()
+    {
 		int i = 0;
 		Palabra pal = FindObjectOfType<Palabra> ();
 		while (i < pal.palabraElegida.Length && letra.ToString() != pal.palabraElegida[i].ToString().ToLower())
 			i++;
 		return i < pal.palabraElegida.Length;
 	}
-
 }

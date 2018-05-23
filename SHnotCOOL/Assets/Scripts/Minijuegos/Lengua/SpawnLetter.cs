@@ -12,18 +12,18 @@ public class SpawnLetter : MonoBehaviour {
 	BoxCollider2D bounds;
 
 	void Start(){
-		//Caching del rect
+
 		bounds = GetComponent<BoxCollider2D>();
 		InvokeRepeating ("Spawn", firstSpawnDelay, spawnDelay);
 	}
 
-	void Spawn(){
-		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta) {
-			//Elige al azar una letra
+	void Spawn()
+    {
+		if (!GameManager.instance.pauseMode && !GameManager.instance.ventanaAbierta)
+        {
 			Vector2 randomPos = new Vector2 (Random.Range (bounds.bounds.min.x + 1, bounds.bounds.max.x - 1), this.gameObject.transform.position.y);
 			Letter letra = Instantiate<Letter> (letraPrefab, randomPos, Quaternion.identity);
 			letra.letra = (char)letras [Random.Range (0, letras.Length)];
 		}
 	}
-
 }
