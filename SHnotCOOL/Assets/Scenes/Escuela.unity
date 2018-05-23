@@ -29780,10 +29780,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8699786a88cada46839849c5743840d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entrance: {fileID: 0}
+  entrance: {fileID: 851432993}
   player: {fileID: 0}
   negro: {fileID: 0}
-  marcaExam: {fileID: 0}
+  marcaExam: {fileID: 1664690928}
 --- !u!1 &564227287
 GameObject:
   m_ObjectHideFlags: 0
