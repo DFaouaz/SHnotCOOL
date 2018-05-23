@@ -15,10 +15,10 @@ public class AnswerManager : MonoBehaviour {
 
     public static AnswerManager instance = null;
     public Text nombreEnemigo;
-
+	int tmaBuenas=10;
     float damage = 0;
-    List<Opcion> opciones;
-    Opcion[] buenas, malas, respuestas;
+    List<Opcion> opciones,buenas;
+    Opcion[]  totalBuenas,malas, respuestas;
     bool pulsado, vidaRestada = false;
 
     void Start() {
@@ -53,24 +53,26 @@ public class AnswerManager : MonoBehaviour {
         }
 
         opciones = new List<Opcion>();
-        buenas = new Opcion[10];
+		buenas = new List<Opcion>();
+		totalBuenas=new Opcion[10];
         malas = new Opcion[30];
         respuestas = new Opcion[4];
 
         int i = 0;
-        while (i < buenas.Length)
+		while (i < totalBuenas.Length)
         {
             fraseBuena = textoBuenas.ReadLine();
             lineasBuenas = fraseBuena.Split(' ');
-            buenas[i].valor = int.Parse(lineasBuenas[0]);
+			totalBuenas[i].valor = int.Parse(lineasBuenas[0]);
 
             for (int k = 1; k < lineasBuenas.Length; k++)
             {
-                buenas[i].frase += ' ';
-                buenas[i].frase += lineasBuenas[k];
+				totalBuenas[i].frase += ' ';
+				totalBuenas[i].frase += lineasBuenas[k];
             }
             i++;
         }
+
 
         int j = 0;
         while (j < malas.Length)
@@ -91,19 +93,22 @@ public class AnswerManager : MonoBehaviour {
 
     public void InitButtons()
     {
+		if (buenas.Count == 0)
+			RellenarBuenas ();
         int x, y, w, z;
-        x = Random.Range(0, buenas.Length);
+        x = Random.Range(0, buenas.Count);
         y = Random.Range(0, malas.Length);
         w = Random.Range(0, malas.Length);
         z = Random.Range(0, malas.Length);
 
         while (w == y)
-            w = Random.Range(0, buenas.Length);
+			w = Random.Range(0, buenas.Count);
 
         while (w == z || y == z)
             z = Random.Range(0, malas.Length);
 
         opciones.Add(buenas[x]);
+		buenas.RemoveAt (x);
         opciones.Add(malas[y]);
         opciones.Add(malas[w]);
         opciones.Add(malas[z]);
@@ -154,4 +159,10 @@ public class AnswerManager : MonoBehaviour {
     {
         vidaRestada = ok;
     }
+	public void RellenarBuenas()
+	{
+		for (int n = 0; n < totalBuenas.Length; n++) {
+			buenas.Add (totalBuenas [n]);
+		}
+	}
 }
