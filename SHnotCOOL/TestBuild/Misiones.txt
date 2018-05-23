@@ -1,4 +1,4 @@
-Negro-0-2-1-Comida para ¡frica
+Negro-0-2-1-Comida para √Åfrica
 #
 Tengo hambre...
 #
@@ -14,7 +14,7 @@ Negro-0-1-0
 Autista-0-2-1-En busca de la tabla perdida.
 #
 Hola...
-NiÒo busca a tabla
+Ni√±o busca a tabla
 Sin tabla estoy triste
 #
 ##
@@ -23,18 +23,18 @@ Busca la tabla y llevasela:Tabla
 ###
 Gracias por la tabla
 Te he echado de menos
-Tabla este niÒo es bueno 
+Tabla este ni√±o es bueno 
 ###
 
 Autista-1-0-1
 
 Timmy-0-2-1-La waifu se viste de braga
 #
-øNakama me harÌas un favor?
+¬øNakama me har√≠as un favor?
 Te acuerdas antes que te he hablado de mi nueva Waifu...
-pues ver·s, necesita ropa...
+pues ver√°s, necesita ropa...
 exactamente ropa interior
-øMe podri·s conseguir unas pantsus?
+¬øMe podri√°s conseguir unas pantsus?
 #
 ##
 Obten las bragas para Timmy:Pantsus
@@ -42,25 +42,25 @@ Obten las bragas para Timmy:Pantsus
 ###
 "snif" "snif"
 Hmmmm Muchas gracias,son perfectas
-Le van a quedar genial, ya ver·s
-No, perdÛn no la ver·s
-Es solo mÌa
+Le van a quedar genial, ya ver√°s
+No, perd√≥n no la ver√°s
+Es solo m√≠a
 ###
 
-Timmy-1-1-2-øEspia o es pio?.
+Timmy-1-1-2-¬øEspia o es pio?.
 #
-Dicen que en el baÒo est·n hablando mal de mi
+Dicen que en el ba√±o est√°n hablando mal de mi
 Mira a ver que dicen
 Menudos mierdas seguro que tienen envidia de mi
 #
 ##
-Ve al baÒo del primer piso a espiar:Espia1
+Ve al ba√±o del primer piso a espiar:Espia1
 --
 Britney:DICEN QUE ESTAS EMBARAZADA TIA!!
 Ariadna:Osea que mentira tia, jamas estare embarazada podria salir un rarito como Timmy
-Britney:Ya te digo, que persona mas rara antes le estaban criticando en el baÒo del segundo piso.
+Britney:Ya te digo, que persona mas rara antes le estaban criticando en el ba√±o del segundo piso.
 --
-Ve al baÒo del segundo piso a espiar:Espia2
+Ve al ba√±o del segundo piso a espiar:Espia2
 --
 Malote 1:Has visto al pringado de Timmy hoy
 Malote 2:Que asco de tio
@@ -68,17 +68,17 @@ Alumno (saliendo del vater):Es repugnante
 --
 ##
 ###
-Asi que se est·n metiendo conmigo ehh
-Ya ver·n, se las tendr·n que ver conmigo
-y con mi puÒo de furia de nivel 15
+Asi que se est√°n metiendo conmigo ehh
+Ya ver√°n, se las tendr√°n que ver conmigo
+y con mi pu√±o de furia de nivel 15
 ###
 
 Timmy-2-0-1
 
 Deportista-0-2-1-Apuntame esta
 #
-A ver pringao maÒana tengo un examen 
-no me vendrÌa nada mal tener unos buenos apuntes.
+A ver pringao ma√±ana tengo un examen 
+no me vendr√≠a nada mal tener unos buenos apuntes.
 Aunque dudo que tu los tengas
 asi que ya me estas buscando unos.
 #
@@ -87,15 +87,15 @@ Encuentra unos apuntes antes del examen:Apuntes
 ##
 ###
 Ah muchas graci...Digo...
-AsÌ me gusta que hagas lo que yo te ordene
+As√≠ me gusta que hagas lo que yo te ordene
 Me gusta ser el dominante
 Aunque a veces... ejem no he dicho nada
 ###
 
-Deportista-1-2-2-Que la fuerza te acompaÒe
+Deportista-1-2-2-Que la fuerza te acompa√±e
 #
 Maldito pardillo la otra vez me diste los apuntes de otro examen
-øSabes quÈ? Te voy a dar otra oportunidad
+¬øSabes qu√©? Te voy a dar otra oportunidad
 Este finde tengo partido y ando un poco falto de fuerzas
 Consigueme alguna medicina especial...
 Vamos que me traigas mis drogas
@@ -106,7 +106,7 @@ Busca los esteroides del Deportista:Esteroides
 ###
 Por lo menos esto lo has hecho bien
 (Se pincha)Esta mierda es buena
-Me siento mucho m·s masculino
+Me siento mucho m√°s masculino
 como el profesor de gimnasia,tiene unos biceps...
 ###
 
@@ -116,7 +116,7 @@ Delegada-0-2-1-El anillo de poder
 #
 Por favor ayudame estoy en un problema
 me han robado mi anillo preferido
-cuando me lo quitÈ a primera hora
+cuando me lo quit√© a primera hora
 No se que hacer, era una joya familiar
 por favor ayudame a encontrarlo...
 #
@@ -126,7 +126,7 @@ Recupera las joyas de la delegada:Anillo
 ###
 Ayyy muchas gracias
 eres un chico muy majo 
-te lo agradezco con todo mi corazÛn 
+te lo agradezco con todo mi coraz√≥n 
 A partir de ahora seremos buenos AMIGOS
 ###
 
@@ -134,7 +134,7 @@ Delegada-1-2-2-Un collar para dominarlos a todos
 #
 Ay justo el amigo al que estaba buscando
 soy un desastre, me ha vuelto a pasar
-me deje el collar en el baÒo cuando me lavaba la cara
+me deje el collar en el ba√±o cuando me lavaba la cara
 y al volver a buscarlo no estaba, alguien me lo ha debido quitar
 Me tienes que ayudar por favor
 Me lo regalo mi ex, pero me gustaba mucho
@@ -143,21 +143,21 @@ Me lo regalo mi ex, pero me gustaba mucho
 Recupera las joyas de la delegada II:Collar
 ##
 ###
-SÌ, es este
+S√≠, es este
 Eres genial de verdad 
-no podria estar m·s agradecida de tener un amigo como t˙
+no podria estar m√°s agradecida de tener un amigo como t√∫
 ###
 
 Delegada-2-1-3-El cerezo en flor
 #
 Muchas gracias por haberme ayudado durante el curso
 ...
-Me gustarÌa contarte algo muy importante 
-pero aquÌ no, vayamos a otro lugar ...
-un lugar m·s bonito.
+Me gustar√≠a contarte algo muy importante 
+pero aqu√≠ no, vayamos a otro lugar ...
+un lugar m√°s bonito.
 #
 ##
-Busca un lugar con ·rboles en el patio:Arboles
+Busca un lugar con √°rboles en el patio:Arboles
 --
 Delegada:...
 --
@@ -166,12 +166,12 @@ Delegada:...
 ...
 ...
 La verdad...
-desde que te conocÌ...
+desde que te conoc√≠...
 ...
 Me has caido muy bien y...
-Ay que verg¸enza...
-Bueno...venga ... lo voy a decir... a a ti .. te gustarÌa... 
-°°SALIR CONMIGO!!
+Ay que verg√ºenza...
+Bueno...venga ... lo voy a decir... a a ti .. te gustar√≠a... 
+¬°¬°SALIR CONMIGO!!
 ...
 ###
 
@@ -179,29 +179,29 @@ Delegada-3-0-1
 
 Pijas-0-1-3-Un secreto oscuro
 #
-Anda el niÒo raro
-Ariadna: Bueno ahora eres algo m·s conocido
+Anda el ni√±o raro
+Ariadna: Bueno ahora eres algo m√°s conocido
 Te permitiremos respirar nuestro aire,
-solo si averiguas lo que est· ocurriendo en el cuarto de la limpieza
-Se escuchan sonidos raros de ahÌ
+solo si averiguas lo que est√° ocurriendo en el cuarto de la limpieza
+Se escuchan sonidos raros de ah√≠
 #
 ##
 Averigua el secreto del Conserje:Limpieza
 --
-Conserje:NiÒo coge esto
-Autista:Pero esta h˙medo
-Autista:Y esto de aquÌ duro
-Conserje:Ya lo se, es que tiene que estar asÌ
-Autista:Nunca habia visto uno igual,mi padre no lo tiene asÌ
+Conserje:Ni√±o coge esto
+Autista:Pero esta h√∫medo
+Autista:Y esto de aqu√≠ duro
+Conserje:Ya lo se, es que tiene que estar as√≠
+Autista:Nunca habia visto uno igual,mi padre no lo tiene as√≠
 Conserje:Deja de quejarte y coge la escoba y la balleta cuanto antes
-Conserje:Que el vaso que has roto,alguien lo tendr· que recoger
+Conserje:Que el vaso que has roto,alguien lo tendr√° que recoger
 Conserje:Que cuando termines podremos seguir jugando
 --
 ##
 ###
-Ariadna:°°Dios que asco!!
+Ariadna:¬°¬°Dios que asco!!
 Britney:Ay que mantenerse alejadas de ese asqueroso pedofilo
-Ariadna: Ya tÌa, a saber lo que nos puede llegar a hacer
+Ariadna: Ya t√≠a, a saber lo que nos puede llegar a hacer
 ###
 
 Pijas-1-0-1
@@ -209,9 +209,9 @@ Pijas-1-0-1
 Emos-0-2-1-Entre el cuchillo y la pared
 #
 Emo 2:Esto da mucho asco
-Emo 1:Pues sÌ, deberÌamos hacer algo al respecto
-Emo 2:øQue sugieres?
-Emo 1:Mira quiÈn est· aquÌ, nos podrÌas ayudar
+Emo 1:Pues s√≠, deber√≠amos hacer algo al respecto
+Emo 2:¬øQue sugieres?
+Emo 1:Mira qui√©n est√° aqu√≠, nos podr√≠as ayudar
 Emo 1:Nos cansa ya este mundo
 Emo 1:Podemos ser tus amigos por un tiempo, si nos ayudas
 Emo 1:Necesitamos que nos traigas algo cortante
@@ -221,27 +221,27 @@ Consigue un cuchillo para los emos:Cuchillo
 ##
 ###
 Emo 2:Para que queremos un cuchillo, yo me tarigo el almuerzo ya cortado
-Emo 1:Ya te contarÈ, pero esto no creo que nos sirva
+Emo 1:Ya te contar√©, pero esto no creo que nos sirva
 Emo 1:Gracias de todas formas
 Emo 1:Probaremos aunque sea
 ###
 
-Emos-1-2-2-Al filo del maÒana
+Emos-1-2-2-Al filo del ma√±ana
 #
 Emo 2:Quiero acabar con todo
-Emo 1:Tengo la soluciÛn pero necesitamos ayuda
-Emos:Menos mal que est·s aquÌ, te vamos a pedir otro favor
-Emo 1:Al final el cuchillo que nos trajiste no nos sirviÛ
+Emo 1:Tengo la soluci√≥n pero necesitamos ayuda
+Emos:Menos mal que est√°s aqu√≠, te vamos a pedir otro favor
+Emo 1:Al final el cuchillo que nos trajiste no nos sirvi√≥
 Emo 1:Nos tienes que traer algo mas cortante y afilado
 #
 ##
-Consigue el c˙ter para los emos:Cuter
+Consigue el c√∫ter para los emos:Cuter
 ##
 ###
-Emo 2:Vale me ahs convencido, pero no se si me atreverÈ
-Emo 1:Si de verdad lo que quieres es acabar con este sufrimiento de mundo es lo ˙nico que nos salvar·
-Emo 2:Est· bien, yo confÌo en ti
-Emos:Gracias po el c˙ter, esto si que es lo que de verdad necesitamos
+Emo 2:Vale me ahs convencido, pero no se si me atrever√©
+Emo 1:Si de verdad lo que quieres es acabar con este sufrimiento de mundo es lo √∫nico que nos salvar√°
+Emo 2:Est√° bien, yo conf√≠o en ti
+Emos:Gracias po el c√∫ter, esto si que es lo que de verdad necesitamos
 ###
 
 Emos-2-0-1
@@ -250,7 +250,7 @@ Minusvalido-0-1-1-A todo Gas
 #
 Necesito ir al taller, pero esta en el piso de arriba
 Yo no puedo subir escaleras por razones obvias
-PodrÌas hecharme una mano, bueno las dos mejor
+Podr√≠as hecharme una mano, bueno las dos mejor
 #
 ##
 LLeva al minusvalido al taller:Espia3
@@ -258,11 +258,11 @@ LLeva al minusvalido al taller:Espia3
 Minusvalido:Perfecto, muchas gracias amigo
 Minusvalido:Espero que no haya sido muy pesado
 Minusvalido:Luego a ver como bajo...
-Minusvalido:Bueno hasta la prÛxima
+Minusvalido:Bueno hasta la pr√≥xima
 --
 ##
 ###
-Ahora tendrÈ que pensar una manera para poder bajar
+Ahora tendr√© que pensar una manera para poder bajar
 ###
 
 Minusvalido-1-2-2-Saliva o Aceite?
@@ -270,7 +270,7 @@ Minusvalido-1-2-2-Saliva o Aceite?
 Hola de nuevo
 Buah tengo otro problema, resulta que me chirrian las ruedas
 Necesito engrasarlas, puedes ayudarme
-Me vendrÌa bien algo con que lubricarlas
+Me vendr√≠a bien algo con que lubricarlas
 #
 ##
 Busca lubricante para la silla:Aceite
@@ -287,25 +287,25 @@ Minusvalido-2-0-1
 AlKaboom-0-2-2-Rogue two
 #
 Hola ando un poco perdido
-Estoy buscando una clase en especial pero no se donde est·
-øMe ayudas?
-Si pudieses conseguirme unos planos de la escuela serÌa genial
-AsÌ ya no me perderÌa m·s
+Estoy buscando una clase en especial pero no se donde est√°
+¬øMe ayudas?
+Si pudieses conseguirme unos planos de la escuela ser√≠a genial
+As√≠ ya no me perder√≠a m√°s
 Jejeje
 #
 ##
 Busca los planos de la escuela:Planos
 ##
 ###
-Jejeje, vale con esto ya podrÈ poner en marcha mi plan...
-Quiero decir, que podrÈ encontrar la clase que buscaba
+Jejeje, vale con esto ya podr√© poner en marcha mi plan...
+Quiero decir, que podr√© encontrar la clase que buscaba
 Gracias
 ###
 
 AlKaboom-1-2-3-Objetivo enCubierto
 #
 Necesito tu ayuda otra vez, estoy haciendo un trabajo de ciencias
-Me hace falta algun objeto met·lico
+Me hace falta algun objeto met√°lico
 Lo que sea, me da igual, eso si que sea metal
 #
 ##
@@ -313,15 +313,15 @@ Consigue objetos metalicos:Cubiertos
 ##
 ###
 Esto sirve, gracias
-Adem·s pesan un poco, saldr·n con fuerza
-Y est·n afilados
+Adem√°s pesan un poco, saldr√°n con fuerza
+Y est√°n afilados
 ###
 
 AlKaboom-2-0-1
 
 Chino-0-2-1-Lluvia de albondigas
 #
-Te voy a pedil un favol, si me tlaes unas albÛndigas de la cafetelia selemos buenos amigos
+Te voy a pedil un favol, si me tlaes unas alb√≥ndigas de la cafetelia selemos buenos amigos
 No tlanquilo no son pala mi, yo no como esto
 Me gusta otlo tipo de calne
 #
@@ -331,7 +331,7 @@ Obten unas albondigas:Albondigas
 ###
 Glacias, con esto no taldale mucho en conseguil lo que quelia 
 Se le ve muy sabloso
-Ahola solo queda sepalal¥le de este tonto
+Ahola solo queda sepalal¬¥le de este tonto
 ###
 
 Chino-1-2-2-Mastelchef
@@ -354,10 +354,10 @@ Chino-2-0-1
 Conserje-0-2-1-Un dulce prohibido
 #
 Hola muchacho
-øNecesitabas algo?
-Si quieres hablar podemos ir a un lugar m·s privado
+¬øNecesitabas algo?
+Si quieres hablar podemos ir a un lugar m√°s privado
 Como... el cuarto de la limpieza...
-øNo?, bueno pues yo si que necesito algo
+¬øNo?, bueno pues yo si que necesito algo
 Mira vas a traerme algunos dulces, para...
 Tu traemelos
 #
@@ -365,8 +365,8 @@ Tu traemelos
 Adquiere carmelos para las actividades sospechosas del conserje:Caramelos
 ##
 ###
-øCaramelos?, bueno si con esto valdr·
-A vosotros los niÒos os gustan mucho eh
+¬øCaramelos?, bueno si con esto valdr√°
+A vosotros los ni√±os os gustan mucho eh
 Si quieres aguno, ya sabes donde encontrarme
 ###
 

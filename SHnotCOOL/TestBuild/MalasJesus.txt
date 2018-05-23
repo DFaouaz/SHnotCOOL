@@ -8,11 +8,11 @@
 -20 Se hizo famoso gracias al musical Jesucristo Superstar
 -23 Es el hijo de Morgan Freeman
 -25 Acabo con el imperio romano
--30 Murió decapitado en la guillotina
+-30 MuriÃ³ decapitado en la guillotina
 -25 Participo en las cruzadas
 -12 Tuvo 14 apostoles
--25 Nació en un hotel de 5 estrellas
--30 Vivio en el año 50 despues de Cristo
+-25 NaciÃ³ en un hotel de 5 estrellas
+-30 Vivio en el aÃ±o 50 despues de Cristo
 -25 Era muy querido por su gobierno
 -27 Fue el primer gran mago de la historia
 -20 Su existencia supuso un gran avance para la ciencia

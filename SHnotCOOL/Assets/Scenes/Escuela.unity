@@ -1001,8 +1001,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 116322618}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.46, y: -1.24, z: 0}
-  m_LocalScale: {x: 1.0524998, y: 1, z: 1}
+  m_LocalPosition: {x: 2.29, y: -1.24, z: 0}
+  m_LocalScale: {x: 1.2630001, y: 1.2500002, z: 1}
   m_Children: []
   m_Father: {fileID: 6410269}
   m_RootOrder: 11
@@ -46391,8 +46391,8 @@ Transform:
   - {fileID: 932826956}
   - {fileID: 1735377450}
   - {fileID: 867694613}
-  - {fileID: 1304489944}
   - {fileID: 1654319472}
+  - {fileID: 1304489944}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48988,7 +48988,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 992684131}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.26, y: 9, z: 0}
+  m_LocalPosition: {x: 11.49, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6410269}
@@ -74500,7 +74500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   escenaPrincipal: Escuela
   EscenaPiso2: Piso2
-  botonInteractuar: 32
+  botonInteractuar: 101
   lastEntrance: {fileID: 0}
   lastPosEntrance: {x: 0, y: 0, z: 0}
   lastEntranceName: 
@@ -87454,7 +87454,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 23.48
+      value: 10.71
       objectReference: {fileID: 0}
     - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
       propertyPath: m_LocalPosition.y
@@ -87482,7 +87482,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4787542864211162, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f926308cb0c222478680c786cd709c9, type: 2}
@@ -94974,8 +94974,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1972623541}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.46, y: 8.53, z: 0}
-  m_LocalScale: {x: 3.3749971, y: 1, z: 1}
+  m_LocalPosition: {x: 7.46, y: 3.22, z: 0}
+  m_LocalScale: {x: 0.8437491, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6410269}
   m_RootOrder: 10
