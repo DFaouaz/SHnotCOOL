@@ -15,8 +15,8 @@
 -99 No hizo nada malo
 -12 Tuvo dos esposas
 -17 Tuvo una aventura con un hombre 
--14 Pertenecia a la raza aria
--13 Llego al poder mediante un golpe de estado
+-14 Pertenecía a la raza aria
+-13 Llegó al poder mediante un golpe de estado
 -12 Tuvo tres hijos
 -10 Ganó la batalla de Estalingrado
 -12 Era muy escéptico en cuanto al misticismo

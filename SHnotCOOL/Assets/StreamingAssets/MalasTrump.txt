@@ -1,20 +1,20 @@
--25 Apenas usa las redes sociales
+﻿-25 Apenas usa las redes sociales
 -35 Es conocido por su actitud pacifista
--30 Odia las barreras entre paises
--25 Es activista de Green peace
+-30 Odia las barreras entre países
+-25 Es activista de Green Peace
 -23 Sucesor de Abraham Lincoln
--20 Perdio las elecciones contra Hillary Clinton
--15 Representante del partido democrata
--20 Tiene buena relacion con los paises del este
+-20 Perdió las elecciones contra Hillary Clinton
+-15 Representante del partido demócrata
+-20 Tiene buena relación con los países del este
 -17 Tiene 8 hijos
 -15 Melania es su primera mujer
--25 Participo en el asesinato de Kennedy
+-25 Participó en el asesinato de Kennedy
 -30 Vive en la casa negra
 -27 Es el presidente de Uganda
 -20 Wakanda Forever
--25 Mantiene una relacion amorosa con Kanye West
+-25 Mantiene una relación amorosa con Kanye West
 -17 Su nacimiento fue el motivo del fin de la WW2
--35 Artista del renacimiento clasico
+-35 Artista del renacimiento clásico
 -27 Es un reptiliano
 -15 Lleva peluca
 -17 Tiene menos de 70 años
@@ -22,9 +22,9 @@
 -16 Se ha divorciado tres veces
 -20 Su mujer es una inmigrante finlandesa
 -99 Make America Great Again
--27 Es la reencarnacion de jesucristo
+-27 Es la reencarnación de Jesucristo
 -17 Ha sido demandado mas de 4000 veces
 -20 Siempre ha pertenecido al partido republicano
--17 Su hermano murio por un accidente de coche
+-17 Su hermano murió en un accidente de coche
 -12 Tuvo cinco hermanos
 -17 Odia el golf
