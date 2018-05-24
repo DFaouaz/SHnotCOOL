@@ -32,7 +32,7 @@ public class Health
     }
 }
 
-public class BarrasDeVida : MonoBehaviour {
+public class VidasHistoria : MonoBehaviour {
 
     public Animator enemyAnimator;
 

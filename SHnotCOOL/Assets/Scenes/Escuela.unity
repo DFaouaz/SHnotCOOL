@@ -516,7 +516,12 @@ Prefab:
         type: 2}
       propertyPath: playerTarget
       value: 
-      objectReference: {fileID: 33144926}
+      objectReference: {fileID: 0}
+    - target: {fileID: 212704400246233856, guid: d871f2555c6711741bbf9f1ef51ec4cd,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 9999
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d871f2555c6711741bbf9f1ef51ec4cd, type: 2}
   m_IsPrefabParent: 0
@@ -1001,7 +1006,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 116322618}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.12, y: -1.05, z: 0}
+  m_LocalPosition: {x: 3.12, y: -2.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6410269}
@@ -1033,7 +1038,7 @@ MonoBehaviour:
   mesagePanel: {fileID: 1095584367}
   text: {fileID: 1298238372}
   mesage: "Ese de ah\xED es uno de tus compa\xF1eros. Intenta hacer el m\xE1ximo n\xFAmero
-    de amigos para que le mat\xF3n deje de molestarte..."
+    de amigos para que el mat\xF3n deje de molestarte..."
 --- !u!61 &116322622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1046,7 +1051,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.29745626}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1057,7 +1062,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5, y: 3}
+  m_Size: {x: 5, y: 3.8821115}
   m_EdgeRadius: 0
 --- !u!1 &132112841
 GameObject:
@@ -34532,7 +34537,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 48789255851a02f45a476deef234b824, type: 3}
-    m_FontSize: 26
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -60953,7 +60958,7 @@ MonoBehaviour:
   objeto: {fileID: 114840101093280774, guid: 7509310d8729ff54f83dca1e0fa62577, type: 2}
   texto_boton: {fileID: 846788914}
   Padre_: {fileID: 1628965108}
-  coste_: 10
+  coste_: 20
 --- !u!114 &1252530040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64783,7 +64788,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 48789255851a02f45a476deef234b824, type: 3}
-    m_FontSize: 26
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -72752,7 +72757,7 @@ MonoBehaviour:
   objeto: {fileID: 114867314904974690, guid: 5660e4a2303aec44688d71cbc228ded7, type: 2}
   texto_boton: {fileID: 997841908}
   Padre_: {fileID: 1628965108}
-  coste_: 10
+  coste_: 25
 --- !u!114 &1447560418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84090,7 +84095,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 48789255851a02f45a476deef234b824, type: 3}
-    m_FontSize: 26
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -94981,9 +94986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mesagePanel: {fileID: 1095584367}
   text: {fileID: 1298238372}
-  mesage: "En tu inventario puedes ver los objetos que llevas en este momento, ademas
-    tambien puedesPodr\xE1s guardar lso objetos que encuentres en ti inventario. Adem\xE1s,
-    tienes una lista con los ex\xE1menes que te quedan por hacer."
+  mesage: "En tu inventario puedes ver los objetos que llevas en este momento. Adem\xE1s,
+    tienes una lista con los ex\xE1menes que te quedan por hacer en el trimestre actual."
 --- !u!61 &1972623545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -96429,7 +96433,7 @@ MonoBehaviour:
   objeto: {fileID: 114413715169940758, guid: 0aa174f07035b0a4b9b9a175f0005405, type: 2}
   texto_boton: {fileID: 1930204515}
   Padre_: {fileID: 1628965108}
-  coste_: 10
+  coste_: 20
 --- !u!114 &2031431636
 MonoBehaviour:
   m_ObjectHideFlags: 0

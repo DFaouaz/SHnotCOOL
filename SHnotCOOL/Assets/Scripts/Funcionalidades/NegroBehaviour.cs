@@ -11,6 +11,7 @@ public class NegroBehaviour : NPC {
 	Rigidbody2D myRigidbody;
 	Animator animator;
 	public string[] possibleScenes;
+	bool layerOrder = false;
 
 	new void Start(){
 		animator = GetComponent<Animator> ();
@@ -20,8 +21,13 @@ public class NegroBehaviour : NPC {
 	}
 
 	void FixedUpdate () {
-		if (alreadyTalked) 
+		if (alreadyTalked) {
 			FollowPlayer ();
+			if (!layerOrder) {
+				GetComponent<SpriteRenderer> ().sortingOrder = 9999;
+				layerOrder = true;
+			}
+		}
 	}
 		
 

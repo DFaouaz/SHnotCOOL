@@ -7,10 +7,12 @@ public class VidasLengua : MonoBehaviour {
 
 	public int vidas;
 	Text texto;
+	Puntos p;
 
 	void Start(){
 
 		texto = GetComponent<Text> ();
+		p = FindObjectOfType<Puntos> ();
 		ActualizaVidas ();
 	}
 		
@@ -36,5 +38,6 @@ public class VidasLengua : MonoBehaviour {
 	void ActualizaVidas()
     {
 		texto.text = "Vidas: " + vidas;
+		p.ActualizaPuntos ();
 	}
 }

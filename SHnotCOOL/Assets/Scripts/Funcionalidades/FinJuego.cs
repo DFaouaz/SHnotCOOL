@@ -20,6 +20,7 @@ public class FinJuego : MonoBehaviour {
         dinero.text = "Dinero: " + (GameManager.instance.dinero);
         amigos.text = "Amigos: " + GameManager.instance.numFriends;
         nota.text = "Nota Final: " + (GameManager.instance.notaFinal);
+		InputConfiguration.SelectFirstFoundButton ();
     }
 
 

@@ -26,7 +26,7 @@ public class Goal : MonoBehaviour {
         if (collision.gameObject.CompareTag("Player"))
         {
             if (GameManager.instance.GeoScore >= 5)
-                finJuego.text = "No está mal";
+                finJuego.text = "No esta mal";
             else
                 finJuego.text = "Das asco";
             GameManager.instance.FinExamenGeografia();

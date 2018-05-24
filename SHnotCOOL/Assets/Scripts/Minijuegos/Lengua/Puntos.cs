@@ -26,7 +26,7 @@ public class Puntos : MonoBehaviour {
         ActualizaPuntos();
     }
 
-	void ActualizaPuntos()
+	public void ActualizaPuntos()
     {
 		if (FindObjectOfType<VidasLengua> ().vidas >= 5)
 			GameManager.instance.lenguaScore = 10;

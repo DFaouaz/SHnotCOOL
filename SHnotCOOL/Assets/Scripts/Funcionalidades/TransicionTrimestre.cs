@@ -17,6 +17,7 @@ public class TransicionTrimestre : MonoBehaviour {
         dinero.text = "Dinero: " + (GameManager.instance.dinero - 100);
         amigos.text = "Amigos: " +GameManager.instance.numFriends;
         nota.text = "Nota: " + (GameManager.instance.media);
+		InputConfiguration.SelectFirstFoundButton ();
 	}
 	
     public void VuelveAEscena()

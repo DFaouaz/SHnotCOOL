@@ -15,7 +15,6 @@ public class AnswerManager : MonoBehaviour {
 
     public static AnswerManager instance = null;
     public Text nombreEnemigo;
-	int tmaBuenas=10;
     float damage = 0;
     List<Opcion> opciones,buenas;
     Opcion[]  totalBuenas,malas, respuestas;

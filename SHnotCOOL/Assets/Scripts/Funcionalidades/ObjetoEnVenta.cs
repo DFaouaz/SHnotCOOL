@@ -22,5 +22,14 @@ public class ObjetoEnVenta : MonoBehaviour {
 			boton.FindSelectableOnDown ().Select ();
 			boton.interactable = false;
 		}
+		else if(!HUD.BuyObject(objeto,Padre_)){
+			texto_boton.text = "No tienes espacio";
+			Invoke ("ReiniciaEstado", 1f);
+		}
+			
+	}
+
+	void ReiniciaEstado(){
+		texto_boton.text = objeto.NombreColeccionable + " " + coste_+"€";
 	}
 }
