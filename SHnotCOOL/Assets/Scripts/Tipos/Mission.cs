@@ -36,7 +36,7 @@ public class Mission : MonoBehaviour {
 
 	//Busca la mision
 	public void LeeMision(){
-		StreamReader file = new StreamReader ("Misiones.txt",System.Text.Encoding.UTF8);
+		StreamReader file = new StreamReader ((Application.dataPath + "/StreamingAssets/Misiones.txt"), System.Text.Encoding.UTF8);
 		//Busca el nombre en clave y el numero
 		string [] partes = new string[1];
 		do{

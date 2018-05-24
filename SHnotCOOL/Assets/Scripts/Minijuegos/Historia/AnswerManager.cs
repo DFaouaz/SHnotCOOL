@@ -29,25 +29,25 @@ public class AnswerManager : MonoBehaviour {
         string fraseBuena, fraseMala;
         string[] lineasBuenas, lineasMalas;
 
-        StreamReader textoMalas = new StreamReader("MalasTrump.txt", Encoding.UTF8);
-        StreamReader textoBuenas = new StreamReader("BuenasTrump.txt", Encoding.UTF8);
+        StreamReader textoMalas = new StreamReader((Application.dataPath + "/StreamingAssets/MalasTrump.txt"), Encoding.UTF8);
+        StreamReader textoBuenas = new StreamReader((Application.dataPath + "/StreamingAssets/BuenasTrump.txt"), Encoding.UTF8);
         pulsado = false;
 
         switch (GameManager.instance.trimestre)
         {
             case (1):
-                textoMalas = new StreamReader("MalasTrump.txt", Encoding.UTF8);
-                textoBuenas = new StreamReader("BuenasTrump.txt", Encoding.UTF8);
+                textoMalas = new StreamReader((Application.dataPath + "/StreamingAssets/MalasTrump.txt"), Encoding.UTF8);
+                textoBuenas = new StreamReader((Application.dataPath + "/StreamingAssets/BuenasTrump.txt"), Encoding.UTF8);
                 nombreEnemigo.text = "Trump";
                 break;
             case (2):
-                textoMalas = new StreamReader("MalasHitler.txt", Encoding.UTF8);
-                textoBuenas = new StreamReader("BuenasHitler.txt", Encoding.UTF8);
+                textoMalas = new StreamReader((Application.dataPath + "/StreamingAssets/MalasHitler.txt"), Encoding.UTF8);
+                textoBuenas = new StreamReader((Application.dataPath + "/StreamingAssets/BuenasHitler.txt"), Encoding.UTF8);
                 nombreEnemigo.text = "Hitler";
                 break;
             case (3):
-                textoMalas = new StreamReader("MalasJesus.txt", Encoding.UTF8);
-                textoBuenas = new StreamReader("BuenasJesus.txt", Encoding.UTF8);
+                textoMalas = new StreamReader((Application.dataPath + "/StreamingAssets/MalasJesus.txt"), Encoding.UTF8);
+                textoBuenas = new StreamReader((Application.dataPath + "/StreamingAssets/BuenasJesus.txt"), Encoding.UTF8);
                 nombreEnemigo.text = "Jesus";
                 break;
         }
